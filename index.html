@@ -6,21 +6,21 @@
 <title>colter.us</title>
 <meta name="description" content="Colter Wehmeier's personal site.">
 
-<link rel="icon" href="portfolio/favicon.ico" type="image/x-icon">
-<script src="portfolio/jquery-3.6.0.min.js"></script>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script src="js/jquery-3.6.0.min.js"></script>
 <!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
 <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
-<link rel="stylesheet" type="text/css" href="portfolio/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 
 
 </head>
 <body>
-<!-- <div>
+<div>
     <video id="bgVideo" loop muted autoplay style="opacity: 0;" oncanplay="this.style.opacity='1';" onloadedmetadata="randomStartTime()">
-        <source src="portfolio/assets/garden_fast.mp4" type="video/mp4">
+        <source src="assets/garden_fast.mp4" type="video/mp4">
       </video>
-    </div> -->
+    </div>
 <!-- takes up space to push content down the page in mobile mode -->
 <div id="spacer"></div>
 <!-- contains the current items loaded from output.html -->
@@ -58,7 +58,7 @@
         d="M35.542,71.066 C15.923,71.066 0.018,55.162 0.018,35.542 C0.018,15.923 15.923,0.018 35.542,0.018 C55.162,0.018 71.066,15.923 71.066,35.542 C71.066,55.162 55.162,71.066 35.542,71.066 ZM19.395,29.083 C15.828,29.083 12.936,31.975 12.936,35.542 C12.936,39.109 15.828,42.001 19.395,42.001 C22.962,42.001 25.854,39.109 25.854,35.542 C25.854,31.975 22.962,29.083 19.395,29.083 ZM42.001,35.542 C40.218,35.542 38.772,36.988 38.772,38.772 C38.772,36.988 37.326,35.542 35.542,35.542 C33.759,35.542 32.313,36.988 32.313,38.772 C32.313,36.988 30.867,35.542 29.083,35.542 C27.300,35.542 25.854,36.988 25.854,38.772 C25.854,40.555 27.300,42.001 29.083,42.001 C30.867,42.001 32.313,40.555 32.313,38.772 C32.313,40.555 33.759,42.001 35.542,42.001 C37.326,42.001 38.772,40.555 38.772,38.772 C38.772,40.555 40.218,42.001 42.001,42.001 C43.785,42.001 45.231,40.555 45.231,38.772 C45.231,36.988 43.785,35.542 42.001,35.542 ZM51.690,29.083 C48.122,29.083 45.231,31.975 45.231,35.542 C45.231,39.109 48.122,42.001 51.690,42.001 C55.257,42.001 58.149,39.109 58.149,35.542 C58.149,31.975 55.257,29.083 51.690,29.083 Z"/>
     </svg>
 </div>
-<!-- <babylon model="portfolio/entries/game/genesis/vhs.glb"></babylon> -->
+<!-- <babylon model="entries/game/genesis/vhs.glb"></babylon> -->
 <div id="lightbox" class="lightbox no-animation">
     <div class="lightbox-content">
         <div id="content">
@@ -263,7 +263,7 @@ function populateLightbox(entry) {
 
 
     if (entry.description.endsWith('.html')) {
-        fetch("portfolio/"+entry.description)
+        fetch(entry.description)
             .then(response => response.text())
             .then(data => {
                 document.getElementById('entry-description').innerHTML = data;
@@ -331,12 +331,12 @@ function populateLightbox(entry) {
             switch (true) {
                 case /\.(jpg|jpeg|png|webp|gif)$/i.test(file):
                     mediaElement = document.createElement('img');
-                    mediaElement.setAttribute("img-data-src", "portfolio/"+file);
+                    mediaElement.setAttribute("img-data-src", file);
                     mediaElement.loading = "lazy"; // Enables native lazy loading
                     break;
                 case /\.(mp4|mov)$/i.test(file):
                     mediaElement = document.createElement('video');
-                    mediaElement.setAttribute("vid-data-src", "portfolio/"+file);
+                    mediaElement.setAttribute("vid-data-src", file);
                     mediaElement.loading = "lazy"; // Enables native lazy loading
                     mediaElement.controls = false;
                     mediaElement.autoplay = true;
@@ -346,11 +346,11 @@ function populateLightbox(entry) {
                     break;
                 case /\.yt$/i.test(file):
                     mediaElement = document.createElement('div');
-                    mediaElement.setAttribute("yt-data-src", "portfolio/"+file);
+                    mediaElement.setAttribute("yt-data-src", file);
                     break;
                 case /\.(gltf|glb)$/i.test(file):
                     mediaElement = document.createElement('div');
-                    mediaElement.setAttribute("model-data-src", "portfolio/"+file);
+                    mediaElement.setAttribute("model-data-src", file);
                     break;
             }
             
@@ -619,7 +619,7 @@ function testURLForHash(){
 let isScrollLocked = false;
 
 // Fetch HTML contents
-fetchHTML('portfolio/output.html', 'container').then(() => {
+fetchHTML('output.html', 'container').then(() => {
     manageLinks();
     setupButtons();
     testURLForHash();
