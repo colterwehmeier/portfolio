@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /ex/private/
+Sitemap: https://colter.us/sitemap.xml

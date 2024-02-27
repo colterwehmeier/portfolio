@@ -1,1 +1,674 @@
-hello!
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>colter.us</title>
+<meta name="description" content="Colter Wehmeier's personal site.">
+
+<link rel="icon" href="portfolio/favicon.ico" type="image/x-icon">
+<script src="portfolio/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
+<!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
+<link rel="stylesheet" type="text/css" href="portfolio/style.css">
+
+
+
+</head>
+<body>
+<!-- <div>
+    <video id="bgVideo" loop muted autoplay style="opacity: 0;" oncanplay="this.style.opacity='1';" onloadedmetadata="randomStartTime()">
+        <source src="portfolio/assets/garden_fast.mp4" type="video/mp4">
+      </video>
+    </div> -->
+<!-- takes up space to push content down the page in mobile mode -->
+<div id="spacer"></div>
+<!-- contains the current items loaded from output.html -->
+<div id="container" class="hidden"></div>
+<div id="container-footer"></div>
+
+<div id="SVG">
+    <svg height="75" width="256" style="top:35px; left:35px;" class="themes gametextsvg">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+         d="M236.187,23.742 L220.830,23.742 C220.367,23.742 220.004,23.609 219.740,23.342 C219.476,23.076 219.344,22.709 219.344,22.242 L219.344,19.643 C219.344,18.643 219.079,17.828 218.552,17.194 C218.022,16.561 217.329,16.244 216.471,16.244 C215.612,16.244 214.935,16.578 214.440,17.244 C213.945,17.911 213.697,18.810 213.697,19.943 C213.697,21.277 214.225,22.559 215.282,23.792 C216.338,25.026 218.452,26.808 221.623,29.140 C225.849,32.274 229.036,34.806 231.183,36.738 C233.329,38.672 235.013,40.854 236.236,43.286 C237.458,45.720 238.069,48.569 238.069,51.833 C238.069,57.899 236.120,62.730 232.224,66.329 C228.326,69.928 223.208,71.728 216.867,71.728 C212.640,71.728 208.941,70.928 205.771,69.328 C202.601,67.729 200.139,65.514 198.390,62.680 C196.639,59.848 195.764,56.599 195.764,52.933 L195.764,49.534 C195.764,49.069 195.896,48.702 196.161,48.434 C196.424,48.169 196.788,48.035 197.251,48.035 L212.706,48.035 C213.167,48.035 213.531,48.169 213.796,48.434 C214.059,48.702 214.192,49.069 214.192,49.534 L214.192,52.033 C214.192,53.100 214.455,53.967 214.985,54.633 C215.513,55.300 216.174,55.632 216.966,55.632 C217.759,55.632 218.418,55.332 218.948,54.733 C219.476,54.133 219.740,53.367 219.740,52.433 C219.740,51.301 219.211,50.184 218.155,49.084 C217.098,47.985 214.886,46.235 211.517,43.836 C208.214,41.504 205.489,39.371 203.344,37.438 C201.196,35.505 199.331,33.073 197.746,30.140 C196.161,27.208 195.368,23.842 195.368,20.043 C195.368,16.111 196.243,12.645 197.994,9.646 C199.743,6.647 202.220,4.315 205.424,2.648 C208.627,0.983 212.310,0.149 216.471,0.149 C220.697,0.149 224.412,0.983 227.617,2.648 C230.820,4.315 233.297,6.647 235.047,9.646 C236.797,12.645 237.673,16.111 237.673,20.043 L237.673,22.242 C237.673,22.709 237.540,23.076 237.277,23.342 C237.012,23.609 236.648,23.742 236.187,23.742 ZM191.165,70.928 L154.507,70.928 C154.044,70.928 153.680,70.795 153.417,70.528 C153.153,70.262 153.021,69.895 153.021,69.428 L153.021,2.448 C153.021,1.982 153.153,1.615 153.417,1.348 C153.680,1.083 154.044,0.948 154.507,0.948 L191.165,0.948 C191.626,0.948 191.990,1.083 192.254,1.348 C192.518,1.615 192.651,1.982 192.651,2.448 L192.651,15.544 C192.651,16.011 192.518,16.378 192.254,16.644 C191.990,16.911 191.626,17.044 191.165,17.044 L172.241,17.044 C171.845,17.044 171.647,17.244 171.647,17.643 L171.647,27.241 C171.647,27.641 171.845,27.840 172.241,27.840 L182.050,27.840 C182.511,27.840 182.875,27.975 183.140,28.240 C183.403,28.507 183.536,28.875 183.536,29.340 L183.536,42.436 C183.536,42.903 183.403,43.270 183.140,43.536 C182.875,43.803 182.511,43.936 182.050,43.936 L172.241,43.936 C171.845,43.936 171.647,44.136 171.647,44.536 L171.647,54.233 C171.647,54.633 171.845,54.833 172.241,54.833 L191.165,54.833 C191.626,54.833 191.990,54.967 192.254,55.232 C192.518,55.500 192.651,55.867 192.651,56.332 L192.651,69.428 C192.651,69.895 192.518,70.262 192.254,70.528 C191.990,70.795 191.626,70.928 191.165,70.928 ZM147.926,70.928 L132.272,70.928 C131.809,70.928 131.445,70.795 131.182,70.528 C130.917,70.262 130.786,69.895 130.786,69.428 L130.786,28.740 C130.786,28.475 130.702,28.308 130.538,28.240 C130.372,28.175 130.224,28.275 130.092,28.540 L124.445,38.137 L123.454,39.937 L123.355,39.937 L116.816,28.340 C116.683,28.075 116.535,27.958 116.370,27.990 C116.205,28.025 116.123,28.208 116.123,28.540 L116.123,69.428 C116.123,69.895 115.990,70.262 115.727,70.528 C115.462,70.795 115.098,70.928 114.637,70.928 L98.983,70.928 C98.520,70.928 98.156,70.795 97.893,70.528 C97.628,70.262 97.497,69.895 97.497,69.428 L97.497,2.448 C97.497,1.982 97.628,1.615 97.893,1.348 C98.156,1.083 98.520,0.948 98.983,0.948 L114.439,0.948 C115.296,0.948 115.891,1.315 116.222,2.048 L123.058,14.744 C123.190,14.944 123.338,15.044 123.504,15.044 C123.668,15.044 123.784,14.944 123.851,14.744 L130.687,2.048 C131.083,1.315 131.677,0.948 132.470,0.948 L147.926,0.948 C148.387,0.948 148.751,1.083 149.015,1.348 C149.279,1.615 149.412,1.982 149.412,2.448 L149.412,69.428 C149.412,69.895 149.279,70.262 149.015,70.528 C148.751,70.795 148.387,70.928 147.926,70.928 ZM93.520,70.928 L77.569,70.928 C76.578,70.928 76.049,70.462 75.984,69.528 L75.092,62.030 C75.092,61.831 75.008,61.681 74.844,61.581 C74.679,61.481 74.530,61.431 74.398,61.431 L65.680,61.431 C65.349,61.431 65.118,61.598 64.986,61.930 L63.797,69.528 C63.664,70.462 63.136,70.928 62.212,70.928 L46.658,70.928 C45.600,70.928 45.171,70.395 45.370,69.328 L59.438,2.248 C59.636,1.383 60.197,0.948 61.122,0.948 L79.154,0.948 C80.078,0.948 80.640,1.383 80.838,2.248 L94.907,69.328 L94.907,69.728 C94.907,70.528 94.444,70.928 93.520,70.928 ZM70.832,29.440 C70.765,29.107 70.649,28.940 70.485,28.940 C70.319,28.940 70.203,29.107 70.138,29.440 L67.463,46.435 C67.397,46.835 67.595,47.035 68.058,47.035 L72.516,47.035 C72.846,47.035 73.011,46.835 73.011,46.435 L70.832,29.440 ZM33.969,69.228 C30.700,70.895 26.918,71.728 22.625,71.728 C16.086,71.728 10.835,69.878 6.872,66.179 C2.909,62.480 0.928,57.532 0.928,51.334 L0.928,20.443 C0.928,14.244 2.909,9.313 6.872,5.647 C10.835,1.982 16.086,0.149 22.625,0.149 C26.918,0.149 30.700,0.983 33.969,2.648 C37.238,4.315 39.780,6.697 41.598,9.796 C43.414,12.895 44.322,16.511 44.322,20.643 L44.322,23.942 C44.322,24.409 44.189,24.776 43.926,25.041 C43.661,25.308 43.297,25.441 42.836,25.441 L27.182,25.441 C26.720,25.441 26.356,25.308 26.093,25.041 C25.828,24.776 25.696,24.409 25.696,23.942 L25.696,20.443 C25.696,19.177 25.415,18.160 24.854,17.394 C24.292,16.628 23.549,16.244 22.625,16.244 C21.699,16.244 20.956,16.628 20.396,17.394 C19.834,18.160 19.554,19.177 19.554,20.443 L19.554,51.434 C19.554,52.700 19.834,53.717 20.396,54.483 C20.956,55.250 21.699,55.632 22.625,55.632 C23.549,55.632 24.292,55.250 24.854,54.483 C25.415,53.717 25.696,52.700 25.696,51.434 L25.696,46.535 C25.696,46.135 25.498,45.935 25.102,45.935 L24.309,45.935 C23.846,45.935 23.483,45.802 23.219,45.535 C22.955,45.270 22.823,44.903 22.823,44.436 L22.823,32.939 C22.823,32.473 22.955,32.106 23.219,31.839 C23.483,31.574 23.846,31.439 24.309,31.439 L42.836,31.439 C43.297,31.439 43.661,31.574 43.926,31.839 C44.189,32.106 44.322,32.473 44.322,32.939 L44.322,51.334 C44.322,55.400 43.414,58.981 41.598,62.080 C39.780,65.180 37.238,67.563 33.969,69.228 Z"/>
+    </svg>
+        
+    <!-- <svg height="75" width="200" style="top:185px; left:38px;" class="themes blogtextsvg">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+         d="M163.712,45.314 L162.919,45.314 C162.456,45.314 162.092,45.183 161.829,44.920 C161.565,44.658 161.433,44.296 161.433,43.835 L161.433,32.494 C161.433,32.035 161.565,31.673 161.829,31.409 C162.092,31.147 162.456,31.015 162.919,31.015 L181.446,31.015 C181.907,31.015 182.271,31.147 182.536,31.409 C182.799,31.673 182.932,32.035 182.932,32.494 L182.932,50.640 C182.932,54.651 182.023,58.184 180.208,61.242 C178.390,64.299 175.848,66.650 172.579,68.293 C169.309,69.937 165.528,70.758 161.235,70.758 C154.696,70.758 149.445,68.934 145.482,65.285 C141.519,61.636 139.538,56.754 139.538,50.640 L139.538,20.166 C139.538,14.052 141.519,9.187 145.482,5.571 C149.445,1.956 154.696,0.147 161.235,0.147 C165.528,0.147 169.309,0.969 172.579,2.612 C175.848,4.256 178.390,6.606 180.208,9.663 C182.023,12.721 182.932,16.288 182.932,20.364 L182.932,23.618 C182.932,24.079 182.799,24.441 182.536,24.703 C182.271,24.966 181.907,25.097 181.446,25.097 L165.792,25.097 C165.329,25.097 164.966,24.966 164.702,24.703 C164.438,24.441 164.306,24.079 164.306,23.618 L164.306,20.166 C164.306,18.918 164.024,17.915 163.464,17.158 C162.902,16.403 162.159,16.024 161.235,16.024 C160.309,16.024 159.566,16.403 159.006,17.158 C158.444,17.915 158.164,18.918 158.164,20.166 L158.164,50.739 C158.164,51.988 158.444,52.991 159.006,53.746 C159.566,54.503 160.309,54.881 161.235,54.881 C162.159,54.881 162.902,54.503 163.464,53.746 C164.024,52.991 164.306,51.988 164.306,50.739 L164.306,45.906 C164.306,45.512 164.108,45.314 163.712,45.314 ZM113.637,70.758 C106.965,70.758 101.632,68.852 97.636,65.038 C93.639,61.226 91.642,56.098 91.642,49.654 L91.642,21.251 C91.642,14.809 93.639,9.680 97.636,5.867 C101.632,2.054 106.965,0.147 113.637,0.147 C120.307,0.147 125.640,2.054 129.637,5.867 C133.633,9.680 135.631,14.809 135.631,21.251 L135.631,49.654 C135.631,56.098 133.633,61.226 129.637,65.038 C125.640,68.852 120.307,70.758 113.637,70.758 ZM117.005,20.462 C117.005,19.082 116.708,17.997 116.114,17.208 C115.519,16.419 114.692,16.024 113.637,16.024 C112.579,16.024 111.754,16.419 111.160,17.208 C110.565,17.997 110.268,19.082 110.268,20.462 L110.268,50.443 C110.268,51.823 110.565,52.908 111.160,53.697 C111.754,54.486 112.579,54.881 113.637,54.881 C114.692,54.881 115.519,54.486 116.114,53.697 C116.708,52.908 117.005,51.823 117.005,50.443 L117.005,20.462 ZM86.957,69.969 L49.904,69.969 C49.441,69.969 49.077,69.838 48.814,69.575 C48.549,69.313 48.417,68.951 48.417,68.490 L48.417,2.415 C48.417,1.956 48.549,1.594 48.814,1.330 C49.077,1.068 49.441,0.936 49.904,0.936 L65.557,0.936 C66.019,0.936 66.382,1.068 66.647,1.330 C66.910,1.594 67.043,1.956 67.043,2.415 L67.043,53.500 C67.043,53.894 67.242,54.092 67.638,54.092 L86.957,54.092 C87.419,54.092 87.783,54.224 88.047,54.486 C88.310,54.750 88.444,55.112 88.444,55.571 L88.444,68.490 C88.444,68.951 88.310,69.313 88.047,69.575 C87.783,69.838 87.419,69.969 86.957,69.969 ZM44.313,50.541 C44.313,56.788 42.297,61.587 38.269,64.940 C34.240,68.293 29.121,69.969 22.913,69.969 L2.008,69.969 C1.545,69.969 1.182,69.838 0.918,69.575 C0.654,69.313 0.522,68.951 0.522,68.490 L0.522,2.415 C0.522,1.956 0.654,1.594 0.918,1.330 C1.182,1.068 1.545,0.936 2.008,0.936 L19.941,0.936 C27.139,0.936 32.771,2.547 36.833,5.768 C40.895,8.990 42.926,13.855 42.926,20.364 C42.926,26.413 41.044,30.916 37.279,33.875 C36.947,34.138 36.882,34.368 37.081,34.565 C41.901,38.248 44.313,43.573 44.313,50.541 ZM20.238,16.813 L19.743,16.813 C19.346,16.813 19.148,17.011 19.148,17.405 L19.148,27.267 C19.148,27.661 19.346,27.859 19.743,27.859 L20.238,27.859 C23.210,27.859 24.696,26.019 24.696,22.336 C24.696,18.655 23.210,16.813 20.238,16.813 ZM24.548,42.898 C23.788,41.682 22.780,41.074 21.526,41.074 L19.743,41.074 C19.346,41.074 19.148,41.271 19.148,41.665 L19.148,53.500 C19.148,53.894 19.346,54.092 19.743,54.092 L21.427,54.092 C22.681,54.092 23.706,53.549 24.498,52.464 C25.291,51.380 25.687,49.819 25.687,47.780 C25.687,45.743 25.306,44.116 24.548,42.898 Z"/>
+    </svg> -->
+    <svg height="75" width="140" style="top:185px; left:38px;" class="themes blogtextsvg">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+        d="M132.602,60.600 C130.819,63.823 128.308,66.320 125.073,68.096 C121.836,69.871 118.103,70.758 113.877,70.758 C109.583,70.758 105.818,69.871 102.583,68.096 C99.346,66.320 96.837,63.823 95.053,60.600 C93.270,57.380 92.378,53.665 92.378,49.456 L92.378,2.415 C92.378,1.956 92.510,1.594 92.774,1.330 C93.038,1.068 93.401,0.936 93.864,0.936 L109.518,0.936 C109.979,0.936 110.343,1.068 110.608,1.330 C110.871,1.594 111.004,1.956 111.004,2.415 L111.004,51.232 C111.004,52.350 111.267,53.238 111.797,53.894 C112.325,54.552 113.018,54.881 113.877,54.881 C114.735,54.881 115.413,54.552 115.908,53.894 C116.404,53.238 116.651,52.350 116.651,51.232 L116.651,2.415 C116.651,1.956 116.783,1.594 117.048,1.330 C117.311,1.068 117.675,0.936 118.137,0.936 L133.791,0.936 C134.253,0.936 134.616,1.068 134.881,1.330 C135.144,1.594 135.277,1.956 135.277,2.415 L135.277,49.456 C135.277,53.665 134.386,57.380 132.602,60.600 ZM77.227,67.504 C73.891,69.148 70.044,69.969 65.685,69.969 L46.167,69.969 C45.704,69.969 45.340,69.838 45.077,69.575 C44.813,69.313 44.681,68.951 44.681,68.490 L44.681,2.415 C44.681,1.956 44.813,1.594 45.077,1.330 C45.340,1.068 45.704,0.936 46.167,0.936 L65.685,0.936 C70.044,0.936 73.891,1.758 77.227,3.401 C80.561,5.045 83.154,7.363 85.004,10.354 C86.853,13.346 87.778,16.781 87.778,20.659 L87.778,50.245 C87.778,54.125 86.853,57.560 85.004,60.551 C83.154,63.544 80.561,65.861 77.227,67.504 ZM69.152,21.843 C69.152,20.331 68.789,19.115 68.063,18.194 C67.335,17.274 66.378,16.813 65.189,16.813 L63.901,16.813 C63.505,16.813 63.307,17.011 63.307,17.405 L63.307,53.500 C63.307,53.894 63.505,54.092 63.901,54.092 L65.288,53.993 C66.344,53.928 67.236,53.435 67.963,52.514 C68.689,51.594 69.086,50.410 69.152,48.963 L69.152,21.843 ZM38.666,69.969 L2.008,69.969 C1.545,69.969 1.182,69.838 0.918,69.575 C0.654,69.313 0.522,68.951 0.522,68.490 L0.522,2.415 C0.522,1.956 0.654,1.594 0.918,1.330 C1.182,1.068 1.545,0.936 2.008,0.936 L38.666,0.936 C39.127,0.936 39.491,1.068 39.756,1.330 C40.019,1.594 40.152,1.956 40.152,2.415 L40.152,15.334 C40.152,15.795 40.019,16.157 39.756,16.419 C39.491,16.682 39.127,16.813 38.666,16.813 L19.743,16.813 C19.346,16.813 19.148,17.011 19.148,17.405 L19.148,26.873 C19.148,27.267 19.346,27.464 19.743,27.464 L29.551,27.464 C30.012,27.464 30.376,27.597 30.641,27.859 C30.904,28.122 31.037,28.484 31.037,28.944 L31.037,41.863 C31.037,42.323 30.904,42.686 30.641,42.948 C30.376,43.211 30.012,43.342 29.551,43.342 L19.743,43.342 C19.346,43.342 19.148,43.539 19.148,43.934 L19.148,53.500 C19.148,53.894 19.346,54.092 19.743,54.092 L38.666,54.092 C39.127,54.092 39.491,54.224 39.756,54.486 C40.019,54.750 40.152,55.112 40.152,55.571 L40.152,68.490 C40.152,68.951 40.019,69.313 39.756,69.575 C39.491,69.838 39.127,69.969 38.666,69.969 Z"/>
+    </svg>
+        
+    <svg height="75" width="180" style="top:260px; left:38px;" class="themes junktextsvg">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+         d="M175.283,68.293 C175.348,68.490 175.382,68.721 175.382,68.983 C175.382,69.641 174.952,69.969 174.094,69.969 L157.648,69.969 C156.789,69.969 156.194,69.575 155.865,68.786 L148.236,48.569 C148.169,48.241 148.053,48.076 147.889,48.076 C147.723,48.076 147.575,48.241 147.443,48.569 L146.651,50.541 C146.584,50.674 146.552,50.936 146.552,51.330 L146.552,68.490 C146.552,68.951 146.419,69.313 146.155,69.575 C145.891,69.838 145.527,69.969 145.066,69.969 L129.412,69.969 C128.949,69.969 128.585,69.838 128.322,69.575 C128.057,69.313 127.926,68.951 127.926,68.490 L127.926,2.415 C127.926,1.956 128.057,1.594 128.322,1.330 C128.585,1.068 128.949,0.936 129.412,0.936 L145.066,0.936 C145.527,0.936 145.891,1.068 146.155,1.330 C146.419,1.594 146.552,1.956 146.552,2.415 L146.552,21.942 C146.552,22.205 146.634,22.353 146.799,22.385 C146.963,22.419 147.112,22.304 147.245,22.040 L155.567,2.119 C155.897,1.330 156.492,0.936 157.351,0.936 L173.698,0.936 C174.226,0.936 174.622,1.100 174.887,1.429 C175.150,1.758 175.150,2.185 174.887,2.711 L160.917,31.804 C160.851,32.067 160.851,32.331 160.917,32.592 L175.283,68.293 ZM121.288,69.969 L103.652,69.969 C102.793,69.969 102.265,69.543 102.067,68.687 L94.538,38.411 C94.471,38.214 94.339,38.132 94.141,38.164 C93.943,38.198 93.844,38.312 93.844,38.510 L94.042,68.490 C94.042,68.951 93.909,69.313 93.646,69.575 C93.381,69.838 93.017,69.969 92.556,69.969 L77.101,69.969 C76.638,69.969 76.274,69.838 76.011,69.575 C75.746,69.313 75.614,68.951 75.614,68.490 L75.614,2.415 C75.614,1.956 75.746,1.594 76.011,1.330 C76.274,1.068 76.638,0.936 77.101,0.936 L94.538,0.936 C95.395,0.936 95.925,1.364 96.123,2.218 L103.752,32.297 C103.817,32.560 103.950,32.691 104.148,32.691 C104.346,32.691 104.445,32.560 104.445,32.297 L104.346,2.415 C104.346,1.956 104.478,1.594 104.742,1.330 C105.005,1.068 105.369,0.936 105.832,0.936 L121.288,0.936 C121.749,0.936 122.113,1.068 122.378,1.330 C122.641,1.594 122.774,1.956 122.774,2.415 L122.774,68.490 C122.774,68.951 122.641,69.313 122.378,69.575 C122.113,69.838 121.749,69.969 121.288,69.969 ZM60.555,68.096 C57.318,69.871 53.586,70.758 49.360,70.758 C45.065,70.758 41.301,69.871 38.065,68.096 C34.828,66.320 32.319,63.823 30.536,60.600 C28.752,57.380 27.861,53.665 27.861,49.456 L27.861,2.415 C27.861,1.956 27.992,1.594 28.257,1.330 C28.520,1.068 28.884,0.936 29.347,0.936 L45.000,0.936 C45.462,0.936 45.826,1.068 46.090,1.330 C46.353,1.594 46.487,1.956 46.487,2.415 L46.487,51.232 C46.487,52.350 46.750,53.238 47.279,53.894 C47.807,54.552 48.501,54.881 49.360,54.881 C50.217,54.881 50.895,54.552 51.391,53.894 C51.886,53.238 52.134,52.350 52.134,51.232 L52.134,2.415 C52.134,1.956 52.265,1.594 52.530,1.330 C52.793,1.068 53.157,0.936 53.620,0.936 L69.274,0.936 C69.735,0.936 70.099,1.068 70.363,1.330 C70.627,1.594 70.760,1.956 70.760,2.415 L70.760,49.456 C70.760,53.665 69.868,57.380 68.085,60.600 C66.301,63.823 63.791,66.320 60.555,68.096 ZM12.582,68.293 C9.312,69.937 5.531,70.758 1.238,70.758 L1.000,70.1000 L-0.000,55.000 C1.013,54.932 0.141,55.000 1.000,55.000 C1.924,55.000 2.905,54.535 3.467,53.845 C4.027,53.155 4.309,52.284 4.309,51.232 L4.309,2.415 C4.309,1.956 4.441,1.594 4.706,1.330 C4.969,1.068 5.332,0.936 5.795,0.936 L21.449,0.936 C21.910,0.936 22.274,1.068 22.539,1.330 C22.802,1.594 22.935,1.956 22.935,2.415 L22.935,51.034 C22.935,54.914 22.026,58.349 20.211,61.340 C18.393,64.333 15.851,66.650 12.582,68.293 Z"/>
+        
+    </svg>
+    
+    <svg height="75" width="250" style="top:110px; left:34px;" class="themes wikartextsvg">
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+        d="M245.160,68.786 C245.160,69.575 244.697,69.969 243.773,69.969 L227.624,69.969 C226.765,69.969 226.237,69.543 226.039,68.687 L219.995,43.934 C219.862,43.606 219.730,43.441 219.599,43.441 C219.334,43.441 219.203,43.638 219.203,44.032 L219.203,68.490 C219.203,68.951 219.069,69.313 218.806,69.575 C218.542,69.838 218.178,69.969 217.716,69.969 L202.063,69.969 C201.600,69.969 201.236,69.838 200.973,69.575 C200.708,69.313 200.577,68.951 200.577,68.490 L200.577,2.415 C200.577,1.956 200.708,1.594 200.973,1.330 C201.236,1.068 201.600,0.936 202.063,0.936 L224.354,0.936 C228.317,0.936 231.835,1.872 234.906,3.746 C237.977,5.620 240.370,8.218 242.089,11.537 C243.806,14.858 244.665,18.655 244.665,22.928 C244.665,26.544 244.036,29.782 242.782,32.642 C241.527,35.502 239.711,37.819 237.333,39.594 C237.068,39.792 236.969,40.055 237.036,40.383 L245.061,68.293 C245.126,68.425 245.160,68.589 245.160,68.786 ZM224.701,18.441 C223.810,17.356 222.604,16.813 221.085,16.813 L219.797,16.813 C219.401,16.813 219.203,17.011 219.203,17.405 L219.203,28.746 C219.203,29.141 219.401,29.338 219.797,29.338 L221.085,29.338 C222.537,29.338 223.726,28.796 224.652,27.711 C225.576,26.626 226.039,25.097 226.039,23.125 C226.039,21.088 225.593,19.525 224.701,18.441 ZM195.085,69.969 L179.134,69.969 C178.143,69.969 177.614,69.510 177.549,68.589 L176.657,61.192 C176.657,60.995 176.574,60.847 176.410,60.748 C176.244,60.650 176.095,60.600 175.964,60.600 L167.245,60.600 C166.914,60.600 166.683,60.765 166.552,61.094 L165.363,68.589 C165.230,69.510 164.702,69.969 163.778,69.969 L148.223,69.969 C147.166,69.969 146.737,69.444 146.935,68.391 L161.003,2.218 C161.202,1.364 161.762,0.936 162.688,0.936 L180.719,0.936 C181.643,0.936 182.205,1.364 182.404,2.218 L196.472,68.391 L196.472,68.786 C196.472,69.575 196.009,69.969 195.085,69.969 ZM172.397,29.042 C172.330,28.714 172.214,28.549 172.050,28.549 C171.885,28.549 171.769,28.714 171.703,29.042 L169.028,45.808 C168.962,46.202 169.160,46.399 169.623,46.399 L174.081,46.399 C174.411,46.399 174.577,46.202 174.577,45.808 L172.397,29.042 ZM142.802,69.969 L126.356,69.969 C125.497,69.969 124.902,69.575 124.572,68.786 L116.944,48.569 C116.877,48.241 116.761,48.076 116.597,48.076 C116.431,48.076 116.283,48.241 116.151,48.569 L115.359,50.541 C115.292,50.674 115.259,50.936 115.259,51.330 L115.259,68.490 C115.259,68.951 115.126,69.313 114.863,69.575 C114.598,69.838 114.235,69.969 113.773,69.969 L98.120,69.969 C97.657,69.969 97.293,69.838 97.030,69.575 C96.765,69.313 96.633,68.951 96.633,68.490 L96.633,2.415 C96.633,1.956 96.765,1.594 97.030,1.330 C97.293,1.068 97.657,0.936 98.120,0.936 L113.773,0.936 C114.235,0.936 114.598,1.068 114.863,1.330 C115.126,1.594 115.259,1.956 115.259,2.415 L115.259,21.942 C115.259,22.205 115.341,22.353 115.507,22.385 C115.671,22.419 115.820,22.304 115.953,22.040 L124.275,2.119 C124.605,1.330 125.199,0.936 126.059,0.936 L142.406,0.936 C142.934,0.936 143.330,1.100 143.595,1.429 C143.858,1.758 143.858,2.185 143.595,2.711 L129.625,31.804 C129.559,32.067 129.559,32.331 129.625,32.592 L143.991,68.293 C144.056,68.490 144.090,68.721 144.090,68.983 C144.090,69.641 143.660,69.969 142.802,69.969 ZM89.995,69.969 L74.342,69.969 C73.879,69.969 73.515,69.838 73.252,69.575 C72.987,69.313 72.856,68.951 72.856,68.490 L72.856,2.415 C72.856,1.956 72.987,1.594 73.252,1.330 C73.515,1.068 73.879,0.936 74.342,0.936 L89.995,0.936 C90.457,0.936 90.821,1.068 91.085,1.330 C91.348,1.594 91.482,1.956 91.482,2.415 L91.482,68.490 C91.482,68.951 91.348,69.313 91.085,69.575 C90.821,69.838 90.457,69.969 89.995,69.969 ZM56.112,68.687 C55.914,69.543 55.352,69.969 54.428,69.969 L40.756,69.969 C39.765,69.969 39.235,69.510 39.170,68.589 L33.009,36.932 C33.009,36.735 32.893,36.636 32.662,36.636 C32.430,36.636 32.316,36.735 32.316,36.932 L21.947,68.589 C21.881,69.510 21.353,69.969 20.362,69.969 L6.591,69.969 C5.665,69.969 5.105,69.543 4.906,68.687 L0.432,2.513 L0.432,2.119 C0.432,1.330 0.894,0.936 1.819,0.936 L17.968,0.936 C18.959,0.936 19.487,1.396 19.554,2.316 L18.922,32.395 C18.922,32.528 19.021,32.609 19.219,32.642 C19.418,32.676 19.517,32.592 19.517,32.395 L27.182,2.316 C27.247,1.396 27.777,0.936 28.768,0.936 L40.855,0.936 C41.845,0.936 42.373,1.396 42.440,2.316 L44.601,32.494 C44.601,32.626 44.716,32.708 44.948,32.740 C45.178,32.774 45.294,32.691 45.294,32.494 L50.168,2.316 C50.233,1.396 50.728,0.936 51.654,0.936 L67.407,0.936 C68.529,0.936 68.992,1.463 68.794,2.513 L56.112,68.687 Z"/>
+    </svg>
+
+    <svg height="75" width="75" style="top:316px; left:18px;" class="bub themes bubsvg" id="biobub">
+        <path fill-rule="evenodd"  fill="#000"
+        d="M35.542,71.066 C15.923,71.066 0.018,55.162 0.018,35.542 C0.018,15.923 15.923,0.018 35.542,0.018 C55.162,0.018 71.066,15.923 71.066,35.542 C71.066,55.162 55.162,71.066 35.542,71.066 ZM19.395,29.083 C15.828,29.083 12.936,31.975 12.936,35.542 C12.936,39.109 15.828,42.001 19.395,42.001 C22.962,42.001 25.854,39.109 25.854,35.542 C25.854,31.975 22.962,29.083 19.395,29.083 ZM42.001,35.542 C40.218,35.542 38.772,36.988 38.772,38.772 C38.772,36.988 37.326,35.542 35.542,35.542 C33.759,35.542 32.313,36.988 32.313,38.772 C32.313,36.988 30.867,35.542 29.083,35.542 C27.300,35.542 25.854,36.988 25.854,38.772 C25.854,40.555 27.300,42.001 29.083,42.001 C30.867,42.001 32.313,40.555 32.313,38.772 C32.313,40.555 33.759,42.001 35.542,42.001 C37.326,42.001 38.772,40.555 38.772,38.772 C38.772,40.555 40.218,42.001 42.001,42.001 C43.785,42.001 45.231,40.555 45.231,38.772 C45.231,36.988 43.785,35.542 42.001,35.542 ZM51.690,29.083 C48.122,29.083 45.231,31.975 45.231,35.542 C45.231,39.109 48.122,42.001 51.690,42.001 C55.257,42.001 58.149,39.109 58.149,35.542 C58.149,31.975 55.257,29.083 51.690,29.083 Z"/>
+    </svg>
+</div>
+<!-- <babylon model="portfolio/entries/game/genesis/vhs.glb"></babylon> -->
+<div id="lightbox" class="lightbox no-animation">
+    <div class="lightbox-content">
+        <div id="content">
+            <div id="close" class="close-btn">&times;</div>
+
+            <!-- Media container for images/videos -->
+            <div id="entry-media"></div>
+            <div style="display: flex;"> 
+            <h2 id="entry-title"></h2>
+            </div>
+
+            <div style="display: flex;">
+                <!-- Year and season container -->
+                <p id="entry-date"></p>
+                <!-- Tags container -->
+                <p id="entry-tags"></p>
+            </div>
+
+            <!-- Description container -->
+            <p id="entry-description"></p>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    //start video at random time
+    function randomStartTime() {
+    const videoElement = document.getElementById('bgVideo');
+    const maxTime = videoElement.duration;
+    const randomTime = Math.random() * maxTime;
+    videoElement.currentTime = randomTime;
+    }
+
+	//lightbox setup
+	document.getElementById('close').addEventListener('click', () => {
+    // To hide the lightbox
+    hideLightbox();
+});
+</script>
+
+<!-- load materials from other html files -->
+<script>
+
+// Declare global variables
+var viewstate = -1;
+var sections = ['gametext', 'blogtext', 'junktext', 'wikartext'];
+
+// Function to fetch HTML content
+function fetchHTML(fileName, elementId) {
+	return new Promise((resolve, reject) => {
+		fetch(fileName)
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+
+				return response.text();
+			})
+			.then(data => {
+                //console.log(data);
+				document.getElementById(elementId).innerHTML = data;
+				resolve(); // resolve the promise when HTML is successfully added to the page
+			})
+			.catch(error => {
+				console.error('There has been a problem with your fetch operation:', error);
+				reject(error); // reject the promise if there was an error fetching the HTML
+			});
+	});
+}
+
+function processTags(tags) {
+    return tags.split(',').map(function(tag) {
+        tag = tag.replace(/[-_]/g, ' ');
+        if (tag !== tag.toUpperCase()) {
+            tag = tag.toLowerCase().split(' ').map(function(word) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }).join(' ');
+        }
+        return tag;
+    }).join(', ');
+}
+function toTitleCase(str) {
+    return str.toLowerCase().split(' ').map(function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(' ');
+}
+
+function handleVideoSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('vid-data-src');
+    activeSlide.removeAttribute('vid-data-src');
+}
+function handleImageSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('img-data-src');
+    activeSlide.removeAttribute('img-data-src');
+}
+function handleYTSrc(activeSlide) {
+    function extractParams(text) {
+                    let videoId = '';
+                    let timecode = '';
+                    if (text.includes('watch?v=')) {
+                        const url = new URL(text);
+                        videoId = url.searchParams.get('v');
+                        timecode = url.searchParams.get('t');
+                    } else if (text.includes('latest_version?id=')) {
+                        const url = new URL(text);
+                        videoId = url.searchParams.get('id');
+                    } else if (text.includes('?t=')) {
+                        [videoId, timecode] = text.split('?t=');
+                    } else {
+                        videoId = text;
+                    }
+                    return { videoId, timecode };
+                }
+    // console.log("handling youtube")
+    fetch(activeSlide.getAttribute('yt-data-src'))
+    .then(response => {
+        if (!response.ok) throw new Error("Failed fetching the URL");
+        return response.text();
+    })
+    .then(text => {
+    const { videoId, timecode } = extractParams(text);
+    let iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
+    console.log(iframe.src);
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '');
+    activeSlide.appendChild(iframe);
+    })
+    .catch(err => {
+        console.error("Fetch error:", err);
+    })
+    .finally(() => {
+        activeSlide.removeAttribute('yt-data-src');
+    });
+}
+function handle3DSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('model-data-src');
+/*
+    // Create babylon element dynamically
+    let babylonElement = document.createElement('babylon');
+    let viewer = new BabylonViewer.DefaultViewer(babylonElement, {
+        scene: {
+        debug: true,},
+        camera: {
+            behaviors: {
+                autoRotate: 360
+            }
+        },
+        model: {
+            url: activeSlide.src
+        },
+    });
+
+
+    
+    // Append to the active slide and remove placeholder attribute
+    activeSlide.appendChild(babylonElement);
+    activeSlide.removeAttribute('model-data-src');
+    
+    console.log("3D model loaded");*/
+    console.log("skipped 3d model");
+}
+
+
+
+
+function handleSlideChange() {
+    // console.log("handle slide change called");
+    let activeSlide = document.querySelector('.slide.active');
+    if(activeSlide == null)return;
+    const attributes = ['vid-data-src', 'img-data-src', 'yt-data-src', 'model-data-src'];
+    for (const attr of attributes) {
+        if (activeSlide.getAttribute(attr)) {
+            const handlerKey = attr.split('-')[0];
+            switch (handlerKey) {
+                case 'vid':
+                    handleVideoSrc(activeSlide);
+                    break;
+                case 'img':
+                    handleImageSrc(activeSlide);
+                    break;
+                case 'yt':
+                    handleYTSrc(activeSlide);
+                    break;
+                case 'model':
+                    handle3DSrc(activeSlide);
+                    break;
+            }
+            break; // Exit loop as only one attribute should apply
+        }
+    }
+}
+
+
+// Function to manage links
+function populateLightbox(entry) {
+    // Fill in the title, description, tags, year, and season
+    document.getElementById('entry-title').innerHTML = entry.title;
+    window.location.hash = `#${entry.id}`;
+    // history.pushState({id: entry.id}, entry.title, `${entry.id}`);
+
+
+    if (entry.description.endsWith('.html')) {
+        fetch("portfolio/"+entry.description)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('entry-description').innerHTML = data;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    } else {
+        document.getElementById('entry-description').innerHTML = entry.description;
+    }
+
+    // entry.span
+    document.getElementById('entry-tags').textContent = processTags(entry.tags);
+
+    var seasonTitleCase = toTitleCase(entry.season);
+    let year = entry.year;
+
+    if (seasonTitleCase == null || seasonTitleCase.trim() == "") {
+        document.getElementById('entry-date').textContent = year;
+    } else {
+        document.getElementById('entry-date').textContent = seasonTitleCase + ', ' + year;
+    }
+    
+    //reset the lightbox
+    $('#entry-title').removeClass('clickable');
+    $('#link, #entry-title').off('click');
+    $('#link, #entry-title').off('mouseenter mouseleave');
+    $('#link').hide(); // Hide the button
+
+    if(entry.content) {
+        document.getElementById('entry-title').innerHTML = entry.title + '  <span class="unicode-char">&#x2197;&#xFE0E;</span>';
+        // $('#link').show(); // Show the button
+        $('#entry-title').addClass('clickable');
+            // Make SVG and entry-title clickable
+    $('#link, #entry-title').on('click', function() {
+        window.open(entry.content, '_blank');
+    });
+        // Add hover effect to both SVG and entry-title
+        $('#link, #entry-title').hover(
+        function() {
+            // On mouseenter, add a class to change the color
+            $('#link, #entry-title').addClass('hovered');
+        },
+        function() {
+            // On mouseleave, remove the class
+            $('#link, #entry-title').removeClass('hovered');
+        }
+    );
+    }
+
+    // If entry.id is not an empty string, attempt to load media from the /assets folder
+        if(entry.id) {
+            let mediaContainer = document.getElementById('entry-media');
+            
+            // Clear any existing media
+            while (mediaContainer.firstChild) {
+                mediaContainer.removeChild(mediaContainer.firstChild);
+        }
+
+        mediaContainer.style.height = entry.lightbox_max_height;
+
+        let isFirst = true;
+        for (let file of entry.file_paths) {
+            let mediaElement;
+            switch (true) {
+                case /\.(jpg|jpeg|png|webp|gif)$/i.test(file):
+                    mediaElement = document.createElement('img');
+                    mediaElement.setAttribute("img-data-src", "portfolio/"+file);
+                    mediaElement.loading = "lazy"; // Enables native lazy loading
+                    break;
+                case /\.(mp4|mov)$/i.test(file):
+                    mediaElement = document.createElement('video');
+                    mediaElement.setAttribute("vid-data-src", "portfolio/"+file);
+                    mediaElement.loading = "lazy"; // Enables native lazy loading
+                    mediaElement.controls = false;
+                    mediaElement.autoplay = true;
+                    mediaElement.loop = true;
+                    mediaElement.muted = true;
+                    mediaElement.setAttribute('playsinline', '');
+                    break;
+                case /\.yt$/i.test(file):
+                    mediaElement = document.createElement('div');
+                    mediaElement.setAttribute("yt-data-src", "portfolio/"+file);
+                    break;
+                case /\.(gltf|glb)$/i.test(file):
+                    mediaElement = document.createElement('div');
+                    mediaElement.setAttribute("model-data-src", "portfolio/"+file);
+                    break;
+            }
+            
+            if (mediaElement) {
+                mediaElement.classList.add('slide');
+                if (isFirst) {
+                    mediaElement.classList.add('active');
+                    isFirst = false;
+                }
+                mediaContainer.appendChild(mediaElement);
+            }
+        }
+        
+            if(entry.file_paths.length >1){
+            addSlideshowControls();
+        }
+        }
+
+    // Open the lightbox
+    lightbox.style.display = "flex";
+    // lightbox.scrollTop = 0;
+    $('#content').scrollTop = 0;
+    handleSlideChange();
+
+
+}
+function addSlideshowControls() {
+    let mediaContainer = document.getElementById('entry-media');
+    let slides = Array.from(mediaContainer.getElementsByClassName('slide'));
+    let currentIndex = slides.findIndex(slide => slide.classList.contains('active')); // Get the index of the active slide
+
+    // Create navigation buttons
+    let prevButton = document.createElement('button');
+    // prevButton.textContent = 'Previous';
+    prevButton.textContent = '<';
+    prevButton.id = 'prevSlideButton';  // Assign unique ID
+    prevButton.style.position = "absolute";
+    prevButton.addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+        slides[currentIndex].classList.add('active');
+        handleSlideChange();
+    });
+
+    let nextButton = document.createElement('button');
+    // nextButton.textContent = 'Next';
+    nextButton.textContent = '>';
+    nextButton.id = 'nextSlideButton';  // Assign unique ID
+    nextButton.style.position = "absolute";
+    nextButton.addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        slides[currentIndex].classList.add('active');
+        handleSlideChange();
+    });
+
+    // Add buttons to media container
+    mediaContainer.style.position = "relative";
+    mediaContainer.appendChild(prevButton);
+    mediaContainer.appendChild(nextButton);
+}
+
+lightboxEnabled = false;
+CurrentLightboxID = null;
+function RequestLightboxChange(direction) {
+    // If lightbox isn't enabled, do nothing
+    if (!lightboxEnabled) return;
+
+    // Get current link element
+    let currentLink = document.getElementById(CurrentLightboxID);
+
+    // Decide next link based on direction
+    let nextLink = direction === 1 
+        ? currentLink.parentElement.previousElementSibling 
+        : currentLink.parentElement.nextElementSibling;
+
+    // Skip over elements with the class "year"
+    while (nextLink && nextLink.classList.contains('year')) {
+    nextLink = direction === 1 
+        ? nextLink.previousElementSibling 
+        : nextLink.nextElementSibling;
+    }
+
+    // Check if there is a next link to navigate to
+    if (nextLink) {
+        // Get the next ID and the corresponding entry
+        let nextID = nextLink.querySelector('.subtext').getAttribute('id');
+        let entry = JSON.parse(unescape(nextLink.querySelector('.subtext').dataset.entry));
+
+        // Populate and show the lightbox for the next entry
+        populateLightbox(entry);
+        CurrentLightboxID = nextID;
+    }
+}
+
+let savedScrollPosition = 0;
+
+function getScrollbarWidth() {
+  const div = document.createElement('div');
+  div.style.overflow = 'scroll';
+  div.style.width = '50px';
+  div.style.height = '50px';
+  document.body.appendChild(div);
+  const scrollbarWidth = div.offsetWidth - div.clientWidth;
+  document.body.removeChild(div);
+  return scrollbarWidth;
+}
+function lockScroll() {
+
+  if (!isScrollLocked) { // Check if scroll is already locked
+    console.log("locking scroll");
+    savedScrollPosition = window.scrollY; // Save the current scroll position        
+
+        scrollbarWidth = getScrollbarWidth();
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${savedScrollPosition}px`;
+        isScrollLocked = true; // Update the flag to indicate scroll is locked
+    }
+}
+
+function unlockScroll() {
+    console.log("unlocking scroll");
+    document.body.style.removeProperty('overflow');
+    document.body.style.removeProperty('position');
+    document.body.style.removeProperty('top');
+    document.body.style.removeProperty('padding-right'); // Remove added padding
+    console.log(savedScrollPosition);
+
+    setTimeout(() => {
+        window.scrollTo(0, savedScrollPosition);
+    }, 0.1);
+
+    isScrollLocked = false;
+}
+
+function hideLightbox(){
+    document.getElementById('lightbox').classList.remove('show');
+    document.getElementById('lightbox').classList.add('hide');
+    // document.body.classList.remove('noScroll'); // restore body scroll
+    unlockScroll();
+    let mediaContainer = document.getElementById('entry-media');
+    // Clear any existing media
+    while (mediaContainer.firstChild) {
+        mediaContainer.removeChild(mediaContainer.firstChild);
+    }
+    lightboxEnabled = false;
+    // Update URL
+    //window.history.replaceState(null, null, '#');
+    window.location.hash = ``;
+
+}
+
+function showLightbox(currentID){
+    document.getElementById('lightbox').classList.remove('no-animation');
+        lockScroll();
+		document.getElementById('lightbox').classList.add('show');
+		document.getElementById('lightbox').classList.remove('hide');
+        lightboxEnabled = true;
+        CurrentLightboxID = currentID;
+}
+function manageLinks() {
+	const links = document.querySelectorAll('.subtext');
+    //console.log(links)
+	links.forEach((link) => {
+        let entry = JSON.parse(unescape(link.dataset.entry));
+        link.setAttribute('id',entry.id);
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            // Reset animation
+            void document.getElementById('lightbox').offsetWidth;
+            // console.log(entry)
+            if(entry.locked){
+                console.log("locked");
+                return;
+            }
+            populateLightbox(entry);
+            showLightbox(entry.id);
+            });
+    });
+
+    $(document).keydown(function(event) { 
+        if (event.key == "Escape") { // checking if the key pressed was 'Escape'
+        hideLightbox();
+        }
+    });
+	document.getElementById('close').addEventListener('click', () => {
+        hideLightbox();
+	});
+    var closeIndicator = $('<div class="close-indicator">&times;</div>');
+    var closeIndicatorAppended = false;
+    var lineConnector = $('<div class="line-connector"></div>');
+    var lineConnectorAppended = false;
+    var lightbox = $('#lightbox');
+    lightbox.click(function(event) {
+        if ($(event.target).attr('id') === 'lightbox') {            hideLightbox();
+            $(this).css('cursor', 'default');
+            $('#close').show();
+        }
+    });
+
+}
+function setupButtons() {
+    $(document).ready(function() {
+        sections.forEach((section, index) => {
+            $('svg.' + section + 'svg').click(function() {
+                if ($(this).hasClass('active')) {
+                    // If the SVG is already active, hide its content and remove the 'active' class
+                    $('.' + section).hide();
+                    $(this).removeClass('active');
+                    viewstate = null;  // No section is currently active
+                } else {
+                    // If the SVG is not active, show its content and add the 'active' class
+                    $('svg.active').removeClass('active');  // Remove 'active' class from previously active SVG
+                    $(this).addClass('active');  // Add 'active' class to clicked SVG
+                    if (viewstate != index) {
+                        viewstate = index;
+                        sections.forEach(sec => {
+                            if(sec !== section){
+                                $('.' + sec).hide();
+                            }else{
+                                $('.' + sec).show();
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        // Hide all sections at the end
+        sections.forEach(sec => {
+            $('.' + sec).hide();
+        });        
+    });
+}
+function testURLForHash(){
+    console.log("testing url");
+    // see if we should be going somewhere based on url decorator
+    const urlHash = window.location.hash.substr(1); // Remove the '#' at the start
+    console.log(urlHash);
+    if (urlHash) {
+        var potentiallink = document.getElementById(urlHash);
+        if(potentiallink){
+            // Create a new event
+            var event = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: true
+            });
+
+            // simulate mouse click
+            potentiallink.dispatchEvent(event);
+        }
+        else
+        {
+            console.log("no match found for"+ urlHash);
+            hideLightbox();
+        }
+        
+    }
+    else {
+        console.log("hiding light box");
+        hideLightbox();
+    }
+}
+let isScrollLocked = false;
+
+// Fetch HTML contents
+fetchHTML('portfolio/output.html', 'container').then(() => {
+    manageLinks();
+    setupButtons();
+    testURLForHash();
+    $(document).ready(function() {
+        document.getElementById('container').classList.remove('hidden');
+    });
+
+    var bioSvg = document.getElementById('biobub');
+    bioSvg.addEventListener('click', function() {
+    var bioLink = document.getElementById('bio');
+
+    // Create a new event
+    var event = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+    });
+
+    // simulate mouse click
+    bioLink.dispatchEvent(event);
+    });
+
+    //detect pressing the back or forward button
+    window.addEventListener('popstate', function(event) {
+        testURLForHash();
+      });
+    
+
+});
+//Subscribe to Key Presses
+$(document).keydown(function(event) { 
+    switch(event.which) {
+        case 38: // up
+        RequestLightboxChange(1);
+        break;
+        case 40: // down
+        RequestLightboxChange(-1);
+        break;
+        case 37: // left
+        $('#prevSlideButton').click();
+        break;
+        case 39: // right
+        $('#nextSlideButton').click();
+        break;
+        default: return; // If it's not an arrow key, we ignore it
+    }
+});
+
+</script>
+
+</body>
+</html>
