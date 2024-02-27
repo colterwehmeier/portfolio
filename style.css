@@ -1,11 +1,11 @@
 /* Fonts and Typography */
 @font-face{ 
 	font-family: 'Cicle';
-	src: url('newciclefina/new_cicle_fina-webfont.eot');
-	src: url('newciclefina/new_cicle_fina-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('newciclefina/new_cicle_fina-webfont.woff') format('woff'),
-	     url('newciclefina/new_cicle_fina-webfont.ttf') format('truetype'),
-	     url('newciclefina/new_cicle_fina-webfont.svg#webfont') format('svg');
+	src: url('fonts/new_cicle_fina-webfont.eot');
+	src: url('fonts/new_cicle_fina-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/new_cicle_fina-webfont.woff') format('woff'),
+	     url('fonts/new_cicle_fina-webfont.ttf') format('truetype'),
+	     url('fonts/new_cicle_fina-webfont.svg#webfont') format('svg');
 }
 
 body, html {
