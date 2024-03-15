@@ -614,11 +614,11 @@ background: black;
 	}
 	#nextSlideButton{
 		z-index: 100;
-		-ms-transform: translate(0%,50px);
-		-webkit-transform: translate(0%,50px);
-		-moz-transform: translate(0%,50px);
-		-o-transform: translate(0%,50px);
-		transform: translate(0%,50px);
+		-ms-transform: translate(35%,50px);
+		-webkit-transform: translate(35%,50px);
+		-moz-transform: translate(35%,50px);
+		-o-transform: translate(35%,50px);
+		transform: translate(35%,50px);
 		
 		bottom:0px;
 		border-radius: 8px;
@@ -627,11 +627,11 @@ background: black;
 	}
 	#prevSlideButton{
 		z-index: 100;
-		-ms-transform: translate(0%,50px);
-		-webkit-transform: translate(0%,50px);
-		-moz-transform: translate(0%,50px);
-		-o-transform: translate(0%,50px);
-		transform: translate(0%,50px);
+		-ms-transform: translate(-0%,50px);
+		-webkit-transform: translate(-35%,50px);
+		-moz-transform: translate(-0%,50px);
+		-o-transform: translate(-0%,50px);
+		transform: translate(-35%,50px);
 		bottom:0px;
 		border-radius: 8px;
 		font-size: 40px;
