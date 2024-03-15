@@ -245,10 +245,18 @@ svg.themes.active path {
 	z-index: 1;
 }
 
-.subtext:hover, .subtext:active{
+/* .subtext:hover, .subtext:active{
 	background: #fff3d1;
 	color: black;
 	z-index: 2;
+} */
+@media (hover: hover) and (pointer: fine) {
+    /* Desktops with mouse */
+	.subtext:hover, .subtext:active{
+		background: #fff3d1;
+		color: black;
+		z-index: 2;
+	}
 }
 
 .lost {
@@ -485,6 +493,18 @@ body{
 svg.bub{
 	transform:scale(0.5) translateY(50px);
 	transition: all 0.1s;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    /* Smartphones and touchscreens */
+	a:hover{
+		color: #ffffff;
+	}
+	
+	button:hover {
+		background-color: #FFF3D1;
+		color: black;
+	}
 }
 /* Responsive Styles */
 @media (max-width: 900px) {
