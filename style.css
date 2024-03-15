@@ -13,8 +13,10 @@ body, html {
 	height:100%;
 	font-family: Cicle, Arial, sans-serif;
 	letter-spacing: .05em;
-	overflow-x: hidden;
+	/* overflow-x: auto;
+	overflow-y: scroll; */
 }
+/* * { border: 1px solid red; } */
 
 h1,h2,h3,h4,h5{
 	text-transform: uppercase;
@@ -546,7 +548,7 @@ svg.bub{
 		gap: 0rem 0.5rem;
 	}
 	.subgroup>*{
-		max-width: 95vw;
+		max-width: 92vw;
 	}
 	.title{
 		margin-bottom: 1px;
