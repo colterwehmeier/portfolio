@@ -584,6 +584,9 @@ svg.bub{
 		overflow: visible;
 
 	}
+	#entry-title{
+		z-index: 200;
+	}
 
 	.year{
 		text-align: left;
@@ -617,7 +620,7 @@ background: black;
 		transform: translate(0%,50px);
 
 		-ms-transform: translate(0%,50px);
-		-webkit-transform: translate(35%,50px);
+		-webkit-transform: translate(0%,50px);
 		-moz-transform: translate(0%,50px);
 		-o-transform: translate(0%,50px);
 		
