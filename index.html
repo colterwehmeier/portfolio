@@ -10,8 +10,8 @@
 <script src="https://colterwehmeier.github.io/portfolio/js/jquery-3.6.0.min.js"></script>
 <!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
 <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
-<link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css">
-<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css"> -->
+<link rel="stylesheet" type="text/css" href="style.css">
 
 
 
@@ -356,6 +356,9 @@ function populateLightbox(entry) {
                     mediaElement.loop = true;
                     mediaElement.muted = true;
                     mediaElement.setAttribute('playsinline', '');
+                    mediaElement.setAttribute('playsInline', '');
+                    mediaElement.setAttribute('disablePictureInPicture', '');
+            
                     break;
                 case /\.yt$/i.test(file):
                     mediaElement = document.createElement('div');

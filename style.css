@@ -514,6 +514,18 @@ svg.bub{
 		padding-top: 0px;
 		top:0px;
 	}
+	.subtext{
+		display: inline-flex;
+		/* grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; */
+		/* flex-direction: row-reverse;
+		flex-basis: content; */
+		align-items: baseline;
+		gap: 0rem 0.5rem;
+	}
+	.title{
+		margin-bottom: 1px;
+	}
 	#container{
 		/* max-width: 490px;; */
 		width: 100%;
@@ -534,6 +546,7 @@ svg.bub{
 		overflow: visible;
 
 	}
+
 	.year{
 		text-align: left;
 		right: 0px;
@@ -616,11 +629,17 @@ background: black;
 }
 
 @media (max-width: 550px) {
-	.subgroup, .title{
+	/* .subgroup, .title{
 		font-size: 16px;
-	}
+	} */
 	#container{
-		max-width: 95vw;
+		max-width: 98vw;
+	}
+	.subtext{
+		display:grid;
+		margin-right: 12px;
+		gap: 0.1rem 0rem;
+
 	}
 	.subgroup{
 		transform: translateY(-70px) translateX(-30px);
