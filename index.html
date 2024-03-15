@@ -183,20 +183,18 @@ function handleYTSrc(activeSlide) {
     const { videoId, timecode } = extractParams(text);
     
     let iframe = document.createElement('iframe');
+    //old method
     // iframe.src = `https://www.youtube.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
-    // console.log(iframe.src);
+    
+    // new technique from here https://news.ycombinator.com/item?id=39536315
     iframe.src=`https://www.youtube-nocookie.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
-    // Updated attributes
     iframe.setAttribute('credentialless', 'true');
     iframe.setAttribute('referrerPolicy', 'no-referrer');
     iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
     iframe.setAttribute('allow', "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; bluetooth 'none'; browsing-topics 'none'; camera 'none'; ch-ua 'none'; display-capture 'none'; domain-agent 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; identity-credentials-get 'none'; idle-detection 'none'; keyboard-map 'none'; local-fonts 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; otp-credentials 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-create 'none'; publickey-credentials-get 'none'; screen-wake-lock 'none'; serial 'none'; speaker-selection 'none'; sync-xhr 'none'; usb 'none'; web-share 'none'; window-management 'none'; xr-spatial-tracking 'none'");
     iframe.setAttribute('csp', 'sandbox allow-scripts allow-same-origin;');
-    // iframe.setAttribute('width', '560');
-    // iframe.setAttribute('height', '315');
     iframe.setAttribute('loading', 'lazy');
-    // iframe.setAttribute('title', 'YouTube Video');
-
+    iframe.setAttribute('title', 'YouTube Video');
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allowfullscreen', '');
     
