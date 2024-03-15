@@ -245,19 +245,18 @@ svg.themes.active path {
 	z-index: 1;
 }
 
-/* .subtext:hover, .subtext:active{
-	background: #fff3d1;
-	color: black;
-	z-index: 2;
-} */
-@media (hover: hover) and (pointer: fine) {
-    /* Desktops with mouse */
-	.subtext:hover, .subtext:focus{
-		background: #fff3d1;
-		color: black;
-		z-index: 2;
-	}
+.using-mouse .subtext:hover {
+    background: #fff3d1;
+    color: black;
+    z-index: 2;
 }
+
+.subtext:focus {
+    background: #fff3d1;
+    color: black;
+    z-index: 2;
+}
+
 
 .lost {
 	background: black;

@@ -689,7 +689,19 @@ $(document).keydown(function(event) {
     }
 });
 
+document.addEventListener('mousemove', function addClassOnMouseMove() {
+    document.body.classList.add('using-mouse');
+    // Remove the event listener once the class is added to avoid unnecessary processing
+    document.removeEventListener('mousemove', addClassOnMouseMove);
+});
+
+document.addEventListener('touchstart', function() {
+    document.body.classList.remove('using-mouse');
+});
+
 </script>
+
+
 
 </body>
 </html>
