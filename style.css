@@ -332,21 +332,21 @@ svg.themes.active path {
 
 }
 #nextSlideButton{
-	transform: translateX(110%)translateY(50px);
-	-ms-transform: translateX(110%) translateY(50px);
-	-webkit-transform: translateX(110%) translateY(50px);
-	-moz-transform: translateX(110%) translateY(50px);
-	-o-transform: translateX(110%) translateY(50px);
-	transform: translateX(110%) translateY(50px);
+	transform: translate(110%,50px);
+	-ms-transform: translate(110%,50px);
+	-webkit-transform: translate(110%,50px);
+	-moz-transform: translate(110%,50px);
+	-o-transform: translate(110%,50px);
+	transform: translate(110%,50px);
 	right: 0px;
 }
 #prevSlideButton{
 	
-	-ms-transform: translateX(-110%) translateY(50px);
-	-webkit-transform: translateX(-110%) translateY(50px);
-	-moz-transform: translateX(-110%) translateY(50px);
-	-o-transform: translateX(-110%) translateY(50px);
-	transform: translateX(-110%) translateY(50px);
+	-ms-transform: translate(-110%,50px);
+	-webkit-transform: translate(-110%,50px);
+	-moz-transform: translate(-110%,50px);
+	-o-transform: translate(-110%,50px);
+	transform: translate(-110%,50px);
 	
 	left: 0px;
 
@@ -614,11 +614,11 @@ background: black;
 	}
 	#nextSlideButton{
 		z-index: 100;
-		-ms-transform: translateX(0%) translateY(50px);
-		-webkit-transform: translateX(0%) translateY(50px);
-		-moz-transform: translateX(0%) translateY(50px);
-		-o-transform: translateX(0%) translateY(50px);
-		transform: translateX(0%) translateY(50px);
+		-ms-transform: translate(0%,50px);
+		-webkit-transform: translate(0%,50px);
+		-moz-transform: translate(0%,50px);
+		-o-transform: translate(0%,50px);
+		transform: translate(0%,50px);
 		
 		bottom:0px;
 		border-radius: 8px;
@@ -627,11 +627,11 @@ background: black;
 	}
 	#prevSlideButton{
 		z-index: 100;
-		-ms-transform: translateX(0%) translateY(50px);
-		-webkit-transform: translateX(0%) translateY(50px);
-		-moz-transform: translateX(0%) translateY(50px);
-		-o-transform: translateX(0%) translateY(50px);
-		transform: translateX(0%) translateY(50px);
+		-ms-transform: translate(0%,50px);
+		-webkit-transform: translate(0%,50px);
+		-moz-transform: translate(0%,50px);
+		-o-transform: translate(0%,50px);
+		transform: translate(0%,50px);
 		bottom:0px;
 		border-radius: 8px;
 		font-size: 40px;
