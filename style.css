@@ -373,7 +373,8 @@ babylon {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y:auto;
   animation: 0.01s ease-out 0s 1 slideIn;
   max-width: 95vw;
   max-height: 90vh;
@@ -509,6 +510,9 @@ svg.bub{
 	transform:scale(0.5) translateY(50px);
 	transition: all 0.1s;
 }
+#entry-title{
+	z-index: 200;
+}
 
 @media (hover: none) and (pointer: coarse) {
     /* Smartphones and touchscreens */
@@ -584,9 +588,7 @@ svg.bub{
 		overflow: visible;
 
 	}
-	#entry-title{
-		z-index: 200;
-	}
+
 
 	.year{
 		text-align: left;
