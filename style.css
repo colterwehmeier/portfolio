@@ -176,6 +176,7 @@ animation: slideOut 0.2s forwards;
 /* Scrollbar Styles */
 body{
 	overflow-y: scroll;
+	overflow-x: hidden;
 	right:0px;
 }
 
