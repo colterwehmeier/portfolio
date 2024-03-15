@@ -252,7 +252,7 @@ svg.themes.active path {
 } */
 @media (hover: hover) and (pointer: fine) {
     /* Desktops with mouse */
-	.subtext:hover, .subtext:active{
+	.subtext:hover, .subtext:focus{
 		background: #fff3d1;
 		color: black;
 		z-index: 2;
