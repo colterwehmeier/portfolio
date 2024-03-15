@@ -488,6 +488,8 @@ body{
 #container{
 	overflow: visible;
 	min-height: 100%;
+	min-width: 95vw;
+
 }
 svg.bub{
 	transform:scale(0.5) translateY(50px);
@@ -652,6 +654,7 @@ background: black;
 		font-size: 16px;
 	} */
 	#container{
+		width: 100%;
 		max-width: 95vw;
 	}
 	.subtext{
