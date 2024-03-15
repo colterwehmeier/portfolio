@@ -333,10 +333,21 @@ svg.themes.active path {
 }
 #nextSlideButton{
 	transform: translateX(110%)translateY(50px);
+	-ms-transform: translateX(110%) translateY(50px);
+	-webkit-transform: translateX(110%) translateY(50px);
+	-moz-transform: translateX(110%) translateY(50px);
+	-o-transform: translateX(110%) translateY(50px);
+	transform: translateX(110%) translateY(50px);
 	right: 0px;
 }
 #prevSlideButton{
+	
+	-ms-transform: translateX(-110%) translateY(50px);
+	-webkit-transform: translateX(-110%) translateY(50px);
+	-moz-transform: translateX(-110%) translateY(50px);
+	-o-transform: translateX(-110%) translateY(50px);
 	transform: translateX(-110%) translateY(50px);
+	
 	left: 0px;
 
 }
@@ -603,7 +614,12 @@ background: black;
 	}
 	#nextSlideButton{
 		z-index: 100;
+		-ms-transform: translateX(0%) translateY(50px);
+		-webkit-transform: translateX(0%) translateY(50px);
+		-moz-transform: translateX(0%) translateY(50px);
+		-o-transform: translateX(0%) translateY(50px);
 		transform: translateX(0%) translateY(50px);
+		
 		bottom:0px;
 		border-radius: 8px;
 		font-size: 40px;
@@ -611,7 +627,11 @@ background: black;
 	}
 	#prevSlideButton{
 		z-index: 100;
-		transform: translateX(0px) translateY(50px);
+		-ms-transform: translateX(0%) translateY(50px);
+		-webkit-transform: translateX(0%) translateY(50px);
+		-moz-transform: translateX(0%) translateY(50px);
+		-o-transform: translateX(0%) translateY(50px);
+		transform: translateX(0%) translateY(50px);
 		bottom:0px;
 		border-radius: 8px;
 		font-size: 40px;
