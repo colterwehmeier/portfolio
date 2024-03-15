@@ -11,6 +11,7 @@
 <!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
 <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
 <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css">
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 
 
 
@@ -471,13 +472,7 @@ function getScrollbarWidth() {
 function lockScroll() {
 
   if (!isScrollLocked) { // Check if scroll is already locked
-    console.log("locking scroll");
     savedScrollPosition = window.scrollY; // Save the current scroll position        
-    // const bodyRect = document.body.getBoundingClientRect();
-    // const distanceFromTopOfViewportToBody = bodyRect.top;
-    // savedScrollPosition = distanceFromTopOfViewportToBody; // Save the current scroll position        
-
-    console.log(savedScrollPosition)
         scrollbarWidth = getScrollbarWidth();
         document.body.style.overflow = 'hidden';
         document.body.style.position = 'fixed';
@@ -487,7 +482,6 @@ function lockScroll() {
 }
 
 function unlockScroll() {
-    console.log("unlocking scroll");
     document.body.style.removeProperty('overflow');
     document.body.style.removeProperty('position');
     document.body.style.removeProperty('top');
@@ -496,7 +490,6 @@ function unlockScroll() {
 
     setTimeout(() => {
         window.scrollTo(0, savedScrollPosition);
-        console.log(window.scrollY)
 
     }, 0.1);
 

@@ -13,6 +13,7 @@ body, html {
 	height:100%;
 	font-family: Cicle, Arial, sans-serif;
 	letter-spacing: .05em;
+	max-width: 100vw;
 }
 
 h1,h2,h3,h4,h5{
@@ -78,7 +79,7 @@ button:active {
 
 #lightbox.show {
 	display: flex;
-	animation: slideIn 0.05s forwards;
+	animation: slideIn 0.01s forwards;
 }
 #entry-media {
     max-width: 100%; 
@@ -98,7 +99,7 @@ button:active {
 
 #lightbox.hide {
 display: flex;
-animation: slideOut 0.2s forwards;
+animation: slideOut .01s forwards;
 }
 
 @keyframes slideIn {
@@ -353,7 +354,7 @@ babylon {
   margin-top: auto;
   margin-bottom: auto;
   overflow: auto;
-  animation: 0.15s ease-out 0s 1 slideIn;
+  animation: 0.01s ease-out 0s 1 slideIn;
   max-width: 95vw;
   max-height: 90vh;
 }
