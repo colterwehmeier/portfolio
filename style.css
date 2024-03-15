@@ -544,7 +544,7 @@ svg.bub{
 	}
 	svg.bub{
 		position:absolute;
-		transform: translateY(0px) scale(0.2);
+		transform: translateY(0px) scale(0.4);
 	}
 	#lightbox #content {
 		border-radius:0px 0px 0px 0px;
@@ -628,6 +628,6 @@ background: black;
 	}
 	svg.bub{
 		position:absolute;
-		transform: translateX(-25px) scale(0.2);
+		transform: translateX(-25px) scale(0.4);
 	}
 }

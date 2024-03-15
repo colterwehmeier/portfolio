@@ -370,13 +370,11 @@ function populateLightbox(entry) {
         }
 
     // Open the lightbox
-    lightbox.style.display = "flex";
-    // lightbox.scrollTop = 0;
+    // lightbox.style.display = "flex";
     $('#content').scrollTop = 0;
     handleSlideChange();
-
-
 }
+
 function addSlideshowControls() {
     let mediaContainer = document.getElementById('entry-media');
     let slides = Array.from(mediaContainer.getElementsByClassName('slide'));
@@ -463,7 +461,11 @@ function lockScroll() {
   if (!isScrollLocked) { // Check if scroll is already locked
     console.log("locking scroll");
     savedScrollPosition = window.scrollY; // Save the current scroll position        
+    // const bodyRect = document.body.getBoundingClientRect();
+    // const distanceFromTopOfViewportToBody = bodyRect.top;
+    // savedScrollPosition = distanceFromTopOfViewportToBody; // Save the current scroll position        
 
+    console.log(savedScrollPosition)
         scrollbarWidth = getScrollbarWidth();
         document.body.style.overflow = 'hidden';
         document.body.style.position = 'fixed';
@@ -482,6 +484,8 @@ function unlockScroll() {
 
     setTimeout(() => {
         window.scrollTo(0, savedScrollPosition);
+        console.log(window.scrollY)
+
     }, 0.1);
 
     isScrollLocked = false;
@@ -505,12 +509,13 @@ function hideLightbox(){
 }
 
 function showLightbox(currentID){
+    // lockScroll();
+
     document.getElementById('lightbox').classList.remove('no-animation');
-        lockScroll();
-		document.getElementById('lightbox').classList.add('show');
-		document.getElementById('lightbox').classList.remove('hide');
-        lightboxEnabled = true;
-        CurrentLightboxID = currentID;
+    document.getElementById('lightbox').classList.add('show');
+    document.getElementById('lightbox').classList.remove('hide');
+    lightboxEnabled = true;
+    CurrentLightboxID = currentID;
 }
 function manageLinks() {
 	const links = document.querySelectorAll('.subtext');
@@ -520,6 +525,9 @@ function manageLinks() {
         link.setAttribute('id',entry.id);
         link.addEventListener('click', (event) => {
             event.preventDefault();
+            // console.log("locking scroll now: "+window.scrollY);
+
+            lockScroll();
             // Reset animation
             void document.getElementById('lightbox').offsetWidth;
             // console.log(entry)
@@ -529,7 +537,7 @@ function manageLinks() {
             }
             populateLightbox(entry);
             showLightbox(entry.id);
-            });
+        });
     });
 
     $(document).keydown(function(event) { 
