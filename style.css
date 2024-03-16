@@ -131,14 +131,16 @@ animation: slideOut .01s forwards;
 	text-align: right;
 	letter-spacing: .05em;
 }
+
 .unicode-char{
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	/* text-shadow: 
-                -1px -1px 0 #000,  
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000; */
-	font-weight:lighter;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight:lighter; */
+		font-family: "Ysabeau Office", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+		font-size:24pt;
+		transform:translate(5px,0px)
 }
 
 .small{
@@ -483,12 +485,12 @@ align-items: center;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-	filter: blur(10px) contrast(0.5);
+	filter: blur(10px) contrast(0.5) brightness(0.9);
 	transform: scale(1.25);
 	transition: opacity 5s ease-in-out;
 }
 body{
-	background-color: #a1aa9d;
+	background-color: #929292;
 
 }
 #spacer{
@@ -525,40 +527,89 @@ svg.bub{
 		color: black;
 	}
 }
+@media (max-width: 900px){
+#entry-media {
+	max-width: 900%; 
+	width: 100vw;
+	min-height: 50vh;
+	transform: translateX(-5ch);
+}
+.lightbox-content{
+	max-width: 100%;
+	margin-bottom:auto;
+	
+}
+#lightbox #content{
+	margin-top: 0px;
+	padding-top: 0px;
+	top:0px;
+}
+#lightbox{
+	justify-content: left;
+	background: linear-gradient(to left, transparent, #0000008d);
+   background: black;
+   
+	   }
+	   #nextSlideButton{
+		   z-index: 100;
+		   transform: translate(12%,55px);
+   
+		   -ms-transform: translate(12%,55px);
+		   -webkit-transform: translate(12%,55px);
+		   -moz-transform: translate(12%,55px);
+		   -o-transform: translate(12%,55px);
+		   
+		   bottom:0px;
+		   border-radius: 8px;
+		   font-size: 40px;
+		   line-height: 40px;
+	   }
+	   #prevSlideButton{
+		   z-index: 100;
+		   transform: translate(0%,55px);
+		   -ms-transform: translate(-0%,55px);
+		   -webkit-transform: translate(-35%,55px);
+		   -moz-transform: translate(-0%,55px);
+		   -o-transform: translate(-0%,55px);
+		   bottom:0px;
+		   border-radius: 8px;
+		   font-size: 40px;
+		   line-height: 40px;
+	   }
+	   #lightbox #close {
+		position: fixed;
+		z-index: 100;
+		right: 0.1em;
+		bottom: 0.1em;
+		top:auto;
+		width: 50px;
+		height: 50px;
+		background-color: black;
+		border-radius: 50%;
+		border: none;
+		opacity: 1;
+		text-align: center;  /* Center text horizontally */
+		line-height: 50px;  /* Center text vertically */
+	}
+
+    .close-btn {
+        font-size: 64px;
+    }
+	p{
+		max-width: 60ch;
+	}
+}
 /* Responsive Styles */
 @media (max-width: 900px) {
-	#entry-media {
-		max-width: 900%; 
-		width: 100vw;
-		min-height: 50vh;
-		transform: translateX(-5ch);
-	}
-	/* img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	} */
+
+
 	body{
 		left:0px;
 		right: auto;
 		padding-right: 0px;
 	}
-	.lightbox-content{
-		max-width: 100%;
-		margin-bottom:auto;
-		
-	}
-	#lightbox #content{
-		margin-top: 0px;
-		padding-top: 0px;
-		top:0px;
-	}
 	.subtext{
 		display: inline-flex;
-		/* grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr; */
-		/* flex-direction: row-reverse;
-		flex-basis: content; */
 		align-items: baseline;
 		gap: 0rem 0.5rem;
 	}
@@ -608,41 +659,7 @@ svg.bub{
 		border-radius:0px 0px 0px 0px;
 
 	}
-	p{
-		max-width: 60ch;
-	}
-	#lightbox{
- justify-content: left;
- background: linear-gradient(to left, transparent, #0000008d);
-background: black;
-
-	}
-	#nextSlideButton{
-		z-index: 100;
-		transform: translate(35%,55px);
-
-		-ms-transform: translate(35%,55px);
-		-webkit-transform: translate(35%,55px);
-		-moz-transform: translate(35%,55px);
-		-o-transform: translate(35%,55px);
-		
-		bottom:0px;
-		border-radius: 8px;
-		font-size: 40px;
-		line-height: 40px;
-	}
-	#prevSlideButton{
-		z-index: 100;
-		transform: translate(0%,55px);
-		-ms-transform: translate(-0%,55px);
-		-webkit-transform: translate(-35%,55px);
-		-moz-transform: translate(-0%,55px);
-		-o-transform: translate(-0%,55px);
-		bottom:0px;
-		border-radius: 8px;
-		font-size: 40px;
-		line-height: 40px;
-	}
+	
 	@keyframes slideIn {
 		0% {
 		  transform: translateX(-110%);
@@ -660,25 +677,7 @@ background: black;
 		  transform: translateX(-110%);
 		}
 	  }
-	  #lightbox #close {
-		position: fixed;
-		z-index: 100;
-		right: 0.1em;
-		bottom: 0.1em;
-		top:auto;
-		width: 50px;
-		height: 50px;
-		background-color: black;
-		border-radius: 50%;
-		border: none;
-		opacity: 1;
-		text-align: center;  /* Center text horizontally */
-		line-height: 50px;  /* Center text vertically */
-	}
 
-    .close-btn {
-        font-size: 64px;
-    }
 }
 
 @media (max-width: 550px) {
