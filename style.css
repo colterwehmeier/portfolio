@@ -15,6 +15,9 @@ body, html {
 	font-family: 'Cicle', Arial, sans-serif;
 	letter-spacing: .05em;
 }
+body.using-mouse a:hover{
+	color: #fff;
+}
 
 h1,h2,h3,h4,h5{
 	text-transform: uppercase;
@@ -34,11 +37,6 @@ button {
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s ease;
-}
-a {
-	color: #FFF3D1;
-	/* padding: 1px; */
-
 }
 a:not(.subtext)::after {
 	content: "\2197";
@@ -575,9 +573,6 @@ svg.bub{
 		transform: translate(0%,55px);
 		-webkit-transform: translate(-0%,55px);
 	   }
-	   body.using-mouse a:hover{
-		color: #ffffff;
-	}
 	   #lightbox #close {
 		position: fixed;
 		z-index: 100;
