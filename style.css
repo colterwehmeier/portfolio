@@ -157,6 +157,7 @@ animation: slideOut .01s forwards;
 	letter-spacing: .15em;
 	text-decoration: none;
 	overflow: hidden;
+	color:black;
 }
 .no-animation {
 	animation-duration: 0s !important;
