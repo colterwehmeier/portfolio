@@ -327,7 +327,6 @@ svg.themes.active path {
 }
 #prevSlideButton:hover {
 	background-color: rgba(0, 0, 0, 0);
-
 	color: white;
 }
 #nextSlideButton:hover {
@@ -400,15 +399,15 @@ align-items: center;
 	padding-left: 8px;
 
 }
-.clickable:hover{
+body.using-mouse .clickable:hover{
 	cursor: pointer;
 	color: #fff;
 }
-.hovered{
+body.using-mouse .hovered{
 	cursor: pointer;
 	color: #fff;
 }
-.hovered path{
+body.using-mouse .hovered path{
 	stroke:#ffffff;
 }
 
