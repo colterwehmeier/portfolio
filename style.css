@@ -14,10 +14,7 @@ body, html {
 	height:100%;
 	font-family: 'Cicle', Arial, sans-serif;
 	letter-spacing: .05em;
-	/* overflow-x: auto;
-	overflow-y: scroll; */
 }
-/* * { border: 1px solid red; } */
 
 h1,h2,h3,h4,h5{
 	text-transform: uppercase;
@@ -45,10 +42,9 @@ a {
 
 }
 a:not(.subtext)::after {
-	content: " \2197\fe0e";
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-		font-weight: lighter;
-	
+	content: "\2197";
+	font-family: 'Cicle', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+	font-weight: 200;
   }
 a:hover{
 	color: #ffffff;
@@ -134,10 +130,12 @@ animation: slideOut .01s forwards;
 }
 
 .unicode-char{
-	font-weight:100;
+	/* font-weight:100; */
 	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Cicle', sans-serif; */
 	font-family: 'Cicle', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	letter-spacing: .05em;
+	font-weight: 200;
+
 }
 .small{
 	font-size: 50%;
@@ -571,6 +569,10 @@ svg.bub{
 		   border-radius: 8px;
 		   font-size: 40px;
 		   line-height: 40px;
+	   }
+	   body.using-mouse #prevSlideButton{
+		transform: translate(0%,55px);
+		-webkit-transform: translate(-0%,55px);
 	   }
 	   #lightbox #close {
 		position: fixed;
