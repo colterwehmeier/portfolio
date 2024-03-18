@@ -11,13 +11,13 @@
 <script src="https://colterwehmeier.github.io/portfolio/js/jquery-3.6.0.min.js"></script>
 <!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
 <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
-<link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css">
-<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css"> -->
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <!-- google font !!!! -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -316,7 +316,9 @@ function populateLightbox(entry) {
     $('#link').hide(); // Hide the button
 
     if(entry.content) {
-        document.getElementById('entry-title').innerHTML = entry.title + '  <span class="unicode-char">&#x2197;&#xFE0E;</span>';
+        document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;</span>';
+        // document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;&#xFE0E;</span>';
+
         // $('#link').show(); // Show the button
         $('#entry-title').addClass('clickable');
             // Make SVG and entry-title clickable
