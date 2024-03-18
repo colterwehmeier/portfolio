@@ -47,12 +47,12 @@ a:not(.subtext)::after {
   }
 
 
-button:hover {
+body.using-mouse button:hover {
     background-color: #FFF3D1;
     color: black;
 }
 
-button:active {
+body.using-mouse button:active {
     background-color: #FFF3D1;
     color: black;
 }
@@ -240,11 +240,12 @@ svg.themes.active path {
 	z-index: 1;
 }
 
-.using-mouse .subtext:hover {
+body.using-mouse .subtext:hover {
     background: #fff3d1;
     color: black;
     z-index: 2;
 }
+
 
 .subtext:focus {
     background: #fff3d1;
@@ -278,7 +279,6 @@ svg.themes.active path {
 
 /* Lightbox and Modal Styles */
 #lightbox {
-	color: #fff3d1;
 	background: linear-gradient(to right, transparent, #0000008d);
 	position: fixed;
 	left: 0;
@@ -491,7 +491,7 @@ body.using-mouse .hovered path{
 }
 body{
 	background-color: #929292;
-
+	/* color: #fff3d1; */
 }
 #spacer{
 	width: 100%;
