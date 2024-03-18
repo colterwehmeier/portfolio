@@ -516,8 +516,7 @@ svg.bub{
 	z-index: 200;
 }
 
-@media (hover: none) and (pointer: coarse) {
-    /* Smartphones and touchscreens */
+/* @media (hover: none) and (pointer: coarse) {
 	a:hover{
 		color: #ffffff;
 	}
@@ -526,7 +525,7 @@ svg.bub{
 		background-color: #FFF3D1;
 		color: black;
 	}
-}
+} */
 @media (max-width: 900px){
 #entry-media {
 	max-width: 900%; 
