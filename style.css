@@ -240,6 +240,9 @@ svg.themes.active path {
 .subtext:focus{
 	color: #fff3d1;
 }
+.subtext:active{
+	color: #fff3d1;
+}
 .subtext:hover{
 	color: #fff3d1;
 }
