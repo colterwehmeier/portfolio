@@ -14,8 +14,12 @@ body, html {
 	height:100%;
 	font-family: 'Cicle', Arial, sans-serif;
 	letter-spacing: .05em;
-	color: #FFF3D1;
+	color: antiquewhite;
 }
+a{
+	color:antiquewhite;
+}
+
 /* body.using-mouse a:hover{
 	color: #fff;
 } */
@@ -26,13 +30,13 @@ h1,h2,h3,h4,h5{
 margin-bottom: 0px;
 }
 button {
-    color: #FFF3D1;
+    color: antiquewhite;
 	font-size: 10pt;
     background-color: black;
     border: none;  /* Removes default button border */
     appearance: none;  /* Removes default button appearance */
     border-radius: 0px;
-	border-color: #FFF3D1;
+	border-color: antiquewhite;
 	border-width: thin;
     font-family: 'Cicle', Arial, sans-serif;
     cursor: pointer;
@@ -47,12 +51,12 @@ a:not(.subtext)::after {
 
 
 body.using-mouse button:hover {
-    background-color: #FFF3D1;
+    background-color: antiquewhite;
     color: black;
 }
 
 body.using-mouse button:active {
-    background-color: #FFF3D1;
+    background-color: antiquewhite;
     color: black;
 }
 .slide {
@@ -209,14 +213,14 @@ svg.themes:hover {
 }
 
 svg.themes:hover path {
-	fill:#FFF3D1;
+	fill:antiquewhite;
 	cursor: pointer;
 	cursor: hand;
-	stroke:#FFF3D1;
+	stroke:antiquewhite;
 }
 svg.themes.active path {
-    fill: #FFF3D1;
-    stroke: #FFF3D1;
+    fill: antiquewhite;
+    stroke: antiquewhite;
 }
 
 
@@ -233,23 +237,23 @@ svg.themes.active path {
 	padding-left: 10px;
 	padding-right: 7px;
 	background: black;
-	color: #fff3d1;
+	color: antiquewhite;
 	text-decoration: none;
 	text-align: center;
 	vertical-align: middle;
 	z-index: 1;
 }
 .subtext:focus{
-	color: #fff3d1;
+	color: antiquewhite;
 }
 .subtext:active{
-	color: #fff3d1;
+	color: antiquewhite;
 }
 .subtext:hover{
-	color: #fff3d1;
+	color: antiquewhite;
 }
 body.using-mouse .subtext:hover {
-    background: #fff3d1;
+    background: antiquewhite;
     color: black;
     z-index: 2;
 }
@@ -257,7 +261,7 @@ body.using-mouse .subtext:hover {
 
 
 .subtext:focus {
-    background: #fff3d1;
+    background:antiquewhite;
     color: black;
     z-index: 2;
 }
@@ -308,7 +312,7 @@ body.using-mouse .subtext:hover {
 }
 #link path{
 	transform: scale(.15);
-	stroke:#FFF3D1;
+	stroke:antiquewhite;
 }
 #link.hovered path{
 	fill:none;
@@ -474,7 +478,7 @@ body.using-mouse .hovered path{
 }
 
 .close-btn {
-    color: #FFF3D1;
+    color: antiquewhite;
     float: right;
     font-size: 48px;
     font-weight: bold;
@@ -500,7 +504,7 @@ body.using-mouse .hovered path{
 }
 body{
 	background-color: #929292;
-	/* color: #fff3d1; */
+	/* color: antiquewhite; */
 }
 #spacer{
 	width: 100%;
@@ -527,7 +531,7 @@ svg.bub{
 
 	
 	body.using-mouse button:hover {
-		background-color: #FFF3D1;
+		background-color: antiquewhite;
 		color: black;
 	}
 
