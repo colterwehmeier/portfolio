@@ -495,11 +495,10 @@ function unlockScroll() {
     document.body.style.removeProperty('top');
     document.body.style.removeProperty('padding-right'); // Remove added padding
     // console.log(savedScrollPosition);
-
-    setTimeout(() => {
-        window.scrollTo(0, savedScrollPosition);
-
-    }, 0.1);
+    window.scrollTo(0, savedScrollPosition)
+    // setTimeout(() => {
+    //     window.scrollTo(0, savedScrollPosition);
+    // }, 0.1);
 
     isScrollLocked = false;
 }
