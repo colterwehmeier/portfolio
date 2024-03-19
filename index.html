@@ -11,8 +11,8 @@
 <script src="https://colterwehmeier.github.io/portfolio/js/jquery-3.6.0.min.js"></script>
 <!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
 <!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
-<link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css">
-<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css"> -->
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div>
@@ -65,7 +65,9 @@
 
             <!-- Media container for images/videos -->
             <div id="entry-media">
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <div id="spinner" class="lds-ellipsis">
+                    <div></div><div></div><div></div><div></div>
+                </div>
             </div>
             
             <div style="display: flex;"> 
@@ -334,11 +336,17 @@ function populateLightbox(entry) {
         }
     );
     }
-
+    // console.log("hide")
+    document.getElementById('spinner').classList.add('hidden');
     // If entry.id is not an empty string, attempt to load media from the /assets folder
         if(entry.id) {
             let mediaContainer = document.getElementById('entry-media');
+            if(entry.file_paths.length > 0){
+                // console.log("spin");
+                document.getElementById('spinner').classList.remove('hidden');
 
+            }
+            // enable the spinner!!!
         // Iterate over the child nodes in reverse order (to safely remove while iterating)
         for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
             let child = mediaContainer.childNodes[i];
@@ -354,7 +362,16 @@ function populateLightbox(entry) {
         // }
 
         mediaContainer.style.height = entry.lightbox_max_height;
-
+        // Function to create the lds-ellipsis spinner element
+        function createSpinner() {
+            let spinner = document.createElement('div');
+            spinner.className = 'lds-ellipsis';
+            for (let i = 0; i < 4; i++) {
+                let dot = document.createElement('div');
+                spinner.appendChild(dot);
+            }
+            return spinner;
+        }
         let isFirst = true;
         for (let file of entry.file_paths) {
             let mediaElement;
@@ -386,6 +403,8 @@ function populateLightbox(entry) {
                     mediaElement.setAttribute("model-data-src", file);
                     break;
             }
+
+            
             
             if (mediaElement) {
                 mediaElement.classList.add('slide');
@@ -394,6 +413,20 @@ function populateLightbox(entry) {
                     isFirst = false;
                 }
                 mediaContainer.appendChild(mediaElement);
+
+                // // Append the spinner to the mediaElement
+                // let spinner = createSpinner();
+                // if (mediaElement.tagName.toLowerCase() === 'img' || mediaElement.tagName.toLowerCase() === 'video') {
+                //     // For img and video, the spinner is added as a sibling and positioned relatively to the parent container
+                //     let wrapper = document.createElement('div');
+                //     wrapper.style.position = 'relative';
+                //     mediaElement.parentNode.insertBefore(wrapper, mediaElement);
+                //     wrapper.appendChild(mediaElement);
+                //     wrapper.appendChild(spinner);
+                // } else {
+                //     // For div elements, directly append the spinner
+                //     mediaElement.appendChild(spinner);
+                // }
             }
         }
         

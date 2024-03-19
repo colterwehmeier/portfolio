@@ -616,11 +616,19 @@ svg.bub{
 	min-height: 50vh;
 	transform: translateX(-5ch);
 }
+#entry-media>img, #entry-media>video{
+	margin-left: 3rem;
+	margin-right: 3rem;
+	max-width: calc(100vw - 6rem);
+}
 .lightbox-content{
 	max-width: 100%;
 	margin-bottom:auto;
-	
+	/* margin-left: 1rem; */
 }
+/* #entry-media{
+	margin-left: 3rem
+} */
 #lightbox #content{
 	margin-top: 0px;
 	padding-top: 0px;
@@ -685,10 +693,18 @@ svg.bub{
 		max-width: 60ch;
 	}
 }
+/* @media (max-width: 1200px) {
+	#entry-media{
+		margin-left: 0rem;
+	}
+} */
+
+
 /* Responsive Styles */
 @media (max-width: 900px) {
-
-
+	/* #entry-media{
+		margin-left: 3rem;
+	} */
 	body{
 		left:0px;
 		right: auto;
@@ -789,5 +805,18 @@ svg.bub{
 	svg.bub{
 		position:absolute;
 		transform: translateX(-25px) scale(0.4);
+	}
+}
+@media (max-width: 600px){
+	#entry-media {
+		max-width: 900%; 
+		width: 100vw;
+		min-height: 50vh;
+		transform: translateX(-5ch);
+	}
+	#entry-media>img, #entry-media>video{
+		margin-left: 0rem;
+		margin-right: 0rem;
+		max-width: calc(100vw);
 	}
 }
