@@ -64,7 +64,10 @@
             <div id="close" class="close-btn">&times;</div>
 
             <!-- Media container for images/videos -->
-            <div id="entry-media"></div>
+            <div id="entry-media">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            </div>
+            
             <div style="display: flex;"> 
             <h2 id="entry-title"></h2>
             </div>
@@ -335,11 +338,20 @@ function populateLightbox(entry) {
     // If entry.id is not an empty string, attempt to load media from the /assets folder
         if(entry.id) {
             let mediaContainer = document.getElementById('entry-media');
-            
-            // Clear any existing media
-            while (mediaContainer.firstChild) {
-                mediaContainer.removeChild(mediaContainer.firstChild);
+
+        // Iterate over the child nodes in reverse order (to safely remove while iterating)
+        for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
+            let child = mediaContainer.childNodes[i];
+            // Check if the child is not the spinner
+            if (!child.classList || !child.classList.contains('lds-ellipsis')) {
+                mediaContainer.removeChild(child);
+            }
         }
+            
+        //     // Clear any existing media
+        //     while (mediaContainer.firstChild) {
+        //         mediaContainer.removeChild(mediaContainer.firstChild);
+        // }
 
         mediaContainer.style.height = entry.lightbox_max_height;
 
@@ -508,11 +520,21 @@ function hideLightbox(){
     document.getElementById('lightbox').classList.add('hide');
     // document.body.classList.remove('noScroll'); // restore body scroll
     unlockScroll();
+    // let mediaContainer = document.getElementById('entry-media');
+    // // Clear any existing media
+    // while (mediaContainer.firstChild) {
+    //     mediaContainer.removeChild(mediaContainer.firstChild);
+    // }
     let mediaContainer = document.getElementById('entry-media');
-    // Clear any existing media
-    while (mediaContainer.firstChild) {
-        mediaContainer.removeChild(mediaContainer.firstChild);
+    // Iterate over the child nodes in reverse order (to safely remove while iterating)
+    for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
+        let child = mediaContainer.childNodes[i];
+        // Check if the child is not the spinner
+        if (!child.classList || !child.classList.contains('lds-ellipsis')) {
+            mediaContainer.removeChild(child);
+        }
     }
+
     lightboxEnabled = false;
 
     if(window.location.hash) {
