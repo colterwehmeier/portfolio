@@ -20,9 +20,6 @@ a{
 	color:antiquewhite;
 }
 
-/* body.using-mouse a:hover{
-	color: #fff;
-} */
 
 h1,h2,h3,h4,h5{
 	text-transform: uppercase;
@@ -91,16 +88,6 @@ body.using-mouse button:active {
 	justify-content:left;
 }
 
-/* #entry-media::before {
-    content: ''; 
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('favicon.ico') no-repeat center center;
-    background-size: 50px 50px;
-    z-index: -1; 
-} */
 .lds-ellipsis {
 	position: absolute;
 	z-index: 1;
@@ -202,8 +189,6 @@ animation: slideOut .01s forwards;
 }
 
 .unicode-char{
-	/* font-weight:100; */
-	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Cicle', sans-serif; */
 	font-family: 'Cicle', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 	letter-spacing: .05em;
 	font-weight: 200;
@@ -273,32 +258,58 @@ body.noScroll {
     background-color: #ffffff21;
 }
 
-/* SVG Styles */
-svg.themes{
+.themes{
 	position:fixed;
 	transform: translateY(20px);
 	transition: all 0.1s;
+	z-index: 1;
+
+}
+.themes:hover {
+	cursor: pointer;
+	filter:  brightness(0) invert(1) sepia(100%);
+}
+.themes.active {
+    filter:  brightness(0) invert(.95) sepia(100%);
 }
 
-svg.themes:hover {
-	cursor: pointer;
+/* radio button version */
+.theme-radio {
+	display: none; /* Hide the radio buttons */
 }
 
-svg.themes:hover path {
-	fill:antiquewhite;
+.theme-label {
+	position: fixed;
 	cursor: pointer;
-	cursor: hand;
-	stroke:antiquewhite;
+	z-index: 1;
+	/* transition: filter 0.1s; */
+	/* z-index: 1; */
 }
-svg.themes.active path {
-    fill: antiquewhite;
-    stroke: antiquewhite;
+
+/* Hover effect */
+.theme-label:hover img {
+	filter: brightness(0) invert(1) sepia(100%);
+}
+
+/* Checked state */
+.theme-radio:checked + .theme-label img {
+	filter: brightness(0) invert(0.95) sepia(100%);
 }
 
 
 .subgroup{
+	display: none;
 	transform: translateY(-60px);
 }
+/* Show the subgroup for the game-text when its radio is checked */
+#game-text:checked ~ #container .gametext,
+#edu-text:checked ~ #container .blogtext,
+#junk-text:checked ~ #container .junktext,
+#wikar-text:checked ~ #container .wikartext {
+    display: inherit;
+	z-index: 0;
+}
+
 
 /* Link and Text Styles */
 .subtext {
@@ -374,6 +385,7 @@ body.using-mouse .subtext:hover {
 	align-items: center;
 	justify-content: right;
 	overflow: hidden;
+	z-index: 1;
 }
 #link{
 	position: relative;
@@ -595,7 +607,7 @@ body{
 	max-width: 100%;
 
 }
-svg.bub{
+.bub{
 	transform:scale(0.5) translateY(50px);
 	transition: all 0.1s;
 }
@@ -749,13 +761,15 @@ svg.bub{
 		left: 40px;
 		transition: all 0.1s;
 	}
-	svg.themes{
+	.themes{
 		position:absolute;
 		transform: translateY(0px);
+
 	}
-	svg.bub{
+	.bub{
 		position:absolute;
 		transform: translateY(0px) scale(0.5);
+
 	}
 	#lightbox #content {
 		border-radius:0px 0px 0px 0px;
@@ -799,10 +813,10 @@ svg.bub{
 	.subgroup{
 		transform: translateY(-70px) translateX(-30px);
 	}
-	svg.themes{
+	.themes{
 		transform: translateX(-25px);
 	}
-	svg.bub{
+	.bub{
 		position:absolute;
 		transform: translateX(-25px) scale(0.5);
 	}
