@@ -261,7 +261,7 @@ body.noScroll {
 .themes{
 	position:fixed;
 	transform: translateY(20px);
-	transition: all 0.1s;
+	/* transition: all 0.1s; */
 	z-index: 1;
 
 }
