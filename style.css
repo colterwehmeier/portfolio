@@ -284,9 +284,33 @@ input[type="radio"].theme-radio {
 	position: fixed;
 	cursor: pointer;
 	z-index: 1;
-	/* transition: filter 0.1s; */
-	/* z-index: 1; */
 }
+
+.theme-checkbox {
+	display: none;
+  }
+  
+  .theme-label {
+	position: fixed;
+	cursor: pointer;
+	z-index: 1;
+  }
+  
+  .theme-label:hover img {
+	filter: brightness(0) invert(1) sepia(100%);
+  }
+  
+  .theme-checkbox:checked + .theme-label img {
+	filter: brightness(0) invert(0.95) sepia(100%);
+  }
+  
+  .theme-checkbox:checked ~ .theme-checkbox {
+	pointer-events: none;
+  }
+  
+  .theme-checkbox:checked ~ .theme-checkbox:checked {
+	pointer-events: auto;
+  }
 
 /* Hover effect */
 .theme-label:hover img {
