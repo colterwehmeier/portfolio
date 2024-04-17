@@ -334,33 +334,14 @@ from pathlib import Path
 source_dir = Path(__file__).parent  # Assumes this script is in the source directory
 target_dir = Path('/home/colter/git/portfolio')
 
-print("injecting content into source index")
-# Read the 'index-source.html' file
-index_source_path = source_dir / 'index-source.html'
-with open(index_source_path, 'r', encoding='utf-8') as file:
-    index_content = file.read()
-
-# Read the 'output.html' file
-output_html_path = source_dir / 'output.html'
-with open(output_html_path, 'r', encoding='utf-8') as file:
-    output_content = file.read()
-
-# Inject the 'output.html' content into the '<div id="container"></div>' element
-modified_index_content = index_content.replace('<div id="container"></div>', f'<div id="container">{output_content}</div>')
-
-# Save the modified index content as 'index.html' in the source directory
-index_html_path = source_dir / 'index.html'
-with open(index_html_path, 'w', encoding='utf-8') as file:
-    file.write(modified_index_content)
-
 print("copying over files to git")
 
 # Specific files to copy
 specific_files = [
     'favicon.ico',
-    'index.html',
+    'index-source.html',
     'robots.txt',
-    'output.html',
+    #'output.html', <- we actually change the filenames and links later on
     'sitemap.xml',
     'style.css',
     'assets/garden_fast.mp4',
@@ -424,6 +405,7 @@ for file_path in all_copied_files:
 
 entries_source_dir = Path(source_dir) / 'entries'  # Update with actual source path
 entries_target_dir = Path(target_dir) / 'entries'  # Update with actual target path
+
 print()
 # Function to copy specific folders ('html' and 'pdf') to target directory
 def copy_specific_folders(source, target, folder_names):
@@ -460,5 +442,30 @@ html_content = re.sub(
 target_html_path = target_dir / 'output.html'
 with open(target_html_path, 'w', encoding='utf-8') as file:
     file.write(html_content)
+
+#
+print("constructing final index.html file at target dir")
+print("injecting content into source index")
+# Read the 'index-source.html' file
+index_source_path = source_dir / 'index-source.html'
+with open(index_source_path, 'r', encoding='utf-8') as file:
+    index_content = file.read()
+
+# Read the 'output.html' file
+output_html_path = target_dir / 'output.html'
+with open(output_html_path, 'r', encoding='utf-8') as file:
+    output_content = file.read()
+
+# Inject the 'output.html' content into the '<div id="container"></div>' element
+modified_index_content = index_content.replace('<div id="container"></div>', f'<div id="container">{output_content}</div>')
+
+# Save the modified index content as 'index.html' in the source directory
+index_html_path = source_dir / 'index.html'
+with open(index_html_path, 'w', encoding='utf-8') as file:
+    file.write(modified_index_content)
+index_html_path = target_dir / 'index.html'
+with open(index_html_path, 'w', encoding='utf-8') as file:
+    file.write(modified_index_content)
+
 
 print("Site export completed successfully.")

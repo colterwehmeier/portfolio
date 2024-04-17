@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>colter.us</title>
+<meta name="description" content="Colter Wehmeier's personal site.">
+
+<link rel="icon" href="https://colterwehmeier.github.io/portfolio/favicon.ico" type="image/x-icon">
+<script src="https://colterwehmeier.github.io/portfolio/js/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
+<!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css"> -->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div>
+    <video id="bgVideo" loop muted autoplay playsinline playsInline style="opacity: 0;" oncanplay="this.style.opacity='1';">
+        <source src="https://colterwehmeier.github.io/portfolio/assets/garden_fast.mp4" type="video/mp4">
+      </video>
+    </div>
+<!-- takes up space to push content down the page in mobile mode -->
+<div id="spacer"></div>
+<!-- contains the current items loaded from output.html -->
+
+<img src="./svg/bub.svg" alt="BIO" style="top:314px; left:16px;" class="bub themes bubsvg" id="biobub">
+
+
+<input type="radio" id="game-text" name="theme" class="theme-radio">
+<label for="game-text" class="theme-label" style="top:185px; left:35px;">
+    <img src="./svg/gametext.svg" alt="GAMES" class="themes">
+</label>
+
+<input type="radio" id="edu-text" name="theme" class="theme-radio">
+<label for="edu-text" class="theme-label" style="top:35px; left:38px;">
+    <img src="./svg/edutext.svg" alt="EDU" class="themes">
+</label>
+
+<input type="radio" id="junk-text" name="theme" class="theme-radio">
+<label for="junk-text" class="theme-label" style="top:260px; left:38px;">
+    <img src="./svg/junktext.svg" alt="ETC" class="themes">
+</label>
+
+<input type="radio" id="wikar-text" name="theme" class="theme-radio">
+<label for="wikar-text" class="theme-label" style="top:110px; left:34px;">
+    <img src="./svg/wikartext.svg" alt="WIKAR" class="themes">
+</label>
+
+
+<div id="container"></div>
+<div id="container-footer"></div>
+
+<!-- <babylon model="entries/game/genesis/vhs.glb"></babylon> -->
+<div id="lightbox" class="lightbox no-animation">
+    <div class="lightbox-content">
+        <div id="content">
+            <div id="close" class="close-btn">&times;</div>
+
+            <!-- Media container for images/videos -->
+            <div id="entry-media">
+                <div id="spinner" class="lds-ellipsis">
+                    <div></div><div></div><div></div><div></div>
+                </div>
+            </div>
+            
+            <div style="display: flex;"> 
+            <h2 id="entry-title"></h2>
+            </div>
+
+            <div style="display: flex;">
+                <!-- Year and season container -->
+                <p id="entry-date"></p>
+                <!-- Tags container -->
+                <p id="entry-tags"></p>
+            </div>
+
+            <!-- Description container -->
+            <p id="entry-description"></p>
+
+        </div>
+    </div>
+</div>
+
+<script>
+	//lightbox setup
+	document.getElementById('close').addEventListener('click', () => {
+    // To hide the lightbox
+    hideLightbox();
+});
+</script>
+
+<script>
+
+
+
+// Function to fetch HTML content
+function fetchHTML(fileName, elementId) {
+	return new Promise((resolve, reject) => {
+		fetch(fileName)
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+
+				return response.text();
+			})
+			.then(data => {
+                //console.log(data);
+				document.getElementById(elementId).innerHTML = data;
+				resolve(); // resolve the promise when HTML is successfully added to the page
+			})
+			.catch(error => {
+				console.error('There has been a problem with your fetch operation:', error);
+				reject(error); // reject the promise if there was an error fetching the HTML
+			});
+	});
+}
+
+function processTags(tags) {
+    return tags.split(',').map(function(tag) {
+        tag = tag.replace(/[-_]/g, ' ');
+        if (tag !== tag.toUpperCase()) {
+            tag = tag.toLowerCase().split(' ').map(function(word) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+            }).join(' ');
+        }
+        return tag;
+    }).join(', ');
+}
+function toTitleCase(str) {
+    return str.toLowerCase().split(' ').map(function(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(' ');
+}
+
+function handleVideoSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('vid-data-src');
+    activeSlide.removeAttribute('vid-data-src');
+}
+function handleImageSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('img-data-src');
+    activeSlide.removeAttribute('img-data-src');
+}
+function handleYTSrc(activeSlide) {
+    function extractParams(text) {
+                    let videoId = '';
+                    let timecode = '';
+                    if (text.includes('watch?v=')) {
+                        const url = new URL(text);
+                        videoId = url.searchParams.get('v');
+                        timecode = url.searchParams.get('t');
+                    } else if (text.includes('latest_version?id=')) {
+                        const url = new URL(text);
+                        videoId = url.searchParams.get('id');
+                    } else if (text.includes('?t=')) {
+                        [videoId, timecode] = text.split('?t=');
+                    } else {
+                        videoId = text;
+                    }
+                    return { videoId, timecode };
+                }
+    // console.log("handling youtube")
+    fetch(activeSlide.getAttribute('yt-data-src'))
+    .then(response => {
+        if (!response.ok) throw new Error("Failed fetching the URL");
+        return response.text();
+    })
+    .then(text => {
+    const { videoId, timecode } = extractParams(text);
+    
+    let iframe = document.createElement('iframe');
+    //old method
+    // iframe.src = `https://www.youtube.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
+    
+    // new technique from here https://news.ycombinator.com/item?id=39536315
+    iframe.src=`https://www.youtube-nocookie.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
+    iframe.setAttribute('credentialless', 'true');
+    iframe.setAttribute('referrerPolicy', 'no-referrer');
+    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+    iframe.setAttribute('allow', "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; bluetooth 'none'; browsing-topics 'none'; camera 'none'; ch-ua 'none'; display-capture 'none'; domain-agent 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; identity-credentials-get 'none'; idle-detection 'none'; keyboard-map 'none'; local-fonts 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; otp-credentials 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-create 'none'; publickey-credentials-get 'none'; screen-wake-lock 'none'; serial 'none'; speaker-selection 'none'; sync-xhr 'none'; usb 'none'; web-share 'none'; window-management 'none'; xr-spatial-tracking 'none'");
+    iframe.setAttribute('csp', 'sandbox allow-scripts allow-same-origin;');
+    iframe.setAttribute('loading', 'lazy');
+    iframe.setAttribute('title', 'YouTube Video');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '');
+    
+    activeSlide.appendChild(iframe);
+    })
+    .catch(err => {
+        console.error("Fetch error:", err);
+    })
+    .finally(() => {
+        activeSlide.removeAttribute('yt-data-src');
+    });
+}
+function handle3DSrc(activeSlide) {
+    activeSlide.src = activeSlide.getAttribute('model-data-src');
+/*
+    // Create babylon element dynamically
+    let babylonElement = document.createElement('babylon');
+    let viewer = new BabylonViewer.DefaultViewer(babylonElement, {
+        scene: {
+        debug: true,},
+        camera: {
+            behaviors: {
+                autoRotate: 360
+            }
+        },
+        model: {
+            url: activeSlide.src
+        },
+    });
+
+
+    
+    // Append to the active slide and remove placeholder attribute
+    activeSlide.appendChild(babylonElement);
+    activeSlide.removeAttribute('model-data-src');
+    
+    console.log("3D model loaded");*/
+    console.log("skipped 3d model");
+}
+
+
+
+
+function handleSlideChange() {
+    // console.log("handle slide change called");
+    let activeSlide = document.querySelector('.slide.active');
+    if(activeSlide == null)return;
+    const attributes = ['vid-data-src', 'img-data-src', 'yt-data-src', 'model-data-src'];
+    for (const attr of attributes) {
+        if (activeSlide.getAttribute(attr)) {
+            const handlerKey = attr.split('-')[0];
+            switch (handlerKey) {
+                case 'vid':
+                    handleVideoSrc(activeSlide);
+                    break;
+                case 'img':
+                    handleImageSrc(activeSlide);
+                    break;
+                case 'yt':
+                    handleYTSrc(activeSlide);
+                    break;
+                case 'model':
+                    handle3DSrc(activeSlide);
+                    break;
+            }
+            break; // Exit loop as only one attribute should apply
+        }
+    }
+}
+
+
+// Function to manage links
+function populateLightbox(entry) {
+    // Fill in the title, description, tags, year, and season
+    document.getElementById('entry-title').innerHTML = entry.title;
+    // Only push state if it's different from the current one
+    const currentHash = window.location.hash;
+    const newHash = `#${entry.id}`;
+
+    if(currentHash !== newHash) {
+        history.pushState({id: entry.id}, entry.title, newHash);
+    }
+
+
+    if (entry.description.endsWith('.html')) {
+        fetch(entry.description)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('entry-description').innerHTML = data;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    } else {
+        document.getElementById('entry-description').innerHTML = entry.description;
+    }
+
+    // entry.span
+    document.getElementById('entry-tags').textContent = processTags(entry.tags);
+
+    var seasonTitleCase = toTitleCase(entry.season);
+    let year = entry.year;
+
+    if (seasonTitleCase == null || seasonTitleCase.trim() == "") {
+        document.getElementById('entry-date').textContent = year;
+    } else {
+        document.getElementById('entry-date').textContent = seasonTitleCase + ', ' + year;
+    }
+    
+    //reset the lightbox
+    $('#entry-title').removeClass('clickable');
+    $('#link, #entry-title').off('click');
+    $('#link, #entry-title').off('mouseenter mouseleave');
+    $('#link').hide(); // Hide the button
+
+    if(entry.content) {
+        document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;</span>';
+        // document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;&#xFE0E;</span>';
+
+        // $('#link').show(); // Show the button
+        $('#entry-title').addClass('clickable');
+            // Make SVG and entry-title clickable
+    $('#link, #entry-title').on('click', function() {
+        window.open(entry.content, '_blank');
+    });
+        // Add hover effect to both SVG and entry-title
+        $('#link, #entry-title').hover(
+        function() {
+            // On mouseenter, add a class to change the color
+            $('#link, #entry-title').addClass('hovered');
+        },
+        function() {
+            // On mouseleave, remove the class
+            $('#link, #entry-title').removeClass('hovered');
+        }
+    );
+    }
+    // console.log("hide")
+    document.getElementById('spinner').classList.add('hidden');
+    // If entry.id is not an empty string, attempt to load media from the /assets folder
+        if(entry.id) {
+            let mediaContainer = document.getElementById('entry-media');
+            if(entry.file_paths.length > 0){
+                // console.log("spin");
+                document.getElementById('spinner').classList.remove('hidden');
+
+            }
+            // enable the spinner!!!
+        // Iterate over the child nodes in reverse order (to safely remove while iterating)
+        for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
+            let child = mediaContainer.childNodes[i];
+            // Check if the child is not the spinner
+            if (!child.classList || !child.classList.contains('lds-ellipsis')) {
+                mediaContainer.removeChild(child);
+            }
+        }
+            
+        //     // Clear any existing media
+        //     while (mediaContainer.firstChild) {
+        //         mediaContainer.removeChild(mediaContainer.firstChild);
+        // }
+
+        mediaContainer.style.height = entry.lightbox_max_height;
+        // Function to create the lds-ellipsis spinner element
+        function createSpinner() {
+            let spinner = document.createElement('div');
+            spinner.className = 'lds-ellipsis';
+            for (let i = 0; i < 4; i++) {
+                let dot = document.createElement('div');
+                spinner.appendChild(dot);
+            }
+            return spinner;
+        }
+        let isFirst = true;
+        for (let file of entry.file_paths) {
+            let mediaElement;
+            switch (true) {
+                case /\.(jpg|jpeg|png|webp|gif)$/i.test(file):
+                    mediaElement = document.createElement('img');
+                    mediaElement.setAttribute("img-data-src", file);
+                    mediaElement.loading = "lazy"; // Enables native lazy loading
+                    break;
+                case /\.(mp4|mov)$/i.test(file):
+                    mediaElement = document.createElement('video');
+                    mediaElement.setAttribute("vid-data-src", file);
+                    mediaElement.loading = "lazy"; // Enables native lazy loading
+                    mediaElement.controls = false;
+                    mediaElement.autoplay = true;
+                    mediaElement.loop = true;
+                    mediaElement.muted = true;
+                    mediaElement.setAttribute('playsinline', '');
+                    mediaElement.setAttribute('playsInline', '');
+                    mediaElement.setAttribute('disablePictureInPicture', '');
+            
+                    break;
+                case /\.yt$/i.test(file):
+                    mediaElement = document.createElement('div');
+                    mediaElement.setAttribute("yt-data-src", file);
+                    break;
+                case /\.(gltf|glb)$/i.test(file):
+                    mediaElement = document.createElement('div');
+                    mediaElement.setAttribute("model-data-src", file);
+                    break;
+            }
+
+            
+            
+            if (mediaElement) {
+                mediaElement.classList.add('slide');
+                if (isFirst) {
+                    mediaElement.classList.add('active');
+                    isFirst = false;
+                }
+                mediaContainer.appendChild(mediaElement);
+            }
+        }
+        
+            if(entry.file_paths.length >1){
+            addSlideshowControls();
+        }
+        }
+
+    // Open the lightbox
+    // lightbox.style.display = "flex";
+    $('#content').scrollTop = 0;
+    handleSlideChange();
+}
+
+function addSlideshowControls() {
+    let mediaContainer = document.getElementById('entry-media');
+    let slides = Array.from(mediaContainer.getElementsByClassName('slide'));
+    let currentIndex = slides.findIndex(slide => slide.classList.contains('active')); // Get the index of the active slide
+
+    // Create navigation buttons
+    let prevButton = document.createElement('button');
+    // prevButton.textContent = 'Previous';
+    prevButton.textContent = '<';
+    prevButton.id = 'prevSlideButton';  // Assign unique ID
+    prevButton.style.position = "absolute";
+    prevButton.addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+        slides[currentIndex].classList.add('active');
+        handleSlideChange();
+    });
+
+    let nextButton = document.createElement('button');
+    // nextButton.textContent = 'Next';
+    nextButton.textContent = '>';
+    nextButton.id = 'nextSlideButton';  // Assign unique ID
+    nextButton.style.position = "absolute";
+    nextButton.addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+        slides[currentIndex].classList.add('active');
+        handleSlideChange();
+    });
+
+    // Add buttons to media container
+    mediaContainer.style.position = "relative";
+    mediaContainer.appendChild(prevButton);
+    mediaContainer.appendChild(nextButton);
+}
+
+lightboxEnabled = false;
+CurrentLightboxID = null;
+function RequestLightboxChange(direction) {
+    // If lightbox isn't enabled, do nothing
+    if (!lightboxEnabled) return;
+
+    // Get current link element
+    let currentLink = document.getElementById(CurrentLightboxID);
+
+    // Decide next link based on direction
+    let nextLink = direction === 1 
+        ? currentLink.parentElement.previousElementSibling 
+        : currentLink.parentElement.nextElementSibling;
+
+    // Skip over elements with the class "year"
+    while (nextLink && nextLink.classList.contains('year')) {
+    nextLink = direction === 1 
+        ? nextLink.previousElementSibling 
+        : nextLink.nextElementSibling;
+    }
+
+    // Check if there is a next link to navigate to
+    if (nextLink) {
+        // Get the next ID and the corresponding entry
+        let nextID = nextLink.querySelector('.subtext').getAttribute('id');
+        let entry = JSON.parse(unescape(nextLink.querySelector('.subtext').dataset.entry));
+
+        // Populate and show the lightbox for the next entry
+        populateLightbox(entry);
+        CurrentLightboxID = nextID;
+    }
+}
+
+let savedScrollPosition = 0;
+
+function getScrollbarWidth() {
+  const div = document.createElement('div');
+  div.style.overflow = 'scroll';
+  div.style.width = '50px';
+  div.style.height = '50px';
+  document.body.appendChild(div);
+  const scrollbarWidth = div.offsetWidth - div.clientWidth;
+  document.body.removeChild(div);
+  return scrollbarWidth;
+}
+function lockScroll() {
+
+  if (!isScrollLocked) { // Check if scroll is already locked
+    savedScrollPosition = window.scrollY; // Save the current scroll position        
+        scrollbarWidth = getScrollbarWidth();
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${savedScrollPosition}px`;
+        isScrollLocked = true; // Update the flag to indicate scroll is locked
+    }
+}
+
+function unlockScroll() {
+    document.body.style.removeProperty('overflow');
+    document.body.style.removeProperty('position');
+    document.body.style.removeProperty('top');
+    document.body.style.removeProperty('padding-right'); // Remove added padding
+    // console.log(savedScrollPosition);
+    window.scrollTo(0, savedScrollPosition)
+    // setTimeout(() => {
+    //     window.scrollTo(0, savedScrollPosition);
+    // }, 0.1);
+
+    isScrollLocked = false;
+}
+
+function hideLightbox(){
+    document.getElementById('lightbox').classList.remove('show');
+    document.getElementById('lightbox').classList.add('hide');
+    // document.body.classList.remove('noScroll'); // restore body scroll
+    unlockScroll();
+    // let mediaContainer = document.getElementById('entry-media');
+    // // Clear any existing media
+    // while (mediaContainer.firstChild) {
+    //     mediaContainer.removeChild(mediaContainer.firstChild);
+    // }
+    let mediaContainer = document.getElementById('entry-media');
+    // Iterate over the child nodes in reverse order (to safely remove while iterating)
+    for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
+        let child = mediaContainer.childNodes[i];
+        // Check if the child is not the spinner
+        if (!child.classList || !child.classList.contains('lds-ellipsis')) {
+            mediaContainer.removeChild(child);
+        }
+    }
+
+    lightboxEnabled = false;
+
+    if(window.location.hash) {
+        history.replaceState(null, null, ' '); // This effectively removes the hash
+    }
+
+}
+
+function showLightbox(currentID){
+    // lockScroll();
+    document.getElementById('lightbox').classList.remove('no-animation');
+    document.getElementById('lightbox').classList.add('show');
+    document.getElementById('lightbox').classList.remove('hide');
+    lightboxEnabled = true;
+    CurrentLightboxID = currentID;
+}
+function manageLinks() {
+	const links = document.querySelectorAll('.subtext');
+    //console.log(links)
+	links.forEach((link) => {
+        let entry = JSON.parse(unescape(link.dataset.entry));
+        link.setAttribute('id',entry.id);
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            // console.log("locking scroll now: "+window.scrollY);
+
+            lockScroll();
+            // Reset animation
+            void document.getElementById('lightbox').offsetWidth;
+            // console.log(entry)
+            if(entry.locked){
+                console.log("locked");
+                return;
+            }
+            populateLightbox(entry);
+            showLightbox(entry.id);
+        });
+    });
+
+    $(document).keydown(function(event) { 
+        if (event.key == "Escape") { // checking if the key pressed was 'Escape'
+        hideLightbox();
+        }
+    });
+	document.getElementById('close').addEventListener('click', () => {
+        hideLightbox();
+	});
+    var closeIndicator = $('<div class="close-indicator">&times;</div>');
+    var closeIndicatorAppended = false;
+    var lineConnector = $('<div class="line-connector"></div>');
+    var lineConnectorAppended = false;
+    var lightbox = $('#lightbox');
+    lightbox.click(function(event) {
+        if ($(event.target).attr('id') === 'lightbox') {            hideLightbox();
+            $(this).css('cursor', 'default');
+            $('#close').show();
+        }
+    });
+
+}
+function testURLForHash(){
+    console.log("testing url");
+    // see if we should be going somewhere based on url decorator
+    const urlHash = window.location.hash.substr(1); // Remove the '#' at the start
+    // console.log(urlHash);
+    if (urlHash) {
+        var potentiallink = document.getElementById(urlHash);
+        if(potentiallink){
+            // Create a new event
+            var event = new MouseEvent('click', {
+                view: window,
+                bubbles: true,
+                cancelable: true
+            });
+
+            // simulate mouse click
+            potentiallink.dispatchEvent(event);
+        }
+        else
+        {
+            console.log("no match found for"+ urlHash);
+            hideLightbox();
+        }
+        
+    }
+    else {
+        // console.log("hiding light box");
+        hideLightbox();
+    }
+}
+let isScrollLocked = false;
+
+// Fetch HTML contents
+// fetchHTML('output.html', 'container').then(() => {
+//     manageLinks();
+//     testURLForHash();
+//     $(document).ready(function() {
+//         document.getElementById('container').classList.remove('hidden');
+//     });
+
+//     var bioSvg = document.getElementById('biobub');
+//     bioSvg.addEventListener('click', function() {
+//     var bioLink = document.getElementById('bio');
+
+//     // Create a new event
+//     var event = new MouseEvent('click', {
+//         view: window,
+//         bubbles: true,
+//         cancelable: true
+//     });
+
+//     // simulate mouse click
+//     bioLink.dispatchEvent(event);
+//     });
+
+//     //detect pressing the back or forward button
+//     window.addEventListener('popstate', function(event) {
+//         testURLForHash();
+//       });
+    
+
+// });
+manageLinks();
+    testURLForHash();
+    $(document).ready(function() {
+        document.getElementById('container').classList.remove('hidden');
+    });
+
+    var bioSvg = document.getElementById('biobub');
+    bioSvg.addEventListener('click', function() {
+    var bioLink = document.getElementById('bio');
+
+    // Create a new event
+    var event = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+    });
+
+    // simulate mouse click
+    bioLink.dispatchEvent(event);
+    });
+
+    //detect pressing the back or forward button
+    window.addEventListener('popstate', function(event) {
+        testURLForHash();
+      });
+
+
+//Subscribe to Key Presses
+$(document).keydown(function(event) { 
+    switch(event.which) {
+        case 38: // up
+        RequestLightboxChange(1);
+        break;
+        case 40: // down
+        RequestLightboxChange(-1);
+        break;
+        case 37: // left
+        $('#prevSlideButton').click();
+        break;
+        case 39: // right
+        $('#nextSlideButton').click();
+        break;
+        default: return; // If it's not an arrow key, we ignore it
+    }
+});
+
+document.addEventListener('mousemove', function addClassOnMouseMove() {
+    document.body.classList.add('using-mouse');
+    // Remove the event listener once the class is added to avoid unnecessary processing
+    document.removeEventListener('mousemove', addClassOnMouseMove);
+});
+
+document.addEventListener('touchstart', function() {
+    document.body.classList.remove('using-mouse');
+});
+
+</script>
+
+
+
+</body>
+</html>
