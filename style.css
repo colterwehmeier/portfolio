@@ -276,6 +276,8 @@ body.noScroll {
 /* radio button version */
 .theme-radio {
 	display: none; /* Hide the radio buttons */
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 .theme-label {

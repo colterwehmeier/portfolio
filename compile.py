@@ -444,7 +444,7 @@ with open(target_html_path, 'w', encoding='utf-8') as file:
     file.write(html_content)
 
 #
-print("constructing final index.html file at target dir")
+print("constructing final index.html file at target dir and source dir")
 print("injecting content into source index")
 # Read the 'index-source.html' file
 index_source_path = source_dir / 'index-source.html'
