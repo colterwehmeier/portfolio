@@ -609,7 +609,7 @@ body{
 }
 .bub{
 	transform:scale(0.5) translateY(50px);
-	transition: all 0.1s;
+	/* transition: all 0.1s; */
 }
 #entry-title{
 	z-index: 200;
@@ -761,7 +761,7 @@ body{
 		left: 40px;
 		transition: all 0.1s;
 	}
-	.themes{
+	.themes, .theme-label{
 		position:absolute;
 		transform: translateY(0px);
 
