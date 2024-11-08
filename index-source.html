@@ -27,25 +27,50 @@
 <img src="./svg/bub.svg" alt="BIO" style="top:314px; left:16px;" class="bub themes bubsvg" id="biobub">
 
 
-<input type="radio" id="game-text" name="theme" class="theme-radio">
+<input type="checkbox" id="game-text" name="theme" class="theme-checkbox" checked>
 <label for="game-text" class="theme-label" style="top:185px; left:35px;">
     <img src="./svg/gametext.svg" alt="GAMES" class="themes">
 </label>
 
-<input type="radio" id="edu-text" name="theme" class="theme-radio">
+<input type="checkbox" id="edu-text" name="theme" class="theme-checkbox" checked>
 <label for="edu-text" class="theme-label" style="top:35px; left:38px;">
     <img src="./svg/edutext.svg" alt="EDU" class="themes">
 </label>
 
-<input type="radio" id="junk-text" name="theme" class="theme-radio">
+<input type="checkbox" id="junk-text" name="theme" class="theme-checkbox" checked>
 <label for="junk-text" class="theme-label" style="top:260px; left:38px;">
     <img src="./svg/junktext.svg" alt="ETC" class="themes">
 </label>
 
-<input type="radio" id="wikar-text" name="theme" class="theme-radio">
+<input type="checkbox" id="wikar-text" name="theme" class="theme-checkbox" checked>
 <label for="wikar-text" class="theme-label" style="top:110px; left:34px;">
     <img src="./svg/wikartext.svg" alt="WIKAR" class="themes">
 </label>
+<script>
+    // Add this JavaScript to handle the radio-like behavior
+document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.theme-checkbox');
+    
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function(e) {
+            // If this checkbox was already checked, uncheck it
+            if (this.dataset.wasChecked === 'true') {
+                this.checked = false;
+                this.dataset.wasChecked = 'false';
+            } else {
+                // Uncheck all other checkboxes
+                checkboxes.forEach(cb => {
+                    cb.checked = false;
+                    cb.dataset.wasChecked = 'false';
+                });
+                // Check this checkbox
+                this.checked = true;
+                this.dataset.wasChecked = 'true';
+            }
+        });
+    });
+});
+</script>
 
 
 <div id="container"></div>
@@ -555,22 +580,16 @@ function showLightbox(currentID){
 }
 function manageLinks() {
 	const links = document.querySelectorAll('.subtext');
-    //console.log(links)
-	links.forEach((link) => {
+    links.forEach((link) => {
         let entry = JSON.parse(unescape(link.dataset.entry));
-        link.setAttribute('id',entry.id);
+        link.setAttribute('id', entry.id);
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            // console.log("locking scroll now: "+window.scrollY);
-
-            lockScroll();
-            // Reset animation
-            void document.getElementById('lightbox').offsetWidth;
-            // console.log(entry)
             if(entry.locked){
                 console.log("locked");
                 return;
             }
+            lockScroll();
             populateLightbox(entry);
             showLightbox(entry.id);
         });

@@ -127,6 +127,7 @@ def get_video_dimensions(video_path):
     result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     dimensions = json.loads(result.stdout)['streams'][0]
     return dimensions['width'], dimensions['height']
+
 # Organize entries by theme and year
 themes = defaultdict(lambda: defaultdict(list))
 existing_folders = []
@@ -261,27 +262,74 @@ for theme in themes.keys():
 # Initialize HTML content
 html_content = ""
 
+# NEW route is for combining all entries into one, sorted by year
+current_year = None
+year_themes = {}  # Dictionary to track themes for each year
+
+# Sort all entries by year (descending order)
+all_entries = []
+for theme, year_entries in themes.items():
+    for year, entries in year_entries.items():
+        for entry in entries:
+            entry['year'] = year  # Ensure each entry has a 'year' key
+            entry['theme'] = theme  # Ensure each entry has a 'theme' key
+            all_entries.append(entry)
+
+            # Track themes for each year
+            if year not in year_themes:
+                year_themes[year] = set()
+            year_themes[year].add(theme.lower())
+
+# Now, let's sort the entries
+try:
+    all_entries.sort(key=lambda x: int(x['year']), reverse=True)
+except Exception as e:
+    print(f"Error sorting entries: {e}")
+    print("Entries will be unsorted")
+
+html_content += '<div class="subgroup">'
+for entry in all_entries:
+    if entry['year'] != current_year:
+        current_year = entry['year']
+        # Add theme classes to year label
+        year_theme_classes = ' '.join([f"{theme}text" for theme in year_themes[current_year]])
+        html_content += f'<p class="year {year_theme_classes}">{current_year}</p>\n'
+    
+    entry_json = json.dumps(entry)
+    entry_json_escaped = html.escape(entry_json)
+    locked_class = "lost " if entry.get('locked', False) else ""
+    theme_class = f"{entry['theme'].lower().replace(',', ' ')}text"
+    
+    tags = entry.get("tags", "")
+    first_tag = tags.split(",")[0] if tags else " "
+    first_tag = first_tag.replace("-", " ").replace("_", " ")
+    
+    html_content += f'<p class="title {theme_class}"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
+html_content += '</div>'
+
+
+# OLD route for keeping entries in themes, sorted by year
 # Iterate through themes and years and build HTML content
-for theme, years in themes.items():
-    html_content += f'<div class="subgroup {theme}text">\n'
+# for theme, years in themes.items():
+#     html_content += f'<div class="subgroup {theme}text">\n'
 
-    # Sort years in descending order
-    for year in sorted(years.keys(), reverse=True):
-        html_content += f'<p class="year">{year}</p>\n'
-        # Iterate through entries for this theme and year
-        for entry in years[year]:
-            entry_json = json.dumps(entry)
-            entry_json_escaped = html.escape(entry_json)
-            if not entry["id"]:
-                entry["locked"] = True
-            locked_class = "lost " if entry['locked'] else ""
-            # html_content += f'<p class="title"><a target="_blank" href="{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span>{entry["span"]}</span> {entry["title"]}</a></p>\n'
-            tags = entry.get("tags", "")
-            first_tag = tags.split(",")[0] if tags else " "
-            first_tag = first_tag.replace("-", " ").replace("_", " ")
-            html_content += f'<p class="title"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
+#     # Sort years in descending order
+#     for year in sorted(years.keys(), reverse=True):
+#         html_content += f'<p class="year">{year}</p>\n'
+#         # Iterate through entries for this theme and year
+#         for entry in years[year]:
+#             entry_json = json.dumps(entry)
+#             entry_json_escaped = html.escape(entry_json)
+#             if not entry["id"]:
+#                 entry["locked"] = True
+#             locked_class = "lost " if entry['locked'] else ""
+#             # html_content += f'<p class="title"><a target="_blank" href="{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span>{entry["span"]}</span> {entry["title"]}</a></p>\n'
+#             tags = entry.get("tags", "")
+#             first_tag = tags.split(",")[0] if tags else " "
+#             first_tag = first_tag.replace("-", " ").replace("_", " ")
+#             html_content += f'<p class="title"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
 
-    html_content += '</div>\n'
+#     html_content += '</div>\n'
 
 # Write to output file
 with open('output.html', 'w') as file:
