@@ -27,22 +27,22 @@
 <img src="./svg/bub.svg" alt="BIO" style="top:314px; left:16px;" class="bub themes bubsvg" id="biobub">
 
 
-<input type="checkbox" id="game-text" name="theme" class="theme-checkbox" checked>
+<input type="checkbox" id="game-text" name="theme" class="theme-checkbox">
 <label for="game-text" class="theme-label" style="top:185px; left:35px;">
     <img src="./svg/gametext.svg" alt="GAMES" class="themes">
 </label>
 
-<input type="checkbox" id="edu-text" name="theme" class="theme-checkbox" checked>
+<input type="checkbox" id="edu-text" name="theme" class="theme-checkbox">
 <label for="edu-text" class="theme-label" style="top:35px; left:38px;">
     <img src="./svg/edutext.svg" alt="EDU" class="themes">
 </label>
 
-<input type="checkbox" id="junk-text" name="theme" class="theme-checkbox" checked>
+<input type="checkbox" id="junk-text" name="theme" class="theme-checkbox">
 <label for="junk-text" class="theme-label" style="top:260px; left:38px;">
     <img src="./svg/junktext.svg" alt="ETC" class="themes">
 </label>
 
-<input type="checkbox" id="wikar-text" name="theme" class="theme-checkbox" checked>
+<input type="checkbox" id="wikar-text" name="theme" class="theme-checkbox">
 <label for="wikar-text" class="theme-label" style="top:110px; left:34px;">
     <img src="./svg/wikartext.svg" alt="WIKAR" class="themes">
 </label>
@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.dataset.wasChecked = 'true';
             }
         });
+        this.checked = false;
     });
 });
 </script>
