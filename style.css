@@ -790,20 +790,20 @@ body{
 	.title {
 		text-align: left;
 		left: 40px;
-		transition: all 1s;
+		/* transition: all 1s; */
 	}
 	.subgroup{
 		left: 0px;
 		right: 0px;
 		text-align: left;
-		transition: all 1s;
+		/* transition: all 1s; */
 		overflow: visible;
 
 	}
 
 
 	.year{
-		transition: height 1s, opacity 1s;
+		/* transition: height 1s, opacity 1s; */
 		display: inline-block;
 		text-align: left;
 		right: 0px;
