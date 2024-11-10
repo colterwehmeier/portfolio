@@ -534,11 +534,7 @@ function unlockScroll() {
     document.body.style.removeProperty('position');
     document.body.style.removeProperty('top');
     document.body.style.removeProperty('padding-right'); // Remove added padding
-    // console.log(savedScrollPosition);
     window.scrollTo(0, savedScrollPosition)
-    // setTimeout(() => {
-    //     window.scrollTo(0, savedScrollPosition);
-    // }, 0.1);
 
     isScrollLocked = false;
 }
@@ -546,13 +542,8 @@ function unlockScroll() {
 function hideLightbox(){
     document.getElementById('lightbox').classList.remove('show');
     document.getElementById('lightbox').classList.add('hide');
-    // document.body.classList.remove('noScroll'); // restore body scroll
-    unlockScroll();
-    // let mediaContainer = document.getElementById('entry-media');
-    // // Clear any existing media
-    // while (mediaContainer.firstChild) {
-    //     mediaContainer.removeChild(mediaContainer.firstChild);
-    // }
+    // unlockScroll();
+
     let mediaContainer = document.getElementById('entry-media');
     // Iterate over the child nodes in reverse order (to safely remove while iterating)
     for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
@@ -590,7 +581,7 @@ function manageLinks() {
                 console.log("locked");
                 return;
             }
-            lockScroll();
+            // lockScroll();
             populateLightbox(entry);
             showLightbox(entry.id);
         });

@@ -415,14 +415,18 @@ body.using-mouse .subtext:hover {
 	color: #7F7F7F;
 }
  .lightbox-content{
+	/* z-index: 1; */
+
 	max-width: 60ch;
 	line-height: 1.45;
 	overflow: visible;
+	pointer-events: all;
+
 } 
 
 /* Lightbox and Modal Styles */
 #lightbox {
-	background: linear-gradient(to right, transparent, #0000008d);
+	/* background: linear-gradient(to right, transparent, #0000008d); */
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -430,9 +434,10 @@ body.using-mouse .subtext:hover {
 	width: 100%;
 	display: none;
 	align-items: center;
-	justify-content: right;
+	justify-content: center;
 	overflow: hidden;
 	z-index: 1;
+	pointer-events: none;
 }
 #link{
 	position: relative;
@@ -513,12 +518,9 @@ babylon {
   position: relative;
   padding: 40px;
   /* border-radius: 10px; */
-  border-radius: 10px 0px 0px 10px;  /* Changed this line to make left corners sharp */
+  border-radius: 10px 10px 10px 10px;  /* Changed this line to make left corners sharp */
   max-width: 60ch;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   overflow-x: hidden;
   overflow-y:auto;
   animation: 0.01s ease-out 0s 1 slideIn;
@@ -667,8 +669,13 @@ body{
 		background-color: antiquewhite;
 		color: black;
 	}
+@media (min-width: 1200px){
+	#lightbox #content{
+		transform: translateX(-8vw);
+	}
+}
 
-@media (max-width: 900px){
+@media (max-width: 1200px){
 #entry-media {
 	max-width: 900%; 
 	width: 100vw;
@@ -683,11 +690,7 @@ body{
 .lightbox-content{
 	max-width: 100%;
 	margin-bottom:auto;
-	/* margin-left: 1rem; */
 }
-/* #entry-media{
-	margin-left: 3rem
-} */
 #lightbox #content{
 	margin-top: 0px;
 	padding-top: 0px;
@@ -748,15 +751,11 @@ body{
     .close-btn {
         font-size: 64px;
     }
-	p{
+	#content>p{
 		max-width: 60ch;
 	}
+
 }
-/* @media (max-width: 1200px) {
-	#entry-media{
-		margin-left: 0rem;
-	}
-} */
 
 
 /* Responsive Styles */
@@ -764,6 +763,9 @@ body{
 	/* #entry-media{
 		margin-left: 3rem;
 	} */
+	p{
+		max-width: 60ch;
+	}
 	body{
 		left:0px;
 		right: auto;
