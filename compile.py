@@ -19,6 +19,165 @@ for file_name in json_files:
         file_data = json.load(file)
         data.extend(file_data)
 
+def process_files(file_list):
+    updated_file_list = []
+    for filename in file_list:
+        if 'DS_Store' in filename or filename.endswith('.psd'):
+            continue
+            
+        # Get the base filename and directory
+        base_name = os.path.basename(filename)
+        dir_name = os.path.dirname(filename)
+        
+        # Clean filename
+        name_without_ext, extension = os.path.splitext(base_name)
+        extension = extension.lower()
+        sanitized_base_name = re.sub(r'[^\w-]+', '_', name_without_ext)
+        cleaned_base_name = re.sub(r'_{2,}', '_', sanitized_base_name)
+        cleaned_full_name = cleaned_base_name + extension
+        
+        # Handle file renaming if needed
+        if base_name != cleaned_full_name:
+            print(f"Proposed filename change: '{base_name}' to '{cleaned_full_name}' in directory '{dir_name}'.")
+            approval = input("Do you approve this change? (y/n): ")
+            if approval.lower() == 'y':
+                new_filename = os.path.join(dir_name, cleaned_full_name)
+                os.rename(filename, new_filename)
+                filename = new_filename
+        
+        # Handle compression
+        if extension in [".mp4", ".avi", ".mkv", ".mov"]:
+            filename = compress_video_if_needed(filename, 1000000)
+        elif extension in [".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"]:
+            filename = compress_image_if_needed(filename, 1000000)
+            
+        updated_file_list.append(filename)
+    
+    return updated_file_list
+
+def calculate_max_height(file_list):
+    fixed_width_ch = 60
+    ch_to_pixel_ratio = 8
+    fixed_width_px = fixed_width_ch * ch_to_pixel_ratio
+    maximumHeight = 500
+    
+    constrained_heights = []
+    for filename in file_list:
+        try:
+            extension = pathlib.Path(filename).suffix.lower()
+            if extension in [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"]:
+                dimensions = get_image_dimensions(filename)
+            elif extension in [".mp4", ".avi", ".mkv", ".mov"]:
+                dimensions = get_video_dimensions(filename)
+            elif extension in [".yt"]:
+                dimensions = (16, 9)
+            else:
+                continue
+                
+            if dimensions:
+                original_width, original_height = dimensions
+                normalized_height = (fixed_width_px / original_width) * original_height
+                constrained_height = min(maximumHeight, normalized_height)
+                constrained_heights.append(constrained_height)
+        except Exception as e:
+            print(f"Error processing dimensions for {filename}: {e}")
+    
+    return round(max(constrained_heights)) if constrained_heights else 0
+
+def process_entries(data):
+    themes = defaultdict(lambda: defaultdict(list))
+    existing_folders = []
+    existing_ids = {}
+    entries_without_id = []
+    FileListForCopyingAtTheEnd = []
+    
+    for entry in data:
+        if not entry['id']:
+            print(f"Entry without id: {entry['title']}")
+            entries_without_id.append(entry)
+            continue
+            
+        if entry['id'] in existing_ids:
+            print(f"Id collision detected: {entry['id']}")
+        else:
+            existing_ids[entry['id']] = True
+        
+        theme_list = [theme.strip() for theme in entry['theme'].split(',')]
+        folder_theme = theme_list[0]
+        folder_path = os.path.join('entries', folder_theme, entry['id'])
+        os.makedirs(folder_path, exist_ok=True)
+        
+        file_list = [os.path.join(folder_path, f) for f in os.listdir(folder_path) 
+                    if os.path.isfile(os.path.join(folder_path, f))]
+        file_list = sort_files(file_list)
+        
+        updated_file_list = process_files(file_list)
+        entry['file_paths'] = updated_file_list
+        FileListForCopyingAtTheEnd.append(updated_file_list)
+        
+        max_height = calculate_max_height(updated_file_list)
+        entry['lightbox_max_height'] = f"{max_height}px" if max_height > 0 else "0px"
+        
+        existing_folders.append(folder_path)
+        
+        # Create a copy of the entry for each theme
+        for theme in theme_list:
+            theme = theme.strip()
+            entry_copy = entry.copy()
+            entry_copy['theme'] = theme  # Set single theme for this copy
+            themes[theme][entry['year']].append(entry_copy)
+    
+    return themes, existing_folders, entries_without_id, FileListForCopyingAtTheEnd
+
+def generate_html_content(themes):
+    html_content = ""
+    year_themes = {}
+    all_entries = []
+    
+    # Collect all entries and their themes
+    for theme, year_entries in themes.items():
+        for year, entries in year_entries.items():
+            for entry in entries:
+                # Create a new entry with all themes for display
+                display_entry = entry.copy()
+                all_entries.append(display_entry)
+                
+                # Track themes for each year
+                if year not in year_themes:
+                    year_themes[year] = set()
+                year_themes[year].add(theme.lower())
+    
+    # Sort entries by year
+    try:
+        all_entries.sort(key=lambda x: int(x['year']), reverse=True)
+    except Exception as e:
+        print(f"Error sorting entries: {e}")
+        print("Entries will be unsorted")
+    
+    # Generate HTML
+    html_content += '<div class="subgroup">'
+    current_year = None
+    
+    for entry in all_entries:
+        if entry['year'] != current_year:
+            current_year = entry['year']
+            year_theme_classes = ' '.join([f"{theme}text" for theme in year_themes[current_year]])
+            html_content += f'<p class="year {year_theme_classes}">{current_year}</p>\n'
+        
+        entry_json = json.dumps(entry)
+        entry_json_escaped = html.escape(entry_json)
+        locked_class = "lost " if entry.get('locked', False) else ""
+        theme_class = f"{entry['theme'].lower()}text"
+        
+        tags = entry.get("tags", "")
+        first_tag = tags.split(",")[0] if tags else " "
+        first_tag = first_tag.replace("-", " ").replace("_", " ")
+        
+        html_content += f'<p class="title {theme_class}"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
+    
+    html_content += '</div>'
+    return html_content
+
 def compress_video_if_needed(filename, max_filesize_bytes=500000000): # Set max_filesize_bytes to your desired max size
     file_size_bytes = os.path.getsize(filename)
     if file_size_bytes > max_filesize_bytes:
@@ -120,220 +279,20 @@ def get_image_dimensions(image_path):
         img = imageio.v2.imread(image_path)
         return img.shape[1], img.shape[0]  # Returns (width, height)
 
-
-
 def get_video_dimensions(video_path):
     cmd = ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=height,width", "-of", "json", video_path]
     result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     dimensions = json.loads(result.stdout)['streams'][0]
     return dimensions['width'], dimensions['height']
 
-# Organize entries by theme and year
-themes = defaultdict(lambda: defaultdict(list))
-existing_folders = []
-existing_ids = {}
-entries_without_id = []
-FileListForCopyingAtTheEnd = []
-for entry in data:
-    # Check if the entry has a non-empty id
-    if entry['id']:
-        # Check if the id already exists
-        if entry['id'] in existing_ids:
-            print(f"Id collision detected: {entry['id']}")
-        else:
-            existing_ids[entry['id']] = True
-
-        theme_list = entry['theme'].split(',')
-        folder_theme = theme_list[0].strip()  # Get the first theme and remove leading and trailing whitespaces
-
-        folder_path = os.path.join('entries', folder_theme, entry['id'])
-        os.makedirs(folder_path, exist_ok=True)
-
-        # Check for files in the folder
-        file_list = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
-        file_list = sort_files(file_list)
-
-        updated_file_list = []
-        for index, filename in enumerate(file_list):
-            if 'DS_Store' in filename or filename.endswith('.psd'):
-                continue
-            # Get the base filename and the directory it's in
-            base_name = os.path.basename(filename)
-            dir_name = os.path.dirname(filename)
-            
-            # Split filename and extension
-            name_without_ext, extension = os.path.splitext(base_name)
-            
-            # Make the extension lowercase
-            extension = extension.lower()
-            
-            # Replace non-alphanumeric and non-dash characters with '_'
-            sanitized_base_name = re.sub(r'[^\w-]+', '_', name_without_ext)
-            
-            # Replace multiple '_' with a single '_'
-            cleaned_base_name = re.sub(r'_{2,}', '_', sanitized_base_name)
-
-            # Append the extension back to the cleaned name
-            cleaned_full_name = cleaned_base_name + extension
-
-            # Check if cleaned name is different from the original
-            if base_name != cleaned_full_name:
-                print(f"Proposed filename change: '{base_name}' to '{cleaned_full_name}' in directory '{dir_name}'.")
-                approval = input("Do you approve this change? (y/n): ")
-                if approval.lower() == 'y':
-                    new_filename = os.path.join(dir_name, cleaned_full_name)
-                    # print(f"Would rename {filename} to {new_filename}")
-                    os.rename(filename, new_filename)
-                    base_name = cleaned_full_name
-                    filename = new_filename
-                        
-            dir_name = os.path.dirname(filename)
-            extension = pathlib.Path(filename).suffix.lower()
-            if extension in [".mp4", ".avi", ".mkv", ".mov"]:  # Update the list of video file extensions as needed
-                filename = compress_video_if_needed(filename, 1000000)
-            elif extension in [".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"]:  # Update the list of image file extensions as needed
-                filename = compress_image_if_needed(filename, 1000000)
-
-            updated_file_list.append(filename)
-
-
-        fixed_width_ch = 60  # Fixed width in CH units
-        ch_to_pixel_ratio = 8  # CH to pixel ratio; usually 1ch = 8px but may vary
-        fixed_width_px = fixed_width_ch * ch_to_pixel_ratio
-        maximumHeight = 500  # Maximum height in pixels
-
-        # List to store constrained heights
-        constrained_heights = []
-
-        # Loop through files to get dimensions and calculate constrained heights
-        for filename in updated_file_list:
-            extension = pathlib.Path(filename).suffix.lower()
-            
-            if extension in [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tif", ".tiff"]:
-                original_width, original_height = get_image_dimensions(filename)
-            elif extension in [".mp4", ".avi", ".mkv", ".mov"]:
-                original_width, original_height = get_video_dimensions(filename)
-            elif extension in [".yt"]:
-                original_width, original_height = (16,9)
-            else:
-                continue  # skip unhandled file types
-
-            # Calculate normalized height if the width were fixed at 50ch
-            normalized_height = (fixed_width_px / original_width) * original_height
-
-            # Constrain the height if it exceeds the maximum allowed value
-            constrained_height = min(maximumHeight, normalized_height)
-
-            constrained_heights.append(constrained_height)
-
-        # Calculate the maximum of the constrained heights
-        if len(constrained_heights) > 0:
-            max_constrained_height = round(max(constrained_heights))
-        else:
-            max_constrained_height = 0  # Default value
-
-
-        # Now, original_widths and original_heights store the dimensions in their original pixel sizes
-
-        entry['lightbox_max_height'] = f"{max_constrained_height}px" if max_constrained_height > 0 else "0px"
-        
-        # Add file paths to entry
-        entry['file_paths'] = updated_file_list
-        FileListForCopyingAtTheEnd.append(updated_file_list)
-        # Add to existing folders
-        existing_folders.append(folder_path)
-    else:
-        print(f"Entry without id: {entry['title']}")
-        entries_without_id.append(entry)
-
-    # If multiple themes are defined, split them and add entry to each
-    theme_list = entry['theme'].split(',')
-    for theme in theme_list:
-        theme = theme.strip()  # Remove leading and trailing whitespaces
-        themes[theme][entry['year']].append(entry)
-# Check for abandoned folders
-for theme in themes.keys():
-    theme_path = os.path.join('entries', theme)
-    all_folders_in_theme = [os.path.join(theme_path, d) for d in os.listdir(theme_path) if os.path.isdir(os.path.join(theme_path, d))]
-    for folder in all_folders_in_theme:
-        if folder not in existing_folders:
-            print(f"Abandoned folder: {folder}")
-
-# Initialize HTML content
-html_content = ""
-
-# NEW route is for combining all entries into one, sorted by year
-current_year = None
-year_themes = {}  # Dictionary to track themes for each year
-
-# Sort all entries by year (descending order)
-all_entries = []
-for theme, year_entries in themes.items():
-    for year, entries in year_entries.items():
-        for entry in entries:
-            entry['year'] = year  # Ensure each entry has a 'year' key
-            entry['theme'] = theme  # Ensure each entry has a 'theme' key
-            all_entries.append(entry)
-
-            # Track themes for each year
-            if year not in year_themes:
-                year_themes[year] = set()
-            year_themes[year].add(theme.lower())
-
-# Now, let's sort the entries
-try:
-    all_entries.sort(key=lambda x: int(x['year']), reverse=True)
-except Exception as e:
-    print(f"Error sorting entries: {e}")
-    print("Entries will be unsorted")
-
-html_content += '<div class="subgroup">'
-for entry in all_entries:
-    if entry['year'] != current_year:
-        current_year = entry['year']
-        # Add theme classes to year label
-        year_theme_classes = ' '.join([f"{theme}text" for theme in year_themes[current_year]])
-        html_content += f'<p class="year {year_theme_classes}">{current_year}</p>\n'
-    
-    entry_json = json.dumps(entry)
-    entry_json_escaped = html.escape(entry_json)
-    locked_class = "lost " if entry.get('locked', False) else ""
-    theme_class = f"{entry['theme'].lower().replace(',', ' ')}text"
-    
-    tags = entry.get("tags", "")
-    first_tag = tags.split(",")[0] if tags else " "
-    first_tag = first_tag.replace("-", " ").replace("_", " ")
-    
-    html_content += f'<p class="title {theme_class}"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
-html_content += '</div>'
-
-
-# OLD route for keeping entries in themes, sorted by year
-# Iterate through themes and years and build HTML content
-# for theme, years in themes.items():
-#     html_content += f'<div class="subgroup {theme}text">\n'
-
-#     # Sort years in descending order
-#     for year in sorted(years.keys(), reverse=True):
-#         html_content += f'<p class="year">{year}</p>\n'
-#         # Iterate through entries for this theme and year
-#         for entry in years[year]:
-#             entry_json = json.dumps(entry)
-#             entry_json_escaped = html.escape(entry_json)
-#             if not entry["id"]:
-#                 entry["locked"] = True
-#             locked_class = "lost " if entry['locked'] else ""
-#             # html_content += f'<p class="title"><a target="_blank" href="{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span>{entry["span"]}</span> {entry["title"]}</a></p>\n'
-#             tags = entry.get("tags", "")
-#             first_tag = tags.split(",")[0] if tags else " "
-#             first_tag = first_tag.replace("-", " ").replace("_", " ")
-#             html_content += f'<p class="title"><a target="_blank" href="#{entry["id"]}" data-entry=\'{entry_json_escaped}\' class="{locked_class}subtext"><span class="small">{first_tag}</span> {entry["title"]}</a></p>\n'
-
-#     html_content += '</div>\n'
+# Process entries and generate HTML
+themes, existing_folders, entries_without_id, FileListForCopyingAtTheEnd = process_entries(data)
+html_content = generate_html_content(themes)
 
 # Write to output file
 with open('output.html', 'w') as file:
     file.write(html_content)
+
 
 # Print entries without id
 if entries_without_id:
