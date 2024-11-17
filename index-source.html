@@ -388,7 +388,7 @@ function populateLightbox(entry) {
                 case /\.(jpg|jpeg|png|webp|gif)$/i.test(file):
                     mediaElement = document.createElement('img');
                     mediaElement.setAttribute("img-data-src", file);
-                    mediaElement.loading = "lazy"; // Enables native lazy loading
+                    mediaElement.loading = "lazy"; // Enables native lazy loading               
                     break;
                 case /\.(mp4|mov)$/i.test(file):
                     mediaElement = document.createElement('video');
@@ -416,6 +416,10 @@ function populateLightbox(entry) {
             
             
             if (mediaElement) {
+                // makes the background of the element on loaded to hide spinner
+                mediaElement.onload = () => {
+                        mediaElement.style.backgroundColor = 'black'; 
+                };     
                 mediaElement.classList.add('slide');
                 if (isFirst) {
                     mediaElement.classList.add('active');

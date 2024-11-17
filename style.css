@@ -86,17 +86,31 @@ body.using-mouse button:active {
 	width: 50ch;
 	vertical-align: middle;
 	justify-content:left;
+	display: flex; /* Add this */
 }
 
 .lds-ellipsis {
-	position: absolute;
-	z-index: 1;
+    position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	width: 50px;
-	height: 50px;
-  }
+    width: 50px;
+    height: 50px;
+    pointer-events: none; /* Add this */
+}
+/* Add media query adjustments */
+@media (max-width: 1200px) {
+    .lds-ellipsis {
+        left: calc(50% + 1.5rem); /* Adjust for the margin */
+    }
+}
+
+@media (max-width: 600px) {
+    .lds-ellipsis {
+        left: 50%; /* Reset for mobile */
+    }
+}
   .lds-ellipsis div {
 	position: absolute;
 	top: 33px;
