@@ -540,6 +540,7 @@ babylon {
   animation: 0.01s ease-out 0s 1 slideIn;
   max-width: 95vw;
   max-height: 90vh;
+  
 }
 #entry-date{
 	padding-right: 6px;
@@ -683,11 +684,12 @@ body{
 		background-color: antiquewhite;
 		color: black;
 	}
-@media (min-width: 1200px){
-	#lightbox #content{
-		transform: translateX(-8vw);
+	@media (min-width: 1200px) and (orientation: landscape) {
+		#lightbox #content {
+			transform: translateX(-8vw);
+		}
 	}
-}
+	
 
 @media (max-width: 1200px){
 #entry-media {
@@ -714,7 +716,7 @@ body{
 	justify-content: left;
 	background: linear-gradient(to left, transparent, #0000008d);
    background: black;
-   
+   box-sizing: border-box; /* Add this to include padding in width calculation */
 	   }
 	   #nextSlideButton{
 		   z-index: 100;
