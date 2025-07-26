@@ -1,6 +1,9 @@
 # Enable clean URLs
 RewriteEngine On
 
+# Redirect /colter to root
+RewriteRule ^colter/?$ / [R=301,L]
+
 # Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
