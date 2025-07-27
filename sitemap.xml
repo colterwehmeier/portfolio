@@ -566,22 +566,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://colter.us/research/filter/wikar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://colter.us/research/filter/haunted-ps1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://colter.us/research/filter/architecture</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://colter.us/research/filter/ict</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/research/filter/madvent</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/research/filter/report</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -592,6 +592,11 @@
   </url>
   <url>
     <loc>https://colter.us/games/peoplessky</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/meshair</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -636,6 +641,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/ar-spatial/beep</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/munich</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -666,6 +676,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/ar-spatial/joteva</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/ict-for-urban-heritage-palermo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -681,6 +696,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/engagement/earthvis</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/timelineatlas</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/engagement/quipit_table</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -691,7 +716,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/engagement/filter/ar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/engagement/filter/research</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://colter.us/engagement/filter/citizen-science</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/engagement/filter/wikar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -706,22 +746,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/engagement/filter/ict</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/engagement/filter/workshop</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/engagement/filter/madvent</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://colter.us/games/peoplessky</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/meshair</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -756,6 +786,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/ar-spatial/beep</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/munich</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -781,6 +816,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/ar-spatial/joteva</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/ict-for-urban-heritage-palermo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -792,6 +832,16 @@
   </url>
   <url>
     <loc>https://colter.us/games/minotaur</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/engagement/earthvis</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/timelineatlas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -906,12 +956,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/design/filter/art</loc>
+    <loc>https://colter.us/design/filter/wikar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/design/filter/wikar</loc>
+    <loc>https://colter.us/design/filter/art</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -921,12 +971,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/design/filter/competition</loc>
+    <loc>https://colter.us/design/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/design/filter/workshop</loc>
+    <loc>https://colter.us/design/filter/competition</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -937,6 +987,11 @@
   </url>
   <url>
     <loc>https://colter.us/ar-spatial/kogler2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/meshair</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -962,6 +1017,11 @@
   </url>
   <url>
     <loc>https://colter.us/ar-spatial/munich</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/beep</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -996,7 +1056,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/earthvis</loc>
+    <loc>https://colter.us/engagement/earthvis</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1296,12 +1356,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/filter/graphic</loc>
+    <loc>https://colter.us/media/filter/data viz</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/filter/vfx</loc>
+    <loc>https://colter.us/media/filter/ar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/media/filter/wikar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1311,17 +1376,27 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/filter/film</loc>
+    <loc>https://colter.us/media/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/filter/matte-painting</loc>
+    <loc>https://colter.us/ar-spatial/meshair</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colter.us/media/uniteposter</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/beep</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/joteva</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1336,12 +1411,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://colter.us/media/earthvis</loc>
+    <loc>https://colter.us/engagement/earthvis</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colter.us/ar-spatial/guchibytes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/ar-spatial/timelineatlas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
