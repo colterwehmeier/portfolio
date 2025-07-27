@@ -286,7 +286,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/games/filter/research</loc>
+    <loc>https://colter.us/games/filter/analytics</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -561,17 +561,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/research/filter/clowder</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://colter.us/research/filter/wikar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://colter.us/research/filter/haunted-ps1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/research/filter/clowder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -612,16 +612,6 @@
   </url>
   <url>
     <loc>https://colter.us/tools/unite</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/publications/minotaurretrospective</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/publications/cordobacourtretrospective</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -741,7 +731,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/engagement/filter/clowder</loc>
+    <loc>https://colter.us/engagement/filter/analytics</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -871,12 +861,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/publications/filter/heritage</loc>
+    <loc>https://colter.us/publications/filter/citizen-science</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/publications/filter/citizen-science</loc>
+    <loc>https://colter.us/publications/filter/heritage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -901,12 +891,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://colter.us/publications/minotaurretrospective</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/publications/cordobacourtretrospective</loc>
+    <loc>https://colter.us/games/cordobacourt</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -927,6 +912,11 @@
   </url>
   <url>
     <loc>https://colter.us/ar-spatial/ict-for-urban-heritage-palermo</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/games/minotaur</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
