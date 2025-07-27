@@ -1,879 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Colter Wehmeier | Digital Heritage, Interactive Environments & Game Design</title>
-<meta name="description" content="Colter Wehmeier is a dual-PhD candidate and interaction designer specializing in digital heritage, virtual environments, and participatory platforms. With a background in architecture and game development, his work bridges computational innovation and cultural memory.">
-<meta name="author" content="Colter Wehmeier">
-
-<!-- Open Graph / Social Media Meta Tags -->
-<meta property="og:title" content="Colter Wehmeier | Digital Heritage, Interactive Environments & Game Design">
-<meta property="og:description" content="Dual-PhD candidate and interaction designer exploring digital heritage, virtual environments, and participatory platforms. Bridging architecture, game development, and computational innovation.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://colter.us">
-
-<!-- Academic/Professional Meta Tags -->
-<meta name="keywords" content="digital heritage, informatics, cultural heritage, virtual environments, BIM, architectural digital humanities, participatory research, interactive interfaces, game design, interaction design, architecture, computational innovation, crowd intelligence, collective memory">
-<meta name="robots" content="index, follow">
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "name": "Colter Wehmeier",
-    "jobTitle": "PhD Candidate & Interaction Designer",
-    "affiliation": [
-        {
-            "@type": "Organization",
-            "name": "University of Illinois Urbana-Champaign",
-            "department": "Informatics (iSchool), National Center for Supercomputing Applications"
-        },
-        {
-            "@type": "Organization",
-            "name": "The Cyprus Institute",
-            "department": "Science and Technology in Cultural Heritage: Virtual Environments Laboritory"
-        }
-    ],
-    "url": "https://colter.us",
-    "description": "Researcher and designer specializing in digital heritage, interactive environments, and game development. Bridging architecture, computational innovation, and cultural studies.",
-    "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Interactive Sfotware Developer, Designer, Researcher",
-        "description": "Expertise in designing interactive environments, participatory platforms, and digital heritage visualization."
-    },
-    "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "University of Illinois Urbana-Champaign, The Cyprus Institute"
-    }
-}
-</script>
-
-<link rel="icon" href="https://colterwehmeier.github.io/portfolio/favicon.ico" type="image/x-icon">
-<script src="https://colterwehmeier.github.io/portfolio/js/jquery-3.6.0.min.js"></script>
-<!-- <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> -->
-<!-- <script src="https://cdn.babylonjs.com/babylon.js"></script> -->
-<!-- <link rel="stylesheet" type="text/css" href="https://colterwehmeier.github.io/portfolio/style.css"> -->
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colter - Colter</title>
+    
+    <meta name="title" content="Colter Wehmeier - Interaction Designer & Researcher">
+    <meta name="description" content="Dual-PhD candidate exploring digital experiences through games, spatial computing, and community engagement. Portfolio of interactive projects, research, and design work.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://colter.us">
+    <meta property="og:title" content="Colter Wehmeier - Interaction Designer & Researcher">
+    <meta property="og:description" content="Dual-PhD candidate exploring digital experiences through games, spatial computing, and community engagement. Portfolio of interactive projects, research, and design work.">
+    <meta property="og:image" content="https://colter.us/entries/junk/bio/IMG_20210622_011350.jpg">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://colter.us">
+    <meta property="twitter:title" content="Colter Wehmeier - Interaction Designer & Researcher">
+    <meta property="twitter:description" content="Dual-PhD candidate exploring digital experiences through games, spatial computing, and community engagement. Portfolio of interactive projects, research, and design work.">
+    <meta property="twitter:image" content="https://colter.us/entries/junk/bio/IMG_20210622_011350.jpg">
+    
+    <link rel="canonical" href="https://colter.us">
+    <meta name="author" content="Colter Wehmeier">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="/static/node.css">
 </head>
 <body>
-<div>
-    <video id="bgVideo" loop muted autoplay playsinline playsInline style="opacity: 0;" oncanplay="this.style.opacity='1';">
-        <source src="https://colterwehmeier.github.io/portfolio/assets/garden_fast.mp4" type="video/mp4">
-      </video>
-    </div>
-<!-- takes up space to push content down the page in mobile mode -->
-<div id="spacer"></div>
-<!-- contains the current items loaded from output.html -->
-
-<img src="./svg/bub.svg" alt="BIO" style="top:314px; left:16px;" class="bub themes bubsvg" id="biobub">
-
-
-<input type="checkbox" id="game-text" name="theme" class="theme-checkbox">
-<label for="game-text" class="theme-label" style="top:185px; left:35px;">
-    <img src="./svg/gametext.svg" alt="GAMES" class="themes">
-</label>
-
-<input type="checkbox" id="edu-text" name="theme" class="theme-checkbox">
-<label for="edu-text" class="theme-label" style="top:35px; left:38px;">
-    <img src="./svg/edutext.svg" alt="EDU" class="themes">
-</label>
-
-<input type="checkbox" id="junk-text" name="theme" class="theme-checkbox">
-<label for="junk-text" class="theme-label" style="top:260px; left:38px;">
-    <img src="./svg/junktext.svg" alt="ETC" class="themes">
-</label>
-
-<input type="checkbox" id="wikar-text" name="theme" class="theme-checkbox">
-<label for="wikar-text" class="theme-label" style="top:110px; left:34px;">
-    <img src="./svg/wikartext.svg" alt="WIKAR" class="themes">
-</label>
-<script>
-    // Add this JavaScript to handle the radio-like behavior
-document.addEventListener('DOMContentLoaded', function() {
-    const checkboxes = document.querySelectorAll('.theme-checkbox');
-    
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function(e) {
-            // If this checkbox was already checked, uncheck it
-            if (this.dataset.wasChecked === 'true') {
-                this.checked = false;
-                this.dataset.wasChecked = 'false';
-            } else {
-                // Uncheck all other checkboxes
-                checkboxes.forEach(cb => {
-                    cb.checked = false;
-                    cb.dataset.wasChecked = 'false';
-                });
-                // Check this checkbox
-                this.checked = true;
-                this.dataset.wasChecked = 'true';
-            }
-        });
-        this.checked = false;
-    });
-});
-</script>
-
-
-<div id="container"><div class="subgroup"><p class="year junktext gametext blogtext">2024</p>
-<p class="title gametext"><a target="_blank" href="#genesis24" data-entry='{&quot;title&quot;: &quot;GENESIS 2K24&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;bitbash, solo, festival, alt-ctrl, game&quot;, &quot;id&quot;: &quot;genesis24&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://colter.us/#genesis&#x27;&gt;&lt;i&gt;GENESIS&lt;/i&gt;&lt;/a&gt; (2023) was remade for &lt;a href=&#x27;https://bitbashchicago.com/&#x27; target=&#x27;_blank&#x27;&gt;BitBash 2024&lt;/a&gt; as a head-tracked rhythmic rail-shooter. We traced &lt;i&gt;&lt;a href=&#x27;https://en.wikipedia.org/wiki/Rez_(video_game)&#x27; target=&#x27;_blank&#x27;&gt;Rez&#x27;s&lt;/a&gt;&lt;/i&gt; (2001) cyberspace aesthetics back to their genesis in Chicago&#x27;s technology and art scenes: Set to Phuture&#x27;s genre-defining &lt;i&gt;&lt;a href=&#x27;https://en.wikipedia.org/wiki/Acid_Tracks&#x27; target=&#x27;_blank&#x27;&gt;Acid Tracks&lt;/a&gt;&lt;/i&gt; (1985), &lt;i&gt;GENESIS&lt;/i&gt; reimagines the Electronic Visualization Laboratory&#x27;s 3D vector graphics for &lt;i&gt;&lt;a href=&#x27;https://www.evl.uic.edu/events/2297&#x27; target=&#x27;_blank&#x27;&gt;Star Wars&lt;/a&gt;&lt;/i&gt; (1977), which inspired countless &lt;a href=&#x27;https://en.wikipedia.org/wiki/Star_Wars:_The_Empire_Strikes_Back_(1985_video_game)&#x27; target=&#x27;_blank&#x27;&gt;vector-based games&lt;/a&gt;. It incorporates head-tracking techniques derived from EVL&#x27;s &lt;a href=&#x27;https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment&#x27; target=&#x27;_blank&#x27;&gt;CAVE&lt;/a&gt; system (1992), a VR precursor. &lt;i&gt;GENESIS&lt;/i&gt; builds upon this heritage to recover technological wonder. Made with &lt;a href=&#x27;https://charlesvoita.com/&#x27;&gt; Charles Voita&lt;/a&gt; and &lt;a href=&#x27;https://jewelblind.bandcamp.com/&#x27;&gt; Bill Derrah&lt;/a&gt;.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis24/c__1_genesis-24-1.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis24/c_IMG_2687.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis24/c_IMG_2690.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis24/c_IMG_2694.webm&quot;]}' class="subtext"><span class="small">bitbash</span> GENESIS 2K24</a></p>
-<p class="title gametext"><a target="_blank" href="#soup1" data-entry='{&quot;title&quot;: &quot;Soap Soup: Sodium&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, solo, art, collaboration&quot;, &quot;id&quot;: &quot;soup1&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://itch.io/c/4548354/soup-likes&quot;, &quot;description&quot;: &quot;SOAP SOUP is a mod based on an obscure Japanese minimalist art-game from 2007. I was invited to produce a room for a large 2024 release. My room is a tribute to the warm glow of sodium vapor street lamps. To create the atmosphere, I designed a soundscape with central Illinois cicadas, a distant summer storm, and the crunch of asphalt underfoot. The visuals rely on a high sensitivity to light and shadow, and sophisticated spherical projection mapping was used to create realistic textures from the perspective of a person standing in a parking lot.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/soup1/c__1_2.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/soup1/c_SOUP_trimmed.webm&quot;]}' class="subtext"><span class="small">game</span> Soap Soup: Sodium</a></p>
-<p class="title gametext"><a target="_blank" href="#egw24" data-entry='{&quot;title&quot;: &quot;Experimental Games Workshop @ GDC&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;conf. presentation, game, gdc, chainged, collaboration, haunted-ps1&quot;, &quot;id&quot;: &quot;egw24&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.experimentalgameworkshop.org/&quot;, &quot;description&quot;: &quot;Adam Pype and I were invited to present C.H.A.I.N.G.E.D. and our work with the Haunted PlayStation 1 collective at the esteemed &lt;a href=&#x27;https://www.experimentalgameworkshop.org/&#x27; target=&#x27;_blank&#x27;&gt;Experimental Games Workshop (EGW)&lt;/a&gt; during the Game Developers Conference (GDC) in San Francisco. The EGW, a GDC tradition spanning over 20 years, celebrates games at the forefront of gameplay, organization, and creative direction.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/4104d1b997ee6fa17e7e0c7f3072201d.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/1_colter.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/2_adam.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/3_workshop.jpg&quot;]}' class="subtext"><span class="small">conf. presentation</span> Experimental Games Workshop @ GDC</a></p>
-<p class="title blogtext"><a target="_blank" href="#egw24" data-entry='{&quot;title&quot;: &quot;Experimental Games Workshop @ GDC&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;conf. presentation, game, gdc, chainged, collaboration, haunted-ps1&quot;, &quot;id&quot;: &quot;egw24&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.experimentalgameworkshop.org/&quot;, &quot;description&quot;: &quot;Adam Pype and I were invited to present C.H.A.I.N.G.E.D. and our work with the Haunted PlayStation 1 collective at the esteemed &lt;a href=&#x27;https://www.experimentalgameworkshop.org/&#x27; target=&#x27;_blank&#x27;&gt;Experimental Games Workshop (EGW)&lt;/a&gt; during the Game Developers Conference (GDC) in San Francisco. The EGW, a GDC tradition spanning over 20 years, celebrates games at the forefront of gameplay, organization, and creative direction.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/4104d1b997ee6fa17e7e0c7f3072201d.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/1_colter.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/2_adam.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/egw24/3_workshop.jpg&quot;]}' class="subtext"><span class="small">conf. presentation</span> Experimental Games Workshop @ GDC</a></p>
-<p class="title junktext"><a target="_blank" href="#qr1" data-entry='{&quot;title&quot;: &quot;Better Qr Codes&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;web tool&quot;, &quot;id&quot;: &quot;qr1&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;First attempt to make QR codes more presentable graphically, using a custom python pipeline. I was wondering how they can hint at what&#x27;s linked in them, or at least have some personality, while still being readable with all the default scanners built into phones. Lastly, I was figuring out the actual critical elements for machine recognition and ways to push against that edge.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/9cb2cbc6b551ae489906b617c4e68fc5.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/qr1/c__1_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/qr1/2_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/qr1/3_.png&quot;]}' class="subtext"><span class="small">web tool</span> Better Qr Codes</a></p>
-<p class="title junktext"><a target="_blank" href="#lillamp" data-entry='{&quot;title&quot;: &quot;Lil Lamp&quot;, &quot;year&quot;: &quot;2024&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, 3d-print, fabrication&quot;, &quot;id&quot;: &quot;lillamp&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A small lamp designed with Taisuke Wakabayashi&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/ee65340aa73603608cae5133a8b65592.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/lillamp/IMG_2905.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Lil Lamp</a></p>
-<p class="year wikartext junktext gametext blogtext">2023</p>
-<p class="title gametext"><a target="_blank" href="#peoplessky" data-entry='{&quot;title&quot;: &quot;The People&#x27;s Sky&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, haunted-ps1, analytics, research, citizen-science, clowder&quot;, &quot;id&quot;: &quot;peoplessky&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://culture.itch.io/the-peoples-sky&quot;, &quot;description&quot;: &quot;The &lt;a href=&#x27;https://culture.itch.io/the-peoples-sky&#x27; target=&#x27;_blank&#x27;&gt;People&#x27;s Tree project&lt;/a&gt; explored community building within networked games, enabling players to design items, append messages, and place them in a communal space. In its fourth iteration, we introduced several enhancements, including data-transfer optimizations and new &#x27;trace&#x27; tracking and visualization features. These allow players to see where others have explored within the game, while also offering more comprehensive analytic logs for post-experiment analysis. Additionally, we developed a simple web application for moderation tasks, streamlining the process by moving it outside the Unity project. &quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplessky/c_mov1.webm&quot;]}' class="subtext"><span class="small">game</span> The People's Sky</a></p>
-<p class="title gametext"><a target="_blank" href="#madvent4" data-entry='{&quot;title&quot;: &quot;Madvent 4: End of the Line&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, launcher haunted-ps1&quot;, &quot;id&quot;: &quot;madvent4&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/madvent4&quot;, &quot;description&quot;: &quot;Madvent is an annual event organized by the Haunted PS1 collective, featuring contributions from approximately 30 creators. Each day in December, a new game is released. As a lead coordinator, I am responsible for developing the launcher. This year, we&#x27;ve designed the launcher to feature a fully dynamic train journeying through various biomes and navigating twisting terrain. &lt;a href=&#x27;https://hauntedps1.itch.io/madvent4&#x27; target=&#x27;_blank&#x27;&gt;The project can be downloaded from itch.io.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent4/1_output2.gif&quot;]}' class="subtext"><span class="small">game</span> Madvent 4: End of the Line</a></p>
-<p class="title gametext"><a target="_blank" href="#chain2" data-entry='{&quot;title&quot;: &quot;C.H.A.I.N.G.E.D.&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, collaboration, haunted-PS1&quot;, &quot;id&quot;: &quot;chain2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://papercookies.itch.io/chainged&quot;, &quot;description&quot;: &quot;The follow-up project to &#x27;Chain&#x27;, a large-scale collaborative game. After each game, a choice is presented, with two following games representing a fork in the timeline. My key contribution was designing the technical and project structure that enabled story branching to occur within the *launcher* itself, rather than individual games. This architectural decision made the project feasible to implement with over 40 contributors working in different engines. You can &lt;a href=&#x27;https://papercookies.itch.io/chainged&#x27; target=&#x27;_blank&#x27;&gt;play the full collection here&lt;/a&gt;. &lt;br&gt;&lt;a href=&#x27;https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game&#x27; target=&#x27;_blank&#x27;&gt;Interview&lt;/a&gt;.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/chain2/1_chain2.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/chain2/c__2_trailer.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/chain2/vid.yt&quot;]}' class="subtext"><span class="small">game</span> C.H.A.I.N.G.E.D.</a></p>
-<p class="title gametext"><a target="_blank" href="#genesis" data-entry='{&quot;title&quot;: &quot;Genesis&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;Chainged, solo, haunted-ps1,game, collaboration, haunted-PS1&quot;, &quot;id&quot;: &quot;genesis&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://papercookies.itch.io/chainged&quot;, &quot;description&quot;: &quot;Genesis was my submission for the &lt;a href=&#x27;https://papercookies.itch.io/chainged&#x27; target=&#x27;_blank&#x27;&gt;C.H.A.I.N.G.E.D. collaboration&lt;/a&gt;, drawing inspiration from vector graphics for a light gun game that reimagines the credit crawl game from Super Smash Bros Melee (2001). This project served as a platform to explore new technologies, including motion-captured camera techniques, synchronizing gameplay with music, a blocking/scripting system for sequencing events, and vector-based rendering.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis/c__1_ninja-genesis.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis/c_2022-08-22_18-59-45.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/genesis/vhs.glb&quot;]}' class="subtext"><span class="small">Chainged</span> Genesis</a></p>
-<p class="title blogtext"><a target="_blank" href="#surveysNecessary" data-entry='{&quot;title&quot;: &quot;Are Surveys Necessary? Designing Virtual Environments for Participatory Research&quot;, &quot;description&quot;: &quot;This chapter argues that interactive Virtual Environments (VEs) can serve as powerful tools for participatory research, moving beyond the limitations of traditional surveys in the Digital Humanities. I present a case study of a prototype VE designed for a workshop on the intangible cultural heritage of C\u00f3rdoba&#x27;s communal patios. The environment functioned as an immersive online \u2018guest book\u2019 where hundreds of users could asynchronously decorate a shared virtual space and leave messages for one another. The work introduces key design strategies for asynchronous interaction, such as &#x27;claims&#x27; and &#x27;traces,&#x27; which allow participants to engage with artifacts left by others. Furthermore, it details a novel workflow that uses Large Language Models (LLMs) to automate the qualitative coding and moderation of text contributions from participants. Published in the 2025 Bloomsbury Academic volume, &lt;i&gt;Clever Design in Critical Times: Conceptualizing the Callidocene&lt;/i&gt;, this research explores how VEs can generate rich, context-aware datasets for more inclusive heritage studies. The book is available from &lt;a href=\&quot;https://www.bloomsbury.com/uk/clever-design-in-critical-times-9781978790179/\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;Bloomsbury Academic&lt;/a&gt;.&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;Book Chapter, academic, Digital Humanities, Participatory Research, Virtual Environments, ICT, citizen-science, games&quot;, &quot;id&quot;: &quot;surveysNecessary&quot;, &quot;locked&quot;: false, &quot;thumbnail_override&quot;: &quot;static/thumbs/3dbc0a4fbe70f23f6d79d3bf50e86fca.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/surveysNecessary/1_cover.jpg&quot;]}' class="subtext"><span class="small">Book Chapter</span> Are Surveys Necessary? Designing Virtual Environments for Participatory Research</a></p>
-<p class="title blogtext"><a target="_blank" href="#metaframing" data-entry='{&quot;title&quot;: &quot;MetaFraming: A Methodology for Democratizing Heritage Interpretation through Wiki Surveys&quot;, &quot;description&quot;: &quot;This paper introduces MetaFraming, a participatory methodology using three distinct AI pipelines (powered by GPT-3.5) to democratize heritage study. The first generates hundreds of &#x27;seed&#x27; propositions for a wiki survey from background research, controlled for tone and topic. The second interprets user-submitted comments by providing the LLM with crucial context about their preceding interactions. The third automatically codes comments for sentiment and topics, which speeds up qualitative analysis and aids in abuse detection. The methodology was developed through a case study on Le Corbusier\u2019s Unit\u00e9 d\u2019habitation. &lt;a href=\&quot;https://dl.acm.org/doi/10.1145/3623462.3623465\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;Read the full paper here&lt;/a&gt;.&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;Conf. Publication, Conf. Presentation, academic, AI, Digital Humanities, Wiki Survey, Participatory Methods, ICT, citizen-science&quot;, &quot;id&quot;: &quot;metaframing&quot;, &quot;locked&quot;: false, &quot;thumbnail_override&quot;: &quot;static/thumbs/cd3f143a8e00726018acc533c91076ca.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/metaframing/Screenshot_2023-09-29_at_1_25_41_PM.png&quot;]}' class="subtext"><span class="small">Conf. Publication</span> MetaFraming: A Methodology for Democratizing Heritage Interpretation through Wiki Surveys</a></p>
-<p class="title blogtext"><a target="_blank" href="#unite" data-entry='{&quot;title&quot;: &quot;Unit\u00e9 d&#x27;Habitation Wikisurvey&quot;, &quot;description&quot;: &quot;A direct link to the &lt;a href=&#x27;https://wikisurvey.web.illinois.edu/&#x27; target=&#x27;_blank&#x27;&gt;wiki survey tool&lt;/a&gt; we developed, implementing methods from two previous wiki survey systems: all our ideas, and POLIS, as well as some new ideas. See Metaframing paper for more details.&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;WebTool, architecture, heritage, wikisurvey, web, academic, ICT, citizen-science&quot;, &quot;id&quot;: &quot;unite&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://wikisurvey.web.illinois.edu/&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/8ba30e2cf5f1e5100bcad2c37a96310b.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/unite/c__1_unite-2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/unite/admin-1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/unite/interest-groups.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/unite/survey-combined.png&quot;]}' class="subtext"><span class="small">WebTool</span> Unité d'Habitation Wikisurvey</a></p>
-<p class="title blogtext"><a target="_blank" href="#minotaurretrospective" data-entry='{&quot;title&quot;: &quot;Minotaur Report&quot;, &quot;description&quot;: &quot;Minotaur was a prototype for our plugin to sync data between Clowder and Unity. This game records play sessions and sends summaries back to Clowder. In &lt;a href=&#x27;https://colter.us/experiments/minotaur/&#x27; target=&#x27;_blank&#x27;&gt;this report&lt;/a&gt;, we analyze the results from 3 years of play and 1000s of sessions.&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;Game Retrospective, report, analytics, games, research, clowder&quot;, &quot;id&quot;: &quot;minotaurretrospective&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://colter.us/experiments/minotaur/&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/06aa8900c6cb425f7c9791b0d1efdc77.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/minotaurretrospective/c_capture.png&quot;]}' class="subtext"><span class="small">Game Retrospective</span> Minotaur Report</a></p>
-<p class="title blogtext"><a target="_blank" href="#cordobacourtretrospective" data-entry='{&quot;title&quot;: &quot;C\u00f3rdoba Court Report&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;description&quot;: &quot;Building off the People&#x27;s Tree experiments, we developed a virtual courtyard space online. Within this space, players can read and submit messages attached to small decorative plates and plants. &lt;a href=&#x27;https://dariahcloud.web.illinois.edu/cordoba/court_report/&#x27; target=&#x27;_blank&#x27;&gt;This report&lt;/a&gt; analyses the content posted and examines some of the behaviors observed within the space.&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;Game Retrospective, report, analytics, games&quot;, &quot;id&quot;: &quot;cordobacourtretrospective&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://dariahcloud.web.illinois.edu/cordoba/court_report/&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/b5281b1436db43aa60a5d24e33b29ddd.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/cordobacourtretrospective/c_1.png&quot;]}' class="subtext"><span class="small">Game Retrospective</span> Córdoba Court Report</a></p>
-<p class="title wikartext"><a target="_blank" href="#kogler2" data-entry='{&quot;title&quot;: &quot;Otto Wagner Areal - Peter Kogler&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, art-installation, AR, shaders, modelling, wikar&quot;, &quot;id&quot;: &quot;kogler2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://wien.orf.at/stories/3219229/&quot;, &quot;description&quot;: &quot;Served as technical producer for an AR sculpture garden featuring Peter Kogler&#x27;s unmade digital sculptures at Wiener Gesundheitsverbund, an Otto Wagner-designed 19th century medical campus, now reused as a university and culture campus. As part of a &lt;a href=&#x27;https://wien.orf.at/stories/3219229/&#x27; target=&#x27;_blank&#x27;&gt;promotional event&lt;/a&gt;, my role involved taking the artist&#x27;s intricate 3D meshes, creating site-specific shaders to simulate reflection and lighting, and then working on-site with Kogler to place, scale, and rotate the virtual works. To facilitate this, I added features to Wikar for real-time metadata syncing from our Clowder server, enabling the rapid placement of eight complex sculptures in a single day.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/e87c940f39727f1e2942e8de07ce2e09.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/kogler2/poster.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> Otto Wagner Areal - Peter Kogler</a></p>
-<p class="title wikartext"><a target="_blank" href="#meshair" data-entry='{&quot;title&quot;: &quot;MESH AIRFLOW Visualization&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;data viz, cyprus institute, research, shaders, AR, architecture, sustainability, wikar&quot;, &quot;id&quot;: &quot;meshair&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Created a visualization of airflow patterns for a secondary facade system designed by the Cyprus Institute. I took the researchers&#x27; 2D computational fluid dynamics (CFD) simulations (heat and flow maps) and UV mapped them onto a 1:1 scale 3D model of the facade. I then built a shader to animate these maps with particles, inspired by how the game *Portal 2* visualizes fluid dynamics. In the final AR application, a user can scan a QR code on the test building and see the internal &#x27;stack effect&#x27; in action, with callouts indicating sensor locations.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/1e0b4a0867f5d67783decf7eaaeb338f.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/meshair/c_MESH2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/meshair/c_Screen_Recording_2023-07-15.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/meshair/Screenshot_2023-07-20_at_9_34_36_PM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/meshair/vid.yt&quot;]}' class="subtext"><span class="small">data viz</span> MESH AIRFLOW Visualization</a></p>
-<p class="title wikartext"><a target="_blank" href="#wikar14" data-entry='{&quot;title&quot;: &quot;WIKAR v14&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;Tool Update, AR, performance, Clowder, wikar&quot;, &quot;id&quot;: &quot;wikar14&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;In preparation for new AR projects, I updated Wikar to improve performance and add features. This included implementing a multi-tiered caching system that checks for updates on the Clowder server before downloading content, enabling an offline mode for sculpture gardens with poor wifi. I also developed an iterative solver that uses a scan&#x27;s confidence rating to progressively refine the AR scene&#x27;s origin, maximizing placement accuracy as a user moves around a QR code. Lastly, an optimized mesh slicer system to allow users to explore 3d cross sections of complex models such as buildings.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/9ce209f27be08c45d296be4b5ce736ec.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/1_wikar1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/2_vid.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/shader1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/c_shader2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/wikar2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikar14/wikar5.jpg&quot;]}' class="subtext"><span class="small">Tool Update</span> WIKAR v14</a></p>
-<p class="title junktext"><a target="_blank" href="#pano" data-entry='{&quot;title&quot;: &quot;360 Visualizer&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;web tool&quot;, &quot;id&quot;: &quot;pano&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/junk/pano/html/?id=three&quot;, &quot;description&quot;: &quot;Developed a tool for the Cyprus Institute to develop immersive 360 degree panoramas with text and recorded sound for exhibitions. The webapp works in all major browsers and uses device compass/gyro (or click and drag) to rotate the panorama intuitively. &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/junk/pano/html/?id=three&#x27; target=&#x27;_blank&#x27;&gt;A demo can be found here.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/pano/c_ninja.webm&quot;]}' class="subtext"><span class="small">web tool</span> 360 Visualizer</a></p>
-<p class="title junktext"><a target="_blank" href="#lilbable" data-entry='{&quot;title&quot;: &quot;Lil Table&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, 3d-print, hifi, fabrication&quot;, &quot;id&quot;: &quot;lilbable&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A small console table for an amplifier. 3D printed legs on a recycled cabinet door top.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/1f75af2a3c411338b080c491f00ade20.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/lilbable/c__1_lil-table.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/lilbable/c__2_20230114_161749.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Lil Table</a></p>
-<p class="title junktext"><a target="_blank" href="#uniteposter" data-entry='{&quot;title&quot;: &quot;Unit\u00e9 d&#x27;Habitation Poster&quot;, &quot;year&quot;: &quot;2023&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;Graphic&quot;, &quot;id&quot;: &quot;uniteposter&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;To draw exhibition visitors to our interactive survey webapp, we designed a poster with some basic information, a QR code, and URL to visit the site. The aim was to use a simple visual element to imply a mystery.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/979c9c64abc21de9a941d5a77de11c48.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/uniteposter/c__1_poster-final.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/uniteposter/2_Screenshot2023-05-07at12_54_02AM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/uniteposter/c_poster3.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/uniteposter/poster6.jpg&quot;]}' class="subtext"><span class="small">Graphic</span> Unité d'Habitation Poster</a></p>
-<p class="year wikartext junktext gametext blogtext">2022</p>
-<p class="title gametext"><a target="_blank" href="#madvent3" data-entry='{&quot;title&quot;: &quot;Madvent Calendar 3: Necrosis&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, haunted-ps1, tool, launcher&quot;, &quot;id&quot;: &quot;madvent3&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/madvent3&quot;, &quot;description&quot;: &quot;Madvent is an annual event organized by the Haunted PS1 collective, featuring around 30 contributors. Each day in December, a new game is released. As a lead coordinator, my role includes developing the &lt;a href=&#x27;https://hauntedps1.itch.io/madvent3&#x27; target=&#x27;_blank&#x27;&gt;launcher&lt;/a&gt; that facilitates access to these daily game releases.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent3/1_mad3.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent3/2_mad2.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent3/vid.yt&quot;]}' class="subtext"><span class="small">game</span> Madvent Calendar 3: Necrosis</a></p>
-<p class="title gametext"><a target="_blank" href="#cordobacourt" data-entry='{&quot;title&quot;: &quot;C\u00f3rdoba Court&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, solo, social experiment, citizen-science, clowder&quot;, &quot;id&quot;: &quot;cordobacourt&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://dariahcloud.web.illinois.edu/cordoba/court&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://dariahcloud.web.illinois.edu/cordoba/court&#x27; target=&#x27;_blank&#x27;&gt;C\u00f3rdoba Court&lt;/a&gt; is an innovative social game designed to foster community building. Set in a virtual space modeled after the communal patios of C\u00f3rdoba, Spain, it invites players to cultivate the environment akin to physical community greening and habitation practices. Players express their individuality through the creation of personalized totems, choosing between a potted plant or a ceramic plate, with millions of possible design combinations. While players have the freedom to post any content in their totem&#x27;s message section, visibility to others requires moderator approval, ensuring a respectful and inclusive community space.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/cordobacourt/c__1_courtFinal_trimmed.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/cordobacourt/2_2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/cordobacourt/3_8.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/cordobacourt/1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/cordobacourt/3.png&quot;]}' class="subtext"><span class="small">game</span> Córdoba Court</a></p>
-<p class="title gametext"><a target="_blank" href="#demodisk3" data-entry='{&quot;title&quot;: &quot;Haunted Ps1 Demo Disk: Spectral Mall&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, launcher, haunted-ps1, tool, ui, tech-art&quot;, &quot;id&quot;: &quot;demodisk3&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/demo-disc-spectral-mall&quot;, &quot;description&quot;: &quot;The HPS1 Demo Disk is a collaborative effort within the community, involving the review of hundreds of demo submissions to curate a collection for release alongside a &lt;a href=&#x27;https://hauntedps1.itch.io/demo-disc-spectral-mall&#x27; target=&#x27;_blank&#x27;&gt;custom launcher&lt;/a&gt;. My responsibilities encompass organization and leading the software development for the launcher, which includes coding, gameplay programming, UI design, and tech-art.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/demodisk3/ddspectal.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/demodisk3/vid.yt&quot;]}' class="subtext"><span class="small">game</span> Haunted Ps1 Demo Disk: Spectral Mall</a></p>
-<p class="title blogtext"><a target="_blank" href="#uncertainty" data-entry='{&quot;title&quot;: &quot;Memory In Uncertainty&quot;, &quot;description&quot;: &quot;I was invited to review the public release of a &lt;a href=&#x27;https://members.newdesigncongress.org/memory-in-uncertainty-web-preservation-in-the-polycrisis/&#x27; target=&#x27;_blank&#x27;&gt;report&lt;/a&gt; by the New Design Congress, which explores the techno-political implications of web archiving practices, focusing specifically on the right to be forgotten.&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;report, new-design-congress, criticism, design, justice&quot;, &quot;id&quot;: &quot;uncertainty&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://members.newdesigncongress.org/memory-in-uncertainty-web-preservation-in-the-polycrisis/&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/3c93543c56d5128a37e0994bad8b4998.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/uncertainty/c_Screenshot_2023-09-15_at_9_03_45_AM.png&quot;]}' class="subtext"><span class="small">report</span> Memory In Uncertainty</a></p>
-<p class="title blogtext"><a target="_blank" href="#patio-walk-cordoba" data-entry='{&quot;title&quot;: &quot;\&quot;Patio Walk\&quot;: C\u00f3rdoba&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;description&quot;: &quot;As a member of the Dariah Udigish Working Group, I developed two web applications: (1) a workshop organization tool designed to enable field workers to effortlessly collect surveys and primary media for our GIS database, and (2) a final &lt;a href=&#x27;https://dariahcloud.web.illinois.edu/cordoba/map/?lang=en&#x27; target=&#x27;_blank&#x27;&gt;visualization tool&lt;/a&gt; for displaying the collected material, which can be accessed via the provided link.&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;workshop, ICT, fieldwork, report, intangible-cultural-heritage, heritage&quot;, &quot;id&quot;: &quot;patio-walk-cordoba&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://dariahcloud.web.illinois.edu/cordoba/map/?lang=en&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/3e8130025837be69070284ee5a89ef6a.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/patio-walk-cordoba/c_capture.png&quot;]}' class="subtext"><span class="small">workshop</span> "Patio Walk": Córdoba</a></p>
-<p class="title blogtext"><a target="_blank" href="#scan-to-ar" data-entry='{&quot;title&quot;: &quot;\&quot;Scan To Ar\&quot;: Palermo&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;Conf. Publication, architecture, heritage, ICT, academic, AR, 3d capture, workshop, participatory methods&quot;, &quot;id&quot;: &quot;scan-to-ar&quot;, &quot;locked&quot;: false, &quot;description&quot;: &quot;A conference presentation and &lt;a href=&#x27;https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR&#x27; target=&#x27;_blank&#x27;&gt;publication&lt;/a&gt; stemmed from the Palermo workshop, which detailed a collaborative initiative between Federico La Russa and myself. Our goal was to facilitate a co-design workshop aimed at repurposing abandoned industrial heritage in Palermo. We employed rapid 3D site capture techniques and established a 3D library of design primitives, akin to Lego bricks. This approach enabled us to swiftly mock up and review architectural proposals with stakeholders over a single weekend, using Wikar, my augmented reality platform. After deliberations over the summer, the public space was opened in &lt;a target=&#x27;_blank&#x27; href=&#x27;https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/&#x27;&gt;October 2022&lt;/a&gt;.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/ad088b3d890cad683611ece9b0a834e8.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/1_STARC_Scientific_Expert_Panel_-_Colter_3_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/c__1_wikar_mockup.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Cyprus_Presentation.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Informatics_Presentation.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Informatics_Presentation2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/3_Informatics_Presentation_2_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/6_vid.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/7_PXL_20210727_183542088_MP.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/Averna-Spazio-Open-1.webp&quot;]}' class="subtext"><span class="small">Conf. Publication</span> "Scan To Ar": Palermo</a></p>
-<p class="title wikartext"><a target="_blank" href="#othermatters" data-entry='{&quot;title&quot;: &quot;Other Matter&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;Summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, AR, art, education, workshop, wikar&quot;, &quot;id&quot;: &quot;othermatters&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://youtu.be/d4-SjAV0xd0&quot;, &quot;description&quot;: &quot;Production support for Wikar during an AR exhibition with Valerie Messini and students at the University of Applied Arts in Vienna. &lt;a href=&#x27;https://youtu.be/d4-SjAV0xd0&#x27; target=&#x27;_blank&#x27;&gt;A video of the exhibition can be seen here.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/b2052670ee4b63dbe9431d52135ffb3d.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/othermatters/vid.yt&quot;]}' class="subtext"><span class="small">exhibition</span> Other Matter</a></p>
-<p class="title wikartext"><a target="_blank" href="#schlegel" data-entry='{&quot;title&quot;: &quot;Eva Schlegel&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, workshop, AR, art, wikar&quot;, &quot;id&quot;: &quot;schlegel&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://evaschlegel.com/ausstellungen-exhibitions/test/&quot;, &quot;description&quot;: &quot;Production assistance for &lt;a href=&#x27;https://evaschlegel.com/ausstellungen-exhibitions/test/&#x27; target=&#x27;_blank&#x27;&gt;Schlegel&#x27;s studio&lt;/a&gt; during public installation in Palermo and Vienna. Many works made use of custom shaders to achieve unique looks and rich effects with small filesizes.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/c__1_index_palermo_002-s.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_001.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_002.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_003.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_004-006.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_007.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/schlegel/2021_Palermo_008-010.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> Eva Schlegel</a></p>
-<p class="title wikartext"><a target="_blank" href="#beep" data-entry='{&quot;title&quot;: &quot;BEEP Energy Sim&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;data viz, cyprus institute, AR, research, climate, heritage, architecture, wikar&quot;, &quot;id&quot;: &quot;beep&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html&quot;, &quot;description&quot;: &quot;I built an energy-use visualization used to explain green infrastructure investments for the adaptive reuse of a heritage building. The visualization shows the expected energy loads for every room in the building over the year, taking into account climatic comfort. &lt;a href=&#x27;https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html&#x27; target=&#x27;_blank&#x27;&gt;More information on the project can be found here.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/14342c1b131d3e7f69aad2ab364d16ed.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/beep/vid.yt&quot;]}' class="subtext"><span class="small">data viz</span> BEEP Energy Sim</a></p>
-<p class="title wikartext"><a target="_blank" href="#munich" data-entry='{&quot;title&quot;: &quot;Academy Of Fine Art, Munich&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, AR, art, education, workshop, installation, wikar&quot;, &quot;id&quot;: &quot;munich&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams&quot;, &quot;description&quot;: &quot;Production assistance for a &lt;a href=&#x27;https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams&#x27; target=&#x27;_blank&#x27;&gt;student exhibition&lt;/a&gt; led by Peter Kogler. We built an AR sculpture park in Graz, Austria.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/5bc634441b4e7e26115ff0a873a651d1.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/munich/1_IMG-20220603-WA0001.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/munich/2_20220520_184030-01.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/munich/IMG-20220524-WA0015.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/munich/IMG-20220524-WA0018.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> Academy Of Fine Art, Munich</a></p>
-<p class="title wikartext"><a target="_blank" href="#scan-to-ar" data-entry='{&quot;title&quot;: &quot;\&quot;Scan To Ar\&quot;: Palermo&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;Conf. Publication, architecture, heritage, ICT, academic, AR, 3d capture, workshop, participatory methods&quot;, &quot;id&quot;: &quot;scan-to-ar&quot;, &quot;locked&quot;: false, &quot;description&quot;: &quot;A conference presentation and &lt;a href=&#x27;https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR&#x27; target=&#x27;_blank&#x27;&gt;publication&lt;/a&gt; stemmed from the Palermo workshop, which detailed a collaborative initiative between Federico La Russa and myself. Our goal was to facilitate a co-design workshop aimed at repurposing abandoned industrial heritage in Palermo. We employed rapid 3D site capture techniques and established a 3D library of design primitives, akin to Lego bricks. This approach enabled us to swiftly mock up and review architectural proposals with stakeholders over a single weekend, using Wikar, my augmented reality platform. After deliberations over the summer, the public space was opened in &lt;a target=&#x27;_blank&#x27; href=&#x27;https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/&#x27;&gt;October 2022&lt;/a&gt;.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/ad088b3d890cad683611ece9b0a834e8.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/1_STARC_Scientific_Expert_Panel_-_Colter_3_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/c__1_wikar_mockup.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Cyprus_Presentation.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Informatics_Presentation.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/2_Informatics_Presentation2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/3_Informatics_Presentation_2_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/6_vid.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/7_PXL_20210727_183542088_MP.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/scan-to-ar/Averna-Spazio-Open-1.webp&quot;]}' class="subtext"><span class="small">Conf. Publication</span> "Scan To Ar": Palermo</a></p>
-<p class="title junktext"><a target="_blank" href="#arcade" data-entry='{&quot;title&quot;: &quot;Arcade Cabinet&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, concept, wood, technology, games&quot;, &quot;id&quot;: &quot;arcade&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://photos.app.goo.gl/Xj2aecCd1zRJoSRr5&quot;, &quot;description&quot;: &quot;I was interested in CRT displays and tried to design an ideal arcade cabinet for exhibiting contemporary art games in a space like a gallery. The CRT is actually a housing over a flat panel, which also contains the computer. I would want to mill and polish acrylic into a CRT-like curved lens to sit on top of the flat panel screen. The last iteration on the design (which &lt;a href=&#x27;https://photos.app.goo.gl/Xj2aecCd1zRJoSRr5&#x27; target=&#x27;_blank&#x27;&gt;can be seen here&lt;/a&gt;) was one which wall mounts for greater stability.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/b645da951ccef24c0ac47c2b91599849.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/arcade/1_ScreenShot2022-04-23at4_21_08PM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/arcade/2_ScreenShot2022-04-23at4_22_17PM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/arcade/3_ScreenShot2022-04-23at3_59_27PM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/arcade/4_ScreenShot2022-04-24at6_16_49PM.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/arcade/5_ScreenShot2022-04-24at6_13_19PM.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Arcade Cabinet</a></p>
-<p class="title junktext"><a target="_blank" href="#hifi" data-entry='{&quot;title&quot;: &quot;Hifi System&quot;, &quot;year&quot;: &quot;2022&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, concept, hifi, technology&quot;, &quot;id&quot;: &quot;hifi&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://photos.app.goo.gl/RKSotdJtzczThUk39&quot;, &quot;description&quot;: &quot;I designed this as an all-in-one wall mounted hifi system optimized for a digital collection. I was interested in using a pipeblending jig and some brass dowels to make a simple but striking shape. &lt;a href=&#x27;https://photos.app.goo.gl/RKSotdJtzczThUk39&#x27; target=&#x27;_blank&#x27;&gt;Images of the design can be seen here.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/4dd59a5d1d172602d38848ef8fad4e37.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/hifi/1_speakers.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Hifi System</a></p>
-<p class="year wikartext junktext gametext blogtext">2021</p>
-<p class="title gametext"><a target="_blank" href="#madvent2" data-entry='{&quot;title&quot;: &quot;2 Madvent 2 Calendar&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, haunted-ps1, tool, launcher&quot;, &quot;id&quot;: &quot;madvent2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/madvent2021&quot;, &quot;description&quot;: &quot;Madvent is a yearly release from the Haunted PS1 where ~30 developers create and release small games, unwrapped daily in an &lt;a href=&#x27;https://hauntedps1.itch.io/madvent2021&#x27; target=&#x27;_blank&#x27;&gt;ornate launcher&lt;/a&gt;. I both coordinate the project and build the launcher.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/1_mad1.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/2_mad2.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/c_movie_003.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/ptree4.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/vid.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent2/c_whereshome.png&quot;]}' class="subtext"><span class="small">game</span> 2 Madvent 2 Calendar</a></p>
-<p class="title gametext"><a target="_blank" href="#whereshome" data-entry='{&quot;title&quot;: &quot;Where&#x27;s Home?&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, prototype, madvent, haunted-ps1, analytics, research, citizen-science, clowder&quot;, &quot;id&quot;: &quot;whereshome&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A scrapped prototype for a People&#x27;s tree sequel where players design their own NPC by asking and answering questions from other peoples characters in the scene. Could be resurfaced later, but ran out of time.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/02adeb799e993700ec7c96ad7e5b2427.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/whereshome/2.webp&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/whereshome/ptree4.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/whereshome/c_unknown.png&quot;]}' class="subtext"><span class="small">game</span> Where's Home?</a></p>
-<p class="title gametext"><a target="_blank" href="#peoplestree2" data-entry='{&quot;title&quot;: &quot;The Peoples Tree 2&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, haunted-ps1, analytics, research, citizen-science, clowder&quot;, &quot;id&quot;: &quot;peoplestree2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://culture.itch.io/the-peoples-tree-2021&quot;, &quot;description&quot;: &quot;The &lt;a href=&#x27;https://culture.itch.io/the-peoples-tree-2021&#x27; target=&#x27;_blank&#x27;&gt;People&#x27;s Tree project&lt;/a&gt; served as an experimental exploration into community building within networked games. Participants could design ornaments and leave messages on a communal tree, offering a unique blend of interaction and shared digital space. This application provided a valuable opportunity to develop technology, establish policy frameworks, and conduct comprehensive analytics.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree2/c__1_Screen_Recording_2023-10-08_at_7_54_15_PM.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree2/2_tree2.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree2/vid.yt&quot;]}' class="subtext"><span class="small">game</span> The Peoples Tree 2</a></p>
-<p class="title gametext"><a target="_blank" href="#demodisk2" data-entry='{&quot;title&quot;: &quot;Haunted Ps1 Demo Disk 2021&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, haunted-ps1, launcher, tool, ui, tech-art&quot;, &quot;id&quot;: &quot;demodisk2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/demodisc2021&quot;, &quot;description&quot;: &quot;The HPS1 Demo Disk is a collaborative release where the community reviews hundreds of demo submissions and builds out a set to release together with a &lt;a href=&#x27;https://hauntedps1.itch.io/demodisc2021&#x27; target=&#x27;_blank&#x27;&gt;custom launcher&lt;/a&gt;. I do organization and lead software development for the launcher, including code, gameplay programming, ui, and tech-art.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/demodisk2/1_dd21.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/demodisk2/c_DEMODISC20201TRAILERYoutube.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/demodisk2/vid.yt&quot;]}' class="subtext"><span class="small">game</span> Haunted Ps1 Demo Disk 2021</a></p>
-<p class="title blogtext"><a target="_blank" href="#ict-for-urban-heritage-palermo" data-entry='{&quot;title&quot;: &quot;ICT For Urban Heritage: Palermo&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;workshop, report, heritage, ICT, architecture, codesign, AR&quot;, &quot;id&quot;: &quot;ict-for-urban-heritage-palermo&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities&quot;, &quot;description&quot;: &quot;Helped coordinate and attended this &lt;a href=&#x27;https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities&#x27; target=&#x27;_blank&#x27;&gt;workshop&lt;/a&gt;, where we engaged the neighborhood with digital tools to help envision the future of an abandoned warehouse on the campus, a modern ruin from the 20th Century.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/1cf28e11534a483e7feadf3d3115d531.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/ict-for-urban-heritage-palermo/c_Capture.png&quot;]}' class="subtext"><span class="small">workshop</span> ICT For Urban Heritage: Palermo</a></p>
-<p class="title wikartext"><a target="_blank" href="#wurm" data-entry='{&quot;title&quot;: &quot;Erwin Wurm&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, art, AR, wikar&quot;, &quot;id&quot;: &quot;wurm&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Worked with Studio Calas to deploy Erwin Wurm&#x27;s sculptural works in new contexts using augmented reality. While their team handled the photogrammetry and content creation, my role was primarily educational and technical. I trained their team on how to prepare and optimize 3D models for the Wikar platform and its upload pipeline. At their request, I also made Wikar&#x27;s QR code scanning more robust for outdoor environments and for use with different colored tags.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/5513e52d96ddc831461d6459d3b2011f.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wurm/c_Kunst-Raum-Stadt_Erwin-Levitating_Studio-Erwin-Wurm_2021-_Making-of.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> Erwin Wurm</a></p>
-<p class="title wikartext"><a target="_blank" href="#joteva" data-entry='{&quot;title&quot;: &quot;CryoLumens&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition,art, AR, data viz, wikar&quot;, &quot;id&quot;: &quot;joteva&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Coding and visual development for Eli Joteva, including data-reactive shaders, VFX-graph particles, real-time web monitoring and full integration in AR. Cryolumens represents the strength and location of Earth&#x27;s magnetic fields using NASA&#x27;s realtime sensor network, overlaying data-driven particle systems on an original painting using image tracking.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/78bd7ccd825845d43739b7b5f8903c5b.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/joteva/IMG_0012.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/joteva/IMG_0843.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> CryoLumens</a></p>
-<p class="title wikartext"><a target="_blank" href="#ict-for-urban-heritage-palermo" data-entry='{&quot;title&quot;: &quot;ICT For Urban Heritage: Palermo&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;workshop, report, heritage, ICT, architecture, codesign, AR&quot;, &quot;id&quot;: &quot;ict-for-urban-heritage-palermo&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities&quot;, &quot;description&quot;: &quot;Helped coordinate and attended this &lt;a href=&#x27;https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities&#x27; target=&#x27;_blank&#x27;&gt;workshop&lt;/a&gt;, where we engaged the neighborhood with digital tools to help envision the future of an abandoned warehouse on the campus, a modern ruin from the 20th Century.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/1cf28e11534a483e7feadf3d3115d531.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/ict-for-urban-heritage-palermo/c_Capture.png&quot;]}' class="subtext"><span class="small">workshop</span> ICT For Urban Heritage: Palermo</a></p>
-<p class="title junktext"><a target="_blank" href="#codex20" data-entry='{&quot;title&quot;: &quot;New Models Codex Y2K20&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;zine&quot;, &quot;id&quot;: &quot;codex20&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.goodreads.com/book/show/58697717-nm-codex-y2k20&quot;, &quot;description&quot;: &quot;Invited article contributor for a &lt;a href=&#x27;https://www.goodreads.com/book/show/58697717-nm-codex-y2k20&#x27; target=&#x27;_blank&#x27;&gt;retrospective on 2020&lt;/a&gt;, the year we were trapped inside.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/c8f7ead15f6d124bc0858d08b6753c56.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/codex20/58697717.jpg&quot;]}' class="subtext"><span class="small">zine</span> New Models Codex Y2K20</a></p>
-<p class="title junktext"><a target="_blank" href="#dungeon" data-entry='{&quot;title&quot;: &quot;Puzzle Generation&quot;, &quot;year&quot;: &quot;2021&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;code, algorithm, game, research&quot;, &quot;id&quot;: &quot;dungeon&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/junk/html/Dungeon-Generator&quot;, &quot;description&quot;: &quot;I took a course in algorithmic design that used puzzle generation and solving as the application case. For a final project, I was interested in using Dijkstra&#x27;s shortest path algorithm to solve for a sequence of moves in time, rather than a shortest traversal path in space. The &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/junk/html/Dungeon-Generator&#x27; target=&#x27;_blank&#x27;&gt;generator&lt;/a&gt; makes a dungeon where monsters trawl on fixed and cyclical paths. This means that the dungeon&#x27;s time is a loop, and our agent attempts to get to the end in the shortest amount of forward steps.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/9ae57bcf4899f5dc36bf131a3509c485.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/dungeon/vid.yt&quot;]}' class="subtext"><span class="small">code</span> Puzzle Generation</a></p>
-<p class="year junktext gametext">2020</p>
-<p class="title gametext"><a target="_blank" href="#madvent1" data-entry='{&quot;title&quot;: &quot;The Madvent Calendar&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, haunted-ps1, madvent, tool, launcher&quot;, &quot;id&quot;: &quot;madvent1&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://hauntedps1.itch.io/madvent2020&quot;, &quot;description&quot;: &quot;Madvent is a yearly release from the Haunted PS1 where ~30 developers create and release small games, unwrapped daily in an &lt;a href=&#x27;https://hauntedps1.itch.io/madvent2020&#x27; target=&#x27;_blank&#x27;&gt;ornate launcher&lt;/a&gt;. I both coordinate the project and build the launcher.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent1/1_madvencalendarlauncher.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent1/2_madvent.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent1/c_mad4.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent1/mad5.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/madvent1/vid.yt&quot;]}' class="subtext"><span class="small">game</span> The Madvent Calendar</a></p>
-<p class="title gametext"><a target="_blank" href="#peoplestree1" data-entry='{&quot;title&quot;: &quot;The Peoples Tree&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, madvent, haunted-ps1, analytics, citizen-science, research, clowder&quot;, &quot;id&quot;: &quot;peoplestree1&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://culture.itch.io/the-peoples-tree&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://culture.itch.io/the-peoples-tree&#x27; target=&#x27;_blank&#x27;&gt;The People&#x27;s Tree&lt;/a&gt; was an experiment about community building in networked games. Players design ornaments and leave messages on a shared tree. One key finding from this and subsequent projects like C\u00f3rdoba Court was an unexpectedly high player return rate of 15-30%. This suggests that even without an explicit goal, players felt a personal stake in the outcome of the collectively-designed artifact and returned to observe its evolution. The app was an opportunity to build technology, policy, and run analytics.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/c__1_tree.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/2_.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/3_.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/mad4.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/maddd.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/peoplestree1/c_ptree.png&quot;]}' class="subtext"><span class="small">game</span> The Peoples Tree</a></p>
-<p class="title gametext"><a target="_blank" href="#chain" data-entry='{&quot;title&quot;: &quot;C.H.A.I.N.&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, collaboration, haunted-PS1, experimenta;&quot;, &quot;id&quot;: &quot;chain&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://papercookies.itch.io/chain&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://papercookies.itch.io/chain&#x27; target=&#x27;_blank&#x27;&gt;C.H.A.I.N.&lt;/a&gt; was an early collaboration experiment by the Haunted PS1 collective, where each developer would recieve a game, develop a sequel, and hand their game off to the next developer. This created a chain where each game flowed into the next but nothing could be predicted. The project was fun, and seeing where the story went was gratefying. We liked it so much, we made a sequel in 2022: C.H.A.I.N.G.E.D. &quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/chain/1_chain.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/chain/trailer.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/chain/vid.yt&quot;]}' class="subtext"><span class="small">game</span> C.H.A.I.N.</a></p>
-<p class="title gametext"><a target="_blank" href="#drip" data-entry='{&quot;title&quot;: &quot;Drip&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, chain, solo, haunted-ps1, collaboration, shaders, grasshopper, animation&quot;, &quot;id&quot;: &quot;drip&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://papercookies.itch.io/chain&quot;, &quot;description&quot;: &quot;For my entry in the &lt;a href=&#x27;https://papercookies.itch.io/chain&#x27; target=&#x27;_blank&#x27;&gt;C.H.A.I.N.&lt;/a&gt; collaboration, I had one week to transition from a first-person hospital game to a dreamlike ball platformer. Given the time constraint, I used Grasshopper for procedural level design. I created a dreamscape where the player floats downwards, and used Grasshopper to place collectibles, asteroids, and hazardous tentacles along splines with random variation. This parametric approach was necessary to fill the large, open space while still directing the player&#x27;s free-floating motion.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/drip/c__1_good-1.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/drip/2_vid.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/drip/level.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/drip/c_model.png&quot;]}' class="subtext"><span class="small">game</span> Drip</a></p>
-<p class="title gametext"><a target="_blank" href="#rococo" data-entry='{&quot;title&quot;: &quot;Rococo&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game, gamejam,solo, haunted-ps1, physics, shaders, sound design&quot;, &quot;id&quot;: &quot;rococo&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://culture.itch.io/rococo&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://culture.itch.io/rococo&#x27; target=&#x27;_blank&#x27;&gt;Rococo&lt;/a&gt; was my first full game. I wanted to have a simple and fun physics based interaction, then polish it with custom shaders for a unique unlit look. I developed a physics-driven  sound system to create a heightened sense of motion.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/c__1_movie009.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/2_2.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/3_rococo.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/1.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/3.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/c_lknlkn.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/moon.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/moon2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/moon3.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/moon4.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/c_movie.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/rococo.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/c_rococoearly.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/sasf.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/spiral.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/c_unknown.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/rococo/vid.yt&quot;]}' class="subtext"><span class="small">game</span> Rococo</a></p>
-<p class="title gametext"><a target="_blank" href="#minotaur" data-entry='{&quot;title&quot;: &quot;Minotaur&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;game&quot;, &quot;tags&quot;: &quot;game,haunted-ps1, solo, gamejam, analytics, research, clowder&quot;, &quot;id&quot;: &quot;minotaur&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://culture.itch.io/minotaur-webgl&quot;, &quot;description&quot;: &quot;&lt;a href=&#x27;https://culture.itch.io/minotaur-webgl&#x27; target=&#x27;_blank&#x27;&gt;Minotaur&lt;/a&gt; was my earliest experiment with game analytics built into a simple experience. See a full report/retrospective in the edu section.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/game/minotaur/c__1_ninja.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/minotaur/2_minotaur.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/minotaur/c_test_morphing.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/game/minotaur/vid.yt&quot;]}' class="subtext"><span class="small">game</span> Minotaur</a></p>
-<p class="title junktext"><a target="_blank" href="#miner75" data-entry='{&quot;title&quot;: &quot;Miner 75&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;film, matte-painting, vfx, prop-design&quot;, &quot;id&quot;: &quot;miner75&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Assisted Christian Pepper with his SCI-ARC thesis film, including concept work, matte paintings, vfx pre-vis.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_201027_BP_Corruption_2.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_Sentinel_Corruption_Sim.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/Untitled-3.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_ewge.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_image0.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_miner3d.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_segwg.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/still.gif&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_tools.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_unknown.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/video0.qt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/miner75/c_withblue.png&quot;]}' class="subtext"><span class="small">film</span> Miner 75</a></p>
-<p class="title junktext"><a target="_blank" href="#sloppyjoe" data-entry='{&quot;title&quot;: &quot;Sloppy Joe&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;game, prototype&quot;, &quot;id&quot;: &quot;sloppyjoe&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/junk/html/SloppyJoe-Web/index.html&quot;, &quot;description&quot;: &quot;Envisioned as a dungeon crawler in the rococo universe. &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/junk/html/SloppyJoe-Web/index.html&#x27; target=&#x27;_blank&#x27;&gt;The prototype can be played here.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/47e1f30a492611eb7b001c910ff7a1e2.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/sloppyjoe/1_sloppy.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/sloppyjoe/scoot.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/sloppyjoe/c_sloppyjoe.webm&quot;]}' class="subtext"><span class="small">game</span> Sloppy Joe</a></p>
-<p class="title junktext"><a target="_blank" href="#pipe" data-entry='{&quot;title&quot;: &quot;Strange Pipe&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;3D-Print, design, fabrication&quot;, &quot;id&quot;: &quot;pipe&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A strange waterpipe designed by Stephen Ferroni, fabricated with my assistance.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/94c9a1f82404295b7f5853137d859982.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/pipe/c_MVIMG_20200203_180800-01.jpg&quot;]}' class="subtext"><span class="small">3D Print</span> Strange Pipe</a></p>
-<p class="title junktext"><a target="_blank" href="#earthvis" data-entry='{&quot;title&quot;: &quot;Earth Vis&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;data viz, vfx, climate, research&quot;, &quot;id&quot;: &quot;earthvis&quot;, &quot;locked&quot;: false, &quot;description&quot;: &quot;An experiment to convert NASA climate data into a VFX-graph visualization in Unity. The particles sweep the surface using a flowmap to determine windspeed and direction. The trails change color based on temperature.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/earthvis/c_movie4042_trimmed.webm&quot;]}' class="subtext"><span class="small">data viz</span> Earth Vis</a></p>
-<p class="title junktext"><a target="_blank" href="#staked-desk" data-entry='{&quot;title&quot;: &quot;Staked Desk&quot;, &quot;year&quot;: &quot;2020&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, fabrication, wood&quot;, &quot;id&quot;: &quot;staked-desk&quot;, &quot;locked&quot;: false, &quot;description&quot;: &quot;A poplar standing desk following a staked baton pattern. &lt;br&gt;&lt;a href=&#x27;https://lostartpress.com/products/the-anarchists-design-book&#x27; target=&#x27;_blank&#x27;&gt;Lost Art Press&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/63bb2ac508e99875e4f0a928e1399548.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/staked-desk/c__1_MVIMG_20200528_170040.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/staked-desk/c__2_MVIMG_20200528_144407.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/staked-desk/c__4_Screenshot_20200528-171038.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Staked Desk</a></p>
-<p class="year wikartext junktext blogtext">2019</p>
-<p class="title blogtext"><a target="_blank" href="#recoveringurbanmemory" data-entry='{&quot;title&quot;: &quot;Recovering Urban Memory: Beijing&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;architecture, competition, design, heritage&quot;, &quot;id&quot;: &quot;recoveringurbanmemory&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;The UIUC Plym Studio, in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar, embarked on a project to redesign an abandoned farmer&#x27;s market in the historic heart of Beijing&#x27;s Baitasi District. The studio encouraged students to explore lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The aim was to devise an intervention that would resurrect collective spaces such as farmers&#x27; markets and cafes, which had slowly disappeared from the community fabric.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/0554c75c87114150ebaa6a153cc07ab2.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/1_grandhall_stone2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/2_2pt-stone.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__3_garden-stone.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__4_MVIMG_20190428_080243.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__5_site_development_models.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/6_exterior.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/7_elevation.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__8_roof.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__9_noroof.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__10_roof.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__11_end.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c__13_middle.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/Lshape.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c_booklet.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/library.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/section1.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/section2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/section3.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c_sketch1.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c_sketch2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c_sketch3.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/c_sketch4.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/recoveringurbanmemory/yt.vid&quot;]}' class="subtext"><span class="small">architecture</span> Recovering Urban Memory: Beijing</a></p>
-<p class="title wikartext"><a target="_blank" href="#guchibytes" data-entry='{&quot;title&quot;: &quot;Guccibytes&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, zine, architecture, design, AR, speculation, furniture, wikar&quot;, &quot;id&quot;: &quot;guchibytes&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/pdf/guchibytes.pdf&quot;, &quot;description&quot;: &quot;Built from the remaining pieces of the digital picnic after we recycled them into furniture, guchibytes was an exhibition which sought to tie up loose ends in our studio organization Quipit. We collected unfinished speculative or sarcastic pieces and exhibited them together, creating a &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/pdf/guchibytes.pdf&#x27; target=&#x27;_blank&#x27;&gt;print zine&lt;/a&gt; and AR content to accompany each piece.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/0b7e58198558691755399180577b3800.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c__1_Screenshot_2023-07-19_at_2_57_22_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190918_193945.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190920_161210.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190920_161940.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_00_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_34_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_49_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/unnamed.png&quot;]}' class="subtext"><span class="small">exhibition</span> Guccibytes</a></p>
-<p class="title wikartext"><a target="_blank" href="#timelineatlas" data-entry='{&quot;title&quot;: &quot;Timeline Atlas&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;Fall&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;exhibition, art, AR, data viz, wikar&quot;, &quot;id&quot;: &quot;timelineatlas&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Back in 2019, we had the unique opportunity to collaborate with artist Stephen Cartwright on the debut of two augmented reality (AR) data-visualization sculptures. The event was part of a faculty showcase, and the project allowed us to explore a fascinating intersection of art and data science. Stephen Cartwright is renowned for his innovative work, where he meticulously logs personal data over decades and then crafts this information into acrylic sculptures. These intricate pieces exhibit spatial-temporal patterns, providing a visual representation of a person&#x27;s life and experiences in a uniquely tangible form. However, for this particular project, we utilized AR to surpass the limitations of his traditional manufacturing techniques. We aimed to visualize datasets of a complexity that would be virtually impossible to depict through physical sculptures. The showcased AR piece represents an intriguing dataset - the home locations of all female senators over the past century.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/2817e20728683af00b1e81b55932de1d.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/timelineatlas/image12.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/timelineatlas/vid.yt&quot;]}' class="subtext"><span class="small">exhibition</span> Timeline Atlas</a></p>
-<p class="title wikartext"><a target="_blank" href="#wikarv1" data-entry='{&quot;title&quot;: &quot;Wikar V1&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;Summer&quot;, &quot;theme&quot;: &quot;wikar&quot;, &quot;tags&quot;: &quot;prototype, AR, tool, clowder, wikar&quot;, &quot;id&quot;: &quot;wikarv1&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://www.youtube.com/watch?v=tLPcyBG3nbE&quot;, &quot;description&quot;: &quot;Wikar is an AR app designed for viewing cloud-hosted media such as artworks and design proposals. It requires an iOS or Android device that supports Augmented Reality (AR). The initial prototype, Wikar V1, was developed in the summer of 2019. The application uses NCSA&#x27;s Clowder open-source data repository system to store and distribute Unity asset bundles and 3D model content. QR codes are utilized for URL lookup and positioning, which enables multiple users and precise location integration. Wikar was developed during an affiliation with the NCSA&#x27;s Advanced Visualization Laboratory and received financial support from eDream and the Fiddler Foundation. The platform has been used by international artists, researchers, architects, and students.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/696c154d5748fde8b6158cf33215f726.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/wikarv1/vid.yt&quot;]}' class="subtext"><span class="small">prototype</span> Wikar V1</a></p>
-<p class="title junktext"><a target="_blank" href="#guchibytes" data-entry='{&quot;title&quot;: &quot;Guccibytes&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;exhibition, zine, architecture, design, AR, speculation, furniture, wikar&quot;, &quot;id&quot;: &quot;guchibytes&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/pdf/guchibytes.pdf&quot;, &quot;description&quot;: &quot;Built from the remaining pieces of the digital picnic after we recycled them into furniture, guchibytes was an exhibition which sought to tie up loose ends in our studio organization Quipit. We collected unfinished speculative or sarcastic pieces and exhibited them together, creating a &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/pdf/guchibytes.pdf&#x27; target=&#x27;_blank&#x27;&gt;print zine&lt;/a&gt; and AR content to accompany each piece.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/0b7e58198558691755399180577b3800.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c__1_Screenshot_2023-07-19_at_2_57_22_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190918_193945.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190920_161210.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_MVIMG_20190920_161940.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_00_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_34_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/c_Screenshot_2023-07-19_at_2_57_49_PM.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/wikar/guchibytes/unnamed.png&quot;]}' class="subtext"><span class="small">exhibition</span> Guccibytes</a></p>
-<p class="title junktext"><a target="_blank" href="#cncchair" data-entry='{&quot;title&quot;: &quot;CNC Chair&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, fabrication, wood&quot;, &quot;id&quot;: &quot;cncchair&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A prototype chair based on the dimensions of an Eames LCW, fabricated from scrap plywood using a Shaper Origin handheld CNC. The design was modified to focus on joinery, angles, and tolerances suitable for CNC cutting and to accept a recycled foam cushion. An unproduced second pass on the design featured more rounded, friendly ergonomics; this iteration is visualized over photos of the original chair using my augmented reality app, Wikar. Justin McCallister is photographed sitting.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/aae72b68635ac1306dcbf722e12f6b42.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/cncchair/c__1_IMG_20190522_210346-01.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/cncchair/c__2_MVIMG_20190521_150525.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/cncchair/c__3_MVIMG_20190522_210007.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/cncchair/c__4_Screenshot_20200301-221355.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/cncchair/c__5_Screenshot_20200301-220959.png&quot;]}' class="subtext"><span class="small">furniture</span> CNC Chair</a></p>
-<p class="title junktext"><a target="_blank" href="#a3" data-entry='{&quot;title&quot;: &quot;A3 Award Logo&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;Graphic, grasshopper, code&quot;, &quot;id&quot;: &quot;a3&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;This was my entry to the A3 (Annual Architecture Awards) logo competition. The graphic was generated using a reaction-diffusion physics simulation in Grasshopper, which I configured to store the entire time-series of the simulation. By extruding this data with the Z-axis representing time, the final form visualizes the &#x27;A3&#x27; letters growing to fill the constraints of the badge shape. The result is an intricate pattern where the content of the logo is determined by the constraints of its graphic container.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/fd04a804bc8e6bc17930ccb948f95711.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/a3/1_GooglePortfolio216.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/a3/GooglePortfolio215.jpg&quot;]}' class="subtext"><span class="small">Graphic</span> A3 Award Logo</a></p>
-<p class="title junktext"><a target="_blank" href="#lovebench" data-entry='{&quot;title&quot;: &quot;Love Bench&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, fabrication, wood&quot;, &quot;id&quot;: &quot;lovebench&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Revisiting a concept from the Archon Studio, the Love Bench was designed as playful, interlocking, multipurpose furniture. It solves three needs: a bench near the door for putting on shoes (with storage underneath), a sturdy weight-lifting bench that avoids the typically ugly aesthetic of exercise equipment, and extra guest seating when pulled apart into stools. The interlinked design provides 8 staked legs for support in its bench configuration, allowing it to take a significant load.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/lovebench/c__1_IMG_0493.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/lovebench/2_GooglePortfolio221.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/lovebench/c__3_IMG_20190105_181430.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/lovebench/4_IMG_20190105_195227_1_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/lovebench/lovebench-EDIT.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Love Bench</a></p>
-<p class="title junktext"><a target="_blank" href="#incoherence" data-entry='{&quot;title&quot;: &quot;Tales From The Incoherence Era&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;zine&quot;, &quot;id&quot;: &quot;incoherence&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A small zine of collected writings and graphics from invited contributors. Embossed cover on recycled paperstock.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/9c77ed6144b433c3bc81cf136dacf11c.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/1_MVIMG_20191211_144141.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/MVIMG_20191208_155440.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/MVIMG_20191211_143643-01.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/MVIMG_20191211_144417.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/c_image2.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/incoherence/c_unknown-1.png&quot;]}' class="subtext"><span class="small">zine</span> Tales From The Incoherence Era</a></p>
-<p class="title junktext"><a target="_blank" href="#illusive" data-entry='{&quot;title&quot;: &quot;Illusive&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;zine, block-print, embossing, art&quot;, &quot;id&quot;: &quot;illusive&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A series of block print/embossed graphics diplaying optical illusions and intense graphic patterns. Using laser etched linoleum stamps for full page printing.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/1cb5170559d745aec106a1148f26cbb8.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__1_MVIMG_20191211_142619.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/2_MVIMG_20191211_142950-01.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__3_MVIMG_20191211_142921-01.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__4_cover.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/5_cover-open.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__6_MVIMG_20191206_204619.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__7_MVIMG_20191206_210444.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__8_MVIMG_20191208_094442.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/9_MVIMG_20191208_123708.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/illusive/c__10_VID_20191207_000043_2.webm&quot;]}' class="subtext"><span class="small">zine</span> Illusive</a></p>
-<p class="title junktext"><a target="_blank" href="#willarnold" data-entry='{&quot;title&quot;: &quot;Will Arnold&quot;, &quot;year&quot;: &quot;2019&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;zine, risograph&quot;, &quot;id&quot;: &quot;willarnold&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Collaborative risograph printed zine with David Lyle Hays&#x27; seminar and printmaker Will Arnold.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/ce56d3b63ba77ca44fef1130cbd22ed3.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/willarnold/c_zinepage.jpg&quot;]}' class="subtext"><span class="small">zine</span> Will Arnold</a></p>
-<p class="year junktext blogtext">2018</p>
-<p class="title blogtext"><a target="_blank" href="#digitalpicnic" data-entry='{&quot;title&quot;: &quot;Digital Picnic&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;exhibition, installation, architecture, design, fabrication, furniture, interactive art&quot;, &quot;id&quot;: &quot;digitalpicnic&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Christian Pepper, Robert Prochaska, and I created a suspended holo-deck-like structure, utilizing projectors and a USB controller to enable the adjustment of the environment to various images, patterns, and colours. My contributions encompassed production, assembly, conceptualization, and the creation of visuals and an interactive controller using Arduino and Max/MSP. Ultimately, we repurposed the installation into permanent furniture.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__1_IMG_6738.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__2_IMG_6971.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/3_GooglePortfolio211.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/4_GooglePortfolio212.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__5_IMG_20181125_221155.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__6_IMG_8020.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__7_IMG_8462.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c__8_postpicnic.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c_IMG_20181209_151658.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c_VID_20181209_165757.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/digitalpicnic/c_56608822301_E8BF2057-612C-44B7-889E-C4A60D2DAA29.jpg&quot;]}' class="subtext"><span class="small">exhibition</span> Digital Picnic</a></p>
-<p class="title blogtext"><a target="_blank" href="#bezeliness" data-entry='{&quot;title&quot;: &quot;Bezeliness Intensifies&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;exhibition, art, design, new-media, 3d printing, furniture, fabrication, installation&quot;, &quot;id&quot;: &quot;bezeliness&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;This art and research project studies the aesthetics of frames and bezels through the use of space-filling curves, packing algorithms, and reaction-diffusion simulations. It also investigates various digital production techniques, including 3D printing, furniture making, pen plotting, rendering, video production, and reactive lighting for installations.&quot;, &quot;thumbnail_override&quot;: &quot;&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c__1_phone_rotated.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/2_GooglePortfolio214.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_IMG_20180914_124020.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/IMG_20180918_105902.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_VID_20181014_222055.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_VID_20181107_221218.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_VID_20181130_181328.webm&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/Untitled-2.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_color1.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_color2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/color3.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/interiorSection.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/bezeliness/c_plateau.png&quot;]}' class="subtext"><span class="small">exhibition</span> Bezeliness Intensifies</a></p>
-<p class="title blogtext"><a target="_blank" href="#seoul" data-entry='{&quot;title&quot;: &quot;Cyprus Pavilion: Seoul Bienalle&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;exhibition, VR, climate, design, fabrication, 3d-print, installation&quot;, &quot;id&quot;: &quot;seoul&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://activate.zone/seoul-biennale-nicosia-city&quot;, &quot;description&quot;: &quot;I assisted the VELab at the Cyprus Institute with a lightweight VR installation. I designed a 3D-printed, stereogram-inspired VR system that loops 360-degree stereo videos. Guests can view various climate modeling scenarios and disasters unfolding within our virtual model of Nicosia.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/f07f75abca8d959de54fef3f3da60c62.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/seoul/c_20170830_154120.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/seoul/image19.jpeg&quot;]}' class="subtext"><span class="small">exhibition</span> Cyprus Pavilion: Seoul Bienalle</a></p>
-<p class="title blogtext"><a target="_blank" href="#austere" data-entry='{&quot;title&quot;: &quot;The Austere&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;architecture, competition, design, speculative design, AR, exhibition&quot;, &quot;id&quot;: &quot;austere&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/blog/austere/1_Poster-Final07.jpg&quot;, &quot;description&quot;: &quot;The Austere began as a realistic entry into the Solar Decathlon Design-Build competition, highlighted in the Graze pitch video featuring Alex Brosh and Shannon Fitzgerald. After submitting our pitch, I transformed the design into a speculative fiction piece focusing on degrowth, American cottage-core, and the app-economy. This unique competition-style &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/blog/austere/x_Poster-Final07.jpg&#x27; target=&#x27;_blank&#x27;&gt;presentation spread&lt;/a&gt; won the Critical Mass student choice award that year. Subsequently, I adapted it for inclusion in the Guchibytes exhibition as an AR installation, offering viewers a glimpse into the peculiar world suggested by the presentation.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/d4a1b0c09a1b4df381d769aa45266217.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/austere/c__1_poster1.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/austere/c__2_poster2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/austere/3_Screenshot_20190921-210331.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/austere/c__4_Midterm_10_12_-_Video_Presentation.webm&quot;]}' class="subtext"><span class="small">architecture</span> The Austere</a></p>
-<p class="title blogtext"><a target="_blank" href="#trainhouse" data-entry='{&quot;title&quot;: &quot;12 Miles a Year&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;architecture, competition, design, archon studio&quot;, &quot;id&quot;: &quot;trainhouse&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;My winning entry for the Archon Studio of 2018, with the supervision of Olsen-Kundig Studio and professor Carl Lewis, drew inspiration from the post-industrial landscapes of the Midwest, particularly those of early nuclear research and energy production. I devised a mobile house designed to traverse the abandoned train lines surrounding the Dresden Generating Station at a pace of 1 foot per hour. This house undertakes a cyclical, 12-mile journey annually, returning to its docking station for the winter months.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/f7ca0304d7bad6a75a162746a99820bb.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/1_Artboard20copy10bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/2_Artboard20bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/3_GooglePortfolio24.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/4_Artboard20copy6bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/5_Artboard20copy5bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/6_Artboard20copybb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/7_Artboard20copy2bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/8_Artboard20copy3bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/9_Artboard20copy4bb2x-100.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/c_map.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/c_midterm.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/trainhouse/route.jpg&quot;]}' class="subtext"><span class="small">architecture</span> 12 Miles a Year</a></p>
-<p class="title blogtext"><a target="_blank" href="#archonprize2018" data-entry='{&quot;title&quot;: &quot;Archon, The Essential Dwelling&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;publication, zine, architecture, archon studio&quot;, &quot;id&quot;: &quot;archonprize2018&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/blog/archonprize2018/pdf/ArchonBook_Spring2018.pdf&quot;, &quot;description&quot;: &quot;I produced a &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/blog/archonprize2018/pdf/ArchonBook_Spring2018.pdf&#x27; target=&#x27;_blank&#x27;&gt;documentary book&lt;/a&gt; for the Archon Studio, showcasing the work of all participating students.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/0d8b416f29dce8aea3f3fb3ca64895bc.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/archonprize2018/Capture.png&quot;]}' class="subtext"><span class="small">publication</span> Archon, The Essential Dwelling</a></p>
-<p class="title junktext"><a target="_blank" href="#bench" data-entry='{&quot;title&quot;: &quot;Staked Bench&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;furniture, fabrication, wood, archon studio&quot;, &quot;id&quot;: &quot;bench&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A solid maple bench with a CNC milled and hand-refined form. This piece was a key deliverable for the Archon Studio, a funded competition where students design a house and matching furniture that embodies a particular concept of dwelling. This bench was designed for my house entry, &#x27;12 Miles a Year&#x27;. The staked furniture technique was later revisited for the &#x27;Staked Desk&#x27; project, though it was not affiliated with the studio.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/672c17b8e6a75f755e7e1ce3692a87c9.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/1_ArchonBook_Spring20182_Page_2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/2_ArchonBook_Spring20182_Page_1.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/4_DSC0020.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/5_DSC0068.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/6_DSC0074.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/7_DSC0012.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/bench/c__8_DSC0081-Edit.jpg&quot;]}' class="subtext"><span class="small">furniture</span> Staked Bench</a></p>
-<p class="title junktext"><a target="_blank" href="#pearl" data-entry='{&quot;title&quot;: &quot;Luliwa Mosque&quot;, &quot;year&quot;: &quot;2018&quot;, &quot;season&quot;: &quot;summer&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;competition, architecture, design&quot;, &quot;id&quot;: &quot;pearl&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;Product of a five day charette to design a complementary mosque for a landmark observation tower in &#x27;Dubai Creek&#x27;. With Max Zorn, Sebastian Koth, Justin McCallister, and Benjamin Bross.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/a415ea374e50c0fc91bdf551f0000524.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/pearl/c_GooglePortfolio25.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/pearl/GooglePortfolio26.jpg&quot;]}' class="subtext"><span class="small">competition</span> Luliwa Mosque</a></p>
-<p class="year junktext">2017</p>
-<p class="title junktext"><a target="_blank" href="#fractalcity" data-entry='{&quot;title&quot;: &quot;Fractal City&quot;, &quot;year&quot;: &quot;2017&quot;, &quot;season&quot;: &quot;fall&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;architecture, concept, design&quot;, &quot;id&quot;: &quot;fractalcity&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;A studio proposal for a Chicago Architecture Foundation museum in Fulton Market, Chicago. We started with a vision of future museums, followed by an exploration of biophilic design and modelling. With Melika Hajishafieiha.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/6c39e8a2d3265d7505c1d7b18691cfef.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/fractalcity/c_ColterWehmeier_MuseumOfEmergence.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fractalcity/GooglePortfolio219.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fractalcity/GooglePortfolio220.jpg&quot;]}' class="subtext"><span class="small">architecture</span> Fractal City</a></p>
-<p class="year blogtext">2016</p>
-<p class="title blogtext"><a target="_blank" href="#paphosgate" data-entry='{&quot;title&quot;: &quot;Paphos Gate: Nicosia&quot;, &quot;year&quot;: &quot;2016&quot;, &quot;season&quot;: &quot;winter&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;research, cyprus institute, architecture, design, heritage, 3d capture, VR, data-driven design&quot;, &quot;id&quot;: &quot;paphosgate&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;For this decade-long urban archaeology project, I served as a research assistant, focusing on virtual representation and data-driven design. I prototyped and built multiple VR applications (using Oculus DK2 and HTC Vive) to visualize both archaeological findings and the proposed architectural intervention. These tools were used to engage stakeholders, from the public to the Department of Antiquities. I developed systems for locomotion, interaction, and gaze-tracking analytics to understand how people focused on the virtual site. This data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. Opened to the public in &lt;a href=&#x27;https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe&#x27;&gt;2024.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/6df07bbe07b8668c6a3440b67b618c12.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/1_STARC_Scientific_Expert_Panel_-_Colter_1_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/2_STARC_Scientific_Expert_Panel_-_Colter_3_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/3_STARC_Scientific_Expert_Panel_-_Colter.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/4_STARC_Scientific_Expert_Panel_-_Colter.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/5_STARC_Scientific_Expert_Panel_-_Colter_4_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/6_STARC_Scientific_Expert_Panel_-_Colter_5_.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/7_STARC_Scientific_Expert_Panel_-_Colter_1_.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_2.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/2.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/3.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/4.yt&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_RIVEEL3D_VR_-_Vive_Winter_2017_Crowdsim_Camera_2_2017-06-01-10-48-12_3282x1296.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_RIVEEL3D_VR_Camera_2016-11-01-16-47-38_6508x2468.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_RIVEEL3D_VR_Camera_2016-11-02-09-23-15_6508x2468.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_RIVEEL3D_VR_Camera_2016-11-02-09-27-07_6508x2468.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_RIVEEL3D_VR_Camera_2016-11-02-13-12-15_6120x7044.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/Riveel3DExcerpt-BestPractices.pdf&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/Riveel3DExcerpt-BestPractices-page-001.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/Riveel3DExcerpt-BestPractices-page-002.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/c_arch_pathway_3.png&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/release-1.jpeg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/paphosgate/release-2.jpeg&quot;]}' class="subtext"><span class="small">research</span> Paphos Gate: Nicosia</a></p>
-<p class="year blogtext">2014</p>
-<p class="title blogtext"><a target="_blank" href="#quipit_table" data-entry='{&quot;title&quot;: &quot;Quipit Student Survey&quot;, &quot;year&quot;: &quot;2014&quot;, &quot;season&quot;: &quot;spring&quot;, &quot;theme&quot;: &quot;blog&quot;, &quot;tags&quot;: &quot;participatory methods, art, architecture, furniture, installation&quot;, &quot;id&quot;: &quot;quipit_table&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;/https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/files/quipit_table.jpg&quot;, &quot;description&quot;: &quot;QUIPIT\u2014a small student group featuring Ray Majewski, Christian Pepper, and Robert Prochaska\u2014aimed to foster open dialogues among students, faculty, and administration. Employing tongue-in-cheek installation art and events, the initiative introduced a novel table in the school&#x27;s atrium. Designed as a platform for dialogue and a collector of viewpoints, the &lt;a href=&#x27;/https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/files/quipit_table.jpg&#x27; target=&#x27;_blank&#x27;&gt;table&lt;/a&gt; challenged passersby with a thought-provoking question: What would you change if you ran the school? The table, adorned with students&#x27; handwritten responses, evolved into a mirror of collective sentiment. After a month-long response collection, QUIPIT held an exclusive student event to discuss the gathered insights, culminating in a presentation to the school&#x27;s director.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/f4129e6ebf743975208e77d2585e7ec7.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/c__1_table4.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/c__2_table2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/3_voices.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/blog/quipit_table/c__4_table3.jpg&quot;]}' class="subtext"><span class="small">participatory methods</span> Quipit Student Survey</a></p>
-<p class="year junktext">2011</p>
-<p class="title junktext"><a target="_blank" href="#fazole" data-entry='{&quot;title&quot;: &quot;DM_Fazole&quot;, &quot;year&quot;: &quot;2011&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;modding, level design&quot;, &quot;id&quot;: &quot;fazole&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://gamebanana.com/mods/62197&quot;, &quot;description&quot;: &quot;I fell in love with HL2DM, a niche first person shooter. It was badly balanced and servers hosted loads of unpolished weird maps. I wanted to spend a weekend to make something unique and as simple looking as the gameplay felt, with many looping and interwoven paths. I was also curious about new styles which would leave a low memory footprint and break away from the grungy looks of all the other maps. &lt;a href=&#x27;https://gamebanana.com/mods/62197&#x27; target=&#x27;_blank&#x27;&gt;Fazle&lt;/a&gt; was about 1% the typical filesize of a map. It was far too strange to get love from HL2DM players.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/fe83046136a66ec1d6340d206ec16983.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/fazole/26245-.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fazole/26246-.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fazole/26247-.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fazole/26248-.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/fazole/dm_fazole.zip&quot;]}' class="subtext"><span class="small">modding</span> DM_Fazole</a></p>
-<p class="title junktext"><a target="_blank" href="#crapmaps" data-entry='{&quot;title&quot;: &quot;CS_Crapmaps&quot;, &quot;year&quot;: &quot;2011&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;modding, level design, event, interlopers&quot;, &quot;id&quot;: &quot;crapmaps&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://gamebanana.com/mods/115695&quot;, &quot;description&quot;: &quot;I was part of an online group called Interlopers, which developed mods and indie games around Valve&#x27;s Source Engine in the 2000s. We began a tradition of making bad or interesting maps once a year and playing through them together. &lt;a href=&#x27;https://gamebanana.com/mods/115695&#x27; target=&#x27;_blank&#x27;&gt;Crap maps night.&lt;/a&gt;&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/2ae14b77135f2d65672f3572705f24f1.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/crapmaps/12178-.jpg&quot;]}' class="subtext"><span class="small">modding</span> CS_Crapmaps</a></p>
-<p class="year junktext">2010</p>
-<p class="title junktext"><a target="_blank" href="#skyboxes" data-entry='{&quot;title&quot;: &quot;Source Engine Skyboxes&quot;, &quot;year&quot;: &quot;2010&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;modding, 3d art, terragen&quot;, &quot;id&quot;: &quot;skyboxes&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://gamebanana.com/mods/7247&quot;, &quot;description&quot;: &quot;My earliest experiences with photoshop and art making from ~2008-2010. I used Terragen, Vue, and photocollage to build skyboxes for the source engine. I also got into making 360 panoramic images from my own camera. A friend bundled the materials I had distributed into one &lt;a href=&#x27;https://gamebanana.com/mods/7247&#x27; target=&#x27;_blank&#x27;&gt;package&lt;/a&gt;. Skies were made for personal projects, friend&#x27;s projects, or mods.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/8ad026088878fa0c19331ef04b8a89da.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/1_sky_blueday01_hdr.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/52ffad52aa14e.webp&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/52ffadfe6ff1f.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/52ffae1b24c3e.webp&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/citypan-ingame.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_airy01_hdr-1.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-18.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-21.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-4.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-8.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_cloudyday-9.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_darkdays01_hdr.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_dejablue01_hdr.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_dusk01_hdr.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_main01_hdr2.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_smurft01_hdr.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/skyboxes/sky_snowyday01_hdr.jpg&quot;]}' class="subtext"><span class="small">modding</span> Source Engine Skyboxes</a></p>
-<p class="title junktext"><a target="_blank" href="#oceantop" data-entry='{&quot;title&quot;: &quot;MG_Oceantop&quot;, &quot;year&quot;: &quot;2010&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;modding, minigame&quot;, &quot;id&quot;: &quot;oceantop&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://gamebanana.com/mods/128413&quot;, &quot;description&quot;: &quot;A &lt;a href=&#x27;https://gamebanana.com/mods/128413&#x27; target=&#x27;_blank&#x27;&gt;minigame map&lt;/a&gt; where players have no weapons and try to survive as falling blocks topple sections of the map.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/7613ededf19e832a1908fe48c25eb69c.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/oceantop/148976a.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/oceantop/148976b.jpg&quot;, &quot;https://colterwehmeier.github.io/portfolio/entries/junk/oceantop/mg_oceantop_3.zip&quot;]}' class="subtext"><span class="small">modding</span> MG_Oceantop</a></p>
-<p class="title junktext"><a target="_blank" href="#nightmarehouse2" data-entry='{&quot;title&quot;: &quot;Nightmare House 2&quot;, &quot;year&quot;: &quot;2010&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;game, modding, 3d art&quot;, &quot;id&quot;: &quot;nightmarehouse2&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;https://nh2.wecreatestuff.com/&quot;, &quot;description&quot;: &quot;I was invited to make a skybox for &lt;a href=&#x27;https://nh2.wecreatestuff.com/&#x27; target=&#x27;_blank&#x27;&gt;a free horror indie game&lt;/a&gt;. The skybox does a lot of work as it replaces the outside environment, working at ground level and when on top of a tall tower. The skybox was a combination of a vue rendering, and photocollage using a program called skypaint which manages perspective-correction when editing.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/94bd62f051c33839c8e8481381a17e80.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/nightmarehouse2/sky_nightmare01_hdr6.jpg&quot;]}' class="subtext"><span class="small">game</span> Nightmare House 2</a></p>
-<p class="year junktext">2008</p>
-<p class="title junktext"><a target="_blank" href="#flatsky" data-entry='{&quot;title&quot;: &quot;GM_Flatsky&quot;, &quot;year&quot;: &quot;2008&quot;, &quot;season&quot;: &quot;&quot;, &quot;theme&quot;: &quot;junk&quot;, &quot;tags&quot;: &quot;modding, level design&quot;, &quot;id&quot;: &quot;flatsky&quot;, &quot;locked&quot;: false, &quot;content&quot;: &quot;&quot;, &quot;description&quot;: &quot;My first public map was a large open grassy plane with a custom skybox.&quot;, &quot;thumbnail_override&quot;: &quot;static/thumbs/13096c7964b8223ad245a2bf457ed39e.jpg&quot;, &quot;file_paths&quot;: [&quot;https://colterwehmeier.github.io/portfolio/entries/junk/flatsky/flatgrass.jpg&quot;]}' class="subtext"><span class="small">modding</span> GM_Flatsky</a></p>
-</div></div>
-<div id="container-footer"></div>
-
-<!-- <babylon model="entries/game/genesis/vhs.glb"></babylon> -->
-<div id="lightbox" class="lightbox no-animation">
-    <div class="lightbox-content">
-        <div id="content">
-            <div id="close" class="close-btn">&times;</div>
-
-            <!-- Media container for images/videos -->
-            <div id="entry-media">
-                <div id="spinner" class="lds-ellipsis">
-                    <div></div><div></div><div></div><div></div>
-                </div>
-            </div>
+    <header class="nav-header">
+        <div class="breadcrumb">
             
-            <div style="display: flex;"> 
-            <h2 id="entry-title"></h2>
-            </div>
+                    <a href="/" class="breadcrumb-item active">
+                        Colter
+                    </a>
+                    
+                
+            
+            
 
-            <div style="display: flex;">
-                <!-- Year and season container -->
-                <p id="entry-date"></p>
-                <!-- Tags container -->
-                <p id="entry-tags"></p>
-            </div>
-
-            <!-- Description container -->
-            <p id="entry-description"></p>
-
+            
         </div>
-    </div>
-</div>
-
-<script>
-	//lightbox setup
-	document.getElementById('close').addEventListener('click', () => {
-    // To hide the lightbox
-    hideLightbox();
-});
-</script>
-
-<script>
-
-
-
-// Function to fetch HTML content
-function fetchHTML(fileName, elementId) {
-	return new Promise((resolve, reject) => {
-		fetch(fileName)
-			.then(response => {
-				if (!response.ok) {
-					throw new Error('Network response was not ok');
-				}
-
-				return response.text();
-			})
-			.then(data => {
-                //console.log(data);
-				document.getElementById(elementId).innerHTML = data;
-				resolve(); // resolve the promise when HTML is successfully added to the page
-			})
-			.catch(error => {
-				console.error('There has been a problem with your fetch operation:', error);
-				reject(error); // reject the promise if there was an error fetching the HTML
-			});
-	});
-}
-
-function processTags(tags) {
-    return tags.split(',').map(function(tag) {
-        tag = tag.replace(/[-_]/g, ' ');
-        if (tag !== tag.toUpperCase()) {
-            tag = tag.toLowerCase().split(' ').map(function(word) {
-                return word.charAt(0).toUpperCase() + word.slice(1);
-            }).join(' ');
-        }
-        return tag;
-    }).join(', ');
-}
-function toTitleCase(str) {
-    return str.toLowerCase().split(' ').map(function(word) {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-    }).join(' ');
-}
-
-function handleVideoSrc(activeSlide) {
-    activeSlide.src = activeSlide.getAttribute('vid-data-src');
-    activeSlide.removeAttribute('vid-data-src');
-}
-function handleImageSrc(activeSlide) {
-    activeSlide.src = activeSlide.getAttribute('img-data-src');
-    activeSlide.removeAttribute('img-data-src');
-}
-function handleYTSrc(activeSlide) {
-    function extractParams(text) {
-                    let videoId = '';
-                    let timecode = '';
-                    if (text.includes('watch?v=')) {
-                        const url = new URL(text);
-                        videoId = url.searchParams.get('v');
-                        timecode = url.searchParams.get('t');
-                    } else if (text.includes('latest_version?id=')) {
-                        const url = new URL(text);
-                        videoId = url.searchParams.get('id');
-                    } else if (text.includes('?t=')) {
-                        [videoId, timecode] = text.split('?t=');
-                    } else {
-                        videoId = text;
-                    }
-                    return { videoId, timecode };
-                }
-    // console.log("handling youtube")
-    fetch(activeSlide.getAttribute('yt-data-src'))
-    .then(response => {
-        if (!response.ok) throw new Error("Failed fetching the URL");
-        return response.text();
-    })
-    .then(text => {
-    const { videoId, timecode } = extractParams(text);
-    
-    let iframe = document.createElement('iframe');
-    //old method
-    // iframe.src = `https://www.youtube.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
-    
-    // new technique from here https://news.ycombinator.com/item?id=39536315
-    iframe.src=`https://www.youtube-nocookie.com/embed/${videoId}` + (timecode ? `?start=${timecode}` : '');
-    iframe.setAttribute('credentialless', 'true');
-    iframe.setAttribute('referrerPolicy', 'no-referrer');
-    iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
-    iframe.setAttribute('allow', "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; bluetooth 'none'; browsing-topics 'none'; camera 'none'; ch-ua 'none'; display-capture 'none'; domain-agent 'none'; document-domain 'none'; encrypted-media 'none'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; identity-credentials-get 'none'; idle-detection 'none'; keyboard-map 'none'; local-fonts 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; navigation-override 'none'; otp-credentials 'none'; payment 'none'; picture-in-picture 'none'; publickey-credentials-create 'none'; publickey-credentials-get 'none'; screen-wake-lock 'none'; serial 'none'; speaker-selection 'none'; sync-xhr 'none'; usb 'none'; web-share 'none'; window-management 'none'; xr-spatial-tracking 'none'");
-    iframe.setAttribute('csp', 'sandbox allow-scripts allow-same-origin;');
-    iframe.setAttribute('loading', 'lazy');
-    iframe.setAttribute('title', 'YouTube Video');
-    iframe.setAttribute('frameborder', '0');
-    iframe.setAttribute('allowfullscreen', '');
-    
-    activeSlide.appendChild(iframe);
-    })
-    .catch(err => {
-        console.error("Fetch error:", err);
-    })
-    .finally(() => {
-        activeSlide.removeAttribute('yt-data-src');
-    });
-}
-function handle3DSrc(activeSlide) {
-    activeSlide.src = activeSlide.getAttribute('model-data-src');
-/*
-    // Create babylon element dynamically
-    let babylonElement = document.createElement('babylon');
-    let viewer = new BabylonViewer.DefaultViewer(babylonElement, {
-        scene: {
-        debug: true,},
-        camera: {
-            behaviors: {
-                autoRotate: 360
-            }
-        },
-        model: {
-            url: activeSlide.src
-        },
-    });
-
-
-    
-    // Append to the active slide and remove placeholder attribute
-    activeSlide.appendChild(babylonElement);
-    activeSlide.removeAttribute('model-data-src');
-    
-    console.log("3D model loaded");*/
-    console.log("skipped 3d model");
-}
-
-
-
-
-function handleSlideChange() {
-    // console.log("handle slide change called");
-    let activeSlide = document.querySelector('.slide.active');
-    if(activeSlide == null)return;
-    const attributes = ['vid-data-src', 'img-data-src', 'yt-data-src', 'model-data-src'];
-    for (const attr of attributes) {
-        if (activeSlide.getAttribute(attr)) {
-            const handlerKey = attr.split('-')[0];
-            switch (handlerKey) {
-                case 'vid':
-                    handleVideoSrc(activeSlide);
-                    break;
-                case 'img':
-                    handleImageSrc(activeSlide);
-                    break;
-                case 'yt':
-                    handleYTSrc(activeSlide);
-                    break;
-                case 'model':
-                    handle3DSrc(activeSlide);
-                    break;
-            }
-            break; // Exit loop as only one attribute should apply
-        }
-    }
-}
-
-
-// Function to manage links
-function populateLightbox(entry) {
-    // Fill in the title, description, tags, year, and season
-    document.getElementById('entry-title').innerHTML = entry.title;
-    // Only push state if it's different from the current one
-    const currentHash = window.location.hash;
-    const newHash = `#${entry.id}`;
-
-    if(currentHash !== newHash) {
-        history.pushState({id: entry.id}, entry.title, newHash);
-    }
-
-
-    if (entry.description.endsWith('.html')) {
-        fetch(entry.description)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('entry-description').innerHTML = data;
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-    } else {
-        document.getElementById('entry-description').innerHTML = entry.description;
-    }
-
-    // entry.span
-    document.getElementById('entry-tags').textContent = processTags(entry.tags);
-
-    var seasonTitleCase = toTitleCase(entry.season);
-    let year = entry.year;
-
-    if (seasonTitleCase == null || seasonTitleCase.trim() == "") {
-        document.getElementById('entry-date').textContent = year;
-    } else {
-        document.getElementById('entry-date').textContent = seasonTitleCase + ', ' + year;
-    }
-    
-    //reset the lightbox
-    $('#entry-title').removeClass('clickable');
-    $('#link, #entry-title').off('click');
-    $('#link, #entry-title').off('mouseenter mouseleave');
-    $('#link').hide(); // Hide the button
-
-    if(entry.content) {
-        document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;</span>';
-        // document.getElementById('entry-title').innerHTML = entry.title + '  <span style="font-family:Cicle, -apple-system" class="unicode-char">&#x2197;&#xFE0E;</span>';
-
-        // $('#link').show(); // Show the button
-        $('#entry-title').addClass('clickable');
-            // Make SVG and entry-title clickable
-    $('#link, #entry-title').on('click', function() {
-        window.open(entry.content, '_blank');
-    });
-        // Add hover effect to both SVG and entry-title
-        $('#link, #entry-title').hover(
-        function() {
-            // On mouseenter, add a class to change the color
-            $('#link, #entry-title').addClass('hovered');
-        },
-        function() {
-            // On mouseleave, remove the class
-            $('#link, #entry-title').removeClass('hovered');
-        }
-    );
-    }
-    // console.log("hide")
-    document.getElementById('spinner').classList.add('hidden');
-    // If entry.id is not an empty string, attempt to load media from the /assets folder
-        if(entry.id) {
-            let mediaContainer = document.getElementById('entry-media');
-            if(entry.file_paths.length > 0){
-                // console.log("spin");
-                document.getElementById('spinner').classList.remove('hidden');
-
-            }
-            // enable the spinner!!!
-        // Iterate over the child nodes in reverse order (to safely remove while iterating)
-        for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
-            let child = mediaContainer.childNodes[i];
-            // Check if the child is not the spinner
-            if (!child.classList || !child.classList.contains('lds-ellipsis')) {
-                mediaContainer.removeChild(child);
-            }
-        }
+        <div class="tag-cloud">
             
-        //     // Clear any existing media
-        //     while (mediaContainer.firstChild) {
-        //         mediaContainer.removeChild(mediaContainer.firstChild);
-        // }
-
-        mediaContainer.style.height = entry.lightbox_max_height;
-        // Function to create the lds-ellipsis spinner element
-        function createSpinner() {
-            let spinner = document.createElement('div');
-            spinner.className = 'lds-ellipsis';
-            for (let i = 0; i < 4; i++) {
-                let dot = document.createElement('div');
-                spinner.appendChild(dot);
-            }
-            return spinner;
-        }
-        let isFirst = true;
-        for (let file of entry.file_paths) {
-            let mediaElement;
-            switch (true) {
-                case /\.(jpg|jpeg|png|webp|gif)$/i.test(file):
-                    mediaElement = document.createElement('img');
-                    mediaElement.setAttribute("img-data-src", file);
-                    mediaElement.loading = "lazy"; // Enables native lazy loading               
-                    break;
-                case /\.(mp4|mov)$/i.test(file):
-                    mediaElement = document.createElement('video');
-                    mediaElement.setAttribute("vid-data-src", file);
-                    mediaElement.loading = "lazy"; // Enables native lazy loading
-                    mediaElement.controls = false;
-                    mediaElement.autoplay = true;
-                    mediaElement.loop = true;
-                    mediaElement.muted = true;
-                    mediaElement.setAttribute('playsinline', '');
-                    mediaElement.setAttribute('playsInline', '');
-                    mediaElement.setAttribute('disablePictureInPicture', '');
+                <a href="/playable" class="tag">Playable</a>
             
-                    break;
-                case /\.yt$/i.test(file):
-                    mediaElement = document.createElement('div');
-                    mediaElement.setAttribute("yt-data-src", file);
-                    break;
-                case /\.(gltf|glb)$/i.test(file):
-                    mediaElement = document.createElement('div');
-                    mediaElement.setAttribute("model-data-src", file);
-                    break;
-            }
+                <a href="/research" class="tag">Research</a>
+            
+                <a href="/design" class="tag">Design</a>
+            
 
             
-            
-            if (mediaElement) {
-                // makes the background of the element on loaded to hide spinner
-                mediaElement.onload = () => {
-                        mediaElement.style.backgroundColor = 'black'; 
-                };     
-                mediaElement.classList.add('slide');
-                if (isFirst) {
-                    mediaElement.classList.add('active');
-                    isFirst = false;
-                }
-                mediaContainer.appendChild(mediaElement);
-            }
-        }
+        </div>
+    </header>
+
+    <main class="grid-container">
         
-            if(entry.file_paths.length >1){
-            addSlideshowControls();
-        }
-        }
+                            
+                <img style="border-radius: 8px; display: block; margin-left:auto;margin-right:auto; width: 60ch; max-width:100%;"src="https://colterwehmeier.github.io/portfolio/entries/junk/bio/IMG_20210622_011350.jpg"></img>
+                <div class="bio">
+                    <h1>Colter Wehmeier</h1>
+                    <p>An interaction designer and researcher exploring digital experiences through games, spatial computing, and community engagement.</p>
+                </div>
 
-    // Open the lightbox
-    // lightbox.style.display = "flex";
-    $('#content').scrollTop = 0;
-    handleSlideChange();
-}
 
-function addSlideshowControls() {
-    let mediaContainer = document.getElementById('entry-media');
-    let slides = Array.from(mediaContainer.getElementsByClassName('slide'));
-    let currentIndex = slides.findIndex(slide => slide.classList.contains('active')); // Get the index of the active slide
+        <p class="centered">
+            Dual-PhD candidate bridging Informatics and 20th-century cultural heritage at UIUC and the Cyprus Institute. 
+            I develop interactive software that transforms scholarly virtual environments into participatory research platforms—spaces where public memory, stories, and insights shape our understanding of architectural heritage.
+        </p>
+        <p class="centered">
+            My work leverages Building Information Modeling (BIM) and Virtual Environments to advance the Architectural Digital Humanities, 
+            grounded in Stiegler's vision of mnemotechnical systems that merge social practices with technological frameworks for collective memory.
+        </p>
+        <p class="centered">
+            Supported by the Fiddler Innovation Fellowship at NCSA, advancing computational approaches for humanities research and public engagement.
+        </p>
+<br>
 
-    // Create navigation buttons
-    let prevButton = document.createElement('button');
-    // prevButton.textContent = 'Previous';
-    prevButton.textContent = '<';
-    prevButton.id = 'prevSlideButton';  // Assign unique ID
-    prevButton.style.position = "absolute";
-    prevButton.addEventListener('click', function() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
-        slides[currentIndex].classList.add('active');
-        handleSlideChange();
-    });
+<table class="bio-table">
+  <tr>
+      <td><a href="https://colterwehmeier.github.io/portfolio/entries/junk/bio/pdf/Colter_CV_2024.pdf" target="_blank">CV&nbsp;↗</a></td>
+      <td><a href="https://culture.itch.io/" target="_blank">itch.io&nbsp;↗</a></td>
+  </tr>
+  <tr>
+      <td><a href="https://informatics.ischool.illinois.edu/person/colter-wehmeier/" target="_blank">University of Illinois&nbsp;↗</a></td>
+      <td><a href="https://www.cyi.ac.cy/index.php/starc/about-the-center/starc-our-people/author/1204-colter-wehmeier.html" target="_blank">Cyprus Institute&nbsp;↗</a></td>
+  </tr>
+  <tr>
+      <td><a href="https://www.instagram.com/abstitial/" target="_blank">instagram&nbsp;↗</a></td>
+      <td><a href="https://twitter.com/abstitial" target="_blank">twitter&nbsp;↗</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://bsky.app/profile/colter.us" target="_blank">bluesky&nbsp;↗</a></td>
+    <td><a href="https://scholar.google.com/citations?user=KK_3cSkAAAAJ&hl=en&oi=ao" target="_blank">google scholar&nbsp;↗</a></td>
+  </tr>
+</table>
 
-    let nextButton = document.createElement('button');
-    // nextButton.textContent = 'Next';
-    nextButton.textContent = '>';
-    nextButton.id = 'nextSlideButton';  // Assign unique ID
-    nextButton.style.position = "absolute";
-    nextButton.addEventListener('click', function() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
-        slides[currentIndex].classList.add('active');
-        handleSlideChange();
-    });
+            <div class="item-grid">
+                
+            </div>
 
-    // Add buttons to media container
-    mediaContainer.style.position = "relative";
-    mediaContainer.appendChild(prevButton);
-    mediaContainer.appendChild(nextButton);
-}
-
-lightboxEnabled = false;
-CurrentLightboxID = null;
-function RequestLightboxChange(direction) {
-    // If lightbox isn't enabled, do nothing
-    if (!lightboxEnabled) return;
-
-    // Get current link element
-    let currentLink = document.getElementById(CurrentLightboxID);
-
-    // Decide next link based on direction
-    let nextLink = direction === 1 
-        ? currentLink.parentElement.previousElementSibling 
-        : currentLink.parentElement.nextElementSibling;
-
-    // Skip over elements with the class "year"
-    while (nextLink && nextLink.classList.contains('year')) {
-    nextLink = direction === 1 
-        ? nextLink.previousElementSibling 
-        : nextLink.nextElementSibling;
-    }
-
-    // Check if there is a next link to navigate to
-    if (nextLink) {
-        // Get the next ID and the corresponding entry
-        let nextID = nextLink.querySelector('.subtext').getAttribute('id');
-        let entry = JSON.parse(unescape(nextLink.querySelector('.subtext').dataset.entry));
-
-        // Populate and show the lightbox for the next entry
-        populateLightbox(entry);
-        CurrentLightboxID = nextID;
-    }
-}
-
-let savedScrollPosition = 0;
-
-function getScrollbarWidth() {
-  const div = document.createElement('div');
-  div.style.overflow = 'scroll';
-  div.style.width = '50px';
-  div.style.height = '50px';
-  document.body.appendChild(div);
-  const scrollbarWidth = div.offsetWidth - div.clientWidth;
-  document.body.removeChild(div);
-  return scrollbarWidth;
-}
-function lockScroll() {
-
-  if (!isScrollLocked) { // Check if scroll is already locked
-    savedScrollPosition = window.scrollY; // Save the current scroll position        
-        scrollbarWidth = getScrollbarWidth();
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${savedScrollPosition}px`;
-        isScrollLocked = true; // Update the flag to indicate scroll is locked
-    }
-}
-
-function unlockScroll() {
-    document.body.style.removeProperty('overflow');
-    document.body.style.removeProperty('position');
-    document.body.style.removeProperty('top');
-    document.body.style.removeProperty('padding-right'); // Remove added padding
-    window.scrollTo(0, savedScrollPosition)
-
-    isScrollLocked = false;
-}
-
-function hideLightbox(){
-    document.getElementById('lightbox').classList.remove('show');
-    document.getElementById('lightbox').classList.add('hide');
-    // unlockScroll();
-
-    let mediaContainer = document.getElementById('entry-media');
-    // Iterate over the child nodes in reverse order (to safely remove while iterating)
-    for (let i = mediaContainer.childNodes.length - 1; i >= 0; i--) {
-        let child = mediaContainer.childNodes[i];
-        // Check if the child is not the spinner
-        if (!child.classList || !child.classList.contains('lds-ellipsis')) {
-            mediaContainer.removeChild(child);
-        }
-    }
-
-    lightboxEnabled = false;
-
-    if(window.location.hash) {
-        history.replaceState(null, null, ' '); // This effectively removes the hash
-    }
-
-}
-
-function showLightbox(currentID){
-    // lockScroll();
-    document.getElementById('lightbox').classList.remove('no-animation');
-    document.getElementById('lightbox').classList.add('show');
-    document.getElementById('lightbox').classList.remove('hide');
-    lightboxEnabled = true;
-    CurrentLightboxID = currentID;
-}
-function manageLinks() {
-	const links = document.querySelectorAll('.subtext');
-    links.forEach((link) => {
-        let entry = JSON.parse(unescape(link.dataset.entry));
-        link.setAttribute('id', entry.id);
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            if(entry.locked){
-                console.log("locked");
-                return;
-            }
-            // lockScroll();
-            populateLightbox(entry);
-            showLightbox(entry.id);
-        });
-    });
-
-    $(document).keydown(function(event) { 
-        if (event.key == "Escape") { // checking if the key pressed was 'Escape'
-        hideLightbox();
-        }
-    });
-	document.getElementById('close').addEventListener('click', () => {
-        hideLightbox();
-	});
-    var closeIndicator = $('<div class="close-indicator">&times;</div>');
-    var closeIndicatorAppended = false;
-    var lineConnector = $('<div class="line-connector"></div>');
-    var lineConnectorAppended = false;
-    var lightbox = $('#lightbox');
-    lightbox.click(function(event) {
-        if ($(event.target).attr('id') === 'lightbox') {            hideLightbox();
-            $(this).css('cursor', 'default');
-            $('#close').show();
-        }
-    });
-
-}
-function testURLForHash(){
-    console.log("testing url");
-    // see if we should be going somewhere based on url decorator
-    const urlHash = window.location.hash.substr(1); // Remove the '#' at the start
-    // console.log(urlHash);
-    if (urlHash) {
-        var potentiallink = document.getElementById(urlHash);
-        if(potentiallink){
-            // Create a new event
-            var event = new MouseEvent('click', {
-                view: window,
-                bubbles: true,
-                cancelable: true
-            });
-
-            // simulate mouse click
-            potentiallink.dispatchEvent(event);
-        }
-        else
-        {
-            console.log("no match found for"+ urlHash);
-            hideLightbox();
-        }
+            
         
-    }
-    else {
-        // console.log("hiding light box");
-        hideLightbox();
-    }
-}
-let isScrollLocked = false;
-
-// Fetch HTML contents
-// fetchHTML('output.html', 'container').then(() => {
-//     manageLinks();
-//     testURLForHash();
-//     $(document).ready(function() {
-//         document.getElementById('container').classList.remove('hidden');
-//     });
-
-//     var bioSvg = document.getElementById('biobub');
-//     bioSvg.addEventListener('click', function() {
-//     var bioLink = document.getElementById('bio');
-
-//     // Create a new event
-//     var event = new MouseEvent('click', {
-//         view: window,
-//         bubbles: true,
-//         cancelable: true
-//     });
-
-//     // simulate mouse click
-//     bioLink.dispatchEvent(event);
-//     });
-
-//     //detect pressing the back or forward button
-//     window.addEventListener('popstate', function(event) {
-//         testURLForHash();
-//       });
-    
-
-// });
-manageLinks();
-    testURLForHash();
-    $(document).ready(function() {
-        document.getElementById('container').classList.remove('hidden');
-    });
-
-    var bioSvg = document.getElementById('biobub');
-    bioSvg.addEventListener('click', function() {
-    var bioLink = document.getElementById('bio');
-
-    // Create a new event
-    var event = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true
-    });
-
-    // simulate mouse click
-    bioLink.dispatchEvent(event);
-    });
-
-    //detect pressing the back or forward button
-    window.addEventListener('popstate', function(event) {
-        testURLForHash();
-      });
-
-
-//Subscribe to Key Presses
-$(document).keydown(function(event) { 
-    switch(event.which) {
-        case 38: // up
-        RequestLightboxChange(1);
-        break;
-        case 40: // down
-        RequestLightboxChange(-1);
-        break;
-        case 37: // left
-        $('#prevSlideButton').click();
-        break;
-        case 39: // right
-        $('#nextSlideButton').click();
-        break;
-        default: return; // If it's not an arrow key, we ignore it
-    }
-});
-
-document.addEventListener('mousemove', function addClassOnMouseMove() {
-    document.body.classList.add('using-mouse');
-    // Remove the event listener once the class is added to avoid unnecessary processing
-    document.removeEventListener('mousemove', addClassOnMouseMove);
-});
-
-document.addEventListener('touchstart', function() {
-    document.body.classList.remove('using-mouse');
-});
-
-</script>
-
-
-
+    </main>
+        <script src="/static/interaction.js" defer></script>
 </body>
 </html>
