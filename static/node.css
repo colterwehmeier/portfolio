@@ -53,6 +53,10 @@ body {
 .breadcrumb-item.active { 
     background: #333; 
     color: white; 
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .breadcrumb-separator { 
     color: #999; 
@@ -368,9 +372,9 @@ p {
         }
 
         /* --- Bio Section & Links Table --- */
-.bio-table {
+    .bio-table {
     width: 60ch;
-    max-width: 100%;
+    max-width: 95vw;
     margin: 2rem auto;
     border-collapse: collapse;
 }
