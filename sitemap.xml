@@ -26,17 +26,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/playable/filter/solo</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://colter.us/playable/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://colter.us/playable/filter/clowder</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/playable/filter/architecture</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -551,11 +551,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/research/filter/ict</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://colter.us/research/filter/clowder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -566,17 +561,27 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://colter.us/research/filter/ict</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/research/filter/madvent</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://colter.us/research/filter/report</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/research/filter/ar</loc>
+    <loc>https://colter.us/games/egw24</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://colter.us/games/egw24</loc>
+    <loc>https://colter.us/games/peoplessky</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -681,16 +686,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/engagement/filter/ict</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colter.us/engagement/filter/workshop</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://colter.us/engagement/filter/game</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -701,9 +696,24 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/engagement/filter/ar</loc>
+    <loc>https://colter.us/engagement/filter/ict</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/engagement/filter/workshop</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/engagement/filter/madvent</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/games/peoplessky</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colter.us/engagement/surveysNecessary</loc>
