@@ -93,6 +93,48 @@ def calculate_max_height(file_list):
             print(f"Error processing dimensions for {filename}: {e}")
     
     return round(max(constrained_heights)) if constrained_heights else 0
+
+# Add this function alongside your other image/video processing functions
+def generate_image_thumbnail(image_path, thumbs_base_dir, size=(400, 400)):
+    """
+    Creates a small, compressed thumbnail for a given image.
+    """
+    try:
+        # Create a unique, stable filename using a hash
+        hash_obj = hashlib.md5(image_path.encode())
+        hash_name = hash_obj.hexdigest()
+        thumb_filename = f"{hash_name}.jpg"
+        
+        # Define paths
+        thumb_rel_path = f"static/thumbs/{thumb_filename}"
+        thumb_full_path = os.path.join(thumbs_base_dir, thumb_filename)
+        
+        # If thumbnail doesn't already exist, create it
+        if not os.path.exists(thumb_full_path):
+            with Image.open(image_path) as img:
+                # Handle EXIF orientation just in case
+                try:
+                    for orientation in ExifTags.TAGS.keys():
+                        if ExifTags.TAGS[orientation] == 'Orientation':
+                            break
+                    exif = img._getexif()
+                    if exif and exif.get(orientation) in [3, 6, 8]:
+                        if exif[orientation] == 3: img = img.rotate(180, expand=True)
+                        elif exif[orientation] == 6: img = img.rotate(270, expand=True)
+                        elif exif[orientation] == 8: img = img.rotate(90, expand=True)
+                except (AttributeError, KeyError, IndexError):
+                    pass # No EXIF data
+
+                img = img.convert('RGB')
+                img.thumbnail(size, PIL.Image.Resampling.LANCZOS)
+                img.save(thumb_full_path, "JPEG", quality=80, optimize=True)
+                print(f"  ✓ Generated thumbnail for {os.path.basename(image_path)}")
+
+        return thumb_rel_path
+    except Exception as e:
+        print(f"  ✗ Failed to create thumbnail for {image_path}: {e}")
+        return None
+
 import hashlib
 import requests
 from pathlib import Path
@@ -244,6 +286,15 @@ def process_entries(data):
         updated_file_list = process_files(file_list)
         entry['file_paths'] = updated_file_list
         FileListForCopyingAtTheEnd.append(updated_file_list)
+        # Check if a thumbnail can be generated from the first image
+        if updated_file_list:
+            first_file = updated_file_list[0]
+            extension = pathlib.Path(first_file).suffix.lower()
+            if extension in [".jpg", ".jpeg", ".png", ".webp"]:
+                # Generate an image thumbnail and assign it to thumbnail_override
+                img_thumb_path = generate_image_thumbnail(first_file, thumbs_base_dir)
+                if img_thumb_path:
+                    entry['thumbnail_override'] = img_thumb_path
         
         # Process YouTube thumbnails
         thumbnail_path = process_youtube_thumbnails(entry, folder_path, thumbs_base_dir)
@@ -312,28 +363,6 @@ def generate_html_content(themes):
     
     html_content += '</div>'
     return html_content
-
-# MP4 Version
-# def compress_video_if_needed(filename, max_filesize_bytes=500000000): # Set max_filesize_bytes to your desired max size
-#     file_size_bytes = os.path.getsize(filename)
-#     if file_size_bytes > max_filesize_bytes:
-#         base_name = os.path.basename(filename)
-#         dir_name = os.path.dirname(filename)
-#         name_without_ext, extension = os.path.splitext(base_name)
-
-#         # compressed_base_name = "_c_" + name_without_ext + extension
-#         compressed_base_name = "_c_" + name_without_ext + ".mp4"
-#         compressed_filename = os.path.join(dir_name, compressed_base_name)
-
-#         # Check if compressed file already exists
-#         if not os.path.isfile(compressed_filename):
-#             print(f"Compressing {filename} to {compressed_filename}")
-#             # subprocess.run(["ffmpeg", "-i", filename, "-vf", "scale=trunc(iw/2)*2:720", "-b:v", "1M", compressed_filename])
-#             subprocess.run(["ffmpeg", "-i", filename, "-vf", "scale='min(720,iw)':-2", "-b:v", "1M", compressed_filename])
-
-#         return compressed_filename
-
-#     return filename
 
 def compress_video_if_needed(filename, max_filesize_bytes=500000000):
     """Convert videos to WebM format, with size-based quality adjustment"""
@@ -407,7 +436,6 @@ def filter_video_files(file_list):
     
     return filtered_files
 
-
 def compress_image_if_needed(filename, max_filesize):
     if pathlib.Path(filename).suffix.lower() not in [".png", ".jpg", ".jpeg"]:
         print(f"{filename} is not a recognised image file.")
@@ -465,7 +493,6 @@ def compress_image_if_needed(filename, max_filesize):
     else:
         return filename
 
-
 def sort_files(file_list):
     def get_sort_key(filename):
         name = os.path.splitext(os.path.basename(filename))[0]
@@ -478,6 +505,7 @@ def sort_files(file_list):
     file_list = [file for file in file_list if '_x_' not in file and '_c_' not in file]
     file_list.sort(key=get_sort_key)
     return file_list
+
 def get_image_dimensions(image_path):
     _, extension = os.path.splitext(image_path)
     extension = extension.lower()
@@ -877,11 +905,7 @@ data = compute_recommendations(data, max_recommendations=4)
 
 
 
-
-
-
 print("Generating compiled.json for the Node.js app...")
-
 # The 'data' variable already contains all the entries that were processed
 # by process_entries, including the updated 'file_paths'.
 with open('entries/compiled/compiled.json', 'w') as json_file:
@@ -896,8 +920,6 @@ with open("../sitemap.xml", "w") as file:
     file.write(sitemap_xml)
 
 print("Sitemap generated successfully.")
-
-
 
 import shutil
 import os

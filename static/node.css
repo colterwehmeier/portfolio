@@ -374,8 +374,8 @@ p {
 
         /* --- Bio Section & Links Table --- */
     .bio-table {
-    width: 60ch;
-    max-width: 95vw;
+    width: 100%; /* Make it fill its container */
+    max-width: 60ch; /* But not exceed 60ch */
     margin: 2rem auto;
     border-collapse: collapse;
 }
