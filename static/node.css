@@ -152,6 +152,7 @@ body {
 	justify-content: center;
     padding-left: 6px;
     padding-right: 6px;
+    max-height: 3ch;
 }
 .item-description { 
     font-size: 1rem; 

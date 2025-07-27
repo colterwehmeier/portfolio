@@ -166,6 +166,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://colter.us/games/dungeon</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/wurm</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -281,7 +286,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/games/filter/clowder</loc>
+    <loc>https://colter.us/games/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -352,6 +357,11 @@
   </url>
   <url>
     <loc>https://colter.us/games/demodisk2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/games/dungeon</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -921,6 +931,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://colter.us/objects/lillamp</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://colter.us/ar-spatial/kogler2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -947,6 +962,16 @@
   </url>
   <url>
     <loc>https://colter.us/ar-spatial/munich</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/objects/arcade</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/objects/hifi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1361,12 +1386,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://colter.us/objects/filter/wood</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://colter.us/objects/filter/design</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/objects/filter/wood</loc>
+    <loc>https://colter.us/objects/filter/3d-print</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1376,12 +1406,22 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://colter.us/objects/filter/installation</loc>
+    <loc>https://colter.us/objects/lillamp</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colter.us/objects/lilbable</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/objects/arcade</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colter.us/objects/hifi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
