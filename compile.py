@@ -135,6 +135,69 @@ def generate_image_thumbnail(image_path, thumbs_base_dir, size=(400, 400)):
         print(f"  ✗ Failed to create thumbnail for {image_path}: {e}")
         return None
 
+def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=300):
+    """
+    Creates a small, compressed video thumbnail with no audio.
+    Max resolution of 300px on the longest edge.
+    """
+    try:
+        import hashlib
+        
+        # Create unique filename using hash
+        hash_obj = hashlib.md5(video_path.encode())
+        hash_name = hash_obj.hexdigest()
+        thumb_filename = f"{hash_name}_thumb.webm"
+        
+        # Define paths
+        thumb_rel_path = f"static/thumbs/{thumb_filename}"
+        thumb_full_path = os.path.join(thumbs_base_dir, thumb_filename)
+        
+        # Skip if thumbnail already exists
+        if os.path.exists(thumb_full_path):
+            return thumb_rel_path
+            
+        # Get video dimensions to calculate scale
+        width, height = get_video_dimensions(video_path)
+        
+        # Calculate scale to fit within max_size
+        if width > height:
+            scale = f"{max_size}:-2"  # Scale width to max_size, height auto
+        else:
+            scale = f"-2:{max_size}"  # Scale height to max_size, width auto
+        
+        print(f"  Creating video thumbnail for {os.path.basename(video_path)}...")
+        
+        # FFmpeg command for thumbnail video
+        # - No audio (-an)
+        # - Scale down
+        # - High compression
+        # - Fast seek for better performance
+        subprocess.run([
+            "ffmpeg", "-i", video_path,
+            "-an",                          # Remove audio
+            "-vf", f"scale={scale}",        # Scale to max 300px
+            "-c:v", "libvpx-vp9",          # VP9 codec
+            "-b:v", "150k",                # Low bitrate for small size
+            "-crf", "40",                  # Higher CRF = more compression
+            "-cpu-used", "5",              # Fastest encoding
+            "-deadline", "realtime",       # Fast encoding mode
+            "-auto-alt-ref", "0",          # Disable for faster encoding
+            "-lag-in-frames", "0",         # No look-ahead for speed
+            "-y",                          # Overwrite
+            thumb_full_path
+        ], check=True, capture_output=True)
+        
+        print(f"  ✓ Generated video thumbnail: {thumb_rel_path}")
+        return thumb_rel_path
+        
+    except subprocess.CalledProcessError as e:
+        print(f"  ✗ Failed to create video thumbnail: {e}")
+        print(f"    Error output: {e.stderr.decode() if e.stderr else 'No error output'}")
+        return None
+    except Exception as e:
+        print(f"  ✗ Error creating video thumbnail for {video_path}: {e}")
+        return None
+    
 import hashlib
 import requests
 from pathlib import Path
@@ -301,19 +364,35 @@ def process_entries(data):
                 }
         
         # Check if a thumbnail can be generated from the first image
+        # Check if a thumbnail can be generated from the first media file
         if updated_file_list:
             first_file = updated_file_list[0]
             extension = pathlib.Path(first_file).suffix.lower()
+            
+            # Generate image thumbnail
             if extension in [".jpg", ".jpeg", ".png", ".webp"]:
-                # Generate an image thumbnail and assign it to thumbnail_override
                 img_thumb_path = generate_image_thumbnail(first_file, thumbs_base_dir)
                 if img_thumb_path:
                     entry['thumbnail_override'] = img_thumb_path
-                    # Also calculate dimensions for the thumbnail
+                    # Calculate dimensions for the thumbnail
                     thumb_full_path = os.path.join(thumbs_base_dir, os.path.basename(img_thumb_path))
                     thumb_dims = calculate_media_dimensions(thumb_full_path)
                     if thumb_dims:
                         entry['media_dimensions'][img_thumb_path] = {
+                            'width': thumb_dims[0],
+                            'height': thumb_dims[1]
+                        }
+            
+            # Generate video thumbnail for WebM/MP4 files
+            elif extension in [".webm", ".mp4"]:
+                video_thumb_path = generate_video_thumbnail(first_file, thumbs_base_dir)
+                if video_thumb_path:
+                    entry['thumbnail_override'] = video_thumb_path
+                    # Video thumbnails maintain aspect ratio, calculate actual dimensions
+                    thumb_full_path = os.path.join(thumbs_base_dir, os.path.basename(video_thumb_path))
+                    thumb_dims = calculate_media_dimensions(thumb_full_path)
+                    if thumb_dims:
+                        entry['media_dimensions'][video_thumb_path] = {
                             'width': thumb_dims[0],
                             'height': thumb_dims[1]
                         }
