@@ -271,6 +271,10 @@ p {
     overflow: hidden;   /* This clips the child (the image) to the rounded shape */
 }
 
+.media-aspect-wrapper:has(iframe) {
+        height:500px;
+}
+
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
@@ -281,9 +285,6 @@ p {
     display: block;
     /* No object-fit is needed, as the element will perfectly fill its
        identically-proportioned parent container. */
-}
-.media-aspect-wrapper iframe{
-    height:500px;
 }
 
 /* Scroll indicators */
