@@ -282,6 +282,9 @@ p {
     /* No object-fit is needed, as the element will perfectly fill its
        identically-proportioned parent container. */
 }
+.media-aspect-wrapper iframe{
+    height:500px;
+}
 
 /* Scroll indicators */
 .detail-media.multi {
