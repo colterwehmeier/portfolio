@@ -230,6 +230,9 @@ p {
 .detail-media.single .media-item {
     max-width: min(100%, 1000px);
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media item base styles */
@@ -264,7 +267,9 @@ p {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    width: 100%; /* Ensure it fills its container slot */
+    width: 100%;
+    /* Add the max-height constraint */
+    max-height: 500px;
 }
 
 /* The actual media element now fills the wrapper perfectly. */
