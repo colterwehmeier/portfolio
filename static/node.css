@@ -272,7 +272,6 @@ p {
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
