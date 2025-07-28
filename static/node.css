@@ -265,23 +265,23 @@ p {
 
 .media-aspect-wrapper {
     position: relative;
-    border-radius: 8px;
-    overflow: hidden;
     width: 100%;
-    /* Add the max-height constraint */
     max-height: 500px;
+    border-radius: 8px; /* The radius of the clipping mask */
+    overflow: hidden;   /* This clips the child (the image) to the rounded shape */
 }
 
 /* The actual media element now fills the wrapper perfectly. */
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
-    display:block;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 'cover' is now safe because the wrapper has the correct aspect ratio */
+    /* No object-fit is needed, as the element will perfectly fill its
+       identically-proportioned parent container. */
 }
 
 /* Scroll indicators */
