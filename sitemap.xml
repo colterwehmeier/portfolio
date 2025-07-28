@@ -571,6 +571,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/research/filter/exhibition</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -581,9 +586,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/clowder</loc>
+    <loc>https://portfolio.colter.us/engagement/dariah25</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/presentations/spacenature</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/engagement/qbicon</loc>
@@ -711,12 +721,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/ar</loc>
+    <loc>https://portfolio.colter.us/engagement/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/research</loc>
+    <loc>https://portfolio.colter.us/engagement/filter/ar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -736,9 +746,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/data viz</loc>
+    <loc>https://portfolio.colter.us/engagement/filter/heritage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/engagement/dariah25</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/engagement/qbicon</loc>
@@ -936,6 +951,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/engagement/dariah25</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/presentations/spacenature</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/games/egw24</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -979,6 +1004,11 @@
     <loc>https://portfolio.colter.us/design/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/presentations/spacenature</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/engagement/qbicon</loc>
@@ -1389,6 +1419,11 @@
     <loc>https://portfolio.colter.us/media/filter/art</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/presentations/spacenature</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/engagement/qbicon</loc>
