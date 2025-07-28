@@ -229,8 +229,10 @@ p {
 /* Single item display */
 .detail-media.single .media-item {
     max-width: min(100%, 1000px);
-    max-height: min(100%, 500px);
     margin: 0 auto;
+}
+.detail-media.single{
+    height:500px;
 }
 
 /* Media item base styles */
