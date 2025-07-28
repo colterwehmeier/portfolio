@@ -231,9 +231,6 @@ p {
     max-width: min(100%, 1000px);
     margin: 0 auto;
 }
-.detail-media.single{
-    height:500px;
-}
 
 /* Media item base styles */
 .media-item {
