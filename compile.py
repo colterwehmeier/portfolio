@@ -249,7 +249,7 @@ def calculate_media_dimensions(file_path):
 
 
 def process_entries(data):
-    """Simplified version without dimension calculations"""
+    """Enhanced version that calculates and stores media dimensions"""
     themes = defaultdict(lambda: defaultdict(list))
     existing_folders = []
     existing_ids = {}
@@ -263,6 +263,9 @@ def process_entries(data):
     for entry in data:
         # Initialize thumbnail_override field
         entry['thumbnail_override'] = ''
+        
+        # Initialize media_dimensions dictionary
+        entry['media_dimensions'] = {}
         
         if not entry['id']:
             print(f"Entry without id: {entry['title']}")
@@ -286,6 +289,17 @@ def process_entries(data):
         updated_file_list = process_files(file_list)
         entry['file_paths'] = updated_file_list
         FileListForCopyingAtTheEnd.append(updated_file_list)
+        
+        # Calculate dimensions for all media files
+        for file_path in updated_file_list:
+            dimensions = calculate_media_dimensions(file_path)
+            if dimensions:
+                # Store dimensions with the file path as key
+                entry['media_dimensions'][file_path] = {
+                    'width': dimensions[0],
+                    'height': dimensions[1]
+                }
+        
         # Check if a thumbnail can be generated from the first image
         if updated_file_list:
             first_file = updated_file_list[0]
@@ -295,15 +309,24 @@ def process_entries(data):
                 img_thumb_path = generate_image_thumbnail(first_file, thumbs_base_dir)
                 if img_thumb_path:
                     entry['thumbnail_override'] = img_thumb_path
+                    # Also calculate dimensions for the thumbnail
+                    thumb_full_path = os.path.join(thumbs_base_dir, os.path.basename(img_thumb_path))
+                    thumb_dims = calculate_media_dimensions(thumb_full_path)
+                    if thumb_dims:
+                        entry['media_dimensions'][img_thumb_path] = {
+                            'width': thumb_dims[0],
+                            'height': thumb_dims[1]
+                        }
         
         # Process YouTube thumbnails
         thumbnail_path = process_youtube_thumbnails(entry, folder_path, thumbs_base_dir)
         if thumbnail_path:
             entry['thumbnail_override'] = thumbnail_path
-        
-        # We can remove the max_height calculation if not needed elsewhere
-        # max_height = calculate_max_height(updated_file_list)
-        # entry['lightbox_max_height'] = f"{max_height}px" if max_height > 0 else "0px"
+            # YouTube thumbnails are typically 16:9
+            entry['media_dimensions'][thumbnail_path] = {
+                'width': 1280,
+                'height': 720
+            }
         
         existing_folders.append(folder_path)
         
@@ -315,6 +338,7 @@ def process_entries(data):
             themes[theme][entry['year']].append(entry_copy)
     
     return themes, existing_folders, entries_without_id, FileListForCopyingAtTheEnd
+
 def generate_html_content(themes):
     html_content = ""
     year_themes = {}
