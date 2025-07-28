@@ -108,29 +108,16 @@ body {
     position: relative; 
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8px; /* Add this */
-    overflow: hidden;    /* Add this */
+    display: flex; /* Helps center the wrapper */
+    justify-content: center;
+    align-items: center;
 }
-.item-thumbnail.video video 
-{ 
-        max-height: 300px;
+.item-thumbnail.video video,
+.item-thumbnail img { 
+    max-height: 300px;
     width: auto;
     max-width: 100%;
-        max-width: 100%;
     object-fit: contain; 
-        border-radius: 8px; 
-
-}
-.item-thumbnail img 
-{ 
-        max-height: 300px;
-    width: auto;
-    max-width: 100%;
-    width: auto; 
-    max-width: 100%;
-    object-fit: contain; 
-    border-radius: 8px; 
-
 }
 .item-content { 
     padding-top: 0.5rem;
@@ -248,8 +235,6 @@ p {
 /* Media item base styles */
 .media-item {
     position: relative;
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 .media-item img,
@@ -262,11 +247,37 @@ p {
     
 }
 
+/* Ensure the wrapper respects the thumbnail's max-height */
+.item-thumbnail .media-aspect-wrapper {
+    max-height: 100%;
+}
+
+/* Keep the iframe rule for detail view */
 .media-item iframe {
     width: 100%;
     height: 100%;
     border: 0;
     min-height: 500px;
+}
+
+.media-aspect-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Fallback background */
+    width: 100%; /* Ensure it fills its container slot */
+}
+
+/* The actual media element now fills the wrapper perfectly. */
+.media-aspect-wrapper img,
+.media-aspect-wrapper video,
+.media-aspect-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 'cover' is now safe because the wrapper has the correct aspect ratio */
 }
 
 /* Scroll indicators */
