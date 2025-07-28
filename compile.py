@@ -177,15 +177,16 @@ def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=500):
             "-an",                          # Remove audio
             "-vf", f"scale={scale}",        # Scale to max 300px
             "-c:v", "libvpx-vp9",          # VP9 codec
-            "-b:v", "150k",                # Low bitrate for small size
-            "-crf", "40",                  # Higher CRF = more compression
-            "-cpu-used", "5",              # Fastest encoding
-            "-deadline", "realtime",       # Fast encoding mode
-            "-auto-alt-ref", "0",          # Disable for faster encoding
-            "-lag-in-frames", "0",         # No look-ahead for speed
+            "-b:v", "0",                   # Use CRF-only mode
+            "-crf", "28",                  # Lower CRF = better quality (20–32 range)
+            "-cpu-used", "4",              # Good speed-quality balance (0=best quality, 5=fastest)
+            "-deadline", "good",           # Better visual quality than "realtime"
+            "-auto-alt-ref", "1",          # Allow alternate reference frames (improves quality)
+            "-lag-in-frames", "25",        # Enable lookahead for better compression
             "-y",                          # Overwrite
             thumb_full_path
         ], check=True, capture_output=True)
+
         
         print(f"  ✓ Generated video thumbnail: {thumb_rel_path}")
         return thumb_rel_path
