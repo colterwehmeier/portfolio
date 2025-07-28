@@ -135,7 +135,7 @@ def generate_image_thumbnail(image_path, thumbs_base_dir, size=(400, 400)):
         print(f"  ✗ Failed to create thumbnail for {image_path}: {e}")
         return None
 
-def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=300):
+def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=500):
     """
     Creates a small, compressed video thumbnail with no audio.
     Max resolution of 300px on the longest edge.
