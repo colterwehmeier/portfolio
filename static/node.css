@@ -272,6 +272,7 @@ p {
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
+    display:block;
     top: 0;
     left: 0;
     width: 100%;
