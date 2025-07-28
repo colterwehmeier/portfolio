@@ -108,8 +108,11 @@ body {
     position: relative; 
     margin-left: auto;
     margin-right: auto;
+    border-radius: 8px; /* Add this */
+    overflow: hidden;    /* Add this */
 }
-.item-thumbnail.video video { 
+.item-thumbnail.video video 
+{ 
         max-height: 300px;
     width: auto;
     max-width: 100%;
@@ -118,7 +121,8 @@ body {
         border-radius: 8px; 
 
 }
-.item-thumbnail img { 
+.item-thumbnail img 
+{ 
         max-height: 300px;
     width: auto;
     max-width: 100%;
