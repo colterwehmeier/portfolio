@@ -272,7 +272,8 @@ p {
 }
 
 .media-aspect-wrapper:has(iframe) {
-        height:500px;
+        height:auto;
+        width: calc(100vw - 6rem);
 }
 
 .media-aspect-wrapper img,
