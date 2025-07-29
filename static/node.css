@@ -103,14 +103,11 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail { 
+/* Instead, use this approach */
+.item-thumbnail {
     max-height: 300px;
-    position: relative; 
-    margin-left: auto;
-    margin-right: auto;
-    display: flex; /* Helps center the wrapper */
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    overflow: hidden; /* Crop anything that exceeds max-height */
 }
 .item-thumbnail.video video,
 .item-thumbnail img { 
@@ -251,9 +248,9 @@ p {
 }
 
 /* Ensure the wrapper respects the thumbnail's max-height */
-.item-thumbnail .media-aspect-wrapper {
+/* .item-thumbnail .media-aspect-wrapper {
     max-height: 100%;
-}
+} */
 
 /* Keep the iframe rule for detail view */
 .media-item iframe {
@@ -264,11 +261,12 @@ p {
 }
 
 .media-aspect-wrapper {
-    position: relative;
-    max-height: 500px;
-    
-    border-radius: 8px; /* The radius of the clipping mask */
-    overflow: hidden;   /* This clips the child (the image) to the rounded shape */
+    width: 100%;
+    /* aspect-ratio set inline */
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f0f0f0;
+    /* Remove ALL max-height constraints - let aspect-ratio do its job */
 }
 
 .media-aspect-wrapper:has(iframe) {
