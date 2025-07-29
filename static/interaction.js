@@ -41,66 +41,66 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     // View Transitions (if supported)
-    if ('startViewTransition' in document) {
-        document.addEventListener('click', async (e) => {
-            const link = e.target.closest('a[href^="/"]');
-            if (!link || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    // if ('startViewTransition' in document) {
+    //     document.addEventListener('click', async (e) => {
+    //         const link = e.target.closest('a[href^="/"]');
+    //         if (!link || e.metaKey || e.ctrlKey || e.shiftKey) return;
             
-            // Check if this is a transition from grid to detail view
-            const isItemCard = link.classList.contains('item-card');
-            const currentPath = window.location.pathname;
-            const newPath = link.pathname;
+    //         // Check if this is a transition from grid to detail view
+    //         const isItemCard = link.classList.contains('item-card');
+    //         const currentPath = window.location.pathname;
+    //         const newPath = link.pathname;
             
-            // Skip view transitions for grid->detail navigations
-            if (isItemCard) {
-                // Just do regular navigation
-                window.location.href = link.href;
-                return;
-            }
+    //         // Skip view transitions for grid->detail navigations
+    //         if (isItemCard) {
+    //             // Just do regular navigation
+    //             window.location.href = link.href;
+    //             return;
+    //         }
             
-            e.preventDefault();
+    //         e.preventDefault();
             
-            try {
-                await document.startViewTransition(async () => {
-                    const response = await fetch(link.href);
-                    const html = await response.text();
+    //         try {
+    //             await document.startViewTransition(async () => {
+    //                 const response = await fetch(link.href);
+    //                 const html = await response.text();
                     
-                    const parser = new DOMParser();
-                    const newDoc = parser.parseFromString(html, 'text/html');
+    //                 const parser = new DOMParser();
+    //                 const newDoc = parser.parseFromString(html, 'text/html');
                     
-                    // Update content
-                    document.querySelector('.nav-header')?.replaceWith(newDoc.querySelector('.nav-header'));
-                    document.querySelector('.grid-container')?.replaceWith(
-                        newDoc.querySelector('.grid-container')
-                    );
+    //                 // Update content
+    //                 document.querySelector('.nav-header')?.replaceWith(newDoc.querySelector('.nav-header'));
+    //                 document.querySelector('.grid-container')?.replaceWith(
+    //                     newDoc.querySelector('.grid-container')
+    //                 );
                     
-                    // Reset navbar state for fresh page
-                    const newNavbar = document.querySelector('.nav-header');
-                    if (newNavbar) {
-                        newNavbar.dataset.offset = '0';
-                        newNavbar.style.transform = 'translateY(0)';
-                    }
+    //                 // Reset navbar state for fresh page
+    //                 const newNavbar = document.querySelector('.nav-header');
+    //                 if (newNavbar) {
+    //                     newNavbar.dataset.offset = '0';
+    //                     newNavbar.style.transform = 'translateY(0)';
+    //                 }
                     
-                    // Ensure JS class persists
-                    document.documentElement.classList.add('js-enabled');
+    //                 // Ensure JS class persists
+    //                 document.documentElement.classList.add('js-enabled');
                     
-                    // Update URL and title
-                    history.pushState(null, '', link.href);
-                    document.title = newDoc.title;
+    //                 // Update URL and title
+    //                 history.pushState(null, '', link.href);
+    //                 document.title = newDoc.title;
                     
-                    // Scroll to top after transition
-                    window.scrollTo(0, 0);
-                    lastScrollTop = 0; // Reset scroll tracking
-                });
-            } catch (error) {
-                console.error('View transition failed:', error);
-                window.location.href = link.href;
-            }
-        });
+    //                 // Scroll to top after transition
+    //                 window.scrollTo(0, 0);
+    //                 lastScrollTop = 0; // Reset scroll tracking
+    //             });
+    //         } catch (error) {
+    //             console.error('View transition failed:', error);
+    //             window.location.href = link.href;
+    //         }
+    //     });
         
-        // Handle browser navigation
-        window.addEventListener('popstate', () => {
-            location.reload();
-        });
-    }
+    //     // Handle browser navigation
+    //     window.addEventListener('popstate', () => {
+    //         location.reload();
+    //     });
+    // }
 });
