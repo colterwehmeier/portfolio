@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Colter Wehmeier</title>
+    <meta name="description" content="Get in touch with Colter Wehmeier for collaborations, questions, or other inquiries.">
+    <link rel="stylesheet" href="https://colterwehmeier.github.io/portfolio/static/node.css">
+    <style>
+      body { background-color: #f4f4f9; }
+      .contact-container { max-width: 650px; margin: 3rem auto; padding: 2rem; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+      .form-group { margin-bottom: 1.5rem; }
+      label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+      input, textarea { width: 100%; padding: 0.85rem; border: 1px solid #ddd; border-radius: 4px; }
+      button { display: block; width: 100%; padding: 1rem; background: #333; color: white; border: none; border-radius: 4px; font-size: 1.1rem; cursor: pointer; }
+      .nav-header { background: white; padding: 2rem; border-bottom: 1px solid #e0e0e0; }
+      .breadcrumb-item.active { background: #333; color: white; }
+    </style>
+</head>
+<body>
+    <header class="nav-header">
+        <div class="breadcrumb">
+            <a href="/" class="breadcrumb-item">Colter</a>
+            <span class="breadcrumb-separator">→</span>
+            <span class="breadcrumb-item active">Contact</span>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <form action="https://colter.us/log/" method="POST">
+            <h1>Contact Me</h1>
+            <p>For questions, collaborations, or other inquiries, please use the form below.</p>
+
+            <input type="hidden" name="from" value="portfolio-contact">
+            <input type="hidden" name="title" value="New Portfolio Contact Form Submission">
+
+            <input type="text" name="subject" style="display:none !important;" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message_body">Message</label>
+                <textarea id="message_body" name="message_body" rows="6" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>
