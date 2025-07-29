@@ -16,17 +16,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/research</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/playable/filter/exhibition</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/playable/filter/madvent</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/playable/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -166,11 +166,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/dungeon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/ar-spatial/wurm</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -216,11 +211,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/sloppyjoe</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/ar-spatial/guchibytes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -251,7 +241,32 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/games/fazole</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/crapmaps</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/skyboxes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/oceantop</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/games/nightmarehouse2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/flatsky</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -281,12 +296,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/filter/research</loc>
+    <loc>https://portfolio.colter.us/games/filter/collaboration</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/filter/collaboration</loc>
+    <loc>https://portfolio.colter.us/games/filter/analytics</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -361,11 +376,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/dungeon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/games/madvent1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -396,12 +406,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/sloppyjoe</loc>
+    <loc>https://portfolio.colter.us/games/fazole</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/crapmaps</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/skyboxes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/oceantop</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/games/nightmarehouse2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/flatsky</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1206,6 +1236,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/games/skyboxes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/nightmarehouse2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/architecture</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1497,6 +1537,16 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/media/archonprize2018</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/skyboxes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/games/nightmarehouse2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
