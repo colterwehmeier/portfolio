@@ -1038,12 +1038,12 @@ print("copying over files to git")
 # Specific files to copy
 specific_files = [
     'favicon.ico',
-    'index-source.html',
-    'robots.txt',
+    # 'index-source.html',
+    # 'robots.txt',
     #'output.html', <- we actually change the filenames and links later on
-    'sitemap.xml',
-    'style.css',
-    'assets/garden_fast.mp4',
+    # 'sitemap.xml',
+    # 'style.css',
+    # 'assets/garden_fast.mp4',
     'compile.py'
 ]
 
@@ -1062,12 +1062,12 @@ for file_path in specific_files:
     shutil.copy(full_source_path, full_target_path)
 
 # Copy directories recursively
-for dir_path in recursive_dirs:
-    full_source_path = source_dir / dir_path
-    full_target_path = target_dir / dir_path
-    if full_target_path.exists():
-        shutil.rmtree(full_target_path)  # Ensure target directory is removed before copying
-    shutil.copytree(full_source_path, full_target_path, dirs_exist_ok=True)  # Copy directory tree
+# for dir_path in recursive_dirs:
+#     full_source_path = source_dir / dir_path
+#     full_target_path = target_dir / dir_path
+#     if full_target_path.exists():
+#         shutil.rmtree(full_target_path)  # Ensure target directory is removed before copying
+#     shutil.copytree(full_source_path, full_target_path, dirs_exist_ok=True)  # Copy directory tree
 
 #have to get rid of preceeding _ for github
 
@@ -1137,34 +1137,34 @@ html_content = re.sub(
     html_content
 )
 
-# Write the modified html content to the target directory
-target_html_path = target_dir / 'output.html'
-with open(target_html_path, 'w', encoding='utf-8') as file:
-    file.write(html_content)
+# # Write the modified html content to the target directory
+# target_html_path = target_dir / 'output.html'
+# with open(target_html_path, 'w', encoding='utf-8') as file:
+#     file.write(html_content)
 
-#
-print("constructing final index.html file at target dir and source dir")
-print("injecting content into source index")
-# Read the 'index-source.html' file
-index_source_path = source_dir / 'index-source.html'
-with open(index_source_path, 'r', encoding='utf-8') as file:
-    index_content = file.read()
+# #
+# print("constructing final index.html file at target dir and source dir")
+# print("injecting content into source index")
+# # Read the 'index-source.html' file
+# index_source_path = source_dir / 'index-source.html'
+# with open(index_source_path, 'r', encoding='utf-8') as file:
+#     index_content = file.read()
 
-# Read the 'output.html' file
-output_html_path = target_dir / 'output.html'
-with open(output_html_path, 'r', encoding='utf-8') as file:
-    output_content = file.read()
+# # Read the 'output.html' file
+# output_html_path = target_dir / 'output.html'
+# with open(output_html_path, 'r', encoding='utf-8') as file:
+#     output_content = file.read()
 
-# Inject the 'output.html' content into the '<div id="container"></div>' element
-modified_index_content = index_content.replace('<div id="container"></div>', f'<div id="container">{output_content}</div>')
+# # Inject the 'output.html' content into the '<div id="container"></div>' element
+# modified_index_content = index_content.replace('<div id="container"></div>', f'<div id="container">{output_content}</div>')
 
-# Save the modified index content as 'index.html' in the source directory
-index_html_path = source_dir / 'index.html'
-with open(index_html_path, 'w', encoding='utf-8') as file:
-    file.write(modified_index_content)
-index_html_path = target_dir / 'index.html'
-with open(index_html_path, 'w', encoding='utf-8') as file:
-    file.write(modified_index_content)
+# # Save the modified index content as 'index.html' in the source directory
+# index_html_path = source_dir / 'index.html'
+# with open(index_html_path, 'w', encoding='utf-8') as file:
+#     file.write(modified_index_content)
+# index_html_path = target_dir / 'index.html'
+# with open(index_html_path, 'w', encoding='utf-8') as file:
+#     file.write(modified_index_content)
 
 
-print("Site export completed successfully.")
+# print("Site export completed successfully.")
