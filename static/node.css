@@ -279,11 +279,11 @@ p {
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
-    top: 0;
+    /* top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: block;
+    display: block; */
     /* No object-fit is needed, as the element will perfectly fill its
        identically-proportioned parent container. */
 }
