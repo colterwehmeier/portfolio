@@ -265,6 +265,18 @@ p {
     max-height: 100%;
     display:block;
     /* background-color: #e0e4f8ff; */
+    opacity: 1;
+    transition: opacity .25s ease-out;
+}
+/* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
+@starting-style {
+  .media-aspect-wrapper img,
+    .media-aspect-wrapper video,
+    .media-aspect-wrapper iframe { opacity: 0; }
+}
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in { transition: none; }
 }
 
 /* Scroll indicators */
