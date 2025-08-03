@@ -103,18 +103,22 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail {
+.item-thumbnail { 
     max-height: 300px;
-    display: flex;
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Helps center the wrapper */
     justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
 }
-.item-thumbnail>*{
-    border-radius: 8px;
+.item-thumbnail.video video,
+.item-thumbnail img { 
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover; 
 }
-
-
 .item-content { 
     padding-top: 0.5rem;
     display: flex;
@@ -246,16 +250,9 @@ p {
     
 }
 
-
-
-
-
-
-.detail-media .media-aspect-wrapper img,
-.detail-media .media-aspect-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Fill for detail view */
+/* Ensure the wrapper respects the thumbnail's max-height */
+.item-thumbnail .media-aspect-wrapper {
+    max-height: 100%;
 }
 
 /* Keep the iframe rule for detail view */
@@ -266,36 +263,30 @@ p {
     min-height: 500px;
 }
 
-
-
-/* Simple thumbnail container */
-.item-thumbnail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 300px;
-    background: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
+.media-aspect-wrapper {
+    position: relative;
+    max-height: 500px;
+    
+    border-radius: 8px; /* The radius of the clipping mask */
+    overflow: hidden;   /* This clips the child (the image) to the rounded shape */
 }
 
-/* Images sized by inline styles */
-.item-thumbnail img,
-.item-thumbnail video {
+.media-aspect-wrapper:has(iframe) {
+        height:auto;
+        width: min(888px,calc(100vw - 6rem));
+}
+
+.media-aspect-wrapper img,
+.media-aspect-wrapper video,
+.media-aspect-wrapper iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: block;
-    background: #e0e0e0; /* Visible while loading */
-    border-radius: 8px;
+    /* No object-fit is needed, as the element will perfectly fill its
+       identically-proportioned parent container. */
 }
-
-/* Mobile adjustment */
-@media (max-width: 768px) {
-    .item-thumbnail {
-        max-height: 250px;
-    }
-}
-
-
-
 
 /* Scroll indicators */
 .detail-media.multi {
