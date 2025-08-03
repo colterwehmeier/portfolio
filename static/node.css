@@ -273,10 +273,11 @@ p {
 @supports (font: -apple-system-body) {
   .media-aspect-wrapper > img,
   .media-aspect-wrapper > video {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: auto;         /* break the “intrinsic height lock” */
-    aspect-ratio: inherit;/* use parent’s aspect-ratio */
-    object-fit: cover;
+    height: 100%;      /* key: don’t leave height:auto in Safari here */
+    object-fit: cover; /* or contain */
     display: block;
   }
 }
