@@ -103,23 +103,17 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail {
+.item-thumbnail { 
     max-height: 300px;
-    position: relative;
+    position: relative; 
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align to top for landscape images */
-    overflow: hidden; /* Ensure nothing exceeds bounds */
+    align-items: center;
 }
-.item-thumbnail.video video,
-.item-thumbnail img { 
-    max-height: 300px;
-    width: auto;
-    max-width: 100%;
-    object-fit: cover; 
-}
+
+
 .item-content { 
     padding-top: 0.5rem;
     display: flex;
@@ -262,7 +256,6 @@ p {
 
 .item-thumbnail .media-aspect-wrapper img,
 .item-thumbnail .media-aspect-wrapper video {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -287,13 +280,18 @@ p {
     min-height: 500px;
 }
 
+
+/* The wrapper reserves space via aspect-ratio */
 .media-aspect-wrapper {
     position: relative;
-    width: 100%;
-    max-height: 100%;
     border-radius: 8px;
-    overflow: hidden; /* Critical for border-radius clipping */
-    background: #f0f0f0; /* Subtle bg while loading */
+    overflow: hidden;
+    background: #f0f0f0; /* visible during load */
+}
+
+/* Critical for aspect-ratio to work */
+.media-aspect-wrapper[style*="aspect-ratio"] {
+    contain: layout style;
 }
 
 .media-aspect-wrapper:has(iframe) {
@@ -301,16 +299,31 @@ p {
         width: min(888px,calc(100vw - 6rem));
 }
 
+
+/* Media fills wrapper naturally */
 .media-aspect-wrapper img,
-.media-aspect-wrapper video,
-.media-aspect-wrapper iframe {
-    top: 0;
-    left: 0;
+.media-aspect-wrapper video {
+    display: block; /* Critical - no inline spacing */
     width: 100%;
     height: 100%;
-    display: block;
-    /* No object-fit is needed, as the element will perfectly fill its
-       identically-proportioned parent container. */
+}
+
+.item-thumbnail .media-aspect-wrapper img,
+.item-thumbnail .media-aspect-wrapper video {
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Detail view uses cover to fill */
+.detail-media .media-aspect-wrapper img,
+.detail-media .media-aspect-wrapper video {
+    object-fit: cover;
+}
+
+/* Keep existing iframe rules */
+.media-aspect-wrapper:has(iframe) {
+    height: auto;
+    width: min(888px, calc(100vw - 6rem));
 }
 
 /* Scroll indicators */
