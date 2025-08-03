@@ -203,12 +203,9 @@ p {
 }
 
 .detail-media.multi .media-item {
-    /* flex: 0 0 min(85vw, 800px); */
     flex: 0 0 auto; /* Responsive width */
     align-content:center;
     scroll-snap-align: start;
-    /* max-height: 50vh;
-    min-height: 300px; */
     max-width: 100%;
 }
 
@@ -268,6 +265,14 @@ p {
     max-height: 100%;
     display:block;
     background-color: #dbd3dd;
+    filter: brightness(0) invert(1);
+    animation: reveal-from-white linear both;
+    animation-timeline: view();             /* tie animation progress to scroll */
+    animation-range: entry 0% cover 30%;    /* from first pixels entering to 30% covered */
+}
+
+@keyframes reveal-from-white {
+  to { filter: none; }
 }
 
 /* Scroll indicators */
