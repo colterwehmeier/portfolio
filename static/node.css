@@ -268,7 +268,7 @@ p {
     border-radius: 8px;
     opacity: 1;
     transition: opacity .25s ease-out;
-    object-fit: contain;
+    object-fit: cover;
 }
 /* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
 @starting-style {
