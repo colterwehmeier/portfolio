@@ -272,7 +272,7 @@ p {
 @starting-style {
   .media-aspect-wrapper img,
     .media-aspect-wrapper video,
-    .media-aspect-wrapper iframe { opacity: 0.01; }
+    .media-aspect-wrapper iframe { opacity: 0; }
 }
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
