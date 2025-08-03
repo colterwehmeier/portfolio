@@ -103,14 +103,15 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail { 
+.item-thumbnail {
     max-height: 300px;
-    position: relative; 
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    display: flex; /* Helps center the wrapper */
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align to top for landscape images */
+    overflow: hidden; /* Ensure nothing exceeds bounds */
 }
 .item-thumbnail.video video,
 .item-thumbnail img { 
@@ -252,7 +253,30 @@ p {
 
 /* Ensure the wrapper respects the thumbnail's max-height */
 .item-thumbnail .media-aspect-wrapper {
-    max-height: 100%;
+    /* Let the aspect-ratio do its job */
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Match parent constraint */
+}
+
+.item-thumbnail .media-aspect-wrapper img,
+.item-thumbnail .media-aspect-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Show full image with letterboxing */
+    object-position: center; /* Center in the container */
+}
+
+
+.detail-media .media-aspect-wrapper img,
+.detail-media .media-aspect-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill for detail view */
 }
 
 /* Keep the iframe rule for detail view */
@@ -265,10 +289,11 @@ p {
 
 .media-aspect-wrapper {
     position: relative;
-    max-height: 500px;
-    
-    border-radius: 8px; /* The radius of the clipping mask */
-    overflow: hidden;   /* This clips the child (the image) to the rounded shape */
+    width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    overflow: hidden; /* Critical for border-radius clipping */
+    background: #f0f0f0; /* Subtle bg while loading */
 }
 
 .media-aspect-wrapper:has(iframe) {
@@ -525,5 +550,14 @@ p {
     
     .bio-table td {
         padding: 0.5rem 0rem;
+    }
+}
+@media (max-width: 768px) {
+    .item-thumbnail {
+        max-height: 250px; /* Slightly smaller on mobile */
+    }
+    
+    .item-thumbnail .media-aspect-wrapper {
+        max-height: 250px;
     }
 }
