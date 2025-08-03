@@ -103,14 +103,12 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail { 
+.item-thumbnail {
     max-height: 300px;
-    position: relative; 
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 
@@ -245,24 +243,9 @@ p {
     
 }
 
-/* Ensure the wrapper respects the thumbnail's max-height */
-.item-thumbnail .media-aspect-wrapper {
-    /* Let the aspect-ratio do its job */
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 300px; /* Match parent constraint */
-}
 
-.item-thumbnail .media-aspect-wrapper img,
-.item-thumbnail .media-aspect-wrapper video {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Show full image with letterboxing */
-    object-position: center; /* Center in the container */
-}
+
+
 
 
 .detail-media .media-aspect-wrapper img,
@@ -281,50 +264,36 @@ p {
 }
 
 
-/* The wrapper reserves space via aspect-ratio */
-.media-aspect-wrapper {
-    position: relative;
+
+/* Simple thumbnail container */
+.item-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    padding: 10px;
+    background: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
-    background: #f0f0f0; /* visible during load */
 }
 
-/* Critical for aspect-ratio to work */
-.media-aspect-wrapper[style*="aspect-ratio"] {
-    contain: layout style;
+/* Images sized by inline styles */
+.item-thumbnail img,
+.item-thumbnail video {
+    display: block;
+    background: #e0e0e0; /* Visible while loading */
+    border-radius: 8px;
 }
 
-.media-aspect-wrapper:has(iframe) {
-        height:auto;
-        width: min(888px,calc(100vw - 6rem));
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .item-thumbnail {
+        max-height: 250px;
+    }
 }
 
 
-/* Media fills wrapper naturally */
-.media-aspect-wrapper img,
-.media-aspect-wrapper video {
-    display: block; /* Critical - no inline spacing */
-    width: 100%;
-    height: 100%;
-}
 
-.item-thumbnail .media-aspect-wrapper img,
-.item-thumbnail .media-aspect-wrapper video {
-    object-fit: contain;
-    object-position: center;
-}
-
-/* Detail view uses cover to fill */
-.detail-media .media-aspect-wrapper img,
-.detail-media .media-aspect-wrapper video {
-    object-fit: cover;
-}
-
-/* Keep existing iframe rules */
-.media-aspect-wrapper:has(iframe) {
-    height: auto;
-    width: min(888px, calc(100vw - 6rem));
-}
 
 /* Scroll indicators */
 .detail-media.multi {
@@ -563,14 +532,5 @@ p {
     
     .bio-table td {
         padding: 0.5rem 0rem;
-    }
-}
-@media (max-width: 768px) {
-    .item-thumbnail {
-        max-height: 250px; /* Slightly smaller on mobile */
-    }
-    
-    .item-thumbnail .media-aspect-wrapper {
-        max-height: 250px;
     }
 }
