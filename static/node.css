@@ -270,6 +270,16 @@ p {
     transition: opacity .25s ease-out;
     object-fit: cover;
 }
+@supports (font: -apple-system-body) {
+  .media-aspect-wrapper > img,
+  .media-aspect-wrapper > video {
+    width: 100%;
+    height: auto;         /* break the “intrinsic height lock” */
+    aspect-ratio: inherit;/* use parent’s aspect-ratio */
+    object-fit: cover;
+    display: block;
+  }
+}
 /* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
 @starting-style {
   .media-aspect-wrapper img,
