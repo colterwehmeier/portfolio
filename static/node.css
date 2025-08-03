@@ -264,7 +264,7 @@ p {
     max-width: 100%;
     max-height: 100%;
     display:block;
-    /* background-color: #e0e4f8ff; */
+    background-color: #fff;
     opacity: 1;
     transition: opacity .25s ease-out;
 }
@@ -272,7 +272,7 @@ p {
 @starting-style {
   .media-aspect-wrapper img,
     .media-aspect-wrapper video,
-    .media-aspect-wrapper iframe { opacity: 0; }
+    .media-aspect-wrapper iframe { opacity: 0.01; }
 }
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
