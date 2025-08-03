@@ -248,7 +248,7 @@ p {
 .media-aspect-wrapper {
     position: relative;
     max-height: 500px;
-    
+    align-content: center;
     border-radius: 8px; /* The radius of the clipping mask */
     overflow: hidden;   /* This clips the child (the image) to the rounded shape */
 }
@@ -265,6 +265,7 @@ p {
     max-height: 100%;
     display:block;
     background-color: #fff;
+    border-radius: 8px;
     opacity: 1;
     transition: opacity .25s ease-out;
 }
