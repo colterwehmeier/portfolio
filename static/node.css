@@ -270,17 +270,6 @@ p {
     transition: opacity .25s ease-out;
     object-fit: cover;
 }
-@supports (font: -apple-system-body) {
-  .media-aspect-wrapper > img,
-  .media-aspect-wrapper > video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;      /* key: don’t leave height:auto in Safari here */
-    object-fit: cover; /* or contain */
-    display: block;
-  }
-}
 /* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
 @starting-style {
   .media-aspect-wrapper img,
