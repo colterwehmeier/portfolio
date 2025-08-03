@@ -279,6 +279,8 @@ p {
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
+    max-width: 100%;
+    max-height: 100%;
     /* top: 0;
     left: 0;
     width: 100%;
