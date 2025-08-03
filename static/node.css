@@ -266,17 +266,17 @@ p {
     display:block;
     background-color: #fff;
 }
-.media-aspect-wrapper{
+.media-aspect-wrapper,img,video,iframe{
     opacity: 1;
     transition: opacity .3s ease-out;
 }
 /* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
 @starting-style {
-    .media-aspect-wrapper { opacity: 0; }
+    .media-aspect-wrapper,img,video,iframe { opacity: 0; }
 }
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .media-aspect-wrapper { transition: none; }
+  .media-aspect-wrapper,img,video,iframe { transition: none; }
 }
 
 /* Scroll indicators */
