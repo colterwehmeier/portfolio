@@ -159,6 +159,7 @@ body {
     /* Still use aspect ratio, but ensure proper sizing */
     width: 100%;
     max-width: min(888px, calc(100vw - 4rem));
+    height: 500px;
     aspect-ratio: var(--ar);
     margin-inline: auto;
 }
