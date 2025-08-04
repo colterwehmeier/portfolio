@@ -152,6 +152,16 @@ body {
     margin-inline: auto;
     border: 0;
     background: #fff;
+    border-radius: 8px; /* Match the border radius */
+}
+
+/* For detail view, iframes need proper height */
+.detail-view .media-aspect-wrapper > iframe {
+    /* Use aspect ratio to determine height */
+    inline-size: 100%;
+    block-size: calc(100% / var(--ar));
+    max-inline-size: min(888px, calc(100vw - 6rem));
+    max-block-size: var(--cell-max-h);
 }
 
 /* Optional: skeleton so empties look intentional if assets 404 */
@@ -276,13 +286,19 @@ p {
 /* Media item base styles */
 .media-item {
     position: relative;
+    border-radius: 8px;
 }
 
-/* Special handling for iframes in detail view */
-.detail-view .media-aspect-wrapper:has(iframe) {
+/* Center items vertically in multi-view scroll */
+.detail-media.multi {
+    align-items: center; /* Vertically center items in scroll container */
+}
+
+/* Remove special iframe handling - use same aspect ratio system */
+/* .detail-view .media-aspect-wrapper:has(iframe) {
     height:auto;
     width: min(888px,calc(100vw - 6rem));
-}
+} */
 
 /* Smooth load animation */
 .media-aspect-wrapper img,
