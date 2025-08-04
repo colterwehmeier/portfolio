@@ -31,7 +31,6 @@ body {
     will-change: transform; /* Optimize for animations */
 }
 
-
 .breadcrumb { 
     display: flex; 
     gap: 1rem; 
@@ -103,22 +102,80 @@ body {
     text-decoration: underline;
 }
 
-.item-thumbnail { 
-    max-height: 300px;
-    position: relative; 
-    margin-left: auto;
-    margin-right: auto;
-    display: flex; /* Helps center the wrapper */
-    justify-content: center;
-    align-items: center;
+/* --- Static media cell (reserves space even if media is missing) --- */
+:root {
+    --cell-max-h: 300px; /* global height cap for cells */
+    --letterbox: #00000000;   /* side bars for tall media */
 }
-/* .item-thumbnail.video video,
-.item-thumbnail img { 
-    max-height: 300px;
-    width: auto;
-    max-width: 100%;
-    object-fit: cover; 
-} */
+
+.item-thumbnail { 
+    position: relative;
+}
+
+/* The wrapper itself reserves space:
+   - its width comes from the grid column
+   - its height is width / --ar, clamped by max-block-size
+*/
+.media-aspect-wrapper {
+    inline-size: 100%;
+    /* aspect-ratio must NOT depend on missing vars—set --ar inline on each wrapper */
+    aspect-ratio: var(--ar);
+    max-block-size: var(--cell-max-h);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--letterbox);
+    position: relative;
+}
+
+/* Media inside wrapper:
+   - top aligned, centered horizontally
+   - width shrinks if hitting the height cap
+   - no cropping (contain → letterboxing for tall)
+*/
+.media-aspect-wrapper > img,
+.media-aspect-wrapper > video {
+    display: block;
+    inline-size: min(100%, calc(var(--cell-max-h) * var(--ar)));
+    block-size: auto;
+    max-block-size: var(--cell-max-h);
+    margin-inline: auto;
+    object-fit: contain;
+    object-position: top center;
+    border-radius: 8px;
+}
+
+.media-aspect-wrapper > iframe {
+    display: block;
+    inline-size: min(100%, calc(var(--cell-max-h) * var(--ar)));
+    block-size: auto;
+    max-block-size: var(--cell-max-h);
+    margin-inline: auto;
+    border: 0;
+    background: #fff;
+}
+
+/* Optional: skeleton so empties look intentional if assets 404 */
+.media-aspect-wrapper::after {
+    content: "";
+    position: absolute; 
+    inset: 0;
+    background: linear-gradient(90deg, transparent, #ffffff10, transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+}
+/* Hide skeleton when any media src is present (no JS) */
+.media-aspect-wrapper:has(img[src], video[src], iframe[src])::after { 
+    display: none; 
+}
+@keyframes shimmer { 
+    to { background-position: -200% 0; } 
+}
+
+/* Detail view media - different max height */
+.detail-view .media-aspect-wrapper {
+    --cell-max-h: 500px; /* Override for detail view */
+}
+
 .item-content { 
     padding-top: 0.5rem;
     display: flex;
@@ -187,8 +244,6 @@ p {
     overflow: hidden;
 }
 
-
-
 /* Horizontal scroll with snap for multiple items */
 .detail-media.multi {
     display: flex;
@@ -223,64 +278,36 @@ p {
     position: relative;
 }
 
-.media-item img,
-.media-item video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    
+/* Special handling for iframes in detail view */
+.detail-view .media-aspect-wrapper:has(iframe) {
+    height:auto;
+    width: min(888px,calc(100vw - 6rem));
 }
 
-/* Ensure the wrapper respects the thumbnail's max-height */
-.item-thumbnail .media-aspect-wrapper {
-    max-height: 100%;
-}
-
-/* Keep the iframe rule for detail view */
-.media-item iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    min-height: 500px;
-}
-
-.media-aspect-wrapper {
-    position: relative;
-    max-height: 500px;
-    align-content: center;
-    border-radius: 8px; /* The radius of the clipping mask */
-    overflow: hidden;   /* This clips the child (the image) to the rounded shape */
-}
-
-.media-aspect-wrapper:has(iframe) {
-        height:auto;
-        width: min(888px,calc(100vw - 6rem));
-}
-
+/* Smooth load animation */
 .media-aspect-wrapper img,
 .media-aspect-wrapper video,
 .media-aspect-wrapper iframe {
-    max-width: 100%;
-    max-height: 100%;
-    display:block;
-    background-color: #fff;
-    border-radius: 8px;
     opacity: 1;
     transition: opacity .25s ease-out;
-    object-fit: cover;
 }
+
 /* Initial render snapshot (Chromium 117+, Safari 17+, FF 128+) */
 @starting-style {
   .media-aspect-wrapper img,
-    .media-aspect-wrapper video,
-    .media-aspect-wrapper iframe { opacity: 0; }
+  .media-aspect-wrapper video,
+  .media-aspect-wrapper iframe { 
+    opacity: 0; 
+  }
 }
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .media-aspect-wrapper img,
-    .media-aspect-wrapper video,
-    .media-aspect-wrapper iframe { transition: none; }
+  .media-aspect-wrapper video,
+  .media-aspect-wrapper iframe { 
+    transition: none; 
+  }
 }
 
 /* Scroll indicators */
@@ -349,7 +376,7 @@ p {
     color: #666; 
     font-size: 1rem; 
     margin-bottom: 1.5rem; 
-        display: flex;
+    display: flex;
     flex-direction: row;
 }
 .detail-content .description { 
@@ -362,36 +389,43 @@ p {
     border-top: 1px solid #e0e0e0; 
     padding-top: 2rem; 
 }
-  .detail-media .media-item { margin-bottom: 1rem; }
-      .detail-media .media-placeholder { padding: 2rem; text-align: center; }
-      .detail-title-link { color: inherit; }
+.detail-media .media-item { 
+    margin-bottom: 1rem; 
+}
+.detail-media .media-placeholder { 
+    padding: 2rem; 
+    text-align: center; 
+}
+.detail-title-link { 
+    color: inherit; 
+}
 
-         .filter-separator {
-            margin: 0 10px;
-            color: #555;
-            align-self: center;
-        }
-        .tag.filter-tag {
-            background-color: #e0e4f8ff;
-            border-color: #555;
-        }
-        .tag.filter-tag:hover {
-            background-color: #667eea;
-            color: #111;
-        }
-        .tag.filter-tag.active {
-            background-color: #667eea;
-            color: #fff;
-            border-color: #667eea;
-        }
-        /* MODIFIED: Style for the filtered breadcrumb item */
-        .breadcrumb-item.filtered-crumb {
-            background-color: #5a67d8; /* Darker purple */
-            color: #fff;
-        }
+.filter-separator {
+    margin: 0 10px;
+    color: #555;
+    align-self: center;
+}
+.tag.filter-tag {
+    background-color: #e0e4f8ff;
+    border-color: #555;
+}
+.tag.filter-tag:hover {
+    background-color: #667eea;
+    color: #111;
+}
+.tag.filter-tag.active {
+    background-color: #667eea;
+    color: #fff;
+    border-color: #667eea;
+}
+/* MODIFIED: Style for the filtered breadcrumb item */
+.breadcrumb-item.filtered-crumb {
+    background-color: #5a67d8; /* Darker purple */
+    color: #fff;
+}
 
-        /* --- Bio Section & Links Table --- */
-    .bio-table {
+/* --- Bio Section & Links Table --- */
+.bio-table {
     width: 100%; /* Make it fill its container */
     max-width: 60ch; /* But not exceed 60ch */
     margin: 2rem auto;
@@ -401,10 +435,6 @@ p {
 .bio-table td {
     padding: 0.5rem 0rem;
 }
-
-
-
-
 
 /* Define view transitions */
 @supports (view-transition-name: none) {
@@ -468,12 +498,8 @@ p {
   }
 }
 
-
-
-
 /* --- Mobile & Portrait Optimization --- */
 @media (max-width: 768px) {
-
     /* Reduce header padding to save vertical space */
     .nav-header {
         padding: 1rem;
@@ -514,7 +540,7 @@ p {
         font-size: 1.25rem;
     }
 
-        .bio-table {
+    .bio-table {
         font-size: 0.9rem;
     }
     
