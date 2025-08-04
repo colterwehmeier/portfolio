@@ -145,23 +145,22 @@ body {
 }
 
 .media-aspect-wrapper > iframe {
+    /* iframes need to fill their wrapper completely */
     display: block;
-    inline-size: min(100%, calc(var(--cell-max-h) * var(--ar)));
-    block-size: auto;
-    max-block-size: var(--cell-max-h);
-    margin-inline: auto;
+    width: 100%;
+    height: 100%;
     border: 0;
     background: #fff;
-    border-radius: 8px; /* Match the border radius */
+    border-radius: 8px;
 }
 
-/* For detail view, iframes need proper height */
-.detail-view .media-aspect-wrapper > iframe {
-    /* Use aspect ratio to determine height */
-    inline-size: 100%;
-    block-size: calc(100% / var(--ar));
-    max-inline-size: min(888px, calc(100vw - 6rem));
-    max-block-size: var(--cell-max-h);
+/* For iframes, the wrapper needs special handling */
+.media-aspect-wrapper:has(iframe) {
+    /* Still use aspect ratio, but ensure proper sizing */
+    width: 100%;
+    max-width: min(888px, calc(100vw - 4rem));
+    aspect-ratio: var(--ar);
+    margin-inline: auto;
 }
 
 /* Optional: skeleton so empties look intentional if assets 404 */
@@ -289,9 +288,9 @@ p {
     border-radius: 8px;
 }
 
-/* Center items vertically in multi-view scroll */
-.detail-media.multi {
-    align-items: center; /* Vertically center items in scroll container */
+/* Detail view adjustments for iframes */
+.detail-view .media-aspect-wrapper:has(iframe) {
+    max-height: 500px; /* Respect detail view height */
 }
 
 /* Remove special iframe handling - use same aspect ratio system */
