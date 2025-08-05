@@ -142,6 +142,8 @@ body {
     object-fit: contain;
     object-position: top center;
     border-radius: 8px;
+    /* max-width: 100%;
+    max-height: 100%; */
 }
 
 .media-aspect-wrapper > iframe {
@@ -366,16 +368,7 @@ p {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    .detail-media.multi {
-        margin: 0 -1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        gap: 1rem;
-    }
     
-    .detail-media.multi .media-item {
-        flex: 0 0 auto; /* Nearly full width */
-    }
     
     /* Stronger snap on mobile */
     .detail-media.multi {
