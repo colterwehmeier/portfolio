@@ -3,6 +3,33 @@
     padding: 0; 
     box-sizing: border-box; 
 }
+
+
+/* 1) Tell the UA you support both */
+:root { color-scheme: light dark; }
+
+/* 2) Don’t force backgrounds/text unless necessary */
+html, body {
+  background: Canvas;     /* system surface */
+  color: CanvasText;      /* system text */
+}
+
+/* 3) For components that had hard colors, swap to system colors */
+.card, .breadcrumb, header, footer {
+  background: Canvas;       /* or Field for inputs */
+  color: CanvasText;
+  border-color: GrayText;   /* subtle system border */
+}
+
+/* 4) Only accent elements define a color, and ensure contrast */
+a { color: LinkText; }          /* system link color */
+a:visited { color: VisitedText; }
+a:hover, a:focus-visible { text-decoration: underline; }
+
+/* 5) Focus visibility */
+:focus-visible { outline: 2px solid Highlight; outline-offset: 2px; }
+
+
 a.detail-title-link, .bio-table a{
     font-weight: 500;
     color: #5a67d8;
@@ -127,6 +154,15 @@ body {
     position: relative;
 }
 
+/* wherever your card body/text lives */
+.card,
+.item,
+.entry {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px; /* rough average; tune */
+}
+
+
 /* Media inside wrapper:
    - top aligned, centered horizontally
    - width shrinks if hitting the height cap
@@ -158,12 +194,11 @@ body {
 
 /* For iframes, the wrapper needs special handling */
 .media-aspect-wrapper:has(iframe) {
-    /* Still use aspect ratio, but ensure proper sizing */
-    width: 100%;
-    max-width: min(888px, calc(100vw - 4rem));
-    height: 500px;
-    aspect-ratio: var(--ar);
-    margin-inline: auto;
+  inline-size: 100%;
+  max-inline-size: min(888px, calc(100vw - 4rem));
+  aspect-ratio: var(--ar);          /* single source of sizing truth */
+  max-block-size: 500px;            /* optional clamp if needed */
+  margin-inline: auto;
 }
 
 /* Optional: skeleton so empties look intentional if assets 404 */

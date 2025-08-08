@@ -311,6 +311,18 @@ def calculate_media_dimensions(file_path):
         print(f"Error getting dimensions for {file_path}: {e}")
         return None
 
+def validate_entries(entries):
+    REQUIRED = {"id", "title", "theme"}  # adjust as needed
+    errors = []
+    for i, e in enumerate(entries):
+        missing = REQUIRED - set(e.keys())
+        if missing:
+            errors.append((e.get("id", f"idx:{i}"), f"missing fields: {sorted(missing)}"))
+    if errors:
+        for id_, msg in errors:
+            print(f"[VALIDATION] {id_}: {msg}")
+        raise SystemExit(f"Validation failed for {len(errors)} entries.")
+
 
 def process_entries(data):
     """Enhanced version that calculates and stores media dimensions"""
@@ -633,6 +645,8 @@ def get_video_dimensions(video_path):
     except (subprocess.CalledProcessError, json.JSONDecodeError, KeyError, IndexError) as e:
         print(f"Error getting video dimensions for {video_path}: {e}")
         return (16, 9)  # Fallback aspect ratio
+    
+validate_entries(data)
 # Process entries and generate HTML
 themes, existing_folders, entries_without_id, FileListForCopyingAtTheEnd = process_entries(data)
 html_content = generate_html_content(themes)
