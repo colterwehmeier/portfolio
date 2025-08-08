@@ -5,29 +5,6 @@
 }
 
 
-/* 1) Tell the UA you support both */
-:root { color-scheme: light dark; }
-
-/* 2) Don’t force backgrounds/text unless necessary */
-html, body {
-  background: Canvas;     /* system surface */
-  color: CanvasText;      /* system text */
-}
-
-/* 3) For components that had hard colors, swap to system colors */
-.card, .breadcrumb, header, footer {
-  background: Canvas;       /* or Field for inputs */
-  color: CanvasText;
-  border-color: GrayText;   /* subtle system border */
-}
-
-/* 4) Only accent elements define a color, and ensure contrast */
-a { color: LinkText; }          /* system link color */
-a:visited { color: VisitedText; }
-a:hover, a:focus-visible { text-decoration: underline; }
-
-/* 5) Focus visibility */
-:focus-visible { outline: 2px solid Highlight; outline-offset: 2px; }
 
 
 a.detail-title-link, .bio-table a{
