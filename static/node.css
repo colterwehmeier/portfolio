@@ -507,6 +507,138 @@ p {
   }
 }
 
+/* --- Dark Mode --- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .nav-header {
+        background: #2d2d2d;
+        border-bottom: 1px solid #404040;
+    }
+    
+    .breadcrumb-item {
+        background: #404040;
+        color: #e0e0e0;
+    }
+    
+    .breadcrumb-item:hover {
+        background: #e0e0e0;
+        color: #1a1a1a;
+    }
+    
+    .breadcrumb-item.active {
+        background: #e0e0e0;
+        color: #1a1a1a;
+    }
+    
+    .breadcrumb-item.filtered-crumb {
+        background-color: #7c3aed;
+        color: #fff;
+    }
+    
+    .breadcrumb-separator {
+        color: #808080;
+    }
+    
+    .tag {
+        background: #404040;
+        color: #e0e0e0;
+    }
+    
+    .tag:hover {
+        background: #e0e0e0;
+        color: #1a1a1a;
+    }
+    
+    .tag.filter-tag {
+        background-color: #4c1d95;
+        color: #e0e0e0;
+    }
+    
+    .tag.filter-tag:hover {
+        background-color: #7c3aed;
+        color: #fff;
+    }
+    
+    .tag.filter-tag.active {
+        background-color: #7c3aed;
+        color: #fff;
+        border-color: #7c3aed;
+    }
+    
+    .item-tag {
+        background: #404040;
+        color: #e0e0e0;
+    }
+    
+    .item-meta {
+        color: #b0b0b0;
+    }
+    
+    .item-description {
+        color: #d0d0d0;
+    }
+    
+    .bio p {
+        color: #c0c0c0;
+    }
+    
+    .detail-view {
+        background: #2d2d2d;
+    }
+    
+    .detail-content .meta {
+        color: #b0b0b0;
+    }
+    
+    .section-title {
+        border-top: 1px solid #404040;
+    }
+    
+    .filter-separator {
+        color: #b0b0b0;
+    }
+    
+    .media-indicator {
+        color: #b0b0b0;
+    }
+    
+    a.detail-title-link, .bio-table a {
+        color: #8b5cf6;
+    }
+    
+    a.detail-title-link:hover, .bio-table a:hover {
+        color: #a78bfa;
+    }
+    
+    /* Dark mode scrollbar */
+    .detail-media.multi {
+        scrollbar-color: #666 transparent;
+    }
+    
+    .detail-media.multi::-webkit-scrollbar-thumb {
+        background: #666;
+    }
+    
+    /* Dark mode scroll indicators */
+    .detail-media.multi {
+        background: 
+            linear-gradient(to right, #2d2d2d 0%, transparent 2rem) left center,
+            linear-gradient(to left, #2d2d2d 0%, transparent 2rem) right center;
+        background-size: 3rem 100%;
+        background-repeat: no-repeat;
+        background-attachment: local, local;
+    }
+    
+    /* Iframe background for dark mode */
+    .media-aspect-wrapper > iframe {
+        background: #2d2d2d;
+    }
+}
+
 /* --- Mobile & Portrait Optimization --- */
 @media (max-width: 768px) {
     /* Reduce header padding to save vertical space */
