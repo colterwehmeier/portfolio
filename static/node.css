@@ -18,7 +18,7 @@ body {
     margin-right: auto;
 }
 .nav-header {
-    background: white;
+    background: none;
     padding: 2rem;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -250,7 +250,7 @@ p {
     max-width: 60ch;
 }
 .detail-view { 
-    background: white; 
+    background: none; 
     border-radius: 8px; 
     margin-bottom: 2rem; 
     overflow: hidden;
@@ -515,7 +515,7 @@ p {
     }
     
     .nav-header {
-        background: #2d2d2d;
+        background: none;
         border-bottom: 1px solid #404040;
     }
     
@@ -535,7 +535,7 @@ p {
     }
     
     .breadcrumb-item.filtered-crumb {
-        background-color: #7c3aed;
+        background-color: #6366f1;
         color: #fff;
     }
     
@@ -554,19 +554,19 @@ p {
     }
     
     .tag.filter-tag {
-        background-color: #4c1d95;
+        background-color: #475569;
         color: #e0e0e0;
     }
     
     .tag.filter-tag:hover {
-        background-color: #7c3aed;
+        background-color: #6366f1;
         color: #fff;
     }
     
     .tag.filter-tag.active {
-        background-color: #7c3aed;
+        background-color: #6366f1;
         color: #fff;
-        border-color: #7c3aed;
+        border-color: #6366f1;
     }
     
     .item-tag {
@@ -587,7 +587,7 @@ p {
     }
     
     .detail-view {
-        background: #2d2d2d;
+        background: none;
     }
     
     .detail-content .meta {
@@ -607,11 +607,11 @@ p {
     }
     
     a.detail-title-link, .bio-table a {
-        color: #8b5cf6;
+        color: #6366f1;
     }
     
     a.detail-title-link:hover, .bio-table a:hover {
-        color: #a78bfa;
+        color: #818cf8;
     }
     
     /* Dark mode scrollbar */
