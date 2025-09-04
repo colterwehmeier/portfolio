@@ -18,7 +18,7 @@ body {
     margin-right: auto;
 }
 .nav-header {
-    background: none;
+    background: white;
     padding: 2rem;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -515,7 +515,7 @@ p {
     }
     
     .nav-header {
-        background: none;
+        background: #1a1a1a;
         border-bottom: 1px solid #404040;
     }
     
