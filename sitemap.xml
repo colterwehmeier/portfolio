@@ -1201,11 +1201,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/architecture/pearl</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/architecture/digitalpicnic</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1307,11 +1302,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/architecture/recoveringurbanmemory</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/pearl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
