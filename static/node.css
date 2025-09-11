@@ -246,6 +246,19 @@ body {
     font-size: 1.1rem; 
     color: #555; 
 }
+
+/* Responsive bio break - shows line break on wide screens, space on narrow */
+.bio-break::before {
+    content: "\A"; /* Line break */
+    white-space: pre;
+}
+
+@media (max-width: 768px) {
+    .bio-break::before {
+        content: " "; /* Just a space on mobile */
+        white-space: normal;
+    }
+}
 p {
     max-width: 60ch;
     margin-bottom: 1.2em;
