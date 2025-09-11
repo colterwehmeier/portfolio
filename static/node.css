@@ -254,6 +254,7 @@ p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphenate-limit-chars: 6 3 3;
+    margin-bottom: 1.2em;
 }
 
 /* Better justification for description text */
