@@ -248,6 +248,21 @@ body {
 }
 p {
     max-width: 60ch;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+}
+
+/* Better justification for description text */
+.description, .item-description {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
 }
 .detail-view { 
     background: none; 
