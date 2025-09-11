@@ -248,22 +248,17 @@ body {
 }
 p {
     max-width: 60ch;
+    margin-bottom: 1.2em;
+}
+
+/* Justification only for paragraphs inside description divs */
+.description p {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphenate-limit-chars: 6 3 3;
-    margin-bottom: 1.2em;
-}
-
-/* Better justification for description text */
-.description, .item-description {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
 }
 .detail-view { 
     background: none; 

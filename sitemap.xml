@@ -1236,11 +1236,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/architecture/fractalcity</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/ar-spatial/paphosgate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1266,36 +1261,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/architecture/filter/architecture</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/filter/design</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/filter/competition</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/filter/exhibition</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/filter/ar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/filter/furniture</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/ar-spatial/guchibytes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1317,11 +1282,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/architecture/trainhouse</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/architecture/fractalcity</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
