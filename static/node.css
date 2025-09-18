@@ -265,7 +265,7 @@ p {
 }
 
 /* Justification only for paragraphs inside description divs */
-.description p {
+.description p, .justified {
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
