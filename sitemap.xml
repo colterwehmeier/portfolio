@@ -26,17 +26,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/architecture</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/playable/filter/madvent</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/playable/filter/clowder</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/playable/filter/architecture</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -52,11 +52,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/games/egw24</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -491,14 +486,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/filter/design</loc>
+    <loc>https://portfolio.colter.us/ar-spatial/filter/workshop</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/ar-spatial/kogler2</loc>
@@ -631,17 +621,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/architecture</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/research/filter/game</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/research/filter/wikar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/research/filter/haunted-ps1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -661,7 +651,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -826,7 +816,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1061,6 +1051,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/design/filter/wood</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/design/filter/research</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1071,17 +1066,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/design/filter/wood</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/presentations/spacenature</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1286,7 +1276,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1331,12 +1321,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/exhibitions/filter/ar</loc>
+    <loc>https://portfolio.colter.us/exhibitions/filter/art</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/exhibitions/filter/art</loc>
+    <loc>https://portfolio.colter.us/exhibitions/filter/ar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1351,7 +1341,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/exhibitions/filter/architecture</loc>
+    <loc>https://portfolio.colter.us/exhibitions/filter/installation</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1361,7 +1351,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/ar-spatial/nicairport</loc>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1571,17 +1561,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/objects/filter/wood</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/objects/filter/design</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/objects/filter/3d-print</loc>
+    <loc>https://portfolio.colter.us/objects/filter/wood</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1591,7 +1576,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/objects/filter/3d-print</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/objects/lillamp</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/engagement/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
