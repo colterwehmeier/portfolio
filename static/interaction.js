@@ -134,7 +134,7 @@ function handleLegacyHashUrls() {
     
     // Try to find the item and redirect to new URL structure
     console.log('🌐 Fetching compiled data...');
-    fetch('/entries/compiled/compiled.json')
+    fetch('/static/compiled.json')
         .then(response => {
             console.log('📡 Fetch response status:', response.status);
             if (!response.ok) {
