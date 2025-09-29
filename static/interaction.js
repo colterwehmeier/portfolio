@@ -110,9 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Legacy hash URL handler for backward compatibility
 function handleLegacyHashUrls() {
+    console.log('🔍 Hash URL handler called');
+    console.log('Current URL:', window.location.href);
+    console.log('Hash:', window.location.hash);
+    
     const hash = window.location.hash;
     
     if (!hash || hash === '#') {
+        console.log('❌ No hash found or empty hash');
         return;
     }
     
@@ -121,34 +126,44 @@ function handleLegacyHashUrls() {
     
     // Only proceed if it looks like a valid item ID
     if (!itemId || itemId.includes('/') || itemId.includes('?')) {
+        console.log('❌ Invalid item ID format:', itemId);
         return;
     }
     
-    console.log('Legacy hash URL detected:', itemId);
+    console.log('✅ Legacy hash URL detected:', itemId);
     
     // Try to find the item and redirect to new URL structure
-    // We'll need to make a request to get the compiled data
+    console.log('🌐 Fetching compiled data...');
     fetch('/entries/compiled/compiled.json')
-        .then(response => response.json())
+        .then(response => {
+            console.log('📡 Fetch response status:', response.status);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('📊 Compiled data loaded, entries found:', data.length);
             const item = data.find(item => item.id === itemId);
             
             if (item && !item.locked) {
                 const year = item.year || '0000';
                 const newUrl = `/${year}/${itemId}`;
                 
-                console.log('Redirecting to new URL:', newUrl);
+                console.log('🎯 Item found:', item.title);
+                console.log('📅 Year:', year);
+                console.log('🔗 Redirecting to new URL:', newUrl);
                 
                 // Replace the current URL to avoid back button issues
                 window.location.replace(newUrl);
             } else {
-                console.log('Item not found or locked:', itemId);
+                console.log('❌ Item not found or locked:', itemId);
                 // Clear the hash but stay on current page
                 history.replaceState(null, null, window.location.pathname);
             }
         })
         .catch(error => {
-            console.error('Error loading compiled data for legacy redirect:', error);
+            console.error('💥 Error loading compiled data for legacy redirect:', error);
             // Clear the hash but stay on current page
             history.replaceState(null, null, window.location.pathname);
         });

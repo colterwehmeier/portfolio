@@ -31,12 +31,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/clowder</loc>
+    <loc>https://portfolio.colter.us/playable/filter/architecture</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/architecture</loc>
+    <loc>https://portfolio.colter.us/playable/filter/clowder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -56,6 +56,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2024/qr1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -71,7 +76,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2023/chain2</loc>
+    <loc>https://portfolio.colter.us/2022/chain2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -246,11 +251,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2011/fazole</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -341,7 +341,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2023/chain2</loc>
+    <loc>https://portfolio.colter.us/2022/chain2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -491,6 +491,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2023/kogler2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -571,11 +576,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/tools</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -606,12 +606,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
+    <loc>https://portfolio.colter.us/research/filter/exhibition</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/exhibition</loc>
+    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -636,6 +636,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2025/dariah25</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -647,11 +652,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -791,12 +791,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/heritage</loc>
+    <loc>https://portfolio.colter.us/engagement/filter/exhibition</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/exhibition</loc>
+    <loc>https://portfolio.colter.us/engagement/filter/heritage</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -806,17 +806,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2025/dariah25</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1066,12 +1066,17 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2025/spacenature</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1251,11 +1256,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2014/quipit_table</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1281,6 +1281,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2019/guchibytes</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1302,11 +1307,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/2018/trainhouse</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1346,12 +1346,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/qbicon</loc>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <loc>https://portfolio.colter.us/2024/qbicon</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1581,12 +1581,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/lillamp</loc>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <loc>https://portfolio.colter.us/2024/lillamp</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
