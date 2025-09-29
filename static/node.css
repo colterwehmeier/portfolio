@@ -171,6 +171,54 @@ body {
     color: white;
 }
 
+/* Subcategory coloring - inherit from parent categories */
+.tag.category-games,
+.tag.category-ar-spatial, 
+.tag.category-tools {
+    border: 1px solid var(--playable-border);
+    background: var(--playable-bg);
+    color: var(--playable-primary);
+}
+
+.tag.category-games:hover,
+.tag.category-ar-spatial:hover,
+.tag.category-tools:hover {
+    background: var(--playable-primary);
+    color: white;
+}
+
+.tag.category-engagement,
+.tag.category-publications,
+.tag.category-presentations {
+    border: 1px solid var(--research-border);
+    background: var(--research-bg);
+    color: var(--research-primary);
+}
+
+.tag.category-engagement:hover,
+.tag.category-publications:hover,
+.tag.category-presentations:hover {
+    background: var(--research-primary);
+    color: white;
+}
+
+.tag.category-architecture,
+.tag.category-exhibitions,
+.tag.category-media,
+.tag.category-objects {
+    border: 1px solid var(--design-border);
+    background: var(--design-bg);
+    color: var(--design-primary);
+}
+
+.tag.category-architecture:hover,
+.tag.category-exhibitions:hover,
+.tag.category-media:hover,
+.tag.category-objects:hover {
+    background: var(--design-primary);
+    color: white;
+}
+
 /* Filter tags with subtle coloring */
 .tag.filter-tag {
     background: #f8f9fa;
@@ -210,33 +258,6 @@ body {
     transition: border-color 0.2s ease;
 }
 
-/* Subtle category color hints on item cards */
-.item-card.category-playable {
-    border-left: 3px solid var(--playable-primary);
-}
-
-.item-card.category-playable:hover {
-    border-color: var(--playable-border);
-    background: var(--playable-bg);
-}
-
-.item-card.category-research {
-    border-left: 3px solid var(--research-primary);
-}
-
-.item-card.category-research:hover {
-    border-color: var(--research-border);
-    background: var(--research-bg);
-}
-
-.item-card.category-design {
-    border-left: 3px solid var(--design-primary);
-}
-
-.item-card.category-design:hover {
-    border-color: var(--design-border);
-    background: var(--design-bg);
-}
 .item-card:hover .item-title {
     text-decoration: underline;
 }
