@@ -79,6 +79,58 @@ body {
     background: #666; 
     color: white; 
 }
+
+/* Category color coding for main navigation */
+.tag.category-playable {
+    border: 1px solid #bbf7d0;
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.tag.category-playable:hover {
+    background: #16a34a;
+    color: white;
+}
+
+.tag.category-research {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.tag.category-research:hover {
+    background: #dc2626;
+    color: white;
+}
+
+.tag.category-design {
+    border: 1px solid #bfdbfe;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.tag.category-design:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Filter tags with subtle coloring */
+.tag.filter-tag {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #6c757d;
+}
+
+.tag.filter-tag:hover {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.tag.filter-tag.active {
+    background: #495057;
+    color: white;
+    border-color: #495057;
+}
 .grid-container { 
     padding: 2rem; 
     max-width: 1400px; 
