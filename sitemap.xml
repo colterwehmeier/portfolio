@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/timeline</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/playable</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
