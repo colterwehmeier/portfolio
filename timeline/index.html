@@ -803,14 +803,14 @@
         
         // Update filter UI based on current state
         function updateFilterUI() {
-            // Update category filters
-            document.querySelectorAll('[data-category]').forEach(btn => {
+            // Update category filters - only apply to filter buttons
+            document.querySelectorAll('.filter-tag[data-category]').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.category === activeCategory);
             });
         }
         
-        // Category filter handlers
-        document.querySelectorAll('[data-category]').forEach(btn => {
+        // Category filter handlers - only apply to filter buttons, not timeline entries
+        document.querySelectorAll('.filter-tag[data-category]').forEach(btn => {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
                 activeCategory = this.dataset.category;
