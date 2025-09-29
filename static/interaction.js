@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle legacy hash-based URLs for backward compatibility
     handleLegacyHashUrls();
     
+    // Handle timeline back navigation
+    handleTimelineNavigation();
+    
     // Initialize scroll behavior only for JS users
     let lastScrollTop = 0;
     let ticking = false;
@@ -153,4 +156,54 @@ function handleLegacyHashUrls() {
             // Clear the hash but stay on current page
             history.replaceState(null, null, window.location.pathname);
         });
+}
+
+// Timeline navigation handler for back button functionality
+function handleTimelineNavigation() {
+    // Check if we came from timeline and should show a back button
+    const timelineReturnUrl = sessionStorage.getItem('timelineReturnUrl');
+    
+    // Only show back to timeline if we're on a project page and came from timeline
+    if (timelineReturnUrl && window.location.pathname.match(/^\/\d{4}\/[^\/]+$/)) {
+        // We're on a project detail page and came from timeline
+        const breadcrumbContainer = document.querySelector('.breadcrumb');
+        
+        if (breadcrumbContainer && !breadcrumbContainer.querySelector('.timeline-back')) {
+            // Add a "Back to Timeline" link
+            const backLink = document.createElement('a');
+            backLink.href = timelineReturnUrl;
+            backLink.className = 'breadcrumb-item timeline-back';
+            backLink.textContent = '← Timeline';
+            backLink.style.cssText = 'color: #666; text-decoration: none; font-size: 0.9rem; margin-right: 0.5rem;';
+            
+            // Insert at the beginning of breadcrumb
+            breadcrumbContainer.insertBefore(backLink, breadcrumbContainer.firstChild);
+            
+            // Add a separator after the back link
+            const separator = document.createElement('span');
+            separator.className = 'breadcrumb-separator';
+            separator.textContent = '→';
+            breadcrumbContainer.insertBefore(separator, backLink.nextSibling);
+        }
+        
+        // Handle browser back button to go to filtered timeline
+        const originalOnPopState = window.onpopstate;
+        window.onpopstate = function(event) {
+            // Check if the previous page was timeline
+            if (document.referrer && document.referrer.includes('/timeline')) {
+                window.location.href = timelineReturnUrl;
+                return;
+            }
+            
+            // Fallback to original handler if any
+            if (originalOnPopState) {
+                originalOnPopState.call(this, event);
+            }
+        };
+    }
+    
+    // Clean up sessionStorage when navigating away from project pages
+    if (!window.location.pathname.match(/^\/\d{4}\/[^\/]+$/)) {
+        sessionStorage.removeItem('timelineReturnUrl');
+    }
 }
