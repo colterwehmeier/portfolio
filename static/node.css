@@ -826,6 +826,8 @@ p {
     .tag {
         background: #404040;
         color: #e0e0e0;
+        border-style: solid;
+        border-width: thin;
     }
     
     .tag:hover {
