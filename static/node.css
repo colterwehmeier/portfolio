@@ -24,6 +24,22 @@
     --design-bg-dark: #1e3a8a;
     --design-border-dark: #3b82f6;
     
+    /* Muted variants for filter tags */
+    --playable-muted-light: #f0fdf4;
+    --playable-muted-border-light: #dcfce7;
+    --playable-muted-dark: #052e16;
+    --playable-muted-border-dark: #166534;
+    
+    --research-muted-light: #fef2f2;
+    --research-muted-border-light: #fee2e2;
+    --research-muted-dark: #450a0a;
+    --research-muted-border-dark: #991b1b;
+    
+    --design-muted-light: #eff6ff;
+    --design-muted-border-light: #dbeafe;
+    --design-muted-dark: #0c1e3f;
+    --design-muted-border-dark: #1e40af;
+    
     /* Current color variables */
     --playable-bg: var(--playable-bg-light);
     --playable-border: var(--playable-border-light);
@@ -31,6 +47,13 @@
     --research-border: var(--research-border-light);
     --design-bg: var(--design-bg-light);
     --design-border: var(--design-border-light);
+    
+    --playable-muted: var(--playable-muted-light);
+    --playable-muted-border: var(--playable-muted-border-light);
+    --research-muted: var(--research-muted-light);
+    --research-muted-border: var(--research-muted-border-light);
+    --design-muted: var(--design-muted-light);
+    --design-muted-border: var(--design-muted-border-light);
 }
 
 /* Dark mode color adjustments */
@@ -42,6 +65,13 @@
         --research-border: var(--research-border-dark);
         --design-bg: var(--design-bg-dark);
         --design-border: var(--design-border-dark);
+        
+        --playable-muted: var(--playable-muted-dark);
+        --playable-muted-border: var(--playable-muted-border-dark);
+        --research-muted: var(--research-muted-dark);
+        --research-muted-border: var(--research-muted-border-dark);
+        --design-muted: var(--design-muted-dark);
+        --design-muted-border: var(--design-muted-border-dark);
     }
 }
 a.detail-title-link, .bio-table a{
@@ -235,6 +265,58 @@ body {
     background: #495057;
     color: white;
     border-color: #495057;
+}
+
+/* Section-specific muted filter tag colors */
+.tag.filter-tag.section-playable {
+    background: var(--playable-muted);
+    border-color: var(--playable-muted-border);
+    color: var(--playable-primary);
+}
+
+.tag.filter-tag.section-playable:hover {
+    background: var(--playable-bg);
+    border-color: var(--playable-border);
+}
+
+.tag.filter-tag.section-playable.active {
+    background: var(--playable-primary);
+    border-color: var(--playable-primary);
+    color: white;
+}
+
+.tag.filter-tag.section-research {
+    background: var(--research-muted);
+    border-color: var(--research-muted-border);
+    color: var(--research-primary);
+}
+
+.tag.filter-tag.section-research:hover {
+    background: var(--research-bg);
+    border-color: var(--research-border);
+}
+
+.tag.filter-tag.section-research.active {
+    background: var(--research-primary);
+    border-color: var(--research-primary);
+    color: white;
+}
+
+.tag.filter-tag.section-design {
+    background: var(--design-muted);
+    border-color: var(--design-muted-border);
+    color: var(--design-primary);
+}
+
+.tag.filter-tag.section-design:hover {
+    background: var(--design-bg);
+    border-color: var(--design-border);
+}
+
+.tag.filter-tag.section-design.active {
+    background: var(--design-primary);
+    border-color: var(--design-primary);
+    color: white;
 }
 .grid-container { 
     padding: 2rem; 
