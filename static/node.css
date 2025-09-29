@@ -145,16 +145,19 @@ body {
 .breadcrumb-item.category-playable.active {
     background: var(--playable-primary);
     border-color: var(--playable-primary);
+    color: white !important;
 }
 
 .breadcrumb-item.category-research.active {
     background: var(--research-primary);
     border-color: var(--research-primary);
+    color: white !important;
 }
 
 .breadcrumb-item.category-design.active {
     background: var(--design-primary);
     border-color: var(--design-primary);
+    color: white !important;
 }
 .breadcrumb-separator { 
     color: #999; 
