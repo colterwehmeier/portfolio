@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Enable JS-only features
     document.documentElement.classList.add('js-enabled');
     
+    // Handle legacy hash-based URLs for backward compatibility
+    handleLegacyHashUrls();
+    
     // Initialize scroll behavior only for JS users
     let lastScrollTop = 0;
     let ticking = false;
@@ -104,3 +107,49 @@ document.addEventListener('DOMContentLoaded', () => {
     //     });
     // }
 });
+
+// Legacy hash URL handler for backward compatibility
+function handleLegacyHashUrls() {
+    const hash = window.location.hash;
+    
+    if (!hash || hash === '#') {
+        return;
+    }
+    
+    // Extract the item ID from the hash (remove the #)
+    const itemId = hash.substring(1);
+    
+    // Only proceed if it looks like a valid item ID
+    if (!itemId || itemId.includes('/') || itemId.includes('?')) {
+        return;
+    }
+    
+    console.log('Legacy hash URL detected:', itemId);
+    
+    // Try to find the item and redirect to new URL structure
+    // We'll need to make a request to get the compiled data
+    fetch('/entries/compiled/compiled.json')
+        .then(response => response.json())
+        .then(data => {
+            const item = data.find(item => item.id === itemId);
+            
+            if (item && !item.locked) {
+                const year = item.year || '0000';
+                const newUrl = `/${year}/${itemId}`;
+                
+                console.log('Redirecting to new URL:', newUrl);
+                
+                // Replace the current URL to avoid back button issues
+                window.location.replace(newUrl);
+            } else {
+                console.log('Item not found or locked:', itemId);
+                // Clear the hash but stay on current page
+                history.replaceState(null, null, window.location.pathname);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading compiled data for legacy redirect:', error);
+            // Clear the hash but stay on current page
+            history.replaceState(null, null, window.location.pathname);
+        });
+}
