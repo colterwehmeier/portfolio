@@ -3,6 +3,47 @@
     padding: 0; 
     box-sizing: border-box; 
 }
+
+/* Category color system - works with light/dark modes */
+:root {
+    --playable-primary: #16a34a;
+    --playable-bg-light: #f0fdf4;
+    --playable-border-light: #bbf7d0;
+    --playable-bg-dark: #14532d;
+    --playable-border-dark: #15803d;
+    
+    --research-primary: #dc2626;
+    --research-bg-light: #fef2f2;
+    --research-border-light: #fecaca;
+    --research-bg-dark: #7f1d1d;
+    --research-border-dark: #b91c1c;
+    
+    --design-primary: #2563eb;
+    --design-bg-light: #eff6ff;
+    --design-border-light: #bfdbfe;
+    --design-bg-dark: #1e3a8a;
+    --design-border-dark: #3b82f6;
+    
+    /* Current color variables */
+    --playable-bg: var(--playable-bg-light);
+    --playable-border: var(--playable-border-light);
+    --research-bg: var(--research-bg-light);
+    --research-border: var(--research-border-light);
+    --design-bg: var(--design-bg-light);
+    --design-border: var(--design-border-light);
+}
+
+/* Dark mode color adjustments */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --playable-bg: var(--playable-bg-dark);
+        --playable-border: var(--playable-border-dark);
+        --research-bg: var(--research-bg-dark);
+        --research-border: var(--research-border-dark);
+        --design-bg: var(--design-bg-dark);
+        --design-border: var(--design-border-dark);
+    }
+}
 a.detail-title-link, .bio-table a{
     font-weight: 500;
     color: #5a67d8;
@@ -57,6 +98,22 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Category breadcrumb coloring */
+.breadcrumb-item.category-playable.active {
+    background: var(--playable-primary);
+    border-color: var(--playable-primary);
+}
+
+.breadcrumb-item.category-research.active {
+    background: var(--research-primary);
+    border-color: var(--research-primary);
+}
+
+.breadcrumb-item.category-design.active {
+    background: var(--design-primary);
+    border-color: var(--design-primary);
+}
 .breadcrumb-separator { 
     color: #999; 
 }
@@ -82,35 +139,35 @@ body {
 
 /* Category color coding for main navigation */
 .tag.category-playable {
-    border: 1px solid #bbf7d0;
-    background: #f0fdf4;
-    color: #16a34a;
+    border: 1px solid var(--playable-border);
+    background: var(--playable-bg);
+    color: var(--playable-primary);
 }
 
 .tag.category-playable:hover {
-    background: #16a34a;
+    background: var(--playable-primary);
     color: white;
 }
 
 .tag.category-research {
-    border: 1px solid #fecaca;
-    background: #fef2f2;
-    color: #dc2626;
+    border: 1px solid var(--research-border);
+    background: var(--research-bg);
+    color: var(--research-primary);
 }
 
 .tag.category-research:hover {
-    background: #dc2626;
+    background: var(--research-primary);
     color: white;
 }
 
 .tag.category-design {
-    border: 1px solid #bfdbfe;
-    background: #eff6ff;
-    color: #2563eb;
+    border: 1px solid var(--design-border);
+    background: var(--design-bg);
+    color: var(--design-primary);
 }
 
 .tag.category-design:hover {
-    background: #2563eb;
+    background: var(--design-primary);
     color: white;
 }
 
@@ -149,6 +206,36 @@ body {
     flex-direction: column; 
     color: inherit; /* Prevent link from turning text blue */
     text-decoration: none; /* Remove link underline */
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+/* Subtle category color hints on item cards */
+.item-card.category-playable {
+    border-left: 3px solid var(--playable-primary);
+}
+
+.item-card.category-playable:hover {
+    border-color: var(--playable-border);
+    background: var(--playable-bg);
+}
+
+.item-card.category-research {
+    border-left: 3px solid var(--research-primary);
+}
+
+.item-card.category-research:hover {
+    border-color: var(--research-border);
+    background: var(--research-bg);
+}
+
+.item-card.category-design {
+    border-left: 3px solid var(--design-primary);
+}
+
+.item-card.category-design:hover {
+    border-color: var(--design-border);
+    background: var(--design-bg);
 }
 .item-card:hover .item-title {
     text-decoration: underline;
