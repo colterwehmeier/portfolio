@@ -1130,8 +1130,8 @@ def copy_specific_folders(source, target, folder_names):
             # Copy the folder and its contents to the target directory
             shutil.copytree(path, target_path, dirs_exist_ok=True)
 
-# Copy 'html' and 'pdf' folders and their contents
-copy_specific_folders(entries_source_dir, entries_target_dir, ['html', 'pdf'])
+# Copy 'html', 'pdf', and 'compiled' folders and their contents
+copy_specific_folders(entries_source_dir, entries_target_dir, ['html', 'pdf', 'compiled'])
 
 
 #manual copy of output.html with file paths fixed to address github limit
