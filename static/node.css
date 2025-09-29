@@ -176,6 +176,9 @@ body {
     cursor: pointer; 
     text-decoration: none; 
     color: #333;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(255, 255, 255, 0.18);
 }
 .tag:hover { 
     background: #666; 
@@ -826,9 +829,6 @@ p {
     .tag {
         background: #404040;
         color: #e0e0e0;
-        border-style: solid;
-        border-width: thin;
-        border-color: rgba(255, 255, 255, 0.18);
     }
     
     .tag:hover {
