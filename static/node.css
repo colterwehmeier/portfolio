@@ -828,7 +828,7 @@ p {
         color: #e0e0e0;
         border-style: solid;
         border-width: thin;
-        border-color: rgba(255, 255, 255, 50);
+        border-color: rgba(255, 255, 255, 0.18);
     }
     
     .tag:hover {
