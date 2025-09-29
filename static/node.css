@@ -7,18 +7,24 @@
 /* Category color system - works with light/dark modes */
 :root {
     --playable-primary: #16a34a;
+    --playable-text-light: #16a34a;
+    --playable-text-dark: #4ade80;
     --playable-bg-light: #f0fdf4;
     --playable-border-light: #bbf7d0;
     --playable-bg-dark: #14532d;
     --playable-border-dark: #15803d;
     
     --research-primary: #dc2626;
+    --research-text-light: #dc2626;
+    --research-text-dark: #f87171;
     --research-bg-light: #fef2f2;
     --research-border-light: #fecaca;
     --research-bg-dark: #7f1d1d;
     --research-border-dark: #b91c1c;
     
     --design-primary: #2563eb;
+    --design-text-light: #2563eb;
+    --design-text-dark: #60a5fa;
     --design-bg-light: #eff6ff;
     --design-border-light: #bfdbfe;
     --design-bg-dark: #1e3a8a;
@@ -41,10 +47,13 @@
     --design-muted-border-dark: #1e40af;
     
     /* Current color variables */
+    --playable-text: var(--playable-text-light);
     --playable-bg: var(--playable-bg-light);
     --playable-border: var(--playable-border-light);
+    --research-text: var(--research-text-light);
     --research-bg: var(--research-bg-light);
     --research-border: var(--research-border-light);
+    --design-text: var(--design-text-light);
     --design-bg: var(--design-bg-light);
     --design-border: var(--design-border-light);
     
@@ -59,10 +68,13 @@
 /* Dark mode color adjustments */
 @media (prefers-color-scheme: dark) {
     :root {
+        --playable-text: var(--playable-text-dark);
         --playable-bg: var(--playable-bg-dark);
         --playable-border: var(--playable-border-dark);
+        --research-text: var(--research-text-dark);
         --research-bg: var(--research-bg-dark);
         --research-border: var(--research-border-dark);
+        --design-text: var(--design-text-dark);
         --design-bg: var(--design-bg-dark);
         --design-border: var(--design-border-dark);
         
@@ -171,7 +183,7 @@ body {
 .tag.category-playable {
     border: 1px solid var(--playable-border);
     background: var(--playable-bg);
-    color: var(--playable-primary);
+    color: var(--playable-text);
 }
 
 .tag.category-playable:hover {
@@ -182,7 +194,7 @@ body {
 .tag.category-research {
     border: 1px solid var(--research-border);
     background: var(--research-bg);
-    color: var(--research-primary);
+    color: var(--research-text);
 }
 
 .tag.category-research:hover {
@@ -193,7 +205,7 @@ body {
 .tag.category-design {
     border: 1px solid var(--design-border);
     background: var(--design-bg);
-    color: var(--design-primary);
+    color: var(--design-text);
 }
 
 .tag.category-design:hover {
@@ -207,7 +219,7 @@ body {
 .tag.category-tools {
     border: 1px solid var(--playable-border);
     background: var(--playable-bg);
-    color: var(--playable-primary);
+    color: var(--playable-text);
 }
 
 .tag.category-games:hover,
@@ -222,7 +234,7 @@ body {
 .tag.category-presentations {
     border: 1px solid var(--research-border);
     background: var(--research-bg);
-    color: var(--research-primary);
+    color: var(--research-text);
 }
 
 .tag.category-engagement:hover,
@@ -238,7 +250,7 @@ body {
 .tag.category-objects {
     border: 1px solid var(--design-border);
     background: var(--design-bg);
-    color: var(--design-primary);
+    color: var(--design-text);
 }
 
 .tag.category-architecture:hover,
@@ -271,7 +283,7 @@ body {
 .tag.filter-tag.section-playable {
     background: var(--playable-muted);
     border-color: var(--playable-muted-border);
-    color: var(--playable-primary);
+    color: var(--playable-text);
 }
 
 .tag.filter-tag.section-playable:hover {
@@ -288,7 +300,7 @@ body {
 .tag.filter-tag.section-research {
     background: var(--research-muted);
     border-color: var(--research-muted-border);
-    color: var(--research-primary);
+    color: var(--research-text);
 }
 
 .tag.filter-tag.section-research:hover {
@@ -305,7 +317,7 @@ body {
 .tag.filter-tag.section-design {
     background: var(--design-muted);
     border-color: var(--design-muted-border);
-    color: var(--design-primary);
+    color: var(--design-text);
 }
 
 .tag.filter-tag.section-design:hover {
