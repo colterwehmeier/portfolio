@@ -51,7 +51,7 @@
                 <div class="filter-level">
                     <div class="filter-tags">
                         <label for="filter-all" class="filter-tag">All</label>
-                        <label for="filter-playable" class="filter-tag category-playable">Playable</label><label for="filter-research" class="filter-tag category-research">Research</label><label for="filter-design" class="filter-tag category-design">Design</label>
+                        <label for="filter-playable" class="filter-tag">Playable</label><label for="filter-research" class="filter-tag">Research</label><label for="filter-design" class="filter-tag">Design</label>
                     </div>
                 </div>
             </div>
@@ -854,46 +854,13 @@
         }
         
         /* Filter tag active states based on radio button selection */
-        #filter-all:checked ~ .timeline-filters label[for="filter-all"] {
-            background: var(--accent-primary);
-            color: white;
-            border-color: var(--accent-primary);
-        }
-        
-        .filter-tag.category-playable {
-            border-color: var(--playable-border);
-            background: var(--playable-bg);
-            color: var(--playable-text);
-        }
-        
-        #filter-playable:checked ~ .timeline-filters label[for="filter-playable"] {
-            background: var(--playable-primary);
-            border-color: var(--playable-primary);
-            color: white;
-        }
-        
-        .filter-tag.category-research {
-            border-color: var(--research-border);
-            background: var(--research-bg);
-            color: var(--research-text);
-        }
-        
-        #filter-research:checked ~ .timeline-filters label[for="filter-research"] {
-            background: var(--research-primary);
-            border-color: var(--research-primary);
-            color: white;
-        }
-        
-        .filter-tag.category-design {
-            border-color: var(--design-border);
-            background: var(--design-bg);
-            color: var(--design-text);
-        }
-        
+        #filter-all:checked ~ .timeline-filters label[for="filter-all"],
+        #filter-playable:checked ~ .timeline-filters label[for="filter-playable"],
+        #filter-research:checked ~ .timeline-filters label[for="filter-research"],
         #filter-design:checked ~ .timeline-filters label[for="filter-design"] {
-            background: var(--design-primary);
-            border-color: var(--design-primary);
+            background: #495057;
             color: white;
+            border-color: #495057;
         }
         
         /* CSS-only filtering: hide entries that don't match the selected category */
