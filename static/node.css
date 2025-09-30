@@ -6,45 +6,45 @@
 
 /* Category color system - works with light/dark modes */
 :root {
-    --playable-primary: #16a34a;
-    --playable-text-light: #16a34a;
-    --playable-text-dark: #4ade80;
-    --playable-bg-light: #f0fdf4;
-    --playable-border-light: #bbf7d0;
-    --playable-bg-dark: #14532d;
-    --playable-border-dark: #15803d;
+    --playable-primary: #D4941E;
+    --playable-text-light: #D4941E;
+    --playable-text-dark: #F5B855;
+    --playable-bg-light: #FDF6E8;
+    --playable-border-light: #F0E4C7;
+    --playable-bg-dark: #3D2914;
+    --playable-border-dark: #8B6914;
     
-    --research-primary: #dc2626;
-    --research-text-light: #dc2626;
-    --research-text-dark: #f87171;
-    --research-bg-light: #fef2f2;
-    --research-border-light: #fecaca;
-    --research-bg-dark: #7f1d1d;
-    --research-border-dark: #b91c1c;
+    --research-primary: #9A3A3B;
+    --research-text-light: #9A3A3B;
+    --research-text-dark: #C8605F;
+    --research-bg-light: #FDF2F2;
+    --research-border-light: #F0D4D4;
+    --research-bg-dark: #2D1515;
+    --research-border-dark: #6B2829;
     
-    --design-primary: #2563eb;
-    --design-text-light: #2563eb;
-    --design-text-dark: #60a5fa;
-    --design-bg-light: #eff6ff;
-    --design-border-light: #bfdbfe;
-    --design-bg-dark: #1e3a8a;
-    --design-border-dark: #3b82f6;
+    --design-primary: #2F365C;
+    --design-text-light: #2F365C;
+    --design-text-dark: #4A5578;
+    --design-bg-light: #F1F2F7;
+    --design-border-light: #D4D8E8;
+    --design-bg-dark: #16192B;
+    --design-border-dark: #242947;
     
     /* Muted variants for filter tags */
-    --playable-muted-light: #f0fdf4;
-    --playable-muted-border-light: #dcfce7;
-    --playable-muted-dark: #052e16;
-    --playable-muted-border-dark: #166534;
+    --playable-muted-light: #FEFCF7;
+    --playable-muted-border-light: #F7F0E0;
+    --playable-muted-dark: #1F1711;
+    --playable-muted-border-dark: #4A3A1A;
     
-    --research-muted-light: #fef2f2;
-    --research-muted-border-light: #fee2e2;
-    --research-muted-dark: #450a0a;
-    --research-muted-border-dark: #991b1b;
+    --research-muted-light: #FEFAFA;
+    --research-muted-border-light: #F7EFEF;
+    --research-muted-dark: #1A0D0D;
+    --research-muted-border-dark: #4A1F1F;
     
-    --design-muted-light: #eff6ff;
-    --design-muted-border-light: #dbeafe;
-    --design-muted-dark: #0c1e3f;
-    --design-muted-border-dark: #1e40af;
+    --design-muted-light: #FAFBFC;
+    --design-muted-border-light: #EDEEF3;
+    --design-muted-dark: #0E1018;
+    --design-muted-border-dark: #1D1F2B;
     
     /* Current color variables */
     --playable-text: var(--playable-text-light);
