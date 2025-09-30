@@ -112,7 +112,23 @@ a:hover {
 /* Special link styles for specific contexts */
 a.detail-title-link, .bio-table a{
     font-weight: 500;
-    color: #5a67d8;
+    color: #333; /* Black in light mode */
+}
+
+/* Section-specific colors for special links */
+.section-playable a.detail-title-link,
+.section-playable .bio-table a {
+    color: var(--playable-text);
+}
+
+.section-research a.detail-title-link,
+.section-research .bio-table a {
+    color: var(--research-text);
+}
+
+.section-design a.detail-title-link,
+.section-design .bio-table a {
+    color: var(--design-text);
 }
 
 body { 
@@ -919,7 +935,7 @@ p {
     }
     
     a.detail-title-link, .bio-table a {
-        color: #6366f1;
+        color: #e0e0e0; /* White in dark mode */
     }
     
     a.detail-title-link:hover, .bio-table a:hover {
