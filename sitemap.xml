@@ -46,6 +46,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/2025/chain3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/2024/genesis24</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -306,6 +311,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/games/filter/collaboration</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/games/filter/solo</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -316,9 +326,9 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/filter/collaboration</loc>
+    <loc>https://portfolio.colter.us/2025/chain3</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/2024/genesis24</loc>

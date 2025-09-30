@@ -1,5 +1,26 @@
 [
   {
+    "title": "C.H.A.I.N. 3",
+    "year": "2025",
+    "season": "winter",
+    "end_year": "2026",
+    "theme": "game",
+    "tags": "game, collaboration, haunted-ps1, mass-collaboration, executive producer",
+    "id": "chain3",
+    "locked": false,
+    "content": "",
+    "description": "The third and most ambitious entry in the C.H.A.I.N. experimental collaborative series, directing a spatially-distributed collaborative development network with 120+ contributors. This project establishes new paradigms for decentralized creative production at an unprecedented scale, featuring a fully automated build and update pipeline that quickly reflects changes as the game-network expands and refines. As Executive Producer and Co-Director, I'm leading the technical infrastructure and creative coordination for this groundbreaking experiment in mass collaborative game development.",
+    "thumbnail_override": "",
+    "media_dimensions": {},
+    "file_paths": [],
+    "recommended_ids": [
+      "chain2",
+      "genesis",
+      "egw24",
+      "chain"
+    ]
+  },
+  {
     "title": "GENESIS 2K24",
     "year": "2024",
     "season": "fall",
@@ -83,7 +104,7 @@
       "genesis",
       "chain2",
       "drip",
-      "egw24"
+      "chain3"
     ]
   },
   {
@@ -123,8 +144,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "chain",
-      "soup1"
+      "chain3",
+      "chain"
     ]
   },
   {
@@ -219,8 +240,8 @@
     "recommended_ids": [
       "chain",
       "genesis",
-      "egw24",
-      "soup1"
+      "chain3",
+      "egw24"
     ]
   },
   {
@@ -922,8 +943,8 @@
     "recommended_ids": [
       "munich",
       "wurm",
-      "timelineatlas",
-      "schlegel"
+      "schlegel",
+      "timelineatlas"
     ]
   },
   {
@@ -1604,7 +1625,7 @@
     "id": "codex20",
     "locked": false,
     "content": "https://www.goodreads.com/book/show/58697717-nm-codex-y2k20",
-    "description": "Invited article contributor for a <a href='https://www.goodreads.com/book/show/58697717-nm-codex-y2k20' target='_blank'>retrospective on 2020</a>, the year we were trapped inside.",
+    "description": "Invited article contributor for a <a href='https://www.goodreads.com/book/show/58697717-nm-codex-y2k20' target='_blank'>retrospective on 2020</a>, the year we were trapped inside. My contribution was titled '#The-New-Aesthetic: Objects in Mirror are Much Closer than They Appear', reading James Bridles term of the technological uncanny into the strange photography of lockdowns and security in 2020.",
     "thumbnail_override": "static/thumbs/50bccbe484b9d15787f2a5694337852f.jpg",
     "media_dimensions": {
       "entries/junk/codex20/_c_cover.png": {
@@ -2531,8 +2552,8 @@
     "recommended_ids": [
       "recoveringurbanmemory",
       "trainhouse",
-      "guchibytes",
-      "austere"
+      "austere",
+      "guchibytes"
     ]
   },
   {
@@ -2784,9 +2805,9 @@
     ],
     "recommended_ids": [
       "skyboxes",
-      "flatsky",
       "fazole",
-      "oceantop"
+      "oceantop",
+      "flatsky"
     ]
   },
   {
@@ -2815,8 +2836,8 @@
     ],
     "recommended_ids": [
       "fazole",
-      "crapmaps",
       "oceantop",
+      "crapmaps",
       "nightmarehouse2"
     ]
   },
@@ -2922,8 +2943,8 @@
       "entries/blog/dariah25/_c__3_Screenshot_2025-07-27_at_7_15_36_PM.png"
     ],
     "recommended_ids": [
-      "spacenature",
       "metaframing",
+      "spacenature",
       "scan-to-ar",
       "surveysNecessary"
     ]
@@ -2953,8 +2974,8 @@
       "entries/blog/spacenature/_c_Screenshot_2025-07-27_at_7_02_07_PM.png"
     ],
     "recommended_ids": [
-      "dariah25",
       "nicairport",
+      "dariah25",
       "uniteposter",
       "metaframing"
     ]
@@ -3279,7 +3300,7 @@
     "id": "recoveringurbanmemory",
     "locked": false,
     "content": "",
-    "description": "The UIUC Plym Studio, in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar, embarked on a project to redesign an abandoned farmer's market in the historic heart of Beijing's Baitasi District. The studio encouraged students to explore lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The aim was to devise an intervention that would resurrect collective spaces such as farmers' markets and cafes, which had slowly disappeared from the community fabric. See an <a href='https://www.youtube.com/watch?v=Y54UwufO0F4' target='_blank'>interview<a> about this project with Mayur Mistry.",
+    "description": "<strong>\ud83c\udfc6 Chicago Studio Award (First Place), 2019</strong><br><br>The UIUC Plym Studio, in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar, embarked on a project to redesign an abandoned farmer's market in the historic heart of Beijing's Baitasi District. The studio encouraged students to explore lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The aim was to devise an intervention that would resurrect collective spaces such as farmers' markets and cafes, which had slowly disappeared from the community fabric. See an <a href='https://www.youtube.com/watch?v=Y54UwufO0F4' target='_blank'>interview<a> about this project with Mayur Mistry.",
     "thumbnail_override": "static/thumbs/0554c75c87114150ebaa6a153cc07ab2.jpg",
     "media_dimensions": {
       "entries/blog/recoveringurbanmemory/_1_grandhall_stone2.jpg": {
@@ -3752,7 +3773,7 @@
     "id": "austere",
     "locked": false,
     "content": "/entries/blog/austere/_1_Poster-Final07.jpg",
-    "description": "Conceived in 2018, The Austere originated as a design-build proposal for the U.S. Solar Decathlon before being reformulated as a speculative project. The work imagines a future shaped by accelerating climate catastrophe and water scarcity, where corporations step in to provide housing through prefabricated shelters tied directly to food production and labor contracts. Exhibited as a large-format presentation board and later adapted as an augmented reality installation, the project won First Prize (Student Choice) at Critical Mass that year, positioning it between architectural proposal, narrative fiction, and propaganda artifact.\n\nThe reading of the work reflects the moment of its making. At the time, speculative design culture often produced exaggerated extremes as a form of safe estrangement, using implausibility to open critical distance. The Austere inverted this conceit: instead of hyperbole, it grounded itself in the plausible, reframing an extreme condition\u2014collapse of water systems, corporate housing provision, labor serfdom\u2014not as outlandish but as an almost logical extension of existing trends. The effect was unsettling: the imagery, from homestead-style prefabs to Wyeth-inspired fields, rendered austerity not futuristic but imminent.\n\nLooking back from 2025, the project reads as tied to the optimism and anxieties of its context. At that moment, the gig economy and corporate urban visions\u2014Katerra, WeWork, Sidewalk Labs\u2014were still seen as possible bulwarks against systemic collapse. The Austere took those trajectories to their limit, presenting them as survival infrastructure. In hindsight, as many of those corporate futures have faltered and private equity\u2019s financialization of existing housing has become the dominant threat, the project stands less as prediction and more as a record of how speculative design can mirror its moment: exaggerating some dangers while making others visible in ways that, only later, prove prescient.",
+    "description": "<strong>\ud83c\udfc6 CRITICAL MASS Student Choice Award, 2018</strong><br><br>Conceived in 2018, The Austere originated as a design-build proposal for the U.S. Solar Decathlon before being reformulated as a speculative project. The work imagines a future shaped by accelerating climate catastrophe and water scarcity, where corporations step in to provide housing through prefabricated shelters tied directly to food production and labor contracts. Exhibited as a large-format presentation board and later adapted as an augmented reality installation, the project won First Prize (Student Choice) at Critical Mass that year, positioning it between architectural proposal, narrative fiction, and propaganda artifact.\n\nThe reading of the work reflects the moment of its making. At the time, speculative design culture often produced exaggerated extremes as a form of safe estrangement, using implausibility to open critical distance. The Austere inverted this conceit: instead of hyperbole, it grounded itself in the plausible, reframing an extreme condition\u2014collapse of water systems, corporate housing provision, labor serfdom\u2014not as outlandish but as an almost logical extension of existing trends. The effect was unsettling: the imagery, from homestead-style prefabs to Wyeth-inspired fields, rendered austerity not futuristic but imminent.\n\nLooking back from 2025, the project reads as tied to the optimism and anxieties of its context. At that moment, the gig economy and corporate urban visions\u2014Katerra, WeWork, Sidewalk Labs\u2014were still seen as possible bulwarks against systemic collapse. The Austere took those trajectories to their limit, presenting them as survival infrastructure. In hindsight, as many of those corporate futures have faltered and private equity's financialization of existing housing has become the dominant threat, the project stands less as prediction and more as a record of how speculative design can mirror its moment: exaggerating some dangers while making others visible in ways that, only later, prove prescient.",
     "thumbnail_override": "static/thumbs/d4a1b0c09a1b4df381d769aa45266217.jpg",
     "media_dimensions": {
       "entries/blog/austere/_c__1_poster1.jpg": {
@@ -3798,7 +3819,7 @@
     "id": "trainhouse",
     "locked": false,
     "content": "",
-    "description": "My winning entry for the Archon Studio of 2018, with the supervision of Olsen-Kundig Studio and professor Carl Lewis, drew inspiration from the post-industrial landscapes of the Midwest, particularly those of early nuclear research and energy production. Dresden Generating Station\u2014the first privately financed nuclear power plant in the U.S. and a keystone of postwar energy optimism\u2014sits within a landscape where rail lines, river corridors, and prairie converge. This terrain carries the layered histories of industry, energy, and abandonment. By re-inhabiting its disused rail lines, the project reclaims infrastructure not for transit or commerce but for reflection and habitation, transforming the residues of industry into a framework for living.\n\nRather than treating movement as speed or efficiency, the project reframes locomotion as a slow inhabitation of landscape. Its propulsion system borrows from the mechanics of a grandfather clock, scaled up into a pendulum, counterweights, and a 1.5-meter winding wheel. Each day, residents wind the mechanism to power the ultra-slow drive, where a heavy steel \u201cfoot\u201d presses against the ground to move the house forward.\n\nBuilt on the reclaimed steel frame of boxcars, the house unfolds as a linear sequence\u2014private quarters, dining, power, and communal spaces\u2014that extend dwelling into a year-long passage across prairie, rivers, marshland, and ruins. In place of the forward thrust of rail or the concentrated energy of nuclear power, the project proposes a cyclical, patient mode of inhabiting the Anthropocene landscape. The house becomes an instrument for reading its environment slowly and deliberately, reframing abandoned infrastructure as a stage for observation, ritual, and renewed attachment to place.",
+    "description": "<strong>\ud83c\udfc6 Archon Studio Prize (2nd Place), 2018</strong><br><br>My winning entry for the Archon Studio of 2018, with the supervision of Olsen-Kundig Studio and professor Carl Lewis, drew inspiration from the post-industrial landscapes of the Midwest, particularly those of early nuclear research and energy production. Dresden Generating Station\u2014the first privately financed nuclear power plant in the U.S. and a keystone of postwar energy optimism\u2014sits within a landscape where rail lines, river corridors, and prairie converge. This terrain carries the layered histories of industry, energy, and abandonment. By re-inhabiting its disused rail lines, the project reclaims infrastructure not for transit or commerce but for reflection and habitation, transforming the residues of industry into a framework for living.\n\nRather than treating movement as speed or efficiency, the project reframes locomotion as a slow inhabitation of landscape. Its propulsion system borrows from the mechanics of a grandfather clock, scaled up into a pendulum, counterweights, and a 1.5-meter winding wheel. Each day, residents wind the mechanism to power the ultra-slow drive, where a heavy steel \"foot\" presses against the ground to move the house forward.\n\nBuilt on the reclaimed steel frame of boxcars, the house unfolds as a linear sequence\u2014private quarters, dining, power, and communal spaces\u2014that extend dwelling into a year-long passage across prairie, rivers, marshland, and ruins. In place of the forward thrust of rail or the concentrated energy of nuclear power, the project proposes a cyclical, patient mode of inhabiting the Anthropocene landscape. The house becomes an instrument for reading its environment slowly and deliberately, reframing abandoned infrastructure as a stage for observation, ritual, and renewed attachment to place.",
     "thumbnail_override": "static/thumbs/f7ca0304d7bad6a75a162746a99820bb.jpg",
     "media_dimensions": {
       "entries/blog/trainhouse/_1_Artboard20copy10bb2x-100.jpg": {
