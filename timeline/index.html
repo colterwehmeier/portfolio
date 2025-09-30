@@ -42,12 +42,16 @@
     </header>
 
     <main class="grid-container">
-        <div class="timeline-view">            
-            <div class="timeline-filters" style="display: none;">
+        <div class="timeline-view">
+            <!-- CSS-only filters using radio buttons -->
+            <input type="radio" name="timeline-filter" id="filter-all" checked style="display: none;">
+            <input type="radio" name="timeline-filter" id="filter-playable" style="display: none;"><input type="radio" name="timeline-filter" id="filter-research" style="display: none;"><input type="radio" name="timeline-filter" id="filter-design" style="display: none;">
+            
+            <div class="timeline-filters">
                 <div class="filter-level">
                     <div class="filter-tags">
-                        <a href="#" class="filter-tag active" data-category="">All</a>
-                        <a href="#" class="filter-tag" data-category="playable">Playable</a><a href="#" class="filter-tag" data-category="research">Research</a><a href="#" class="filter-tag" data-category="design">Design</a>
+                        <label for="filter-all" class="filter-tag">All</label>
+                        <label for="filter-playable" class="filter-tag category-playable">Playable</label><label for="filter-research" class="filter-tag category-research">Research</label><label for="filter-design" class="filter-tag category-design">Design</label>
                     </div>
                 </div>
             </div>
@@ -779,91 +783,8 @@
     </main>
     
     <script>
-        // Timeline filtering functionality with URL state
-        let activeCategory = '';
-        
-        // Parse URL parameters on page load
-        function parseUrlParams() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const hashParams = new URLSearchParams(window.location.hash.substring(1));
-            
-            // Check both URL params and hash for filters
-            activeCategory = urlParams.get('category') || hashParams.get('category') || '';
-            
-            updateFilterUI();
-            filterEntries();
-        }
-        
-        // Update URL without page reload
-        function updateUrl() {
-            const params = new URLSearchParams();
-            if (activeCategory) params.set('category', activeCategory);
-            
-            const newUrl = params.toString() ? 
-                window.location.pathname + '?' + params.toString() : 
-                window.location.pathname;
-            
-            history.replaceState(null, '', newUrl);
-        }
-        
-        // Update filter UI based on current state
-        function updateFilterUI() {
-            // Update category filters - only apply to filter buttons
-            document.querySelectorAll('.filter-tag[data-category]').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.category === activeCategory);
-            });
-        }
-        
-        // Category filter handlers - only apply to filter buttons, not timeline entries
-        document.querySelectorAll('.filter-tag[data-category]').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                activeCategory = this.dataset.category;
-                updateUrl();
-                updateFilterUI();
-                filterEntries();
-            });
-        });
-        
-        // Filter entries based on current state
-        function filterEntries() {
-            const entries = document.querySelectorAll('.timeline-entry');
-            
-            entries.forEach(entry => {
-                let show = true;
-                
-                // Filter by category - check both data-category and data-tags
-                if (activeCategory) {
-                    const entryCategory = entry.dataset.category || '';
-                    const entryTags = entry.dataset.tags || '';
-                    
-                    // Show if the active category matches either the main category or appears in tags
-                    const hasCategory = entryCategory === activeCategory || 
-                                      entryTags.split(' ').includes(activeCategory);
-                    
-                    if (!hasCategory) {
-                        show = false;
-                    }
-                }
-                
-                entry.style.display = show ? 'flex' : 'none';
-            });
-        }
-        
-        // Handle browser back/forward buttons
-        window.addEventListener('popstate', function(e) {
-            parseUrlParams();
-        });
-        
-        // Initialize filters on page load
+        // Timeline navigation for back button functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Show filters when JavaScript is available
-            const filters = document.querySelector('.timeline-filters');
-            if (filters) {
-                filters.style.display = 'flex';
-            }
-            parseUrlParams();
-            
             // Add timeline state to project links for proper back navigation
             document.querySelectorAll('.timeline-title').forEach(link => {
                 link.addEventListener('click', function(e) {
@@ -932,7 +853,8 @@
             color: var(--text-primary);
         }
         
-        .filter-tag.active {
+        /* Filter tag active states based on radio button selection */
+        #filter-all:checked ~ .timeline-filters label[for="filter-all"] {
             background: var(--accent-primary);
             color: white;
             border-color: var(--accent-primary);
@@ -944,7 +866,7 @@
             color: var(--playable-text);
         }
         
-        .filter-tag.category-playable.active {
+        #filter-playable:checked ~ .timeline-filters label[for="filter-playable"] {
             background: var(--playable-primary);
             border-color: var(--playable-primary);
             color: white;
@@ -956,7 +878,7 @@
             color: var(--research-text);
         }
         
-        .filter-tag.category-research.active {
+        #filter-research:checked ~ .timeline-filters label[for="filter-research"] {
             background: var(--research-primary);
             border-color: var(--research-primary);
             color: white;
@@ -968,10 +890,17 @@
             color: var(--design-text);
         }
         
-        .filter-tag.category-design.active {
+        #filter-design:checked ~ .timeline-filters label[for="filter-design"] {
             background: var(--design-primary);
             border-color: var(--design-primary);
             color: white;
+        }
+        
+        /* CSS-only filtering: hide entries that don't match the selected category */
+        #filter-playable:checked ~ .timeline-list .timeline-entry:not(.border-playable),
+        #filter-research:checked ~ .timeline-list .timeline-entry:not(.border-research),
+        #filter-design:checked ~ .timeline-list .timeline-entry:not(.border-design) {
+            display: none;
         }
         
         /* Secondary tags with more faded colors */
