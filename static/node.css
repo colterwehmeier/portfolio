@@ -4,50 +4,47 @@
     box-sizing: border-box; 
 }
 
-/* Category color system - harmonically matched amber/red/cyan */
+/* Category color system - works with light/dark modes */
 :root {
-    /* PLAYABLE - Amber (#EDA022 root hue) */
-    --playable-primary: #eda022;        /* Target amber hue */
-    --playable-text-light: #eda022;     /* Same as primary */
-    --playable-text-dark: #f5c55a;      /* Lighter, more saturated */
-    --playable-bg-light: #fef9f0;       /* Very light amber tint */
-    --playable-border-light: #fef0d9;   /* Light amber border */
-    --playable-bg-dark: #3d2a0a;        /* Dark amber background */
-    --playable-border-dark: #8b6914;    /* Medium dark amber */
+    --playable-primary: #eda022;
+    --playable-text-light: #eda022;
+    --playable-text-dark: #f5c871;
+    --playable-bg-light: #fef8f2;
+    --playable-border-light: #feeaca;
+    --playable-bg-dark: #7f611d;
+    --playable-border-dark: #b9871c;
     
-    /* RESEARCH - Red (#AC3C3D root hue) */
-    --research-primary: #ac3c3d;        /* Target red hue */
-    --research-text-light: #ac3c3d;     /* Same as primary */
-    --research-text-dark: #d16a6b;      /* Lighter, more saturated */
-    --research-bg-light: #faf4f4;       /* Very light red tint */
-    --research-border-light: #f0d7d7;   /* Light red border */
-    --research-bg-dark: #2a1415;        /* Dark red background */
-    --research-border-dark: #6d2829;    /* Medium dark red */
+    --research-primary: #ac3c3d;
+    --research-text-light: #ac3c3d;
+    --research-text-dark: #d16a6b;
+    --research-bg-light: #faf2f2;
+    --research-border-light: #f0caca;
+    --research-bg-dark: #5c1d1d;
+    --research-border-dark: #851c1c;
     
-    /* DESIGN - Dark Cyan (#333B60 root hue) */
-    --design-primary: #333b60;          /* Target cyan hue */
-    --design-text-light: #333b60;       /* Same as primary */
-    --design-text-dark: #5a6799;        /* Lighter, more saturated */
-    --design-bg-light: #f4f5f9;         /* Very light cyan tint */
-    --design-border-light: #d9dde8;     /* Light cyan border */
-    --design-bg-dark: #0f1117;          /* Dark cyan background */
-    --design-border-dark: #252c42;      /* Medium dark cyan */
+    --design-primary: #333b60;
+    --design-text-light: #333b60;
+    --design-text-dark: #6971a5;
+    --design-bg-light: #f2f2fe;
+    --design-border-light: #cacafe;
+    --design-bg-dark: #1d1d7f;
+    --design-border-dark: #1c1cb9;
     
-    /* Muted variants for filter tags - harmonically matched */
-    --playable-muted-light: #fef9f0;    /* Matches bg-light */
-    --playable-muted-border-light: #fcedc0;  /* Slightly more saturated */
-    --playable-muted-dark: #1a1308;     /* Very dark amber */
-    --playable-muted-border-dark: #5c4510;  /* Dark amber border */
+    /* Muted variants for filter tags */
+    --playable-muted-light: #fef8f2;
+    --playable-muted-border-light: #fee2ca;
+    --playable-muted-dark: #450a0a;
+    --playable-muted-border-dark: #991b1b;
     
-    --research-muted-light: #faf4f4;    /* Matches new red bg-light */
-    --research-muted-border-light: #ebcdcd;  /* Slightly more saturated */
-    --research-muted-dark: #140909;     /* Very dark red */
-    --research-muted-border-dark: #451a1b;  /* Dark red border */
+    --research-muted-light: #faf2f2;
+    --research-muted-border-light: #f0e2e2;
+    --research-muted-dark: #450a0a;
+    --research-muted-border-dark: #991b1b;
     
-    --design-muted-light: #f4f5f9;      /* Matches bg-light */
-    --design-muted-border-light: #cbd1e0;   /* Slightly more saturated */
-    --design-muted-dark: #080a0f;       /* Very dark cyan */
-    --design-muted-border-dark: #1a1f2e;    /* Dark cyan border */
+    --design-muted-light: #f2f2fe;
+    --design-muted-border-light: #cae2fe;
+    --design-muted-dark: #0c0e3f;
+    --design-muted-border-dark: #1e40af;
     
     /* Current color variables */
     --playable-text: var(--playable-text-light);
