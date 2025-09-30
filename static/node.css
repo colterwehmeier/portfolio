@@ -22,13 +22,13 @@
     --research-bg-dark: #3A1A1A;
     --research-border-dark: #843233;
     
-    --design-primary: #3C7A93;
-    --design-text-light: #3C7A93;
-    --design-text-dark: #6B9BB4;
-    --design-bg-light: #F2F7F9;
-    --design-border-light: #D0E3E9;
-    --design-bg-dark: #1D2F34;
-    --design-border-dark: #3E5A62;
+    --design-primary: #0647A1;
+    --design-text-light: #0647A1;
+    --design-text-dark: #4A7BC8;
+    --design-bg-light: #F0F4FB;
+    --design-border-light: #C7D8F0;
+    --design-bg-dark: #0A1A33;
+    --design-border-dark: #1E3A6B;
     
     /* Muted variants for filter tags */
     --playable-muted-light: #FEFDF9;
@@ -41,10 +41,10 @@
     --research-muted-dark: #201010;
     --research-muted-border-dark: #572525;
     
-    --design-muted-light: #FBFDFE;
-    --design-muted-border-light: #EDF5F7;
-    --design-muted-dark: #101A1C;
-    --design-muted-border-dark: #223235;
+    --design-muted-light: #FAFCFE;
+    --design-muted-border-light: #EBF2F9;
+    --design-muted-dark: #08111A;
+    --design-muted-border-dark: #162033;
     
     /* Current color variables */
     --playable-text: var(--playable-text-light);
