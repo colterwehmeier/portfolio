@@ -109,6 +109,11 @@ a:hover {
     color: var(--design-text);
 }
 
+/* Exception: item-title links should remain neutral regardless of section */
+.item-title a {
+    color: #333 !important;
+}
+
 /* Special link styles for specific contexts */
 a.detail-title-link, .bio-table a{
     font-weight: 500;
@@ -932,6 +937,11 @@ p {
     /* General links in dark mode */
     a {
         color: #e0e0e0;
+    }
+    
+    /* Item-title links remain neutral in dark mode */
+    .item-title a {
+        color: #e0e0e0 !important;
     }
     
     a.detail-title-link, .bio-table a {
