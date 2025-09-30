@@ -832,9 +832,18 @@
             entries.forEach(entry => {
                 let show = true;
                 
-                // Filter by category
-                if (activeCategory && entry.dataset.category !== activeCategory) {
-                    show = false;
+                // Filter by category - check both data-category and data-tags
+                if (activeCategory) {
+                    const entryCategory = entry.dataset.category || '';
+                    const entryTags = entry.dataset.tags || '';
+                    
+                    // Show if the active category matches either the main category or appears in tags
+                    const hasCategory = entryCategory === activeCategory || 
+                                      entryTags.split(' ').includes(activeCategory);
+                    
+                    if (!hasCategory) {
+                        show = false;
+                    }
                 }
                 
                 entry.style.display = show ? 'flex' : 'none';
