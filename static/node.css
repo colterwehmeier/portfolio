@@ -581,6 +581,7 @@ p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphenate-limit-chars: 6 3 3;
+    max-width: 80ch;
 }
 .detail-view { 
     background: none; 
