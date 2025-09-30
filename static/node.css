@@ -732,6 +732,12 @@ p {
     border-top: 1px solid #e0e0e0; 
     padding-top: 2rem; 
 }
+.section-playable .item-title {
+    color: #E8AD43;
+}
+.section-research .item-title {
+    color: #C6595A;
+}
 .section-design .item-title {
     color: #58739d;
 }
