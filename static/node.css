@@ -4,84 +4,49 @@
     box-sizing: border-box; 
 }
 
-/* Category color system - systematic variant approach */
+/* Category color system - amber/red/dark cyan palette */
 :root {
-    /* === PLAYABLE (Warm Amber) === */
-    --playable-primary: #d97706;
-    
-    /* Rich variants - for breadcrumbs (deeper, more saturated) */
-    --playable-rich-light: #b45309;      /* Darker amber */
-    --playable-rich-bg-light: #f59e0b;   /* Rich amber background */
-    --playable-rich-dark: #fbbf24;       /* Bright amber for dark mode */
-    --playable-rich-bg-dark: #92400e;    /* Rich background for dark mode */
-    
-    /* Standard variants - for category tags */
-    --playable-text-light: #d97706;
+    --playable-primary: #f59e0b;
+    --playable-text-light: #f59e0b;
     --playable-text-dark: #fbbf24;
     --playable-bg-light: #fef3c7;
     --playable-border-light: #fed7aa;
     --playable-bg-dark: #451a03;
     --playable-border-dark: #a16207;
     
-    /* Light variants - for filter tags (subtle, muted) */
-    --playable-light-light: #92400e;     /* Muted amber text */
-    --playable-light-bg-light: #fffbeb;  /* Very light amber */
-    --playable-light-border-light: #fef3c7;
-    --playable-light-dark: #d69e2e;      /* Muted for dark mode */
-    --playable-light-bg-dark: #1a1611;   /* Very dark bg */
-    --playable-light-border-dark: #44403c;
+    --research-primary: #dc2626;
+    --research-text-light: #dc2626;
+    --research-text-dark: #f87171;
+    --research-bg-light: #fef2f2;
+    --research-border-light: #fecaca;
+    --research-bg-dark: #7f1d1d;
+    --research-border-dark: #b91c1c;
     
-    /* === RESEARCH (Cool Teal) === */
-    --research-primary: #0891b2;
+    --design-primary: #0891b2;
+    --design-text-light: #0891b2;
+    --design-text-dark: #22d3ee;
+    --design-bg-light: #cffafe;
+    --design-border-light: #a5f3fc;
+    --design-bg-dark: #083344;
+    --design-border-dark: #0e7490;
     
-    /* Rich variants - for breadcrumbs */
-    --research-rich-light: #0e7490;      /* Darker teal */
-    --research-rich-bg-light: #0891b2;   /* Rich teal background */
-    --research-rich-dark: #22d3ee;       /* Bright teal for dark mode */
-    --research-rich-bg-dark: #155e75;    /* Rich background for dark mode */
+    /* Muted variants for filter tags */
+    --playable-muted-light: #fef3c7;
+    --playable-muted-border-light: #fde68a;
+    --playable-muted-dark: #292524;
+    --playable-muted-border-dark: #78716c;
     
-    /* Standard variants - for category tags */
-    --research-text-light: #0891b2;
-    --research-text-dark: #22d3ee;
-    --research-bg-light: #cffafe;
-    --research-border-light: #a5f3fc;
-    --research-bg-dark: #083344;
-    --research-border-dark: #0e7490;
+    --research-muted-light: #fef2f2;
+    --research-muted-border-light: #fee2e2;
+    --research-muted-dark: #450a0a;
+    --research-muted-border-dark: #991b1b;
     
-    /* Light variants - for filter tags */
-    --research-light-light: #155e75;     /* Muted teal text */
-    --research-light-bg-light: #f0fdfa;  /* Very light teal */
-    --research-light-border-light: #ccfbf1;
-    --research-light-dark: #06b6d4;      /* Muted for dark mode */
-    --research-light-bg-dark: #0f172a;   /* Very dark bg */
-    --research-light-border-dark: #334155;
+    --design-muted-light: #cffafe;
+    --design-muted-border-light: #a5f3fc;
+    --design-muted-dark: #164e63;
+    --design-muted-border-dark: #155e75;
     
-    /* === DESIGN (Deep Purple) === */
-    --design-primary: #7c3aed;
-    
-    /* Rich variants - for breadcrumbs */
-    --design-rich-light: #6d28d9;        /* Darker purple */
-    --design-rich-bg-light: #7c3aed;     /* Rich purple background */
-    --design-rich-dark: #a78bfa;         /* Bright purple for dark mode */
-    --design-rich-bg-dark: #5b21b6;      /* Rich background for dark mode */
-    
-    /* Standard variants - for category tags */
-    --design-text-light: #7c3aed;
-    --design-text-dark: #a78bfa;
-    --design-bg-light: #f3e8ff;
-    --design-border-light: #ddd6fe;
-    --design-bg-dark: #3c1a78;
-    --design-border-dark: #6d28d9;
-    
-    /* Light variants - for filter tags */
-    --design-light-light: #5b21b6;       /* Muted purple text */
-    --design-light-bg-light: #faf5ff;    /* Very light purple */
-    --design-light-border-light: #e9d5ff;
-    --design-light-dark: #8b5cf6;        /* Muted for dark mode */
-    --design-light-bg-dark: #1e1b2e;     /* Very dark bg */
-    --design-light-border-dark: #3730a3;
-    
-    /* Current color variables - Standard level (for category tags) */
+    /* Current color variables */
     --playable-text: var(--playable-text-light);
     --playable-bg: var(--playable-bg-light);
     --playable-border: var(--playable-border-light);
@@ -92,30 +57,17 @@
     --design-bg: var(--design-bg-light);
     --design-border: var(--design-border-light);
     
-    /* Rich variants - for breadcrumbs */
-    --playable-rich: var(--playable-rich-light);
-    --playable-rich-bg: var(--playable-rich-bg-light);
-    --research-rich: var(--research-rich-light);
-    --research-rich-bg: var(--research-rich-bg-light);
-    --design-rich: var(--design-rich-light);
-    --design-rich-bg: var(--design-rich-bg-light);
-    
-    /* Light variants - for filter tags */
-    --playable-light: var(--playable-light-light);
-    --playable-light-bg: var(--playable-light-bg-light);
-    --playable-light-border: var(--playable-light-border-light);
-    --research-light: var(--research-light-light);
-    --research-light-bg: var(--research-light-bg-light);
-    --research-light-border: var(--research-light-border-light);
-    --design-light: var(--design-light-light);
-    --design-light-bg: var(--design-light-bg-light);
-    --design-light-border: var(--design-light-border-light);
+    --playable-muted: var(--playable-muted-light);
+    --playable-muted-border: var(--playable-muted-border-light);
+    --research-muted: var(--research-muted-light);
+    --research-muted-border: var(--research-muted-border-light);
+    --design-muted: var(--design-muted-light);
+    --design-muted-border: var(--design-muted-border-light);
 }
 
 /* Dark mode color adjustments */
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Standard variants */
         --playable-text: var(--playable-text-dark);
         --playable-bg: var(--playable-bg-dark);
         --playable-border: var(--playable-border-dark);
@@ -126,24 +78,12 @@
         --design-bg: var(--design-bg-dark);
         --design-border: var(--design-border-dark);
         
-        /* Rich variants */
-        --playable-rich: var(--playable-rich-dark);
-        --playable-rich-bg: var(--playable-rich-bg-dark);
-        --research-rich: var(--research-rich-dark);
-        --research-rich-bg: var(--research-rich-bg-dark);
-        --design-rich: var(--design-rich-dark);
-        --design-rich-bg: var(--design-rich-bg-dark);
-        
-        /* Light variants */
-        --playable-light: var(--playable-light-dark);
-        --playable-light-bg: var(--playable-light-bg-dark);
-        --playable-light-border: var(--playable-light-border-dark);
-        --research-light: var(--research-light-dark);
-        --research-light-bg: var(--research-light-bg-dark);
-        --research-light-border: var(--research-light-border-dark);
-        --design-light: var(--design-light-dark);
-        --design-light-bg: var(--design-light-bg-dark);
-        --design-light-border: var(--design-light-border-dark);
+        --playable-muted: var(--playable-muted-dark);
+        --playable-muted-border: var(--playable-muted-border-dark);
+        --research-muted: var(--research-muted-dark);
+        --research-muted-border: var(--research-muted-border-dark);
+        --design-muted: var(--design-muted-dark);
+        --design-muted-border: var(--design-muted-border-dark);
     }
 }
 /* General link styling - black in light mode, white in dark mode */
@@ -251,38 +191,23 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Category breadcrumb coloring - Rich variants for depth and richness */
+/* Category breadcrumb coloring */
 .breadcrumb-item.category-playable.active {
-    background: var(--playable-rich-bg);
-    border-color: var(--playable-rich-bg);
+    background: var(--playable-primary);
+    border-color: var(--playable-primary);
     color: white !important;
-}
-
-.breadcrumb-item.category-playable:hover:not(.active) {
-    background: var(--playable-rich);
-    color: white;
 }
 
 .breadcrumb-item.category-research.active {
-    background: var(--research-rich-bg);
-    border-color: var(--research-rich-bg);
+    background: var(--research-primary);
+    border-color: var(--research-primary);
     color: white !important;
-}
-
-.breadcrumb-item.category-research:hover:not(.active) {
-    background: var(--research-rich);
-    color: white;
 }
 
 .breadcrumb-item.category-design.active {
-    background: var(--design-rich-bg);
-    border-color: var(--design-rich-bg);
+    background: var(--design-primary);
+    border-color: var(--design-primary);
     color: white !important;
-}
-
-.breadcrumb-item.category-design:hover:not(.active) {
-    background: var(--design-rich);
-    color: white;
 }
 .breadcrumb-separator { 
     color: #999; 
@@ -410,17 +335,16 @@ body {
     border-color: #495057;
 }
 
-/* Section-specific light filter tag colors - Light variants for subtlety */
+/* Section-specific muted filter tag colors */
 .tag.filter-tag.section-playable {
-    background: var(--playable-light-bg);
-    border-color: var(--playable-light-border);
-    color: var(--playable-light);
+    background: var(--playable-muted);
+    border-color: var(--playable-muted-border);
+    color: var(--playable-text);
 }
 
 .tag.filter-tag.section-playable:hover {
     background: var(--playable-bg);
     border-color: var(--playable-border);
-    color: var(--playable-text);
 }
 
 .tag.filter-tag.section-playable.active {
@@ -430,15 +354,14 @@ body {
 }
 
 .tag.filter-tag.section-research {
-    background: var(--research-light-bg);
-    border-color: var(--research-light-border);
-    color: var(--research-light);
+    background: var(--research-muted);
+    border-color: var(--research-muted-border);
+    color: var(--research-text);
 }
 
 .tag.filter-tag.section-research:hover {
     background: var(--research-bg);
     border-color: var(--research-border);
-    color: var(--research-text);
 }
 
 .tag.filter-tag.section-research.active {
@@ -448,15 +371,14 @@ body {
 }
 
 .tag.filter-tag.section-design {
-    background: var(--design-light-bg);
-    border-color: var(--design-light-border);
-    color: var(--design-light);
+    background: var(--design-muted);
+    border-color: var(--design-muted-border);
+    color: var(--design-text);
 }
 
 .tag.filter-tag.section-design:hover {
     background: var(--design-bg);
     border-color: var(--design-border);
-    color: var(--design-text);
 }
 
 .tag.filter-tag.section-design.active {
