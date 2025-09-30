@@ -115,7 +115,7 @@ a.item-card:hover {
 }
 
 /* Exception: item-title links should remain neutral regardless of section */
-.item-title a {
+.item-title {
     color: #333 !important;
 }
 
@@ -945,7 +945,7 @@ p {
     }
     
     /* Item-title links remain neutral in dark mode */
-    .item-title a {
+    .item-title {
         color: #e0e0e0 !important;
     }
     
