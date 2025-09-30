@@ -22,13 +22,13 @@
     --research-bg-dark: #3A1A1A;
     --research-border-dark: #843233;
     
-    --design-primary: #4A5A8C;
-    --design-text-light: #4A5A8C;
-    --design-text-dark: #6B7BA8;
-    --design-bg-light: #F3F5F9;
-    --design-border-light: #D8DEEA;
-    --design-bg-dark: #1C2033;
-    --design-border-dark: #313751;
+    --design-primary: #2E8B9A;
+    --design-text-light: #2E8B9A;
+    --design-text-dark: #5CAABB;
+    --design-bg-light: #F0F9FA;
+    --design-border-light: #C7EAED;
+    --design-bg-dark: #1A3335;
+    --design-border-dark: #3A6569;
     
     /* Muted variants for filter tags */
     --playable-muted-light: #FEFDF9;
@@ -41,10 +41,10 @@
     --research-muted-dark: #201010;
     --research-muted-border-dark: #572525;
     
-    --design-muted-light: #FBFCFD;
-    --design-muted-border-light: #EFF1F5;
-    --design-muted-dark: #12141C;
-    --design-muted-border-dark: #252835;
+    --design-muted-light: #FAFEFE;
+    --design-muted-border-light: #EBF7F8;
+    --design-muted-dark: #0F1C1D;
+    --design-muted-border-dark: #1F3638;
     
     /* Current color variables */
     --playable-text: var(--playable-text-light);
