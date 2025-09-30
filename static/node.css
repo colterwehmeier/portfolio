@@ -96,6 +96,11 @@ a:hover {
     opacity: 0.8;
 }
 
+/* Exception: item cards should not have opacity change on hover */
+a.item-card:hover {
+    opacity: 1;
+}
+
 /* Section-specific link colors */
 .section-playable a {
     color: var(--playable-text);
