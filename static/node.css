@@ -4,16 +4,18 @@
     box-sizing: border-box; 
 }
 
-/* Category color system - amber/red/dark cyan palette */
+/* Category color system - harmonically matched amber/red/cyan */
 :root {
-    --playable-primary: #f59e0b;
-    --playable-text-light: #f59e0b;
-    --playable-text-dark: #fbbf24;
-    --playable-bg-light: #fef3c7;
-    --playable-border-light: #fed7aa;
-    --playable-bg-dark: #451a03;
-    --playable-border-dark: #a16207;
+    /* PLAYABLE - Amber (matches red harmonics exactly) */
+    --playable-primary: #dc7c26;        /* Same saturation/lightness as red #dc2626 */
+    --playable-text-light: #dc7c26;     /* Same as primary */
+    --playable-text-dark: #f8b171;      /* Same relationship as red #f87171 */
+    --playable-bg-light: #fef8f2;       /* Same lightness as red #fef2f2 */
+    --playable-border-light: #feeaca;   /* Same relationship as red #fecaca */
+    --playable-bg-dark: #7f3f1d;        /* Same darkness as red #7f1d1d */
+    --playable-border-dark: #b9661c;    /* Same relationship as red #b91c1c */
     
+    /* RESEARCH - Red (unchanged) */
     --research-primary: #dc2626;
     --research-text-light: #dc2626;
     --research-text-dark: #f87171;
@@ -22,29 +24,30 @@
     --research-bg-dark: #7f1d1d;
     --research-border-dark: #b91c1c;
     
-    --design-primary: #0891b2;
-    --design-text-light: #0891b2;
-    --design-text-dark: #22d3ee;
-    --design-bg-light: #cffafe;
-    --design-border-light: #a5f3fc;
-    --design-bg-dark: #083344;
-    --design-border-dark: #0e7490;
+    /* DESIGN - Dark Cyan (matches red harmonics exactly) */
+    --design-primary: #26a6dc;          /* Same saturation/lightness as red #dc2626 */
+    --design-text-light: #26a6dc;       /* Same as primary */
+    --design-text-dark: #71d9f8;        /* Same relationship as red #f87171 */
+    --design-bg-light: #f2fafe;         /* Same lightness as red #fef2f2 */
+    --design-border-light: #cae9fe;     /* Same relationship as red #fecaca */
+    --design-bg-dark: #1d5c7f;          /* Same darkness as red #7f1d1d */
+    --design-border-dark: #1c78b9;      /* Same relationship as red #b91c1c */
     
-    /* Muted variants for filter tags */
-    --playable-muted-light: #fef3c7;
-    --playable-muted-border-light: #fde68a;
-    --playable-muted-dark: #292524;
-    --playable-muted-border-dark: #78716c;
+    /* Muted variants for filter tags - harmonically matched */
+    --playable-muted-light: #fef8f2;    /* Matches bg-light */
+    --playable-muted-border-light: #fee6d2;  /* Slightly more saturated */
+    --playable-muted-dark: #45260a;     /* Matches red darkness pattern */
+    --playable-muted-border-dark: #99471b;  /* Matches red relationship */
     
-    --research-muted-light: #fef2f2;
+    --research-muted-light: #fef2f2;    /* Unchanged */
     --research-muted-border-light: #fee2e2;
     --research-muted-dark: #450a0a;
     --research-muted-border-dark: #991b1b;
     
-    --design-muted-light: #cffafe;
-    --design-muted-border-light: #a5f3fc;
-    --design-muted-dark: #164e63;
-    --design-muted-border-dark: #155e75;
+    --design-muted-light: #f2fafe;      /* Matches bg-light */
+    --design-muted-border-light: #d2f0fe;   /* Slightly more saturated */
+    --design-muted-dark: #0a3645;       /* Matches red darkness pattern */
+    --design-muted-border-dark: #1b6b99;    /* Matches red relationship */
     
     /* Current color variables */
     --playable-text: var(--playable-text-light);
