@@ -86,6 +86,30 @@
         --design-muted-border: var(--design-muted-border-dark);
     }
 }
+/* General link styling - black in light mode, white in dark mode */
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Section-specific link colors */
+.section-playable a {
+    color: var(--playable-text);
+}
+
+.section-research a {
+    color: var(--research-text);
+}
+
+.section-design a {
+    color: var(--design-text);
+}
+
+/* Special link styles for specific contexts */
 a.detail-title-link, .bio-table a{
     font-weight: 500;
     color: #5a67d8;
@@ -887,6 +911,11 @@ p {
     
     .media-indicator {
         color: #b0b0b0;
+    }
+    
+    /* General links in dark mode */
+    a {
+        color: #e0e0e0;
     }
     
     a.detail-title-link, .bio-table a {
