@@ -115,9 +115,9 @@ a.item-card:hover {
 }
 
 /* Exception: item-title links should remain neutral regardless of section */
-.item-title {
+/* .item-title a {
     color: #333 !important;
-}
+} */
 
 /* Special link styles for specific contexts */
 a.detail-title-link, .bio-table a{
@@ -945,9 +945,9 @@ p {
     }
     
     /* Item-title links remain neutral in dark mode */
-    .item-title {
+    /* .item-title {
         color: #e0e0e0 !important;
-    }
+    } */
     
     a.detail-title-link, .bio-table a {
         color: #e0e0e0; /* White in dark mode */
