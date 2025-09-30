@@ -1311,7 +1311,7 @@
       "meshair",
       "earthvis",
       "trainhouse",
-      "timelineatlas"
+      "joteva"
     ]
   },
   {
@@ -1662,9 +1662,9 @@
     ],
     "recommended_ids": [
       "qr1",
-      "nicairport",
       "patio-walk-cordoba",
-      "demodisk3"
+      "demodisk3",
+      "unite"
     ]
   },
   {
@@ -2089,7 +2089,7 @@
       "beep",
       "joteva",
       "timelineatlas",
-      "miner75"
+      "meshair"
     ]
   },
   {
@@ -2313,7 +2313,7 @@
       "uniteposter",
       "dungeon",
       "drip",
-      "austere"
+      "illusive"
     ]
   },
   {
@@ -2495,8 +2495,8 @@
     "recommended_ids": [
       "incoherence",
       "codex20",
-      "joteva",
-      "willarnold"
+      "willarnold",
+      "joteva"
     ]
   },
   {
@@ -2563,7 +2563,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "austere",
-      "paphosgate"
+      "digitalpicnic"
     ]
   },
   {
@@ -2788,8 +2788,8 @@
     ],
     "recommended_ids": [
       "fazole",
-      "skyboxes",
       "flatsky",
+      "skyboxes",
       "nightmarehouse2"
     ]
   },
@@ -2856,9 +2856,9 @@
     ],
     "recommended_ids": [
       "skyboxes",
+      "flatsky",
       "fazole",
-      "oceantop",
-      "flatsky"
+      "oceantop"
     ]
   },
   {
@@ -2901,8 +2901,8 @@
     "tags": "research, playable, engagement, exhibition, cultural-heritage, playable, design, object, wood, participatory methods, cyprus institute, heritage",
     "id": "nicairport",
     "locked": false,
-    "content": "https://velab.cloud/nic",
-    "description": "As a centerpiece of my doctoral research, I led the design of an immersive reconstruction for the Nicosia International Airport: VE project. I developed the interactive visualization by meticulously 3D modeling the historic terminal, referencing high-fidelity LiDAR scans, comprehensive documentation from The Cyprus Institute, and archival state photography. This detailed reconstruction functions as a spatial information model, where visitors navigate the architecture to explore memories, photographs, and media anchored directly to the 3D space. To house the installation, I designed and fabricated a bespoke, jet-age wooden console containing a touchscreen for navigation and a mirrored short-throw projection system for an immersive display. For visitors to contribute their own stories, I engineered a unique recording interface by embedding a robust, serial-based computer into a period landline phone, allowing them to record testimonials directly into the virtual archive. Presented by The Cyprus Institute, this installation is a core feature of a multi-year exhibition at the Bank of Cyprus Cultural Foundation. The experience is free and open to the public from 10am to 7pm daily, transforming a digital model into a living, co-authored archive that preserves the airport's place in Cyprus's collective memory.",
+    "content": "https://velab.cloud/nic/en/",
+    "description": "A participatory virtual environment developed to test dissertation methodologies on interface-mediated, co-constructive heritage interpretation. Deployed in a public exhibition at the Bank of Cyprus Cultural Foundation, the project uses a \"propositional model\" to successfully scale public engagement, capturing over 3,200 play sessions and 300 oral story recordings. This method generated new qualitative data that enriches, expands, and challenges the site's limited documentation. The installation features a meticulously reconstructed 3D model of the historic terminal based on LiDAR scans and archival photography, housed in a custom-designed wooden console with touchscreen navigation and immersive projection. Visitors contribute stories through a period landline phone interface, transforming the digital model into a living, co-authored archive. The project is documented at <a href='https://velab.cloud/nic/en/' target='_blank'>velab.cloud/nic/en</a>, a companion website I also designed and developed.",
     "thumbnail_override": "static/thumbs/e50b8e71b3b2741b7579d174dee1ad68.jpg",
     "media_dimensions": {
       "entries/blog/nicairport/_c__1_booth.jpg": {
@@ -2953,10 +2953,10 @@
       "entries/blog/nicairport/IMG_8025.jpg"
     ],
     "recommended_ids": [
-      "spacenature",
-      "seoul",
       "paphosgate",
-      "meshair"
+      "dariah25",
+      "beep",
+      "spacenature"
     ]
   },
   {
@@ -2997,7 +2997,7 @@
       "metaframing",
       "spacenature",
       "scan-to-ar",
-      "surveysNecessary"
+      "nicairport"
     ]
   },
   {
@@ -3025,9 +3025,9 @@
       "entries/blog/spacenature/_c_Screenshot_2025-07-27_at_7_02_07_PM.png"
     ],
     "recommended_ids": [
-      "nicairport",
       "dariah25",
       "uniteposter",
+      "nicairport",
       "metaframing"
     ]
   },
@@ -3211,7 +3211,7 @@
       "recoveringurbanmemory",
       "patio-walk-cordoba",
       "cordobacourt",
-      "codex20"
+      "ict-for-urban-heritage-palermo"
     ]
   },
   {
@@ -3596,9 +3596,9 @@
       "entries/blog/paphosgate/release-2.jpeg"
     ],
     "recommended_ids": [
-      "recoveringurbanmemory",
       "seoul",
       "nicairport",
+      "recoveringurbanmemory",
       "beep"
     ]
   },
@@ -3812,7 +3812,7 @@
       "pipe",
       "digitalpicnic",
       "bezeliness",
-      "nicairport"
+      "paphosgate"
     ]
   },
   {
