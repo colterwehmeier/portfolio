@@ -3185,7 +3185,7 @@
   },
   {
     "title": "Memory In Uncertainty",
-    "description": "I was invited to review the public release of a <a href='https://members.newdesigncongress.org/memory-in-uncertainty-web-preservation-in-the-polycrisis/' target='_blank'>report</a> by the New Design Congress, which explores the techno-political implications of web archiving practices, focusing specifically on the right to be forgotten.",
+    "description": "I was invited to review the public release of a <a href='https://newdesigncongress.org/en/report/2022/memory-in-uncertainty/' target='_blank'>report</a> by the New Design Congress, which explores the techno-political implications of web archiving practices, focusing specifically on the right to be forgotten. The full report is available on the <a href='https://members.newdesigncongress.org/memory-in-uncertainty-web-preservation-in-the-polycrisis/' target='_blank'>members site</a>. Also featured in the <a href='https://nn.librarystack.org/contributor/wehmeier-colter/' target='_blank'>Neural Networks contributor archive</a>.",
     "year": "2022",
     "season": "fall",
     "theme": "blog",
@@ -3209,9 +3209,9 @@
     ],
     "recommended_ids": [
       "recoveringurbanmemory",
-      "patio-walk-cordoba",
       "cordobacourt",
-      "ict-for-urban-heritage-palermo"
+      "patio-walk-cordoba",
+      "minotaur"
     ]
   },
   {
@@ -3596,8 +3596,8 @@
       "entries/blog/paphosgate/release-2.jpeg"
     ],
     "recommended_ids": [
-      "seoul",
       "nicairport",
+      "seoul",
       "recoveringurbanmemory",
       "beep"
     ]
