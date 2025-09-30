@@ -28,6 +28,68 @@
     
     <script type="application/ld+json">{
   "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://portfolio.colter.us#website",
+  "name": "Colter Wehmeier Portfolio",
+  "url": "https://portfolio.colter.us",
+  "author": {
+    "@type": "Person",
+    "name": "Colter Wehmeier"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Portfolio Sections",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CollectionPage",
+          "name": "Playable Software",
+          "url": "https://portfolio.colter.us/playable",
+          "description": "Interactive games, AR/spatial computing, and digital tools"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CollectionPage",
+          "name": "Research",
+          "url": "https://portfolio.colter.us/research",
+          "description": "Academic research in digital humanities and community engagement"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CollectionPage",
+          "name": "Design",
+          "url": "https://portfolio.colter.us/design",
+          "description": "Architectural, exhibition, and media design projects"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "WebPage",
+          "name": "Timeline",
+          "url": "https://portfolio.colter.us/timeline",
+          "description": "Chronological view of all projects"
+        }
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://portfolio.colter.us/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://portfolio.colter.us#person",
   "name": "Colter Wehmeier",
@@ -166,6 +228,74 @@ I pursue this through practice-led research as a dual PhD in Informatics at the 
     </tr>
 </table>
 
+
+        <!-- Navigation Structure for AI Agents -->
+        <nav role="navigation" aria-label="Portfolio navigation" style="margin: 2rem auto; max-width: 700px;">
+            <h2>Portfolio Sections</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 1rem 0;">
+                    <a href="/playable" style="font-weight: bold; font-size: 1.1rem;">Playable Software</a>
+                    <p style="margin: 0.5rem 0; color: #666;">Interactive games, AR/spatial computing, and digital tools</p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+                        <li><a href="/games">Games</a> - Interactive games and experimental play experiences</li>
+                        <li><a href="/ar-spatial">AR/Spatial</a> - Augmented reality and spatial computing projects</li>
+                        <li><a href="/tools">Tools</a> - Digital tools and web applications</li>
+                    </ul>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/research" style="font-weight: bold; font-size: 1.1rem;">Research</a>
+                    <p style="margin: 0.5rem 0; color: #666;">Academic research in digital humanities and community engagement</p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+                        <li><a href="/engagement">Community Engagement</a> - Participatory research and public engagement</li>
+                        <li><a href="/publications">Publications</a> - Academic papers and book chapters</li>
+                        <li><a href="/presentations">Presentations</a> - Conference talks and presentations</li>
+                    </ul>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/design" style="font-weight: bold; font-size: 1.1rem;">Design</a>
+                    <p style="margin: 0.5rem 0; color: #666;">Architectural, exhibition, and media design projects</p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+                        <li><a href="/architecture">Architecture</a> - Architectural and spatial design projects</li>
+                        <li><a href="/exhibitions">Exhibitions</a> - Exhibition and installation design</li>
+                        <li><a href="/media">Media</a> - Visual design, video, and publication work</li>
+                        <li><a href="/objects">Objects</a> - Physical fabrication and furniture design</li>
+                    </ul>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/timeline" style="font-weight: bold; font-size: 1.1rem;">Timeline</a>
+                    <p style="margin: 0.5rem 0; color: #666;">Chronological view of all projects</p>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Recent Projects for AI Agents -->
+        <section style="margin: 2rem auto; max-width: 700px;">
+            <h2>Recent Projects</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 1rem 0;">
+                    <a href="/2025/chain3" style="font-weight: bold;">C.H.A.I.N. 3 (2025)</a>
+                    <p style="margin: 0.25rem 0; color: #666;">Collaborative horror adventure game with community-driven development</p>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/2024/genesis24" style="font-weight: bold;">GENESIS 2K24 (2024)</a>
+                    <p style="margin: 0.25rem 0; color: #666;">Head-tracked rhythmic rail-shooter exploring Chicago's tech/art history</p>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/2024/nicairport" style="font-weight: bold;">Nicosia Airport Digital Heritage (2024)</a>
+                    <p style="margin: 0.25rem 0; color: #666;">AR/VR documentation of Cyprus's abandoned international airport</p>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/2023/peoplessky" style="font-weight: bold;">The People's Sky (2023)</a>
+                    <p style="margin: 0.25rem 0; color: #666;">Community engagement project exploring shared environmental concerns</p>
+                </li>
+                <li style="margin: 1rem 0;">
+                    <a href="/2023/madvent4" style="font-weight: bold;">Madvent Calendar 2023 (2023)</a>
+                    <p style="margin: 0.25rem 0; color: #666;">Collaborative advent calendar featuring 31 experimental games</p>
+                </li>
+            </ul>
+            <p><a href="/timeline">View all projects chronologically →</a></p>
+        </section>
+        
             <div class="item-grid">
                 
             </div>
