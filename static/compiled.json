@@ -2898,7 +2898,7 @@
     "season": "summer",
     "end_year": "2026",
     "theme": "blog",
-    "tags": "research, playable, engagement, exhibition, cultural-heritage, playable, design, object, wood, participatory methods, cyprus institute, heritage",
+    "tags": "research, playable, engagement, exhibition, analytics, cultural-heritage, playable, design, object, wood, participatory methods, cyprus institute, heritage",
     "id": "nicairport",
     "locked": false,
     "content": "https://velab.cloud/nic/en/",
@@ -2956,7 +2956,7 @@
       "paphosgate",
       "dariah25",
       "beep",
-      "spacenature"
+      "peoplessky"
     ]
   },
   {
@@ -3485,7 +3485,7 @@
     "season": "winter",
     "end_year": "2024",
     "theme": "blog",
-    "tags": "research, cyprus institute, architecture, design, heritage, 3d capture, VR, data-driven design",
+    "tags": "research, cyprus institute, architecture, design, analytics, heritage, 3d capture, VR, data-driven design",
     "id": "paphosgate",
     "locked": false,
     "content": "",
@@ -3596,8 +3596,8 @@
       "entries/blog/paphosgate/release-2.jpeg"
     ],
     "recommended_ids": [
-      "seoul",
       "nicairport",
+      "seoul",
       "recoveringurbanmemory",
       "beep"
     ]
