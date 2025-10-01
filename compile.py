@@ -13,7 +13,8 @@ import math
 from collections import Counter
 
 data = []
-json_files = [pos_json for pos_json in os.listdir('entries/') if pos_json.endswith('.json')]
+json_files = [pos_json for pos_json in os.listdir('entries/')
+              if pos_json.endswith('.json') and pos_json != 'life-events.json']
 
 # For each file, open it, load the JSON data, and add it to the list
 for file_name in json_files:

@@ -77,6 +77,14 @@
                             <div class="timeline-year">2024–2026</div>
                         </div>
                     
+                            <div class="timeline-entry life-event" data-category="life" data-tags="life">
+                                <div class="timeline-color-code life-event-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="life-event-title">🎓 Dual PhDs</h3>
+                                </div>
+                                <div class="timeline-year">fall 2020–summer 2026 (exp.)</div>
+                            </div>
+                        
                         <div class="timeline-entry border-research" data-category="research" data-tags="conf. presentation dariah digital humanities heritage visualization participatory methods research">
                             <div class="timeline-color-code"></div>
                             <div class="timeline-content">
@@ -653,6 +661,14 @@
                             <div class="timeline-year">2019</div>
                         </div>
                     
+                            <div class="timeline-entry life-event" data-category="life" data-tags="life">
+                                <div class="timeline-color-code life-event-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="life-event-title">🎓 Master of Architecture</h3>
+                                </div>
+                                <div class="timeline-year">spring 2017–spring 2019</div>
+                            </div>
+                        
                         <div class="timeline-entry border-design" data-category="design" data-tags="furniture fabrication wood archon studio">
                             <div class="timeline-color-code"></div>
                             <div class="timeline-content">
@@ -716,6 +732,22 @@
                             <div class="timeline-year">2018</div>
                         </div>
                     
+                            <div class="timeline-entry life-event" data-category="life" data-tags="life">
+                                <div class="timeline-color-code life-event-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="life-event-title">💼 Visiting Researcher, Cyprus Institute</h3>
+                                </div>
+                                <div class="timeline-year">2016–2017</div>
+                            </div>
+                        
+                            <div class="timeline-entry life-event" data-category="life" data-tags="life">
+                                <div class="timeline-color-code life-event-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="life-event-title">🎓 Bachelor of Architecture</h3>
+                                </div>
+                                <div class="timeline-year">spring 2016</div>
+                            </div>
+                        
                         <div class="timeline-entry border-research border-design" data-category="research" data-tags="participatory methods art architecture furniture installation">
                             <div class="timeline-color-code"></div>
                             <div class="timeline-content">
@@ -779,6 +811,14 @@
                             <div class="timeline-year">2008</div>
                         </div>
                     
+                            <div class="timeline-entry life-event" data-category="life" data-tags="life">
+                                <div class="timeline-color-code life-event-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="life-event-title">★ Born</h3>
+                                </div>
+                                <div class="timeline-year">Dec 1993</div>
+                            </div>
+                        
             </div>
         </div>
     </main>
@@ -972,12 +1012,34 @@
         }
         
         .timeline-entry.border-playable.border-research.border-design .timeline-color-code {
-            background: linear-gradient(to bottom, 
-                var(--playable-primary) 33.33%, 
-                var(--research-primary) 33.33% 66.66%, 
+            background: linear-gradient(to bottom,
+                var(--playable-primary) 33.33%,
+                var(--research-primary) 33.33% 66.66%,
                 var(--design-primary) 66.66%);
         }
-        
+
+        /* Life event styles */
+        .timeline-entry.life-event {
+            opacity: 0.7;
+            background-color: rgba(128, 128, 128, 0.03);
+        }
+
+        .timeline-color-code.life-event-marker {
+            background-color: var(--text-muted);
+            width: 0.4rem;
+        }
+
+        .life-event-title {
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .timeline-entry.life-event:hover {
+            opacity: 0.85;
+        }
+
         @media (max-width: 600px) {
             .timeline-entry {
                 gap: 0.75rem;
