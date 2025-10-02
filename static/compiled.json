@@ -9,7 +9,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "I developed a comprehensive technical infrastructure for 120+ developers to collaboratively build a spatially-distributed game network: a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where developers map the network, report bugs, monitor node health, and detect illegal actions; a PHP-based build system with automated sync to itch.io for rapid testing; and coordination tools that enable decentralized creative production at unprecedented scale. The third entry in the C.H.A.I.N. experimental collaborative series, this project brings together the Haunted PS1 community and notable contributors from the wider indie game community. Co-directed with Adam Pype as lead, the project establishes new paradigms for mass collaborative game development, replacing previous Google Sheet and Drive-based workflows with purpose-built infrastructure designed to support over 100 simultaneous contributors working across a branching narrative graph.",
+    "description": "I developed a comprehensive technical infrastructure for 120+ developers to collaboratively build a spatially-distributed game network: a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where developer clients collaboratively map the network, detect bugs, and detect illegal actions; a PHP-based build system with automated sync to itch.io for rapid testing; and coordination tools that enable decentralized creative production at unprecedented scale. The third entry in the C.H.A.I.N. experimental collaborative series, this project brings together the Haunted PS1 community and notable contributors from the wider indie game community. Co-directed with Adam Pype as lead, the project establishes new paradigms for mass collaborative game development, replacing previous Google Sheet and Drive-based workflows with purpose-built infrastructure designed to support over 100 simultaneous contributors working across a branching narrative graph.",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
     "media_dimensions": {
       "entries/game/chain3/_c__2_demo.webm": {
@@ -318,8 +318,8 @@
     "recommended_ids": [
       "genesis",
       "chain",
-      "egw24",
-      "chain3"
+      "chain3",
+      "egw24"
     ]
   },
   {
@@ -3054,8 +3054,8 @@
     "recommended_ids": [
       "dariah25",
       "uniteposter",
-      "nicairport",
-      "metaframing"
+      "metaframing",
+      "nicairport"
     ]
   },
   {
