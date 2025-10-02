@@ -10,65 +10,92 @@
     "locked": false,
     "content": "",
     "description": "The third and most ambitious entry in the C.H.A.I.N. experimental collaborative series, directing a spatially-distributed collaborative development network with 120+ contributors. This project establishes new paradigms for decentralized creative production at an unprecedented scale. I developed a comprehensive technical infrastructure including a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where 100+ developers collaboratively map out the network, collect bugs, identify node health, and detect illegal actions (such as accessing wrong nodes or attempting to write illegal data to shared save data). We shifted from a Google Sheet and Drive-based system to an entirely PHP-based system with automated build and sync to itch.io, allowing developers to quickly see and test new builds in the full network. As Co-Director, I'm leading both the technical infrastructure and creative coordination for this groundbreaking experiment in mass collaborative game development.",
-    "thumbnail_override": "static/thumbs/a27e67dec31ab1f308b5e7998938cdda.jpg",
+    "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
     "media_dimensions": {
-      "entries/game/chain3/_c__1_Screenshot_2025-02-13_at_9_02_29_PM.png": {
-        "width": 1540,
-        "height": 990
-      },
       "entries/game/chain3/_c__2_demo.webm": {
         "width": 720,
         "height": 742
       },
-      "entries/game/chain3/_c_Screen_Recording_2025-02-02_at_5_16_42_PM.webm": {
+      "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm": {
+        "width": 486,
+        "height": 500
+      }
+    },
+    "file_paths": [
+      "entries/game/chain3/_c__2_demo.webm"
+    ],
+    "recommended_ids": [
+      "chain2",
+      "genesis",
+      "backbone",
+      "egw24"
+    ]
+  },
+  {
+    "title": "BACKBONE",
+    "year": "2025",
+    "season": "winter",
+    "end_year": "2026",
+    "theme": "game",
+    "tags": "game, collaboration, haunted-ps1, chain, solo, stealth, AI, FSM, procedural animation, level design",
+    "id": "backbone",
+    "locked": false,
+    "content": "",
+    "description": "My node within the C.H.A.I.N. 3 network, BACKBONE continued directly from the start node and dramatically expanded the exposition, connecting to 3 other nodes. Built on modular architectural assets, the game recreates an early 70s midwestern basement\u2014a childhood memory of one of the lead characters. The environment features an inspection system for environmental storytelling, a phone call system for dialogue sequences, and stealth gameplay with enemy AI running on a finite state machine (FSM) with procedural and physics-based animation. BACKBONE serves as a critical structural node in the C.H.A.I.N. 3 network, bridging multiple narrative threads while establishing key mechanical systems.",
+    "thumbnail_override": "static/thumbs/7e0b6567d7e403441c3773b54be71093.jpg",
+    "media_dimensions": {
+      "entries/game/backbone/_c__1_Screenshot_2025-02-13_at_9_02_29_PM.png": {
+        "width": 1540,
+        "height": 990
+      },
+      "entries/game/backbone/_c_Screen_Recording_2025-02-02_at_5_16_42_PM.webm": {
         "width": 720,
         "height": 244
       },
-      "entries/game/chain3/_c_Screen_Recording_2025-05-26_at_9_54_29_PM.webm": {
+      "entries/game/backbone/_c_Screen_Recording_2025-05-26_at_9_54_29_PM.webm": {
         "width": 720,
         "height": 286
       },
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_14_41_PM.png": {
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_14_41_PM.png": {
         "width": 1929,
         "height": 657
       },
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_15_25_PM.png": {
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_15_25_PM.png": {
         "width": 1929,
         "height": 657
       },
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_21_40_PM.png": {
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_21_40_PM.png": {
         "width": 1929,
         "height": 657
       },
-      "entries/game/chain3/_c_Screenshot_2025-02-05_at_8_11_24_PM.png": {
+      "entries/game/backbone/_c_Screenshot_2025-02-05_at_8_11_24_PM.png": {
         "width": 1216,
         "height": 704
       },
-      "entries/game/chain3/_c_Screenshot_2025-02-08_at_1_15_37_PM.png": {
+      "entries/game/backbone/_c_Screenshot_2025-02-08_at_1_15_37_PM.png": {
         "width": 1831,
         "height": 773
       },
-      "static/thumbs/a27e67dec31ab1f308b5e7998938cdda.jpg": {
+      "static/thumbs/7e0b6567d7e403441c3773b54be71093.jpg": {
         "width": 400,
         "height": 257
       }
     },
     "file_paths": [
-      "entries/game/chain3/_c__1_Screenshot_2025-02-13_at_9_02_29_PM.png",
-      "entries/game/chain3/_c__2_demo.webm",
-      "entries/game/chain3/_c_Screen_Recording_2025-02-02_at_5_16_42_PM.webm",
-      "entries/game/chain3/_c_Screen_Recording_2025-05-26_at_9_54_29_PM.webm",
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_14_41_PM.png",
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_15_25_PM.png",
-      "entries/game/chain3/_c_Screenshot_2025-02-02_at_5_21_40_PM.png",
-      "entries/game/chain3/_c_Screenshot_2025-02-05_at_8_11_24_PM.png",
-      "entries/game/chain3/_c_Screenshot_2025-02-08_at_1_15_37_PM.png"
+      "entries/game/backbone/_c__1_Screenshot_2025-02-13_at_9_02_29_PM.png",
+      "entries/game/backbone/_c_Screen_Recording_2025-02-02_at_5_16_42_PM.webm",
+      "entries/game/backbone/_c_Screen_Recording_2025-05-26_at_9_54_29_PM.webm",
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_14_41_PM.png",
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_15_25_PM.png",
+      "entries/game/backbone/_c_Screenshot_2025-02-02_at_5_21_40_PM.png",
+      "entries/game/backbone/_c_Screenshot_2025-02-05_at_8_11_24_PM.png",
+      "entries/game/backbone/_c_Screenshot_2025-02-08_at_1_15_37_PM.png"
     ],
     "recommended_ids": [
-      "chain2",
+      "chain3",
       "genesis",
-      "egw24",
-      "chain"
+      "chain2",
+      "soup1"
     ]
   },
   {
@@ -113,8 +140,8 @@
     "recommended_ids": [
       "genesis",
       "soup1",
-      "cordobacourt",
-      "chain2"
+      "backbone",
+      "cordobacourt"
     ]
   },
   {
@@ -155,7 +182,7 @@
       "genesis",
       "chain2",
       "drip",
-      "chain3"
+      "backbone"
     ]
   },
   {
@@ -196,7 +223,7 @@
       "genesis",
       "chain2",
       "chain3",
-      "chain"
+      "soup1"
     ]
   },
   {
@@ -2856,8 +2883,8 @@
     ],
     "recommended_ids": [
       "skyboxes",
-      "flatsky",
       "fazole",
+      "flatsky",
       "oceantop"
     ]
   },
@@ -2887,8 +2914,8 @@
     ],
     "recommended_ids": [
       "fazole",
-      "crapmaps",
       "oceantop",
+      "crapmaps",
       "nightmarehouse2"
     ]
   },
@@ -2956,7 +2983,7 @@
       "paphosgate",
       "dariah25",
       "beep",
-      "peoplessky"
+      "seoul"
     ]
   },
   {
@@ -3211,7 +3238,7 @@
       "recoveringurbanmemory",
       "patio-walk-cordoba",
       "cordobacourt",
-      "ict-for-urban-heritage-palermo"
+      "codex20"
     ]
   },
   {
