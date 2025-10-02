@@ -9,7 +9,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "The third and most ambitious entry in the C.H.A.I.N. experimental collaborative series, directing a spatially-distributed collaborative development network with 120+ contributors. This project establishes new paradigms for decentralized creative production at an unprecedented scale. I developed a comprehensive technical infrastructure including a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where 100+ developers collaboratively map out the network, collect bugs, identify node health, and detect illegal actions (such as accessing wrong nodes or attempting to write illegal data to shared save data). We shifted from a Google Sheet and Drive-based system to an entirely PHP-based system with automated build and sync to itch.io, allowing developers to quickly see and test new builds in the full network. As Co-Director, I'm leading both the technical infrastructure and creative coordination for this groundbreaking experiment in mass collaborative game development.",
+    "description": "I developed a comprehensive technical infrastructure for 120+ developers to collaboratively build a spatially-distributed game network: a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where developers map the network, report bugs, monitor node health, and detect illegal actions; a PHP-based build system with automated sync to itch.io for rapid testing; and coordination tools that enable decentralized creative production at unprecedented scale. The third entry in the C.H.A.I.N. experimental collaborative series, this project brings together the Haunted PS1 community and notable contributors from the wider indie game community. Co-directed with Adam Pype as lead, the project establishes new paradigms for mass collaborative game development, replacing previous Google Sheet and Drive-based workflows with purpose-built infrastructure designed to support over 100 simultaneous contributors working across a branching narrative graph.",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
     "media_dimensions": {
       "entries/game/chain3/_c__2_demo.webm": {
@@ -26,9 +26,9 @@
     ],
     "recommended_ids": [
       "chain2",
-      "genesis",
+      "chain",
       "backbone",
-      "egw24"
+      "genesis"
     ]
   },
   {
@@ -41,7 +41,7 @@
     "id": "backbone",
     "locked": false,
     "content": "",
-    "description": "My node within the C.H.A.I.N. 3 network, BACKBONE continued directly from the start node and dramatically expanded the exposition, connecting to 3 other nodes. Built on modular architectural assets, the game recreates an early 70s midwestern basement\u2014a childhood memory of one of the lead characters. The environment features an inspection system for environmental storytelling, a phone call system for dialogue sequences, and stealth gameplay with enemy AI running on a finite state machine (FSM) with procedural and physics-based animation. BACKBONE serves as a critical structural node in the C.H.A.I.N. 3 network, bridging multiple narrative threads while establishing key mechanical systems.",
+    "description": "An immersive horror, first-person stealth exploration game spanning approximately 30 minutes, rendered with NTSC analogue-style graphics that mimic the rainbow iridescence of 1970s television. My contribution to the C.H.A.I.N. 3 network, BACKBONE continued directly from the start node and dramatically expanded the exposition, connecting to three other nodes in the collaborative graph. The game recreates an early 70s midwestern basement\u2014a childhood memory of one of the lead characters\u2014using modular architectural assets to build an atmospheric period environment. Technical features include an inspection system for environmental storytelling, a phone call system for delivering dialogue sequences, and stealth gameplay driven by enemy AI running on a finite state machine with procedural and physics-based animation. As a critical structural node in the network, BACKBONE bridges multiple narrative threads while establishing key mechanical systems for subsequent developers.",
     "thumbnail_override": "static/thumbs/7e0b6567d7e403441c3773b54be71093.jpg",
     "media_dimensions": {
       "entries/game/backbone/_c__1_Screenshot_2025-02-13_at_9_02_29_PM.png": {
@@ -107,7 +107,7 @@
     "id": "genesis24",
     "locked": false,
     "content": "",
-    "description": "<a href='https://colter.us/#genesis'><i>GENESIS</i></a> (2023) was remade for <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a> as a head-tracked rhythmic rail-shooter. We traced <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez's</a></i> (2001) cyberspace aesthetics back to their genesis in Chicago's technology and art scenes: Set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985), <i>GENESIS</i> reimagines the Electronic Visualization Laboratory's 3D vector graphics for <i><a href='https://www.evl.uic.edu/events/2297' target='_blank'>Star Wars</a></i> (1977), which inspired countless <a href='https://en.wikipedia.org/wiki/Star_Wars:_The_Empire_Strikes_Back_(1985_video_game)' target='_blank'>vector-based games</a>. It incorporates head-tracking techniques derived from EVL's <a href='https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment' target='_blank'>CAVE</a> system (1992), a VR precursor. <i>GENESIS</i> builds upon this heritage to recover technological wonder. Made with <a href='https://charlesvoita.com/'> Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'> Bill Derrah</a>.",
+    "description": "A head-tracked rhythmic rail-shooter that traces <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez's</a></i> (2001) cyberspace aesthetics back to their genesis in Chicago's technology and art scenes. Set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985), <i>GENESIS</i> reimagines the Electronic Visualization Laboratory's 3D vector graphics for <i><a href='https://www.evl.uic.edu/events/2297' target='_blank'>Star Wars</a></i> (1977), which inspired countless <a href='https://en.wikipedia.org/wiki/Star_Wars:_The_Empire_Strikes_Back_(1985_video_game)' target='_blank'>vector-based games</a>. It incorporates head-tracking techniques derived from EVL's <a href='https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment' target='_blank'>CAVE</a> system (1992), a VR precursor. A remake of my <a href='https://colter.us/#genesis'>2023 entry</a> for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>, shown at <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a>. Made with <a href='https://charlesvoita.com/'> Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'> Bill Derrah</a>.",
     "thumbnail_override": "static/thumbs/616d9512ed403804bc04d226f679f00e_thumb.webm",
     "media_dimensions": {
       "entries/game/genesis24/_c__1_genesis-24-1.webm": {
@@ -141,7 +141,7 @@
       "genesis",
       "soup1",
       "backbone",
-      "cordobacourt"
+      "chain2"
     ]
   },
   {
@@ -153,7 +153,7 @@
     "id": "soup1",
     "locked": false,
     "content": "https://itch.io/c/4548354/soup-likes",
-    "description": "SOAP SOUP is a mod based on an obscure Japanese minimalist art-game from 2007. I was invited to produce a room for a large 2024 release. My room is a tribute to the warm glow of sodium vapor street lamps. To create the atmosphere, I designed a soundscape with central Illinois cicadas, a distant summer storm, and the crunch of asphalt underfoot. The visuals rely on a high sensitivity to light and shadow, and sophisticated spherical projection mapping was used to create realistic textures from the perspective of a person standing in a parking lot.",
+    "description": "A tribute to the warm glow of sodium vapor street lamps, created for the 2024 SOAP SOUP collaboration. I designed a soundscape with central Illinois cicadas, a distant summer storm, and the crunch of asphalt underfoot. The visuals rely on high sensitivity to light and shadow, using sophisticated spherical projection mapping to create realistic textures from the perspective of a person standing in a parking lot. SOAP SOUP is a mod based on an obscure Japanese minimalist art-game from 2007.",
     "thumbnail_override": "static/thumbs/ffc2bc50cf1864577af3935e13375e24_thumb.webm",
     "media_dimensions": {
       "entries/game/soup1/_c__1_2.webm": {
@@ -181,8 +181,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "drip",
-      "backbone"
+      "backbone",
+      "drip"
     ]
   },
   {
@@ -194,7 +194,7 @@
     "id": "egw24",
     "locked": false,
     "content": "https://www.experimentalgameworkshop.org/2024-session",
-    "description": "Adam Pype and I were invited to present C.H.A.I.N.G.E.D. and our work with the Haunted PlayStation 1 collective at the esteemed <a href='https://www.experimentalgameworkshop.org/2024-session' target='_blank'>Experimental Games Workshop (EGW)</a> during the Game Developers Conference (GDC) in San Francisco. The EGW, a GDC tradition spanning over 20 years, celebrates games at the forefront of gameplay, organization, and creative direction. See the link above for a full video of the presentation in the GDC Vault.",
+    "description": "Presented C.H.A.I.N.G.E.D. and our work with the Haunted PlayStation 1 collective at the <a href='https://www.experimentalgameworkshop.org/2024-session' target='_blank'>Experimental Games Workshop (EGW)</a> during the Game Developers Conference (GDC) in San Francisco with Adam Pype. The EGW, a GDC tradition spanning over 20 years, celebrates games at the forefront of gameplay, organization, and creative direction. See the link above for a full video of the presentation in the GDC Vault.",
     "thumbnail_override": "static/thumbs/4104d1b997ee6fa17e7e0c7f3072201d.jpg",
     "media_dimensions": {
       "entries/game/egw24/_1_colter.jpg": {
@@ -223,7 +223,7 @@
       "genesis",
       "chain2",
       "chain3",
-      "soup1"
+      "chain"
     ]
   },
   {
@@ -235,7 +235,7 @@
     "id": "peoplessky",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-sky",
-    "description": "The <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>People's Tree project</a> explored community building within networked games, enabling players to design items, append messages, and place them in a communal space. In its fourth iteration, we introduced several enhancements, including data-transfer optimizations and new 'trace' tracking and visualization features. These allow players to see where others have explored within the game, while also offering more comprehensive analytic logs for post-experiment analysis. Additionally, we developed a simple web application for moderation tasks, streamlining the process by moving it outside the Unity project. ",
+    "description": "I developed data-transfer optimizations, new 'trace' tracking and visualization features that show where players have explored, comprehensive analytic logs for post-experiment analysis, and a web application for moderation tasks. The fourth iteration of the People's Tree project, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> explores community building within networked games, enabling players to design items, append messages, and place them in a communal space.",
     "thumbnail_override": "static/thumbs/d96cd359a524fccf7cdac42f3d0ad641_thumb.webm",
     "media_dimensions": {
       "entries/game/peoplessky/_c_mov1.webm": {
@@ -251,9 +251,9 @@
       "entries/game/peoplessky/_c_mov1.webm"
     ],
     "recommended_ids": [
-      "whereshome",
       "peoplestree2",
       "peoplestree1",
+      "whereshome",
       "cordobacourt"
     ]
   },
@@ -266,7 +266,7 @@
     "id": "madvent4",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent4",
-    "description": "Madvent is an annual event organized by the Haunted PS1 collective, featuring contributions from approximately 30 creators. Each day in December, a new game is released. As a lead coordinator, I am responsible for developing the launcher. This year, we've designed the launcher to feature a fully dynamic train journeying through various biomes and navigating twisting terrain. <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>The project can be downloaded from itch.io.</a>",
+    "description": "I developed a <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>launcher</a> featuring a fully dynamic train journeying through various biomes and navigating twisting terrain. Created for Madvent, an annual Haunted PS1 event where approximately 30 creators release games daily throughout December. As lead coordinator, I'm responsible for both organizing the event and developing the launcher each year.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent4/_1_output2.gif": {
@@ -294,7 +294,7 @@
     "id": "chain2",
     "locked": false,
     "content": "https://papercookies.itch.io/chainged",
-    "description": "The follow-up project to 'Chain', a large-scale collaborative game. After each game, a choice is presented, with two following games representing a fork in the timeline. My key contribution was designing the technical and project structure that enabled story branching to occur within the *launcher* itself, rather than individual games. This architectural decision made the project feasible to implement with over 40 contributors working in different engines. You can <a href='https://papercookies.itch.io/chainged' target='_blank'>play the full collection here</a>. <br><a href='https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game' target='_blank'>Interview</a>.",
+    "description": "I designed the technical and project structure that enabled story branching to occur within the launcher itself, rather than individual games. This architectural decision made the project feasible to implement with over 40 contributors working in different engines. The follow-up to C.H.A.I.N., this large-scale collaborative game presents choices after each game, with two following games representing forks in the timeline. You can <a href='https://papercookies.itch.io/chainged' target='_blank'>play the full collection here</a>. <br><a href='https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game' target='_blank'>Interview</a>.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/chain2/_1_chain2.gif": {
@@ -316,10 +316,10 @@
       "entries/game/chain2/vid.yt"
     ],
     "recommended_ids": [
-      "chain",
       "genesis",
-      "chain3",
-      "egw24"
+      "chain",
+      "egw24",
+      "chain3"
     ]
   },
   {
@@ -368,7 +368,7 @@
     "id": "madvent3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent3",
-    "description": "Madvent is an annual event organized by the Haunted PS1 collective, featuring around 30 contributors. Each day in December, a new game is released. As a lead coordinator, my role includes developing the <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>launcher</a> that facilitates access to these daily game releases.",
+    "description": "I developed the <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>launcher</a> for Madvent, an annual Haunted PS1 event featuring around 30 contributors who release games daily throughout December. As lead coordinator, I'm responsible for both organizing the event and developing the launcher.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent3/_1_mad3.gif": {
@@ -456,7 +456,7 @@
     "id": "demodisk3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demo-disc-spectral-mall",
-    "description": "The HPS1 Demo Disk is a collaborative effort within the community, involving the review of hundreds of demo submissions to curate a collection for release alongside a <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a>. My responsibilities encompass organization and leading the software development for the launcher, which includes coding, gameplay programming, UI design, and tech-art.",
+    "description": "I led software development for this <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a>, including coding, gameplay programming, UI design, and tech-art, while also organizing the collaborative effort. The HPS1 Demo Disk curates a collection from hundreds of demo submissions reviewed by the community.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/demodisk3/ddspectal.gif": {
@@ -474,8 +474,8 @@
     ],
     "recommended_ids": [
       "demodisk2",
-      "madvent2",
       "madvent3",
+      "madvent2",
       "madvent1"
     ]
   },
@@ -488,7 +488,7 @@
     "id": "madvent2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2021",
-    "description": "Madvent is a yearly release from the Haunted PS1 where ~30 developers create and release small games, unwrapped daily in an <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a>. I both coordinate the project and build the launcher.",
+    "description": "I coordinated the project and built this <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a> for Madvent, an annual Haunted PS1 event where ~30 developers release small games daily throughout December.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent2/_1_mad1.gif": {
@@ -517,8 +517,8 @@
     "recommended_ids": [
       "madvent1",
       "madvent3",
-      "demodisk2",
-      "demodisk3"
+      "madvent4",
+      "demodisk2"
     ]
   },
   {
@@ -604,8 +604,8 @@
     ],
     "recommended_ids": [
       "peoplestree1",
-      "whereshome",
       "peoplessky",
+      "whereshome",
       "cordobacourt"
     ]
   },
@@ -618,7 +618,7 @@
     "id": "demodisk2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demodisc2021",
-    "description": "The HPS1 Demo Disk is a collaborative release where the community reviews hundreds of demo submissions and builds out a set to release together with a <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a>. I do organization and lead software development for the launcher, including code, gameplay programming, ui, and tech-art.",
+    "description": "I led organization and software development for this <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a>, including code, gameplay programming, UI, and tech-art. The HPS1 Demo Disk curates a collection from hundreds of demo submissions reviewed by the community.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/demodisk2/_1_dd21.gif": {
@@ -642,8 +642,8 @@
     "recommended_ids": [
       "demodisk3",
       "madvent2",
-      "madvent1",
-      "madvent3"
+      "madvent3",
+      "madvent1"
     ]
   },
   {
@@ -655,7 +655,7 @@
     "id": "madvent1",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2020",
-    "description": "Madvent is a yearly release from the Haunted PS1 where ~30 developers create and release small games, unwrapped daily in an <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a>. I both coordinate the project and build the launcher.",
+    "description": "I coordinated the project and built this <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a> for Madvent, an annual Haunted PS1 event where ~30 developers release small games daily throughout December.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent1/_1_madvencalendarlauncher.gif": {
@@ -689,8 +689,8 @@
     "recommended_ids": [
       "madvent2",
       "madvent3",
-      "demodisk2",
-      "demodisk3"
+      "madvent4",
+      "demodisk2"
     ]
   },
   {
@@ -744,8 +744,8 @@
     ],
     "recommended_ids": [
       "peoplestree2",
-      "whereshome",
       "peoplessky",
+      "whereshome",
       "cordobacourt"
     ]
   },
@@ -783,7 +783,7 @@
       "chain2",
       "drip",
       "genesis",
-      "madvent3"
+      "chain3"
     ]
   },
   {
@@ -991,7 +991,7 @@
       "cordobacourt",
       "peoplestree1",
       "peoplestree2",
-      "peoplessky"
+      "rococo"
     ]
   },
   {
@@ -1003,7 +1003,7 @@
     "id": "kogler2",
     "locked": false,
     "content": "https://wien.orf.at/stories/3219229/",
-    "description": "Served as technical producer for an AR sculpture garden featuring Peter Kogler's unmade digital sculptures at Wiener Gesundheitsverbund, an Otto Wagner-designed 19th century medical campus, now reused as a university and culture campus. As part of a <a href='https://wien.orf.at/stories/3219229/' target='_blank'>promotional event</a>, my role involved taking the artist's intricate 3D meshes, creating site-specific shaders to simulate reflection and lighting, and then working on-site with Kogler to place, scale, and rotate the virtual works. To facilitate this, I added features to Wikar for real-time metadata syncing from our Clowder server, enabling the rapid placement of eight complex sculptures in a single day.",
+    "description": "An AR sculpture garden featuring Peter Kogler's unmade digital sculptures at Wiener Gesundheitsverbund, an Otto Wagner-designed 19th century medical campus now reused as a university and culture campus. I served as technical producer, taking the artist's intricate 3D meshes, creating site-specific shaders to simulate reflection and lighting, and working on-site with Kogler to place, scale, and rotate the virtual works. I added features to Wikar for real-time metadata syncing from our Clowder server, enabling the rapid placement of eight complex sculptures in a single day. Part of a <a href='https://wien.orf.at/stories/3219229/' target='_blank'>promotional event</a>.",
     "thumbnail_override": "static/thumbs/e87c940f39727f1e2942e8de07ce2e09.jpg",
     "media_dimensions": {
       "entries/wikar/kogler2/poster.jpg": {
@@ -1021,8 +1021,8 @@
     "recommended_ids": [
       "munich",
       "wurm",
-      "timelineatlas",
-      "schlegel"
+      "schlegel",
+      "timelineatlas"
     ]
   },
   {
@@ -1034,7 +1034,7 @@
     "id": "meshair",
     "locked": false,
     "content": "",
-    "description": "Created a visualization of airflow patterns for a secondary facade system designed by the Cyprus Institute. I took the researchers' 2D computational fluid dynamics (CFD) simulations (heat and flow maps) and UV mapped them onto a 1:1 scale 3D model of the facade. I then built a shader to animate these maps with particles, inspired by how the game *Portal 2* visualizes fluid dynamics. In the final AR application, a user can scan a QR code on the test building and see the internal 'stack effect' in action, with callouts indicating sensor locations.",
+    "description": "An AR visualization of airflow patterns for a secondary facade system designed by the Cyprus Institute. I took the researchers' 2D computational fluid dynamics (CFD) simulations (heat and flow maps) and UV mapped them onto a 1:1 scale 3D model of the facade, then built a shader to animate these maps with particles, inspired by how *Portal 2* visualizes fluid dynamics. In the final application, users scan a QR code on the test building and see the internal 'stack effect' in action, with callouts indicating sensor locations.",
     "thumbnail_override": "static/thumbs/1e0b4a0867f5d67783decf7eaaeb338f.jpg",
     "media_dimensions": {
       "entries/wikar/meshair/_c_MESH2.jpg": {
@@ -1066,9 +1066,9 @@
     ],
     "recommended_ids": [
       "beep",
+      "wikar14",
       "joteva",
-      "kogler2",
-      "wikar14"
+      "kogler2"
     ]
   },
   {
@@ -1080,7 +1080,7 @@
     "id": "wikar14",
     "locked": false,
     "content": "",
-    "description": "In preparation for new AR projects, I updated Wikar to improve performance and add features. This included implementing a multi-tiered caching system that checks for updates on the Clowder server before downloading content, enabling an offline mode for sculpture gardens with poor wifi. I also developed an iterative solver that uses a scan's confidence rating to progressively refine the AR scene's origin, maximizing placement accuracy as a user moves around a QR code. Lastly, an optimized mesh slicer system to allow users to explore 3d cross sections of complex models such as buildings.",
+    "description": "A major update to Wikar improving performance and adding features: a multi-tiered caching system that checks for updates on the Clowder server before downloading content, enabling offline mode for sculpture gardens with poor wifi; an iterative solver that uses a scan's confidence rating to progressively refine the AR scene's origin, maximizing placement accuracy as users move around a QR code; and an optimized mesh slicer system allowing users to explore 3D cross sections of complex models such as buildings. I developed these updates in preparation for new AR projects.",
     "thumbnail_override": "static/thumbs/9ce209f27be08c45d296be4b5ce736ec.jpg",
     "media_dimensions": {
       "entries/wikar/wikar14/_1_wikar1.png": {
@@ -1123,8 +1123,8 @@
     "recommended_ids": [
       "wikarv1",
       "wurm",
-      "othermatters",
-      "meshair"
+      "meshair",
+      "othermatters"
     ]
   },
   {
@@ -1136,7 +1136,7 @@
     "id": "othermatters",
     "locked": false,
     "content": "https://youtu.be/d4-SjAV0xd0",
-    "description": "Production support for Wikar during an AR exhibition with Valerie Messini and students at the University of Applied Arts in Vienna. <a href='https://youtu.be/d4-SjAV0xd0' target='_blank'>A video of the exhibition can be seen here.</a>",
+    "description": "An AR exhibition with Valerie Messini and students at the University of Applied Arts in Vienna. I provided production support for Wikar during the exhibition. <a href='https://youtu.be/d4-SjAV0xd0' target='_blank'>A video of the exhibition can be seen here.</a>",
     "thumbnail_override": "static/thumbs/b2052670ee4b63dbe9431d52135ffb3d.jpg",
     "media_dimensions": {
       "entries/wikar/othermatters/vid.yt": {
@@ -1167,7 +1167,7 @@
     "id": "guchibytes",
     "locked": false,
     "content": "/entries/wikar/guchibytes/pdf/guchibytes.pdf",
-    "description": "Built from the remaining pieces of the digital picnic after we recycled them into furniture, guchibytes was an exhibition which sought to tie up loose ends in our studio organization Quipit. We collected unfinished speculative or sarcastic pieces and exhibited them together, creating a <a href='/entries/wikar/guchibytes/pdf/guchibytes.pdf' target='_blank'>print zine</a> and AR content to accompany each piece.",
+    "description": "An exhibition with a <a href='/entries/wikar/guchibytes/pdf/guchibytes.pdf' target='_blank'>print zine</a> and AR content showcasing unfinished speculative and sarcastic pieces, tying up loose ends in our studio organization Quipit. We collected and exhibited the work together, building the physical components from the remaining pieces of the Digital Picnic after we recycled them into furniture.",
     "thumbnail_override": "static/thumbs/a268f30a958f782324b8f8738d8b398e.jpg",
     "media_dimensions": {
       "entries/wikar/guchibytes/_1_unnamed.png": {
@@ -1253,7 +1253,7 @@
     "id": "schlegel",
     "locked": false,
     "content": "https://evaschlegel.com/ausstellungen-exhibitions/test/",
-    "description": "Production assistance for <a href='https://evaschlegel.com/ausstellungen-exhibitions/test/' target='_blank'>Schlegel's studio</a> during public installation in Palermo and Vienna. Many works made use of custom shaders to achieve unique looks and rich effects with small filesizes.",
+    "description": "Public AR installations in Palermo and Vienna featuring custom shaders to achieve unique looks and rich effects with small filesizes. I provided production assistance for <a href='https://evaschlegel.com/ausstellungen-exhibitions/test/' target='_blank'>Schlegel's studio</a> during the exhibitions.",
     "thumbnail_override": "static/thumbs/f659ed5a4999ccb5d3271b57c64e7f05_thumb.webm",
     "media_dimensions": {
       "entries/wikar/schlegel/_c__1_index_palermo_002-s.webm": {
@@ -1299,8 +1299,8 @@
       "entries/wikar/schlegel/2021_Palermo_008-010.jpg"
     ],
     "recommended_ids": [
-      "wurm",
       "othermatters",
+      "wurm",
       "munich",
       "joteva"
     ]
@@ -1314,7 +1314,7 @@
     "id": "beep",
     "locked": false,
     "content": "https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html",
-    "description": "I built an energy-use visualization used to explain green infrastructure investments for the adaptive reuse of a heritage building. The visualization shows the expected energy loads for every room in the building over the year, taking into account climatic comfort. <a href='https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html' target='_blank'>More information on the project can be found here.</a>",
+    "description": "An AR energy-use visualization showing expected energy loads for every room in a heritage building over the year, taking into account climatic comfort. I built the visualization to explain green infrastructure investments for the adaptive reuse project. <a href='https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html' target='_blank'>More information on the project can be found here.</a>",
     "thumbnail_override": "static/thumbs/8de005008d0ea778b0b0087d82cbd2fc_thumb.webm",
     "media_dimensions": {
       "entries/wikar/beep/_c__1_WikarDemo.webm": {
@@ -1350,7 +1350,7 @@
     "id": "munich",
     "locked": false,
     "content": "https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams",
-    "description": "Production assistance with Peter Kogler and MFA students from the Academy Of Fine Art, Munich for a <a href='https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams' target='_blank'>public exhibition</a>. We built an AR sculpture park in Graz, Austria.",
+    "description": "An AR sculpture park built in Graz, Austria for a <a href='https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams' target='_blank'>public exhibition</a>. I provided production assistance with Peter Kogler and MFA students from the Academy of Fine Art, Munich.",
     "thumbnail_override": "static/thumbs/11b105899638906f1ad3f5496f76b829.jpg",
     "media_dimensions": {
       "entries/wikar/munich/_c__1_IMG-20220603-WA0001.png": {
@@ -1461,7 +1461,7 @@
     "id": "wurm",
     "locked": false,
     "content": "",
-    "description": "Worked with Studio Calas to deploy Erwin Wurm's sculptural works in new contexts using augmented reality. While their team handled the photogrammetry and content creation, my role was primarily educational and technical. I trained their team on how to prepare and optimize 3D models for the Wikar platform and its upload pipeline. At their request, I also made Wikar's QR code scanning more robust for outdoor environments and for use with different colored tags.",
+    "description": "An AR deployment of Erwin Wurm's sculptural works in new contexts using augmented reality. I worked with Studio Calas in an educational and technical capacity, training their team on how to prepare and optimize 3D models for the Wikar platform and its upload pipeline while they handled photogrammetry and content creation. At their request, I also made Wikar's QR code scanning more robust for outdoor environments and for use with different colored tags.",
     "thumbnail_override": "static/thumbs/5513e52d96ddc831461d6459d3b2011f.jpg",
     "media_dimensions": {
       "entries/wikar/wurm/_c_Kunst-Raum-Stadt_Erwin-Levitating_Studio-Erwin-Wurm_2021-_Making-of.jpg": {
@@ -1477,8 +1477,8 @@
       "entries/wikar/wurm/_c_Kunst-Raum-Stadt_Erwin-Levitating_Studio-Erwin-Wurm_2021-_Making-of.jpg"
     ],
     "recommended_ids": [
-      "schlegel",
       "joteva",
+      "schlegel",
       "timelineatlas",
       "othermatters"
     ]
@@ -1492,7 +1492,7 @@
     "id": "joteva",
     "locked": false,
     "content": "",
-    "description": "Coding and visual development for Eli Joteva, including data-reactive shaders, VFX-graph particles, real-time web monitoring and full integration in AR. Cryolumens represents the strength and location of Earth's magnetic fields using NASA's realtime sensor network, overlaying data-driven particle systems on an original painting using image tracking.",
+    "description": "An AR artwork representing the strength and location of Earth's magnetic fields using NASA's realtime sensor network, overlaying data-driven particle systems on an original painting using image tracking. I developed the coding and visuals for Eli Joteva, including data-reactive shaders, VFX-graph particles, real-time web monitoring, and full AR integration.",
     "thumbnail_override": "static/thumbs/78bd7ccd825845d43739b7b5f8903c5b.jpg",
     "media_dimensions": {
       "entries/wikar/joteva/IMG_0012.jpg": {
@@ -1528,7 +1528,7 @@
     "id": "timelineatlas",
     "locked": false,
     "content": "",
-    "description": "Back in 2019, we had the unique opportunity to collaborate with artist Stephen Cartwright on the debut of two augmented reality (AR) data-visualization sculptures. The event was part of a faculty showcase, and the project allowed us to explore a fascinating intersection of art and data science. Stephen Cartwright is renowned for his innovative work, where he meticulously logs personal data over decades and then crafts this information into acrylic sculptures. These intricate pieces exhibit spatial-temporal patterns, providing a visual representation of a person's life and experiences in a uniquely tangible form. However, for this particular project, we utilized AR to surpass the limitations of his traditional manufacturing techniques. We aimed to visualize datasets of a complexity that would be virtually impossible to depict through physical sculptures. The showcased AR piece represents an intriguing dataset - the home locations of all female senators over the past century.",
+    "description": "Two AR data-visualization sculptures visualizing datasets too complex to depict through physical sculpture: the home locations of all female senators over the past century. I collaborated with artist Stephen Cartwright, known for meticulously logging personal data over decades and crafting it into acrylic sculptures that exhibit spatial-temporal patterns. We used AR to surpass the limitations of his traditional manufacturing techniques. Debuted as part of a faculty showcase in 2019.",
     "thumbnail_override": "static/thumbs/2817e20728683af00b1e81b55932de1d.jpg",
     "media_dimensions": {
       "entries/wikar/timelineatlas/image12.png": {
@@ -1595,7 +1595,7 @@
     "id": "qbicon",
     "locked": false,
     "content": "",
-    "description": "I built a suite of tools and visualizations in Unity for live-generated 3D visuals for the <a href='https://quantum.itineraries.itabora.space/' target='_blank'>Quantum Itineraries</a> music performances. The festival featured works in the genre of quantum computer music, where quantum simulations are a core part of the composition and instrumentation. The visuals were projected behind the performers and rendered at 8K for dome or classical displays, using procedurally generated meshes and shaders. The system used WebRTC to route Unity's output to a mixer, while artists on stage built custom controllers with OSC to drive the visual-state in Unity, all powered by the same data from the quantum computer simulations that created the music.",
+    "description": "A suite of tools and visualizations in Unity for live-generated 3D visuals projected behind performers at 8K for dome or classical displays, using procedurally generated meshes and shaders. I built the system for the <a href='https://quantum.itineraries.itabora.space/' target='_blank'>Quantum Itineraries</a> music performances, a festival featuring quantum computer music where quantum simulations are core to composition and instrumentation. The system used WebRTC to route Unity's output to a mixer, while artists on stage built custom controllers with OSC to drive the visual-state in Unity, all powered by the same data from the quantum computer simulations that created the music.",
     "thumbnail_override": "static/thumbs/62d360ad4866b98fcb9bd6116e043ed8_thumb.webm",
     "media_dimensions": {
       "entries/junk/qbicon/_c__1_Screen_Recording_2024-08-01_at_11_22_23_PM.webm": {
@@ -1617,8 +1617,8 @@
     ],
     "recommended_ids": [
       "joteva",
-      "meshair",
       "timelineatlas",
+      "meshair",
       "beep"
     ]
   },
@@ -1631,7 +1631,7 @@
     "id": "qr1",
     "locked": false,
     "content": "",
-    "description": "First attempt to make QR codes more presentable graphically, using a custom python pipeline. I was wondering how they can hint at what's linked in them, or at least have some personality, while still being readable with all the default scanners built into phones. Lastly, I was figuring out the actual critical elements for machine recognition and ways to push against that edge.",
+    "description": "Graphically enhanced QR codes using a custom Python pipeline that hint at what's linked in them while remaining readable with default phone scanners. I experimented with making QR codes more presentable and giving them personality, identifying the critical elements for machine recognition and pushing against those constraints.",
     "thumbnail_override": "static/thumbs/9cb2cbc6b551ae489906b617c4e68fc5.jpg",
     "media_dimensions": {
       "entries/junk/qr1/_c__1_.png": {
@@ -1659,8 +1659,8 @@
     "recommended_ids": [
       "pano",
       "metaframing",
-      "qbicon",
-      "peoplessky"
+      "backbone",
+      "meshair"
     ]
   },
   {
@@ -1672,7 +1672,7 @@
     "id": "pano",
     "locked": false,
     "content": "/entries/junk/pano/html/?id=three",
-    "description": "Developed a tool for the Cyprus Institute to develop immersive 360 degree panoramas with text and recorded sound for exhibitions. The webapp works in all major browsers and uses device compass/gyro (or click and drag) to rotate the panorama intuitively. <a href='/entries/junk/pano/html/?id=three' target='_blank'>A demo can be found here.</a>",
+    "description": "A web tool for creating immersive 360 degree panoramas with text and recorded sound for exhibitions, working in all major browsers and using device compass/gyro (or click and drag) to rotate the panorama intuitively. I developed this for the Cyprus Institute. <a href='/entries/junk/pano/html/?id=three' target='_blank'>A demo can be found here.</a>",
     "thumbnail_override": "static/thumbs/12ade35118348d6f67dbf132a4862a47_thumb.webm",
     "media_dimensions": {
       "entries/junk/pano/_c_ninja.webm": {
@@ -1703,7 +1703,7 @@
     "id": "codex20",
     "locked": false,
     "content": "https://www.goodreads.com/book/show/58697717-nm-codex-y2k20",
-    "description": "Invited article contributor for a <a href='https://www.goodreads.com/book/show/58697717-nm-codex-y2k20' target='_blank'>retrospective on 2020</a>, the year we were trapped inside. My contribution was titled '#The-New-Aesthetic: Objects in Mirror are Much Closer than They Appear', reading James Bridles term of the technological uncanny into the strange photography of lockdowns and security in 2020.",
+    "description": "An article titled '#The-New-Aesthetic: Objects in Mirror are Much Closer than They Appear', reading James Bridle's term of the technological uncanny into the strange photography of lockdowns and security in 2020. I contributed this piece to a <a href='https://www.goodreads.com/book/show/58697717-nm-codex-y2k20' target='_blank'>retrospective on 2020</a>, the year we were trapped inside.",
     "thumbnail_override": "static/thumbs/50bccbe484b9d15787f2a5694337852f.jpg",
     "media_dimensions": {
       "entries/junk/codex20/_c_cover.png": {
@@ -1722,7 +1722,7 @@
       "incoherence",
       "willarnold",
       "illusive",
-      "archonprize2018"
+      "guchibytes"
     ]
   },
   {
@@ -1734,7 +1734,7 @@
     "id": "miner75",
     "locked": false,
     "content": "",
-    "description": "Assisted Christian Pepper with his SCI-ARC thesis film, including concept work, matte paintings, vfx pre-vis.",
+    "description": "A SCI-ARC thesis film with concept work, matte paintings, and VFX pre-visualization. I assisted Christian Pepper with production.",
     "thumbnail_override": "static/thumbs/de3b1265be28316dffa9aa645900afe2_thumb.webm",
     "media_dimensions": {
       "entries/junk/miner75/_c_201027_BP_Corruption_2.webm": {
@@ -1801,10 +1801,10 @@
       "entries/junk/miner75/_c_withblue.png"
     ],
     "recommended_ids": [
-      "earthvis",
       "bezeliness",
-      "joteva",
-      "timelineatlas"
+      "earthvis",
+      "guchibytes",
+      "austere"
     ]
   },
   {
@@ -1883,7 +1883,7 @@
     "id": "arcade",
     "locked": false,
     "content": "https://photos.app.goo.gl/Xj2aecCd1zRJoSRr5",
-    "description": "I was interested in CRT displays and tried to design an ideal arcade cabinet for exhibiting contemporary art games in a space like a gallery. The CRT is actually a housing over a flat panel, which also contains the computer. I would want to mill and polish acrylic into a CRT-like curved lens to sit on top of the flat panel screen.",
+    "description": "An arcade cabinet design for exhibiting contemporary art games in gallery spaces. The CRT housing sits over a flat panel screen and contains the computer. I designed this exploring how to mill and polish acrylic into a CRT-like curved lens to sit on top of the flat panel.",
     "thumbnail_override": "static/thumbs/b4eb86b0087568ea43267272c7d91402.jpg",
     "media_dimensions": {
       "entries/junk/arcade/_c__1_arcade-1.png": {
@@ -1939,7 +1939,7 @@
     "id": "hifi",
     "locked": false,
     "content": "https://photos.app.goo.gl/RKSotdJtzczThUk39",
-    "description": "I designed this as an all-in-one wall mounted hifi system optimized for a digital collection. I was interested in using a pipeblending jig and some brass dowels to make a simple but striking shape. <a href='https://photos.app.goo.gl/RKSotdJtzczThUk39' target='_blank'>Images of the design can be seen here.</a>",
+    "description": "An all-in-one wall mounted hifi system optimized for a digital collection, using a pipeblending jig and brass dowels to make a simple but striking shape. <a href='https://photos.app.goo.gl/RKSotdJtzczThUk39' target='_blank'>Images of the design can be seen here.</a>",
     "thumbnail_override": "static/thumbs/955f853354a3a5166e80d5d2c38830d0.jpg",
     "media_dimensions": {
       "entries/junk/hifi/_c__1_hifi-1.png": {
@@ -1967,8 +1967,8 @@
     "recommended_ids": [
       "arcade",
       "lilbable",
-      "lillamp",
-      "staked-desk"
+      "staked-desk",
+      "lillamp"
     ]
   },
   {
@@ -1980,7 +1980,7 @@
     "id": "uniteposter",
     "locked": false,
     "content": "",
-    "description": "To draw exhibition visitors to our interactive survey webapp, we designed a poster with some basic information, a QR code, and URL to visit the site. The aim was to use a simple visual element to imply a mystery.",
+    "description": "A poster with basic information, a QR code, and URL using a simple visual element to imply mystery. We designed this to draw exhibition visitors to our interactive survey webapp.",
     "thumbnail_override": "static/thumbs/979c9c64abc21de9a941d5a77de11c48.jpg",
     "media_dimensions": {
       "entries/junk/uniteposter/_c__1_poster-final.png": {
@@ -2168,7 +2168,7 @@
     "id": "dungeon",
     "locked": false,
     "content": "/entries/junk/html/Dungeon-Generator",
-    "description": "I took a course in algorithmic design that used puzzle generation and solving as the application case. For a final project, I was interested in using Dijkstra's shortest path algorithm to solve for a sequence of moves in time, rather than a shortest traversal path in space. The <a href='/entries/junk/html/Dungeon-Generator' target='_blank'>generator</a> makes a dungeon where monsters trawl on fixed and cyclical paths. This means that the dungeon's time is a loop, and our agent attempts to get to the end in the shortest amount of forward steps.",
+    "description": "A <a href='/entries/junk/html/Dungeon-Generator' target='_blank'>dungeon generator</a> where monsters trawl on fixed and cyclical paths, creating a looping temporal structure where an agent attempts to reach the end in the shortest amount of forward steps. I developed this using Dijkstra's shortest path algorithm to solve for a sequence of moves in time rather than a shortest traversal path in space, as a final project for a course in algorithmic design.",
     "thumbnail_override": "static/thumbs/9ae57bcf4899f5dc36bf131a3509c485.jpg",
     "media_dimensions": {
       "entries/junk/dungeon/vid.yt": {
@@ -2186,8 +2186,8 @@
     "recommended_ids": [
       "a3",
       "whereshome",
-      "peoplestree2",
-      "peoplessky"
+      "chain2",
+      "chain"
     ]
   },
   {
@@ -2316,7 +2316,7 @@
     "id": "a3",
     "locked": false,
     "content": "",
-    "description": "This was my entry to the A3 (Annual Architecture Awards) logo competition. The graphic was generated using a reaction-diffusion physics simulation in Grasshopper, which I configured to store the entire time-series of the simulation. By extruding this data with the Z-axis representing time, the final form visualizes the 'A3' letters growing to fill the constraints of the badge shape. The result is an intricate pattern where the content of the logo is determined by the constraints of its graphic container.",
+    "description": "A logo generated using a reaction-diffusion physics simulation in Grasshopper, configured to store the entire time-series of the simulation. By extruding this data with the Z-axis representing time, the final form visualizes the 'A3' letters growing to fill the constraints of the badge shape, creating an intricate pattern where the content is determined by the constraints of its graphic container. My entry to the A3 (Annual Architecture Awards) logo competition.",
     "thumbnail_override": "static/thumbs/fd04a804bc8e6bc17930ccb948f95711.jpg",
     "media_dimensions": {
       "entries/junk/a3/_1_GooglePortfolio216.jpg": {
@@ -2340,7 +2340,7 @@
       "uniteposter",
       "dungeon",
       "drip",
-      "illusive"
+      "austere"
     ]
   },
   {
@@ -2521,9 +2521,9 @@
     ],
     "recommended_ids": [
       "incoherence",
+      "joteva",
       "codex20",
-      "willarnold",
-      "joteva"
+      "timelineatlas"
     ]
   },
   {
@@ -2631,7 +2631,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "austere",
-      "guchibytes"
+      "paphosgate"
     ]
   },
   {
@@ -2643,7 +2643,7 @@
     "id": "skyboxes",
     "locked": false,
     "content": "https://gamebanana.com/mods/7247",
-    "description": "My earliest experiences with photoshop and art making from ~2008-2010. I used Terragen, Vue, and photocollage to build skyboxes for the source engine. I also got into making 360 panoramic images from my own camera. A friend bundled the materials I had distributed into one <a href='https://gamebanana.com/mods/7247' target='_blank'>package</a>. Skies were made for personal projects, friend's projects, or mods.",
+    "description": "Skyboxes for the Source engine built using Terragen, Vue, and photocollage, along with 360 panoramic images from my own camera. I created these for personal projects, friend's projects, and mods during my earliest experiences with Photoshop and art making from ~2008-2010. A friend bundled the materials I had distributed into one <a href='https://gamebanana.com/mods/7247' target='_blank'>package</a>.",
     "thumbnail_override": "static/thumbs/8ad026088878fa0c19331ef04b8a89da.jpg",
     "media_dimensions": {
       "entries/junk/skyboxes/_1_sky_blueday01_hdr.jpg": {
@@ -2751,7 +2751,7 @@
     "id": "fazole",
     "locked": false,
     "content": "https://gamebanana.com/mods/62197",
-    "description": "I fell in love with HL2DM, a niche first person shooter. It was badly balanced and servers hosted loads of unpolished weird maps. I wanted to spend a weekend to make something unique and as simple looking as the gameplay felt, with many looping and interwoven paths. I was also curious about new styles which would leave a low memory footprint and break away from the grungy looks of all the other maps. <a href='https://gamebanana.com/mods/62197' target='_blank'>Fazle</a> was about 1% the typical filesize of a map. It was far too strange to get love from HL2DM players.",
+    "description": "A minimalist <a href='https://gamebanana.com/mods/62197' target='_blank'>HL2DM map</a> with many looping and interwoven paths, designed to be as simple looking as the gameplay felt while breaking away from the grungy aesthetic of other maps. I built this in a weekend with a low memory footprint\u2014about 1% the typical filesize of a map\u2014though it was far too strange to get love from HL2DM players.",
     "thumbnail_override": "static/thumbs/fe83046136a66ec1d6340d206ec16983.jpg",
     "media_dimensions": {
       "entries/junk/fazole/_26245-.jpg": {
@@ -2784,8 +2784,8 @@
     ],
     "recommended_ids": [
       "flatsky",
-      "crapmaps",
       "oceantop",
+      "crapmaps",
       "nightmarehouse2"
     ]
   },
@@ -2798,7 +2798,7 @@
     "id": "crapmaps",
     "locked": false,
     "content": "https://gamebanana.com/mods/115695",
-    "description": "I was part of an online group called Interlopers, which developed mods and indie games around Valve's Source Engine in the 2000s. We began a tradition of making bad or interesting maps once a year and playing through them together. <a href='https://gamebanana.com/mods/115695' target='_blank'>Crap maps night.</a>",
+    "description": "<a href='https://gamebanana.com/mods/115695' target='_blank'>Crap maps night</a>\u2014a tradition where we made bad or interesting maps once a year and played through them together. I was part of Interlopers, an online group that developed mods and indie games around Valve's Source Engine in the 2000s.",
     "thumbnail_override": "static/thumbs/2ae14b77135f2d65672f3572705f24f1.jpg",
     "media_dimensions": {
       "entries/junk/crapmaps/_12178-.jpg": {
@@ -2817,7 +2817,7 @@
       "fazole",
       "flatsky",
       "skyboxes",
-      "nightmarehouse2"
+      "oceantop"
     ]
   },
   {
@@ -2851,10 +2851,10 @@
       "entries/junk/oceantop/mg_oceantop_3.zip"
     ],
     "recommended_ids": [
-      "flatsky",
       "fazole",
+      "flatsky",
       "nightmarehouse2",
-      "skyboxes"
+      "crapmaps"
     ]
   },
   {
@@ -2866,7 +2866,7 @@
     "id": "nightmarehouse2",
     "locked": false,
     "content": "https://nh2.wecreatestuff.com/",
-    "description": "I was invited to make a skybox for <a href='https://nh2.wecreatestuff.com/' target='_blank'>a free horror indie game</a>. The skybox does a lot of work as it replaces the outside environment, working at ground level and when on top of a tall tower. The skybox was a combination of a vue rendering, and photocollage using a program called skypaint which manages perspective-correction when editing.",
+    "description": "A skybox for <a href='https://nh2.wecreatestuff.com/' target='_blank'>a free horror indie game</a> that replaces the outside environment, working at ground level and when on top of a tall tower. I created the skybox using a combination of Vue rendering and photocollage with a program called Skypaint which manages perspective-correction when editing.",
     "thumbnail_override": "static/thumbs/94bd62f051c33839c8e8481381a17e80.jpg",
     "media_dimensions": {
       "entries/junk/nightmarehouse2/sky_nightmare01_hdr6.jpg": {
@@ -2929,7 +2929,7 @@
     "id": "nicairport",
     "locked": false,
     "content": "https://velab.cloud/nic/en/",
-    "description": "A participatory virtual environment developed to test dissertation methodologies on interface-mediated, co-constructive heritage interpretation. Deployed in a public exhibition at the Bank of Cyprus Cultural Foundation, the project uses a \"propositional model\" to successfully scale public engagement, capturing over 3,200 play sessions and 300 oral story recordings. This method generated new qualitative data that enriches, expands, and challenges the site's limited documentation. The installation features a meticulously reconstructed 3D model of the historic terminal based on LiDAR scans and archival photography, housed in a custom-designed wooden console with touchscreen navigation and immersive projection. Visitors contribute stories through a period landline phone interface, transforming the digital model into a living, co-authored archive. The project is documented at <a href='https://velab.cloud/nic/en/' target='_blank'>velab.cloud/nic/en</a>, a companion website I also designed and developed.",
+    "description": "A museum installation featuring a reconstructed 3D model of Nicosia International Airport's modern terminal based on LiDAR scans and archival documentation, housed in a custom-designed wooden console with touchscreen navigation and immersive projection. I developed the participatory virtual environment to test dissertation methodologies on interface-mediated, co-constructive 'virtual places' for heritage, featuring our WIP \"propositional model\" for focusing public knowledge towards architectural features, and a period landline phone interface for oral story contribution. I also designed and developed the companion website at <a href='https://velab.cloud/nic/en/' target='_blank'>velab.cloud/nic/en</a>. Deployed in a public exhibition at the Bank of Cyprus Cultural Foundation, the project captured over 3,200 play sessions and 300 oral story recordings, generating new qualitative data that enriches, expands, and challenges the site's limited documentation.",
     "thumbnail_override": "static/thumbs/e50b8e71b3b2741b7579d174dee1ad68.jpg",
     "media_dimensions": {
       "entries/blog/nicairport/_c__1_booth.jpg": {
@@ -2983,7 +2983,7 @@
       "paphosgate",
       "dariah25",
       "beep",
-      "seoul"
+      "spacenature"
     ]
   },
   {
@@ -2995,7 +2995,7 @@
     "id": "dariah25",
     "locked": false,
     "content": "https://zenodo.org/records/15711075",
-    "description": "Presented at the DARIAH Annual Event 2025 in Goettingen, Germany. The talk was part of the Digital Storytelling session and argued that moving beyond photorealism to embrace representational ambiguity can create richer, more participatory experiences in digital heritage. This research is a core component of my dual PhD dissertation work. The full presentation materials, including slides and abstract, are archived on <a href='https://zenodo.org/records/15711075' target='_blank'>Zenodo</a>.",
+    "description": "A conference presentation arguing that moving beyond photorealism to embrace representational abstraction and ambiguity can create richer, more participatory works in digital cultural heritage. I presented this research, a core component of my dual PhD dissertation work, at the DARIAH Annual Event 2025 in Goettingen, Germany as part of the Digital Storytelling session. The full presentation materials, including slides and abstract, are archived on <a href='https://zenodo.org/records/15711075' target='_blank'>Zenodo</a>.",
     "thumbnail_override": "static/thumbs/da1e60bca76d3c140a375f3a3884bc8c.jpg",
     "media_dimensions": {
       "entries/blog/dariah25/_c__1_Screenshot_2025-07-27_at_7_09_14_PM.png": {
@@ -3036,7 +3036,7 @@
     "id": "spacenature",
     "locked": false,
     "content": "https://spacenature.web.illinois.edu/",
-    "description": "Co-organized the <a href='https://landarch.illinois.edu/about-us/events/graduate-student-symposium-spaces-of-nature-natures-of-space/' target='_blank'>'Spaces of Nature/Natures of Space' graduate student symposium</a> at the University of Illinois Urbana-Champaign with Taisuke Wakabayashi. I was also responsible for creating the event's graphic identity, and designing the official <a href='https://spacenature.web.illinois.edu/' target='_blank'>website</a>. During the symposium, held on February 14, 2025, I presented an early draft of my research paper, 'The Interpretive Nature of Space: Generative Ambiguity in Heritage Visualization'. <br><br><h1>Abstract</h3> In architectural representation, the tension between objectivity and ambiguity creates fertile ground for interpretive engagement. Yet contemporary digital visualization practices increasingly prioritize photorealism\u2014a pursuit that, as Lefebvre cautions, risks reducing the multidimensionality of lived space to a superficial spectacle. Drawing on research conducted at Cyprus's Virtual Environments Laboratory, this paper contends that the nature of space emerges not through visual mimesis but through the generative potential of representational ambiguity. Such an approach aligns virtual reconstructions with the deeper intellectual and cultural aims of the Digital Humanities. <br>The Nicosia International Airport (1968), abandoned in Cyprus's UN buffer zone since 1974, exemplifies the interpretive challenges of modern architectural heritage. Here, meaning is negotiated between design intent, built form, and lived experience. More than a modernist relic of Cyprus's post-colonial aspirations, the site's abrupt abandonment transformed it into a time capsule of what de Certeau terms 'spatial practices': public terraces and amenities overlooking the tarmac once fostered forms of social life unimaginable in today's airports. With these practices now confined to living memory, there is an urgent need for methodologies that integrate experiential knowledge with conventional documentation.<br>To address this gap, we developed an innovative approach to heritage visualization through a year-long museum installation featuring a virtual reconstruction of the airport set in 1969. By embedding carefully designed 'interpretation gaps'\u2014strategic ambiguities in the visualization\u2014we created a system that invites visitors to actively bridge these gaps through their contributions: memories, media, and historical knowledge. In this way, the virtual environment becomes both a research instrument and a conduit for collective storytelling, supporting rather than supplanting the social practices that sustain collective memory.",
+    "description": "A graphic identity and <a href='https://spacenature.web.illinois.edu/' target='_blank'>website</a> designed for the <a href='https://landarch.illinois.edu/about-us/events/graduate-student-symposium-spaces-of-nature-natures-of-space/' target='_blank'>'Spaces of Nature/Natures of Space' graduate student symposium</a>. I created the event's visual identity, designed the official website, while co-organizing the symposium with Taisuke Wakabayashi at the University of Illinois Urbana-Champaign. During the symposium, held on February 14, 2025, I presented an early draft of my research paper, 'The Interpretive Nature of Space: Generative Ambiguity in Heritage Visualization'. <br><br><h1>Abstract</h3> In architectural representation, the tension between objectivity and ambiguity creates fertile ground for interpretive engagement. Yet contemporary digital visualization practices increasingly prioritize photorealism\u2014a pursuit that, as Lefebvre cautions, risks reducing the multidimensionality of lived space to a superficial spectacle. Drawing on research conducted at Cyprus's Virtual Environments Laboratory, this paper contends that the nature of space emerges not through visual mimesis but through the generative potential of representational ambiguity. Such an approach aligns virtual reconstructions with the deeper intellectual and cultural aims of the Digital Humanities. <br>The Nicosia International Airport (1968), abandoned in Cyprus's UN buffer zone since 1974, exemplifies the interpretive challenges of modern architectural heritage. Here, meaning is negotiated between design intent, built form, and lived experience. More than a modernist relic of Cyprus's post-colonial aspirations, the site's abrupt abandonment transformed it into a time capsule of what de Certeau terms 'spatial practices': public terraces and amenities overlooking the tarmac once fostered forms of social life unimaginable in today's airports. With these practices now confined to living memory, there is an urgent need for methodologies that integrate experiential knowledge with conventional documentation.<br>To address this gap, we developed an innovative approach to heritage visualization through a year-long museum installation featuring a virtual reconstruction of the airport set in 1969. By embedding carefully designed 'interpretation gaps'\u2014strategic ambiguities in the visualization\u2014we created a system that invites visitors to actively bridge these gaps through their contributions: memories, media, and historical knowledge. In this way, the virtual environment becomes both a research instrument and a conduit for collective storytelling, supporting rather than supplanting the social practices that sustain collective memory.",
     "thumbnail_override": "static/thumbs/804a43d479a53b29aa870b8189eb4239.jpg",
     "media_dimensions": {
       "entries/blog/spacenature/_c_Screenshot_2025-07-27_at_7_02_07_PM.png": {
@@ -3060,7 +3060,7 @@
   },
   {
     "title": "Are Surveys Necessary? Designing Virtual Environments for Participatory Research",
-    "description": "This chapter argues that interactive Virtual Environments (VEs) can serve as powerful tools for participatory research, moving beyond the limitations of traditional surveys in the Digital Humanities. I present a case study of a prototype VE designed for a workshop on the intangible cultural heritage of C\u00f3rdoba's communal patios. The environment functioned as an immersive online \u2018guest book\u2019 where hundreds of users could asynchronously decorate a shared virtual space and leave messages for one another. The work introduces key design strategies for asynchronous interaction, such as 'claims' and 'traces,' which allow participants to engage with artifacts left by others. Furthermore, it details a novel workflow that uses Large Language Models (LLMs) to automate the qualitative coding and moderation of text contributions from participants. Published in the 2025 Bloomsbury Academic volume, <i>Clever Design in Critical Times: Conceptualizing the Callidocene</i>, this research explores how VEs can generate rich, context-aware datasets for more inclusive heritage studies. The book is available from <a href=\"https://www.bloomsbury.com/uk/clever-design-in-critical-times-9781978790179/\" target=\"_blank\" rel=\"noopener noreferrer\">Bloomsbury Academic</a>.",
+    "description": "A prototype Virtual Environment (VE) designed as an immersive online 'guest book' where hundreds of users could asynchronously decorate a shared virtual space and leave messages for one another. I developed this VE for a workshop on the intangible cultural heritage of C\u00f3rdoba's communal patios, introducing key design strategies for asynchronous interaction ('claims' and 'traces') and a novel workflow using Large Language Models (LLMs) to automate qualitative coding and moderation of text contributions. Published as a book chapter in the 2025 Bloomsbury Academic volume, <i>Clever Design in Critical Times: Conceptualizing the Callidocene</i>, arguing that interactive VEs can serve as powerful tools for participatory research, moving beyond the limitations of traditional surveys in the Digital Humanities. The book is available from <a href=\"https://www.bloomsbury.com/uk/clever-design-in-critical-times-9781978790179/\" target=\"_blank\" rel=\"noopener noreferrer\">Bloomsbury Academic</a>.",
     "year": "2023",
     "season": "fall",
     "theme": "blog",
@@ -3085,12 +3085,12 @@
       "metaframing",
       "unite",
       "cordobacourt",
-      "dariah25"
+      "patio-walk-cordoba"
     ]
   },
   {
     "title": "MetaFraming: A Methodology for Democratizing Heritage Interpretation through Wiki Surveys",
-    "description": "This paper introduces MetaFraming, a participatory methodology using three distinct AI pipelines (powered by GPT-3.5) to democratize heritage study. The first generates hundreds of 'seed' propositions for a wiki survey from background research, controlled for tone and topic. The second interprets user-submitted comments by providing the LLM with crucial context about their preceding interactions. The third automatically codes comments for sentiment and topics, which speeds up qualitative analysis and aids in abuse detection. The methodology was developed through a case study on Le Corbusier\u2019s Unit\u00e9 d\u2019habitation. <a href=\"https://dl.acm.org/doi/10.1145/3623462.3623465\" target=\"_blank\" rel=\"noopener noreferrer\">Read the full paper here</a>.",
+    "description": "A participatory methodology to democratize heritage study through AI-assisted wiki surveys, a technology from the computational social sciences that allows the survey itself to evolve and people interact with it. I developed MetaFraming using three distinct GPT-3.5 pipelines: one generates hundreds of 'seed' propositions from background research (controlled for tone and topic), another interprets user-submitted comments by providing contextual history of their interactions, and a third automatically codes comments for sentiment and topics to speed qualitative analysis and aid abuse detection. The methodology was developed through a case study on Le Corbusier's Unit\u00e9 d'habitation and published as a conference paper. <a href=\"https://dl.acm.org/doi/10.1145/3623462.3623465\" target=\"_blank\" rel=\"noopener noreferrer\">Read the full paper here</a>.",
     "year": "2023",
     "season": "summer",
     "theme": "blog",
@@ -3114,13 +3114,13 @@
     "recommended_ids": [
       "unite",
       "surveysNecessary",
-      "dariah25",
-      "scan-to-ar"
+      "scan-to-ar",
+      "dariah25"
     ]
   },
   {
     "title": "Unit\u00e9 d'Habitation Wikisurvey",
-    "description": "A direct link to the <a href='https://wikisurvey.web.illinois.edu/' target='_blank'>wiki survey tool</a> we developed, implementing methods from two previous wiki survey systems: all our ideas, and POLIS, as well as some new ideas. See Metaframing paper for more details.",
+    "description": "A <a href='https://wikisurvey.web.illinois.edu/' target='_blank'>wiki survey tool</a> implementing methods from two previous wiki survey systems (All Our Ideas and POLIS) with new innovations. I developed this web application as part of the MetaFraming research. See the MetaFraming paper for more details.",
     "year": "2023",
     "season": "summer",
     "theme": "blog",
@@ -3158,10 +3158,10 @@
       "entries/blog/unite/survey-combined.png"
     ],
     "recommended_ids": [
-      "uniteposter",
       "metaframing",
-      "scan-to-ar",
-      "patio-walk-cordoba"
+      "uniteposter",
+      "surveysNecessary",
+      "scan-to-ar"
     ]
   },
   {
@@ -3173,7 +3173,7 @@
     "id": "quipit_table",
     "locked": false,
     "content": "/entries/blog/quipit_table/files/quipit_table.jpg",
-    "description": "QUIPIT\u2014a small student group featuring Ray Majewski, Christian Pepper, and Robert Prochaska\u2014aimed to foster open dialogues among students, faculty, and administration. Employing tongue-in-cheek installation art and events, the initiative introduced a novel table in the school's atrium. Designed as a platform for dialogue and a collector of viewpoints, the <a href='/entries/blog/quipit_table/files/quipit_table.jpg' target='_blank'>table</a> challenged passersby with a thought-provoking question: What would you change if you ran the school? The table, adorned with students' handwritten responses, evolved into a mirror of collective sentiment. After a month-long response collection, QUIPIT held an exclusive student event to discuss the gathered insights, culminating in a presentation to the school's director.",
+    "description": "A <a href='/entries/blog/quipit_table/files/quipit_table.jpg' target='_blank'>participatory table installation</a> in the school's atrium that challenged passersby with the question: What would you change if you ran the school? Designed as a platform for dialogue and collector of viewpoints, the table became adorned with students' handwritten responses, evolving into a mirror of collective sentiment. After a month-long response collection, QUIPIT\u2014an student group in the University of Illinois' School of Architecture, with Ray Majewski, Christian Pepper, and Robert Prochaska\u2014held an exclusive student event to discuss the gathered insights, culminating in a presentation to the school's director. Part of our broader initiative using tongue-in-cheek installation art and events to foster open dialogues among students, faculty, and administration.",
     "thumbnail_override": "static/thumbs/f4129e6ebf743975208e77d2585e7ec7.jpg",
     "media_dimensions": {
       "entries/blog/quipit_table/_c__1_table4.jpg": {
@@ -3207,12 +3207,12 @@
       "digitalpicnic",
       "bezeliness",
       "guchibytes",
-      "lilbable"
+      "munich"
     ]
   },
   {
     "title": "Memory In Uncertainty",
-    "description": "I was invited to review the public release of a <a href='https://newdesigncongress.org/en/report/2022/memory-in-uncertainty/' target='_blank'>report</a> by the New Design Congress, which explores the techno-political implications of web archiving practices, focusing specifically on the right to be forgotten. Also featured in the <a href='https://nn.librarystack.org/contributor/wehmeier-colter/' target='_blank'>Neural Networks contributor archive</a>.",
+    "description": "A New Design Congress <a href='https://newdesigncongress.org/en/report/2022/memory-in-uncertainty/' target='_blank'>report</a> exploring the techno-political implications of web archiving practices, focusing specifically on our contradictory impulses to both preserve web culture at scale, and also respect people's right to be forgotten. I contributed as a reviewer for the public release, which built out from several private reports produced by NDC. Also featured in the <a href='https://nn.librarystack.org/contributor/wehmeier-colter/' target='_blank'>Neural Networks contributor archive</a>.",
     "year": "2022",
     "season": "fall",
     "theme": "blog",
@@ -3238,7 +3238,7 @@
       "recoveringurbanmemory",
       "patio-walk-cordoba",
       "cordobacourt",
-      "codex20"
+      "ict-for-urban-heritage-palermo"
     ]
   },
   {
@@ -3280,7 +3280,7 @@
     "tags": "Conf. Publication, architecture, heritage, ICT, dariah, academic, AR, 3d capture, dariah, workshop, participatory methods",
     "id": "scan-to-ar",
     "locked": false,
-    "description": "A conference presentation and <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>publication</a> stemmed from the Palermo workshop, which detailed a collaborative initiative between Federico La Russa and myself. Our goal was to facilitate a co-design workshop aimed at repurposing abandoned industrial heritage in Palermo. We employed rapid 3D site capture techniques and established a 3D library of design primitives, akin to Lego bricks. This approach enabled us to swiftly mock up and review architectural proposals with stakeholders over a single weekend, using Wikar, my augmented reality platform. After deliberations over the summer, the public space was opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>.",
+    "description": "A co-design workshop using rapid 3D site capture and a library of design primitives (akin to Lego bricks) to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The public space opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
     "thumbnail_override": "static/thumbs/ad088b3d890cad683611ece9b0a834e8.jpg",
     "media_dimensions": {
       "entries/blog/scan-to-ar/_1_STARC_Scientific_Expert_Panel_-_Colter_3_.jpg": {
@@ -3333,8 +3333,8 @@
     ],
     "recommended_ids": [
       "ict-for-urban-heritage-palermo",
-      "patio-walk-cordoba",
       "metaframing",
+      "patio-walk-cordoba",
       "schlegel"
     ]
   },
@@ -3347,7 +3347,7 @@
     "id": "ict-for-urban-heritage-palermo",
     "locked": false,
     "content": "https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities",
-    "description": "Helped coordinate and attended this <a href='https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities' target='_blank'>workshop</a>, where we engaged the neighborhood with digital tools to help envision the future of an abandoned warehouse on the campus, a modern ruin from the 20th Century.",
+    "description": "A <a href='https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities' target='_blank'>workshop</a> engaging the neighborhood with digital tools to envision the future of an abandoned warehouse\u2014a modern 20th century ruin. I helped coordinate the event and contributed to the participatory design process.",
     "thumbnail_override": "static/thumbs/1cf28e11534a483e7feadf3d3115d531.jpg",
     "media_dimensions": {
       "entries/blog/ict-for-urban-heritage-palermo/_c_Capture.png": {
@@ -3378,7 +3378,7 @@
     "id": "recoveringurbanmemory",
     "locked": false,
     "content": "",
-    "description": "<strong>Chicago Studio Award (First Place), 2019</strong><br><br>The UIUC Plym Studio, in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar, embarked on a project to redesign an abandoned farmer's market in the historic heart of Beijing's Baitasi District. The studio encouraged students to explore lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The aim was to devise an intervention that would resurrect collective spaces such as farmers' markets and cafes, which had slowly disappeared from the community fabric. See an <a href='https://www.youtube.com/watch?v=Y54UwufO0F4' target='_blank'>interview<a> about this project with Mayur Mistry.",
+    "description": "<strong>Chicago Studio Award (First Place), 2019</strong><br><br>An architectural intervention to redesign an abandoned farmer's market in the historic heart of Beijing's Baitasi District, resurrecting collective spaces such as farmers' markets and cafes that had slowly disappeared from the community fabric. I developed this proposal through the UIUC Plym Studio, exploring lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The studio was led in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar. See an <a href='https://www.youtube.com/watch?v=Y54UwufO0F4' target='_blank'>interview</a> about this project with Mayur Mistry.",
     "thumbnail_override": "static/thumbs/0554c75c87114150ebaa6a153cc07ab2.jpg",
     "media_dimensions": {
       "entries/blog/recoveringurbanmemory/_1_grandhall_stone2.jpg": {
@@ -3503,7 +3503,7 @@
       "trainhouse",
       "austere",
       "ict-for-urban-heritage-palermo",
-      "uncertainty"
+      "paphosgate"
     ]
   },
   {
@@ -3516,7 +3516,7 @@
     "id": "paphosgate",
     "locked": false,
     "content": "",
-    "description": "For this decade-long urban archaeology project, I served as a research assistant, focusing on virtual representation and data-driven design. I prototyped and built multiple VR applications (using Oculus DK2 and HTC Vive) to visualize both archaeological findings and the proposed architectural intervention. These tools were used to engage stakeholders, from the public to the Department of Antiquities. I developed systems for locomotion, interaction, and gaze-tracking analytics to understand how people focused on the virtual site. This data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. Opened to the public in <a href='https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe'>2024.</a>",
+    "description": "Multiple VR applications (using Oculus DK2 and HTC Vive) to visualize archaeological findings and a proposed architectural intervention for an urban archaeology project in Nicosia. I prototyped and built the applications as a research assistant, developing systems for locomotion, interaction, and gaze-tracking analytics to understand how stakeholders focused on the virtual site. These tools engaged everyone from the public to the Department of Antiquities. The gaze-tracking data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. The project spanned a decade and opened to the public in <a href='https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe'>2024</a>.",
     "thumbnail_override": "static/thumbs/5f423bdc9e407166347e56196ed424da.jpg",
     "media_dimensions": {
       "entries/blog/paphosgate/_1_STARC_Scientific_Expert_Panel_-_Colter_1_.jpg": {
@@ -3624,8 +3624,8 @@
     ],
     "recommended_ids": [
       "nicairport",
-      "seoul",
       "recoveringurbanmemory",
+      "seoul",
       "beep"
     ]
   },
@@ -3638,7 +3638,7 @@
     "id": "digitalpicnic",
     "locked": false,
     "content": "",
-    "description": "Christian Pepper, Robert Prochaska, and I created a suspended holo-deck-like structure, utilizing projectors and a USB controller to enable the adjustment of the environment to various images, patterns, and colours. My contributions encompassed production, assembly, conceptualization, and the creation of visuals and an interactive controller using Arduino and Max/MSP. Ultimately, we repurposed the installation into permanent furniture.",
+    "description": "A suspended holo-deck-like structure using projectors and a USB controller to adjust the environment with various images, patterns, and colors. I contributed production, assembly, conceptualization, and created visuals and an interactive controller using Arduino and Max/MSP, working with Christian Pepper and Robert Prochaska. We ultimately repurposed the installation into permanent furniture.",
     "thumbnail_override": "static/thumbs/1778167612b377ce1f43f622c739088b_thumb.webm",
     "media_dimensions": {
       "entries/blog/digitalpicnic/_c__1_IMG_6738.webm": {
@@ -3704,10 +3704,10 @@
       "entries/blog/digitalpicnic/_c_56608822301_E8BF2057-612C-44B7-889E-C4A60D2DAA29.jpg"
     ],
     "recommended_ids": [
-      "bezeliness",
       "guchibytes",
+      "bezeliness",
       "seoul",
-      "lovebench"
+      "quipit_table"
     ]
   },
   {
@@ -3801,8 +3801,8 @@
     ],
     "recommended_ids": [
       "digitalpicnic",
+      "miner75",
       "seoul",
-      "timelineatlas",
       "guchibytes"
     ]
   },
@@ -3815,7 +3815,7 @@
     "id": "seoul",
     "locked": false,
     "content": "https://activate.zone/seoul-biennale-nicosia-city",
-    "description": "I assisted the VELab at the Cyprus Institute with a lightweight VR installation. I designed a 3D-printed, stereogram-inspired VR system that loops 360-degree stereo videos. Guests can view various climate modeling scenarios and disasters unfolding within our virtual model of Nicosia.",
+    "description": "A lightweight VR installation featuring a 3D-printed, stereogram-inspired VR system that loops 360-degree stereo videos of climate modeling scenarios and disasters unfolding within a virtual model of Nicosia. I designed the system while assisting the VELab at the Cyprus Institute for the Cyprus Pavilion at the Seoul Biennale.",
     "thumbnail_override": "static/thumbs/f07f75abca8d959de54fef3f3da60c62.jpg",
     "media_dimensions": {
       "entries/blog/seoul/_c_20170830_154120.jpg": {
@@ -3885,7 +3885,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "guchibytes",
-      "timelineatlas"
+      "digitalpicnic"
     ]
   },
   {
