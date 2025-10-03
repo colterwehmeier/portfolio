@@ -9,7 +9,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "I developed a comprehensive technical infrastructure for 120+ developers to collaboratively build a spatially-distributed game network: a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> where developer clients collaboratively map the network, detect bugs, and detect illegal actions; a PHP-based build system with automated sync to itch.io for rapid testing; and coordination tools that enable decentralized creative production at unprecedented scale. The third entry in the C.H.A.I.N. experimental collaborative series, this project brings together the Haunted PS1 community and notable contributors from the wider indie game community. Co-directed with Adam Pype as lead, the project establishes new paradigms for mass collaborative game development, replacing previous Google Sheet and Drive-based workflows with purpose-built infrastructure designed to support over 100 simultaneous contributors working across a branching narrative graph.",
+    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a mass-collaborative game that brings together over 120 developers from the Haunted PS1 and wider indie communities. As co-director and lead technical developer, I created a comprehensive infrastructure to support decentralized creative production at an unprecedented scale. This included a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a> for developers to collaboratively map the game network, a PHP-based build system with automated itch.io syncing for rapid testing, and other purpose-built coordination tools. The project establishes a new paradigm for mass collaborative game development, replacing previous Google Sheet-based workflows with a robust system for over 100 simultaneous contributors across a branching narrative.",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
     "media_dimensions": {
       "entries/game/chain3/_c__2_demo.webm": {
@@ -27,8 +27,8 @@
     "recommended_ids": [
       "chain2",
       "chain",
-      "backbone",
-      "genesis"
+      "genesis",
+      "backbone"
     ]
   },
   {
@@ -94,8 +94,8 @@
     "recommended_ids": [
       "chain3",
       "genesis",
-      "chain2",
-      "soup1"
+      "soup1",
+      "chain2"
     ]
   },
   {
@@ -107,7 +107,7 @@
     "id": "genesis24",
     "locked": false,
     "content": "",
-    "description": "A head-tracked rhythmic rail-shooter that traces <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez's</a></i> (2001) cyberspace aesthetics back to their genesis in Chicago's technology and art scenes. Set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985), <i>GENESIS</i> reimagines the Electronic Visualization Laboratory's 3D vector graphics for <i><a href='https://www.evl.uic.edu/events/2297' target='_blank'>Star Wars</a></i> (1977), which inspired countless <a href='https://en.wikipedia.org/wiki/Star_Wars:_The_Empire_Strikes_Back_(1985_video_game)' target='_blank'>vector-based games</a>. It incorporates head-tracking techniques derived from EVL's <a href='https://en.wikipedia.org/wiki/Cave_automatic_virtual_environment' target='_blank'>CAVE</a> system (1992), a VR precursor. A remake of my <a href='https://colter.us/#genesis'>2023 entry</a> for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>, shown at <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a>. Made with <a href='https://charlesvoita.com/'> Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'> Bill Derrah</a>.",
+    "description": "A head-tracked rhythmic rail-shooter that traces the cyberspace aesthetics of <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez</a></i> (2001) back to their origins in Chicago's art and technology scenes. In collaboration with <a href='https://charlesvoita.com/'>Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'>Bill Derrah</a>, I led the development of this remake of my <a href='https://colter.us/#genesis'>2023 entry</a> for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. project</a>. The game reimagines the Electronic Visualization Laboratory's (EVL) 3D vector graphics for <i>Star Wars</i> (1977) and incorporates head-tracking from the CAVE system (1992), set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985). It was exhibited at the <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a> festival.",
     "thumbnail_override": "static/thumbs/616d9512ed403804bc04d226f679f00e_thumb.webm",
     "media_dimensions": {
       "entries/game/genesis24/_c__1_genesis-24-1.webm": {
@@ -140,8 +140,8 @@
     "recommended_ids": [
       "genesis",
       "soup1",
-      "backbone",
-      "chain2"
+      "chain3",
+      "backbone"
     ]
   },
   {
@@ -153,7 +153,7 @@
     "id": "soup1",
     "locked": false,
     "content": "https://itch.io/c/4548354/soup-likes",
-    "description": "A tribute to the warm glow of sodium vapor street lamps, created for the 2024 SOAP SOUP collaboration. I designed a soundscape with central Illinois cicadas, a distant summer storm, and the crunch of asphalt underfoot. The visuals rely on high sensitivity to light and shadow, using sophisticated spherical projection mapping to create realistic textures from the perspective of a person standing in a parking lot. SOAP SOUP is a mod based on an obscure Japanese minimalist art-game from 2007.",
+    "description": "An atmospheric exploration game created for the 2024 SOAP SOUP collaboration, a modding project where artists create abstract rooms using a fixed set of elements. My entry is a sensory experience that places the player in a sodium-lit parking lot on a midsummer night. I designed a soundscape of cicadas and a distant storm, and used sophisticated spherical projection mapping for the visuals, focusing on creating a realistic and immersive atmosphere of warm light and deep shadow.",
     "thumbnail_override": "static/thumbs/ffc2bc50cf1864577af3935e13375e24_thumb.webm",
     "media_dimensions": {
       "entries/game/soup1/_c__1_2.webm": {
@@ -181,8 +181,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "backbone",
-      "drip"
+      "drip",
+      "backbone"
     ]
   },
   {
@@ -194,7 +194,7 @@
     "id": "egw24",
     "locked": false,
     "content": "https://www.experimentalgameworkshop.org/2024-session",
-    "description": "Presented C.H.A.I.N.G.E.D. and our work with the Haunted PlayStation 1 collective at the <a href='https://www.experimentalgameworkshop.org/2024-session' target='_blank'>Experimental Games Workshop (EGW)</a> during the Game Developers Conference (GDC) in San Francisco with Adam Pype. The EGW, a GDC tradition spanning over 20 years, celebrates games at the forefront of gameplay, organization, and creative direction. See the link above for a full video of the presentation in the GDC Vault.",
+    "description": "A presentation at the <a href='https://www.experimentalgameworkshop.org/2024-session' target='_blank'>Experimental Games Workshop (EGW)</a>, held during the Game Developers Conference (GDC) in San Francisco. With co-presenter Adam Pype, I discussed our project C.H.A.I.N.G.E.D. and the collaborative work of the Haunted PlayStation 1 collective. Our presentation was selected for this prestigious workshop, a GDC tradition of over 20 years that celebrates games at the forefront of gameplay, organization, and creative direction. A full video is available in the GDC Vault, linked above.",
     "thumbnail_override": "static/thumbs/4104d1b997ee6fa17e7e0c7f3072201d.jpg",
     "media_dimensions": {
       "entries/game/egw24/_1_colter.jpg": {
@@ -235,7 +235,7 @@
     "id": "peoplessky",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-sky",
-    "description": "I developed data-transfer optimizations, new 'trace' tracking and visualization features that show where players have explored, comprehensive analytic logs for post-experiment analysis, and a web application for moderation tasks. The fourth iteration of the People's Tree project, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> explores community building within networked games, enabling players to design items, append messages, and place them in a communal space.",
+    "description": "The fourth iteration of the People's Tree project, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> is an experimental game exploring community building by enabling players to design items, append messages, and place them in a shared digital space. For this iteration, I developed several key features, including data-transfer optimizations, new 'trace' visualizations to show player exploration paths, comprehensive analytic logs for post-experiment analysis, and a web application for content moderation.",
     "thumbnail_override": "static/thumbs/d96cd359a524fccf7cdac42f3d0ad641_thumb.webm",
     "media_dimensions": {
       "entries/game/peoplessky/_c_mov1.webm": {
@@ -266,7 +266,7 @@
     "id": "madvent4",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent4",
-    "description": "I developed a <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>launcher</a> featuring a fully dynamic train journeying through various biomes and navigating twisting terrain. Created for Madvent, an annual Haunted PS1 event where approximately 30 creators release games daily throughout December. As lead coordinator, I'm responsible for both organizing the event and developing the launcher each year.",
+    "description": "A <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>custom launcher</a> for the 2023 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. As lead coordinator and launcher developer for the series, I created a fully dynamic train that journeys through various biomes and navigates twisting terrain to connect the individual games.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent4/_1_output2.gif": {
@@ -294,7 +294,7 @@
     "id": "chain2",
     "locked": false,
     "content": "https://papercookies.itch.io/chainged",
-    "description": "I designed the technical and project structure that enabled story branching to occur within the launcher itself, rather than individual games. This architectural decision made the project feasible to implement with over 40 contributors working in different engines. The follow-up to C.H.A.I.N., this large-scale collaborative game presents choices after each game, with two following games representing forks in the timeline. You can <a href='https://papercookies.itch.io/chainged' target='_blank'>play the full collection here</a>. <br><a href='https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game' target='_blank'>Interview</a>.",
+    "description": "A large-scale, collaborative follow-up to C.H.A.I.N., this project connects over 40 developers' games into a branching narrative. After each entry, the player chooses between two games, representing forks in the timeline. My primary contribution was designing the technical architecture that enabled this branching to occur within the launcher itself, rather than individual games. This key decision made the project feasible to implement across multiple engines and contributors. You can <a href='https://papercookies.itch.io/chainged' target='_blank'>play the full collection here</a> and read an <a href='https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game' target='_blank'>interview about the project</a>.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/chain2/_1_chain2.gif": {
@@ -316,8 +316,8 @@
       "entries/game/chain2/vid.yt"
     ],
     "recommended_ids": [
-      "genesis",
       "chain",
+      "genesis",
       "chain3",
       "egw24"
     ]
@@ -331,7 +331,7 @@
     "id": "genesis",
     "locked": false,
     "content": "https://papercookies.itch.io/chainged",
-    "description": "Genesis was my submission for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>, drawing inspiration from vector graphics for a light gun game that reimagines the credit crawl game from Super Smash Bros Melee (2001). This project served as a platform to explore new technologies, including motion-captured camera techniques, synchronizing gameplay with music, a blocking/scripting system for sequencing events, and vector-based rendering.",
+    "description": "A light-gun game inspired by vector graphics that reimagines the credit crawl sequence from <i>Super Smash Bros. Melee</i> (2001). I developed this game as my submission for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>. The project served as a personal platform to explore new technologies, including motion-captured camera techniques, synchronizing gameplay to music, a blocking system for sequencing events, and vector-based rendering.",
     "thumbnail_override": "static/thumbs/97815e48a95e3d4118a3a8dbc75fabab_thumb.webm",
     "media_dimensions": {
       "entries/game/genesis/_c__1_ninja-genesis.webm": {
@@ -368,7 +368,7 @@
     "id": "madvent3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent3",
-    "description": "I developed the <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>launcher</a> for Madvent, an annual Haunted PS1 event featuring around 30 contributors who release games daily throughout December. As lead coordinator, I'm responsible for both organizing the event and developing the launcher.",
+    "description": "The <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>official launcher</a> for the 2022 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. In my role as lead coordinator and launcher developer, I was responsible for organizing the event and building the application that unites all the contributed games.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent3/_1_mad3.gif": {
@@ -405,7 +405,7 @@
     "id": "cordobacourt",
     "locked": false,
     "content": "https://dariahcloud.web.illinois.edu/cordoba/court",
-    "description": "<a href='https://dariahcloud.web.illinois.edu/cordoba/court' target='_blank'>C\u00f3rdoba Court</a> is an innovative social game designed to foster community building. Set in a virtual space modeled after the communal patios of C\u00f3rdoba, Spain, it invites players to cultivate the environment akin to physical community greening and habitation practices. Players express their individuality through the creation of personalized totems, choosing between a potted plant or a ceramic plate, with millions of possible design combinations. A <a href='https://dariahcloud.web.illinois.edu/cordoba/court_report/' target='_blank'>report</a> is also available, which analyses the content posted and examines some of the behaviors observed within the space.",
+    "description": "<a href='https://dariahcloud.web.illinois.edu/cordoba/court' target='_blank'>C\u00f3rdoba Court</a> is an innovative social game I designed and developed to foster community building. Modeled after the communal patios of C\u00f3rdoba, Spain, the game invites players to cultivate a shared virtual environment, expressing their individuality by designing personalized totems from millions of possible combinations. The project serves as a social experiment in digital placemaking and community greening practices. A <a href='https://dariahcloud.web.illinois.edu/cordoba/court_report/' target='_blank'>report</a> is also available, which analyzes player content and observed behaviors.",
     "thumbnail_override": "static/thumbs/561b866c97a6b39bd0a272f7316d71b6_thumb.webm",
     "media_dimensions": {
       "entries/game/cordobacourt/_c__1_courtFinal_trimmed.webm": {
@@ -442,9 +442,9 @@
     ],
     "recommended_ids": [
       "minotaur",
-      "peoplestree1",
+      "peoplestree2",
       "peoplessky",
-      "peoplestree2"
+      "peoplestree1"
     ]
   },
   {
@@ -456,7 +456,7 @@
     "id": "demodisk3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demo-disc-spectral-mall",
-    "description": "I led software development for this <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a>, including coding, gameplay programming, UI design, and tech-art, while also organizing the collaborative effort. The HPS1 Demo Disk curates a collection from hundreds of demo submissions reviewed by the community.",
+    "description": "A <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a> for the 2022 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. I led the software development for the launcher, which included all coding, gameplay programming, UI design, and tech-art. I was also responsible for organizing the broader collaborative effort.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/demodisk3/ddspectal.gif": {
@@ -488,7 +488,7 @@
     "id": "madvent2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2021",
-    "description": "I coordinated the project and built this <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a> for Madvent, an annual Haunted PS1 event where ~30 developers release small games daily throughout December.",
+    "description": "An <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a> for the 2021 Madvent event, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this event, I both coordinated the project and single-handedly built the launcher application to house the collection of games.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent2/_1_mad1.gif": {
@@ -530,7 +530,7 @@
     "id": "whereshome",
     "locked": false,
     "content": "",
-    "description": "A scrapped prototype for a People's tree sequel where players design their own NPC by asking and answering questions from other peoples characters in the scene. Could be resurfaced later, but ran out of time.",
+    "description": "An experimental prototype that successfully translated the unshaded, minimalist aesthetic of <i>Rococo</i> into a more complex, architecturally descriptive style. The concept was a sequel to the People's Tree project set in an abstracted Union Station, Chicago. For the prototype, I developed a custom Rhinoceros plugin to optimize and export modular architectural elements, and created a system to randomly place around 100 unique characters and their luggage throughout the scene. While the core technical art was a success, the project was paused to allow for more design iteration on its complex dialogue system.",
     "thumbnail_override": "static/thumbs/2a76f361e08ebdc40cffe751edc4cf77.jpg",
     "media_dimensions": {
       "entries/game/whereshome/_c_movie_004.webm": {
@@ -562,10 +562,10 @@
       "entries/game/whereshome/_c_unknown.png"
     ],
     "recommended_ids": [
-      "peoplestree1",
       "peoplestree2",
+      "peoplestree1",
       "peoplessky",
-      "cordobacourt"
+      "sloppyjoe"
     ]
   },
   {
@@ -577,7 +577,7 @@
     "id": "peoplestree2",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-tree-2021",
-    "description": "The <a href='https://culture.itch.io/the-peoples-tree-2021' target='_blank'>People's Tree project</a> served as an experimental exploration into community building within networked games. Participants could design ornaments and leave messages on a communal tree, offering a unique blend of interaction and shared digital space. This application provided a valuable opportunity to develop technology, establish policy frameworks, and conduct comprehensive analytics.",
+    "description": "The second iteration of the <a href='https://culture.itch.io/the-peoples-tree-2021' target='_blank'>People's Tree project</a>, an experimental game exploring community building in networked spaces. I created this application to allow participants to design ornaments and leave messages on a communal tree, offering a unique blend of interaction and shared digital space. The project served as a valuable opportunity to develop new technology, establish policy frameworks for user-generated content, and conduct comprehensive analytics on player behavior.",
     "thumbnail_override": "static/thumbs/9a2322f41e9cbbab900f1ce25260492a_thumb.webm",
     "media_dimensions": {
       "entries/game/peoplestree2/_c__1_Screen_Recording_2023-10-08_at_7_54_15_PM.webm": {
@@ -618,7 +618,7 @@
     "id": "demodisk2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demodisc2021",
-    "description": "I led organization and software development for this <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a>, including code, gameplay programming, UI, and tech-art. The HPS1 Demo Disk curates a collection from hundreds of demo submissions reviewed by the community.",
+    "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a> for the 2021 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. As the project lead, I was responsible for organizing the collaborative effort and for the launcher's software development, including all code, gameplay programming, UI, and tech-art.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/demodisk2/_1_dd21.gif": {
@@ -655,7 +655,7 @@
     "id": "madvent1",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2020",
-    "description": "I coordinated the project and built this <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a> for Madvent, an annual Haunted PS1 event where ~30 developers release small games daily throughout December.",
+    "description": "An <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a> for the inaugural Madvent event in 2020, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this first event, I coordinated the project and built the launcher application to house the collection of games.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/madvent1/_1_madvencalendarlauncher.gif": {
@@ -702,7 +702,7 @@
     "id": "peoplestree1",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-tree",
-    "description": "<a href='https://culture.itch.io/the-peoples-tree' target='_blank'>The People's Tree</a> was an experiment about community building in networked games. Players design ornaments and leave messages on a shared tree. One key finding from this and subsequent projects like C\u00f3rdoba Court was an unexpectedly high player return rate of 15-30%. This suggests that even without an explicit goal, players felt a personal stake in the outcome of the collectively-designed artifact and returned to observe its evolution. The app was an opportunity to build technology, policy, and run analytics.",
+    "description": "<a href='https://culture.itch.io/the-peoples-tree' target='_blank'>The People's Tree</a> was the first in a series of experimental games I created to explore community building in networked spaces. In this project, players design ornaments and leave messages on a shared tree. It was my first opportunity to build the underlying technology, develop content policies, and run analytics for a live, public-facing application. A key finding from this and subsequent projects was an unexpectedly high player return rate of 15-30%, suggesting that players felt a personal stake in the collectively-designed artifact and returned to observe its evolution.",
     "thumbnail_override": "static/thumbs/86f9bd0436e6b2c320c54a176bf5dd67_thumb.webm",
     "media_dimensions": {
       "entries/game/peoplestree1/_c__1_tree.webm": {
@@ -758,7 +758,7 @@
     "id": "chain",
     "locked": false,
     "content": "https://papercookies.itch.io/chain",
-    "description": "<a href='https://papercookies.itch.io/chain' target='_blank'>C.H.A.I.N.</a> was an early collaboration experiment by the Haunted PS1 collective, where each developer would recieve a game, develop a sequel, and hand their game off to the next developer. This created a chain where each game flowed into the next but nothing could be predicted. The project was fun, and seeing where the story went was gratefying. We liked it so much, we made a sequel in 2022: C.H.A.I.N.G.E.D. ",
+    "description": "An early collaboration by the Haunted PS1 collective, <a href='https://papercookies.itch.io/chain' target='_blank'>C.H.A.I.N.</a> was an experimental game series with a unique structure: each developer received a game, created a direct sequel, and then passed it to the next person in the chain. I participated in this project, contributing my own entry, \"Drip.\" The unpredictable, flowing nature of the narrative was a gratifying success, and the experiment's popularity directly led to the creation of a more ambitious sequel, C.H.A.I.N.G.E.D., in 2022.",
     "thumbnail_override": "",
     "media_dimensions": {
       "entries/game/chain/_1_chain.gif": {
@@ -782,8 +782,8 @@
     "recommended_ids": [
       "chain2",
       "drip",
-      "genesis",
-      "chain3"
+      "chain3",
+      "genesis"
     ]
   },
   {
@@ -795,7 +795,7 @@
     "id": "drip",
     "locked": false,
     "content": "https://papercookies.itch.io/chain",
-    "description": "For my entry in the <a href='https://papercookies.itch.io/chain' target='_blank'>C.H.A.I.N.</a> collaboration, I had one week to transition from a first-person hospital game to a dreamlike ball platformer. Given the time constraint, I used Grasshopper for procedural level design. I created a dreamscape where the player floats downwards, and used Grasshopper to place collectibles, asteroids, and hazardous tentacles along splines with random variation. This parametric approach was necessary to fill the large, open space while still directing the player's free-floating motion.",
+    "description": "A dreamlike ball platformer created in one week for the <a href='https://papercookies.itch.io/chain' target='_blank'>C.H.A.I.N.</a> collaboration. My task was to create a sequel to a first-person hospital game. To meet the deadline, I used Grasshopper for procedural level design, creating a large, open dreamscape where the player floats downwards. This parametric approach allowed me to efficiently place collectibles, asteroids, and hazardous tentacles along splines with random variation, directing the player's movement through the vast space.",
     "thumbnail_override": "static/thumbs/6be77c2aa87d4f429e7882874530f264_thumb.webm",
     "media_dimensions": {
       "entries/game/drip/_c__1_good-1.webm": {
@@ -827,9 +827,9 @@
     ],
     "recommended_ids": [
       "chain",
+      "rococo",
       "chain2",
-      "genesis",
-      "rococo"
+      "soup1"
     ]
   },
   {
@@ -841,7 +841,7 @@
     "id": "rococo",
     "locked": false,
     "content": "https://culture.itch.io/rococo",
-    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> was my first full game. I wanted to have a simple and fun physics based interaction, then polish it with custom shaders for a unique unlit look. I developed a physics-driven  sound system to create a heightened sense of motion.",
+    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is a short, atmospheric game set within a child's dream of a deconstructed kitchen. The player bounces on a jelly-like linoleum floor to jump higher and higher, reaching for a floating jar of cookies. As my first full game project, I focused on polishing this simple physics interaction by developing custom shaders for a unique unlit look and a physics-driven sound system to create a heightened sense of motion.",
     "thumbnail_override": "static/thumbs/bb47a11421e16d316d837ee6fd40677e_thumb.webm",
     "media_dimensions": {
       "entries/game/rococo/_c__1_movie009.webm": {
@@ -940,7 +940,7 @@
       "sloppyjoe",
       "minotaur",
       "drip",
-      "genesis"
+      "whereshome"
     ]
   },
   {
@@ -952,7 +952,7 @@
     "id": "minotaur",
     "locked": false,
     "content": "https://culture.itch.io/minotaur-webgl",
-    "description": "<a href='https://culture.itch.io/minotaur-webgl' target='_blank'>Minotaur</a> was my earliest experiment with game analytics built into a simple experience. This game records play sessions and sends summaries back to Clowder. In <a href='https://colter.us/experiments/minotaur/' target='_blank'>this report</a>, we analyze the results from 3 years of play and 1000s of sessions.",
+    "description": "A simple game experience that served as my earliest experiment with embedded analytics. For this project, I built a system that records play sessions and sends summary data back to a Clowder server. This work enabled long-term data collection, and the results from over three years and thousands of play sessions are analyzed in <a href='https://colter.us/experiments/minotaur/' target='_blank'>this report</a>.",
     "thumbnail_override": "static/thumbs/478ee6ea8e74a95e2aab56e5908270fb_thumb.webm",
     "media_dimensions": {
       "entries/game/minotaur/_c__1_ninja.webm": {
@@ -989,9 +989,9 @@
     ],
     "recommended_ids": [
       "cordobacourt",
-      "peoplestree1",
+      "earthvis",
       "peoplestree2",
-      "rococo"
+      "peoplestree1"
     ]
   },
   {
@@ -1019,10 +1019,10 @@
       "entries/wikar/kogler2/poster.jpg"
     ],
     "recommended_ids": [
-      "munich",
       "wurm",
       "schlegel",
-      "timelineatlas"
+      "joteva",
+      "othermatters"
     ]
   },
   {
@@ -1066,9 +1066,9 @@
     ],
     "recommended_ids": [
       "beep",
-      "wikar14",
       "joteva",
-      "kogler2"
+      "kogler2",
+      "earthvis"
     ]
   },
   {
@@ -1080,7 +1080,7 @@
     "id": "wikar14",
     "locked": false,
     "content": "",
-    "description": "A major update to Wikar improving performance and adding features: a multi-tiered caching system that checks for updates on the Clowder server before downloading content, enabling offline mode for sculpture gardens with poor wifi; an iterative solver that uses a scan's confidence rating to progressively refine the AR scene's origin, maximizing placement accuracy as users move around a QR code; and an optimized mesh slicer system allowing users to explore 3D cross sections of complex models such as buildings. I developed these updates in preparation for new AR projects.",
+    "description": "A major update to Wikar for which I developed several key performance and feature improvements in preparation for new AR projects. These included: a multi-tiered caching system to enable offline mode for sculpture gardens; an iterative solver that uses a scan's confidence rating to progressively refine AR placement accuracy; and an optimized mesh slicer system for exploring 3D cross-sections of complex models.",
     "thumbnail_override": "static/thumbs/9ce209f27be08c45d296be4b5ce736ec.jpg",
     "media_dimensions": {
       "entries/wikar/wikar14/_1_wikar1.png": {
@@ -1123,7 +1123,7 @@
     "recommended_ids": [
       "wikarv1",
       "wurm",
-      "meshair",
+      "munich",
       "othermatters"
     ]
   },
@@ -1136,7 +1136,7 @@
     "id": "othermatters",
     "locked": false,
     "content": "https://youtu.be/d4-SjAV0xd0",
-    "description": "An AR exhibition with Valerie Messini and students at the University of Applied Arts in Vienna. I provided production support for Wikar during the exhibition. <a href='https://youtu.be/d4-SjAV0xd0' target='_blank'>A video of the exhibition can be seen here.</a>",
+    "description": "An AR exhibition with Valerie Messini and her students at the University of Applied Arts in Vienna. To support the students' creation of interactive and reactive sculptures, I extended the Wikar platform with several new features. This included more robust QR code scanning (improving reliability for inverted codes), expanded UI customization options, and a set of \"interaction primitives\" that students could use for proximity-based events or custom user controls. <a href='https://youtu.be/d4-SjAV0xd0' target='_blank'>A video of the exhibition can be seen here.</a>",
     "thumbnail_override": "static/thumbs/b2052670ee4b63dbe9431d52135ffb3d.jpg",
     "media_dimensions": {
       "entries/wikar/othermatters/vid.yt": {
@@ -1167,7 +1167,7 @@
     "id": "guchibytes",
     "locked": false,
     "content": "/entries/wikar/guchibytes/pdf/guchibytes.pdf",
-    "description": "An exhibition with a <a href='/entries/wikar/guchibytes/pdf/guchibytes.pdf' target='_blank'>print zine</a> and AR content showcasing unfinished speculative and sarcastic pieces, tying up loose ends in our studio organization Quipit. We collected and exhibited the work together, building the physical components from the remaining pieces of the Digital Picnic after we recycled them into furniture.",
+    "description": "An exhibition and <a href='/entries/wikar/guchibytes/pdf/guchibytes.pdf' target='_blank'>print zine</a> showcasing unfinished speculative pieces from our studio organization, Quipit, with a focus on revealing the often-unseen digital components of our work. The zine was printed on long scrolls wrapped around PVC lattices, with embedded QR codes linking to AR content in Wikar. Each contributor used the platform differently: some created virtual galleries, others showed complex models on virtual plinths, and I created a \"3D portal\" to show one of my miniature models staged in its fictional setting. The physical exhibition components were built from materials recycled from a previous project.",
     "thumbnail_override": "static/thumbs/a268f30a958f782324b8f8738d8b398e.jpg",
     "media_dimensions": {
       "entries/wikar/guchibytes/_1_unnamed.png": {
@@ -1238,10 +1238,10 @@
       "entries/wikar/guchibytes/_c_Screenshot_2023-07-19_at_2_57_49_PM.png"
     ],
     "recommended_ids": [
-      "digitalpicnic",
       "incoherence",
-      "austere",
-      "wurm"
+      "codex20",
+      "wurm",
+      "digitalpicnic"
     ]
   },
   {
@@ -1253,7 +1253,7 @@
     "id": "schlegel",
     "locked": false,
     "content": "https://evaschlegel.com/ausstellungen-exhibitions/test/",
-    "description": "Public AR installations in Palermo and Vienna featuring custom shaders to achieve unique looks and rich effects with small filesizes. I provided production assistance for <a href='https://evaschlegel.com/ausstellungen-exhibitions/test/' target='_blank'>Schlegel's studio</a> during the exhibitions.",
+    "description": "Public AR installations for artist <a href='https://evaschlegel.com/ausstellungen-exhibitions/test/' target='_blank'>Eva Schlegel</a>'s studio, featuring complex custom shaders developed by her team. My role was to provide the technical education and platform support to make this possible. I extended the Wikar platform with new capabilities specifically for this project, including support for stencil shaders, UI compositing, and safeguarding access to camera textures and other rendering features that Unity would typically strip from a build.",
     "thumbnail_override": "static/thumbs/f659ed5a4999ccb5d3271b57c64e7f05_thumb.webm",
     "media_dimensions": {
       "entries/wikar/schlegel/_c__1_index_palermo_002-s.webm": {
@@ -1350,7 +1350,7 @@
     "id": "munich",
     "locked": false,
     "content": "https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams",
-    "description": "An AR sculpture park built in Graz, Austria for a <a href='https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams' target='_blank'>public exhibition</a>. I provided production assistance with Peter Kogler and MFA students from the Academy of Fine Art, Munich.",
+    "description": "An AR sculpture park for a <a href='https://www.museum-joanneum.at/skulpturenpark/skulpturen/artists-in-residence/events/event/11500/augmented-dreams' target='_blank'>public exhibition</a> in Graz, Austria, layering digital works by MFA students onto an existing physical sculpture park. As the selected technical producer, my Wikar platform was chosen for its openness and spatial accuracy. The students created site-specific works, some of which extended existing physical sculptures in interesting ways. To meet the high demand for documentation from both students and visitors, I improved Wikar's performance and added new photo and video recording capabilities to the app.",
     "thumbnail_override": "static/thumbs/11b105899638906f1ad3f5496f76b829.jpg",
     "media_dimensions": {
       "entries/wikar/munich/_c__1_IMG-20220603-WA0001.png": {
@@ -1449,7 +1449,7 @@
       "othermatters",
       "schlegel",
       "wurm",
-      "joteva"
+      "timelineatlas"
     ]
   },
   {
@@ -1477,8 +1477,8 @@
       "entries/wikar/wurm/_c_Kunst-Raum-Stadt_Erwin-Levitating_Studio-Erwin-Wurm_2021-_Making-of.jpg"
     ],
     "recommended_ids": [
-      "joteva",
       "schlegel",
+      "joteva",
       "timelineatlas",
       "othermatters"
     ]
@@ -1564,7 +1564,7 @@
     "id": "wikarv1",
     "locked": false,
     "content": "https://www.youtube.com/watch?v=tLPcyBG3nbE",
-    "description": "Wikar is an AR app designed for viewing cloud-hosted media such as artworks and design proposals. It requires an iOS or Android device that supports Augmented Reality (AR). The initial prototype, Wikar V1, was developed in the summer of 2019. The application uses NCSA's Clowder open-source data repository system to store and distribute Unity asset bundles and 3D model content. QR codes are utilized for URL lookup and positioning, which enables multiple users and precise location integration. Wikar was developed during an affiliation with the NCSA's Advanced Visualization Laboratory and received financial support from eDream and the Fiddler Foundation. The platform has been used by international artists, researchers, architects, and students.",
+    "description": "The initial prototype for Wikar, an AR app I designed for viewing cloud-hosted media like artworks and design proposals. During an affiliation with the NCSA's Advanced Visualization Laboratory, I developed this first version to use NCSA's Clowder data repository for storing and distributing Unity asset bundles. The system uses QR codes for URL lookup and precise positioning, enabling multi-user, location-integrated experiences. The project, which received financial support from eDream and the Fiddler Foundation, has since been used by international artists, researchers, architects, and students.",
     "thumbnail_override": "static/thumbs/c4e4dd3a5a3ce570f469d0fc7c49e6b9_thumb.webm",
     "media_dimensions": {
       "entries/wikar/wikarv1/_c_Fiddler2103Demo.webm": {
@@ -1582,8 +1582,8 @@
     "recommended_ids": [
       "wikar14",
       "wurm",
-      "sloppyjoe",
-      "whereshome"
+      "whereshome",
+      "sloppyjoe"
     ]
   },
   {
@@ -1617,9 +1617,9 @@
     ],
     "recommended_ids": [
       "joteva",
-      "timelineatlas",
       "meshair",
-      "beep"
+      "timelineatlas",
+      "schlegel"
     ]
   },
   {
@@ -1631,7 +1631,7 @@
     "id": "qr1",
     "locked": false,
     "content": "",
-    "description": "Graphically enhanced QR codes using a custom Python pipeline that hint at what's linked in them while remaining readable with default phone scanners. I experimented with making QR codes more presentable and giving them personality, identifying the critical elements for machine recognition and pushing against those constraints.",
+    "description": "A custom Python pipeline that embeds full-color images into QR codes while maintaining scannability with standard phone cameras. The technique works by deconstructing a generated QR code into its cellular data. While preserving the critical landing markers, the pipeline reconstructs the data-carrying portions of the code as an image. It overlays this image with a pattern of fine dots, calibrated to manipulate the average luminance within each cell. This ensures that when a scanner samples the cells, it correctly reads them as light or dark, preserving the original data while making the embedded image visible to the human eye.",
     "thumbnail_override": "static/thumbs/9cb2cbc6b551ae489906b617c4e68fc5.jpg",
     "media_dimensions": {
       "entries/junk/qr1/_c__1_.png": {
@@ -1658,9 +1658,9 @@
     ],
     "recommended_ids": [
       "pano",
-      "metaframing",
-      "backbone",
-      "meshair"
+      "othermatters",
+      "earthvis",
+      "joteva"
     ]
   },
   {
@@ -1690,8 +1690,8 @@
     "recommended_ids": [
       "qr1",
       "patio-walk-cordoba",
-      "demodisk3",
-      "unite"
+      "joteva",
+      "demodisk3"
     ]
   },
   {
@@ -1721,8 +1721,8 @@
     "recommended_ids": [
       "incoherence",
       "willarnold",
-      "illusive",
-      "guchibytes"
+      "guchibytes",
+      "illusive"
     ]
   },
   {
@@ -1801,10 +1801,10 @@
       "entries/junk/miner75/_c_withblue.png"
     ],
     "recommended_ids": [
-      "bezeliness",
       "earthvis",
-      "guchibytes",
-      "austere"
+      "bezeliness",
+      "austere",
+      "minotaur"
     ]
   },
   {
@@ -1883,7 +1883,7 @@
     "id": "arcade",
     "locked": false,
     "content": "https://photos.app.goo.gl/Xj2aecCd1zRJoSRr5",
-    "description": "An arcade cabinet design for exhibiting contemporary art games in gallery spaces. The CRT housing sits over a flat panel screen and contains the computer. I designed this exploring how to mill and polish acrylic into a CRT-like curved lens to sit on top of the flat panel.",
+    "description": "An arcade cabinet designed for exhibiting contemporary art games. The concept's core innovation is a novel fabrication method I developed for creating a perfect, CRT-style curved lens to place over a modern flat-panel screen. The technique adapts the principles of liquid-mirror telescopes: first, liquid silicon is spun in a dish to form a perfect parabolic mold; then, epoxy is poured into the stationary mold to cast the lens. While this fabrication method is developed and ready, the project is currently shelved, awaiting grant funding to produce a full-scale prototype.",
     "thumbnail_override": "static/thumbs/b4eb86b0087568ea43267272c7d91402.jpg",
     "media_dimensions": {
       "entries/junk/arcade/_c__1_arcade-1.png": {
@@ -1926,8 +1926,8 @@
     "recommended_ids": [
       "hifi",
       "staked-desk",
-      "cncchair",
-      "lovebench"
+      "lovebench",
+      "cncchair"
     ]
   },
   {
@@ -1968,7 +1968,7 @@
       "arcade",
       "lilbable",
       "staked-desk",
-      "lillamp"
+      "wikar14"
     ]
   },
   {
@@ -2026,7 +2026,7 @@
     "id": "sloppyjoe",
     "locked": false,
     "content": "/entries/junk/sloppyjoe/html/index.html",
-    "description": "Envisioned as a dungeon crawler in the rococo universe. <a href='/entries/junk/html/SloppyJoe-Web/index.html' target='_blank'>The prototype can be played here.</a>",
+    "description": "A prototype for a dungeon crawler set in the <i>Rococo</i> universe, created to test a unique ground-based movement mechanic. In this demo, I implemented a system where the player navigates on a rolling seat, bouncing off walls and turning in 90-degree increments. The project was also an experiment in pushing the <i>Rococo</i> aesthetic in a darker visual direction. <a href='/entries/junk/html/SloppyJoe-Web/index.html' target='_blank'>The prototype can be played here.</a>",
     "thumbnail_override": "static/thumbs/47e1f30a492611eb7b001c910ff7a1e2.jpg",
     "media_dimensions": {
       "entries/junk/sloppyjoe/_1_sloppy.png": {
@@ -2052,8 +2052,8 @@
       "entries/junk/sloppyjoe/_c_sloppyjoe.webm"
     ],
     "recommended_ids": [
-      "rococo",
       "whereshome",
+      "rococo",
       "wikarv1",
       "minotaur"
     ]
@@ -2097,7 +2097,7 @@
     "tags": "data viz, vfx, climate, research",
     "id": "earthvis",
     "locked": false,
-    "description": "An experiment to convert NASA climate data into a VFX-graph visualization in Unity. The particles sweep the surface using a flowmap to determine windspeed and direction. The trails change color based on temperature.",
+    "description": "An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over a globe, using a flowmap to determine wind speed and direction, while their trails change color based on temperature.",
     "thumbnail_override": "static/thumbs/9852356150dc747e11836fdb50db57cb_thumb.webm",
     "media_dimensions": {
       "entries/junk/earthvis/_c_movie4042_trimmed.webm": {
@@ -2114,9 +2114,9 @@
     ],
     "recommended_ids": [
       "beep",
+      "minotaur",
       "joteva",
-      "timelineatlas",
-      "meshair"
+      "timelineatlas"
     ]
   },
   {
@@ -2127,7 +2127,7 @@
     "tags": "furniture, fabrication, wood",
     "id": "staked-desk",
     "locked": false,
-    "description": "A poplar standing desk following a staked baton pattern. <br><a href='https://lostartpress.com/products/the-anarchists-design-book' target='_blank'>Lost Art Press</a>",
+    "description": "A poplar standing desk built using the \"baton\" pattern from Christopher Schwarz's <a href='https://lostartpress.com/products/the-anarchists-design-book' target='_blank'>The Anarchist's Design Book</a>. The project was an exercise in this craft philosophy, continuing my use of a simple and robust staked-leg joinery technique seen in two earlier projects. The result is a functional and heartfelt piece of workshop furniture, built around a joint that is close to my heart.",
     "thumbnail_override": "static/thumbs/63bb2ac508e99875e4f0a928e1399548.jpg",
     "media_dimensions": {
       "entries/junk/staked-desk/_c__1_MVIMG_20200528_170040.jpg": {
@@ -2187,7 +2187,7 @@
       "a3",
       "whereshome",
       "chain2",
-      "chain"
+      "earthvis"
     ]
   },
   {
@@ -2302,8 +2302,8 @@
     ],
     "recommended_ids": [
       "lovebench",
-      "staked-desk",
       "cncchair",
+      "staked-desk",
       "trainhouse"
     ]
   },
@@ -2389,8 +2389,8 @@
     ],
     "recommended_ids": [
       "staked-desk",
-      "cncchair",
       "bench",
+      "cncchair",
       "lillamp"
     ]
   },
@@ -2403,7 +2403,7 @@
     "id": "incoherence",
     "locked": false,
     "content": "",
-    "description": "A small zine of collected writings and graphics from invited contributors. Embossed cover on recycled paperstock.",
+    "description": "A small zine of collected writings and graphics. As the primary creator and editor, I contributed a significant portion of the content and handled the final assembly, including a custom embossed cover on recycled paperstock.",
     "thumbnail_override": "static/thumbs/9c77ed6144b433c3bc81cf136dacf11c.jpg",
     "media_dimensions": {
       "entries/junk/incoherence/_1_MVIMG_20191211_144141.jpg": {
@@ -2446,8 +2446,8 @@
     "recommended_ids": [
       "codex20",
       "willarnold",
-      "illusive",
-      "guchibytes"
+      "guchibytes",
+      "illusive"
     ]
   },
   {
@@ -2459,7 +2459,7 @@
     "id": "illusive",
     "locked": false,
     "content": "",
-    "description": "A series of block print/embossed graphics diplaying optical illusions and intense graphic patterns. Using laser etched linoleum stamps for full page printing.",
+    "description": "A limited-edition series of block prints and embossed graphics displaying optical illusions and intense patterns. I created this series myself, developing an experimental pipeline that used 3D-printed embossing plates to achieve deep, tactile imprints on the cards.",
     "thumbnail_override": "static/thumbs/1cb5170559d745aec106a1148f26cbb8.jpg",
     "media_dimensions": {
       "entries/junk/illusive/_c__1_MVIMG_20191211_142619.jpg": {
@@ -2521,9 +2521,9 @@
     ],
     "recommended_ids": [
       "incoherence",
-      "joteva",
       "codex20",
-      "timelineatlas"
+      "timelineatlas",
+      "guchibytes"
     ]
   },
   {
@@ -2535,7 +2535,7 @@
     "id": "willarnold",
     "locked": false,
     "content": "",
-    "description": "Collaborative risograph printed zine with David Lyle Hays' seminar and printmaker Will Arnold.",
+    "description": "A collaborative two-color risograph zine produced during a seminar with professor David Lyle Hays. As a participating student, I produced the masked image on the left (David Hays, right). The text in my image was contributed by architecture PhD student Soumya Dasgupta. The zine was printed by Will Arnold, a lead print technician at UIUC and prolific zine maker.",
     "thumbnail_override": "static/thumbs/ce56d3b63ba77ca44fef1130cbd22ed3.jpg",
     "media_dimensions": {
       "entries/junk/willarnold/_c_zinepage.jpg": {
@@ -2553,8 +2553,8 @@
     "recommended_ids": [
       "incoherence",
       "codex20",
-      "archonprize2018",
-      "illusive"
+      "guchibytes",
+      "archonprize2018"
     ]
   },
   {
@@ -2631,7 +2631,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "austere",
-      "paphosgate"
+      "digitalpicnic"
     ]
   },
   {
@@ -2829,7 +2829,7 @@
     "id": "oceantop",
     "locked": false,
     "content": "https://gamebanana.com/mods/128413",
-    "description": "A <a href='https://gamebanana.com/mods/128413' target='_blank'>minigame map</a> where players have no weapons and try to survive as falling blocks topple sections of the map.",
+    "description": "A <a href='https://gamebanana.com/mods/128413' target='_blank'>minigame map</a> I created where players have no weapons and must try to survive as falling blocks topple sections of the map.",
     "thumbnail_override": "static/thumbs/7613ededf19e832a1908fe48c25eb69c.jpg",
     "media_dimensions": {
       "entries/junk/oceantop/148976a.jpg": {
@@ -2854,7 +2854,7 @@
       "fazole",
       "flatsky",
       "nightmarehouse2",
-      "crapmaps"
+      "skyboxes"
     ]
   },
   {
@@ -2883,9 +2883,9 @@
     ],
     "recommended_ids": [
       "skyboxes",
-      "fazole",
       "flatsky",
-      "oceantop"
+      "oceantop",
+      "fazole"
     ]
   },
   {
@@ -2897,7 +2897,7 @@
     "id": "flatsky",
     "locked": false,
     "content": "",
-    "description": "My first public map was a large open grassy plane with a custom skybox.",
+    "description": "A large, open grassy plane with a custom skybox, which was the first public map I ever created.",
     "thumbnail_override": "static/thumbs/13096c7964b8223ad245a2bf457ed39e.jpg",
     "media_dimensions": {
       "entries/junk/flatsky/flatgrass.jpg": {
@@ -2982,8 +2982,8 @@
     "recommended_ids": [
       "paphosgate",
       "dariah25",
-      "beep",
-      "spacenature"
+      "spacenature",
+      "beep"
     ]
   },
   {
@@ -3054,8 +3054,8 @@
     "recommended_ids": [
       "dariah25",
       "uniteposter",
-      "metaframing",
-      "nicairport"
+      "nicairport",
+      "metaframing"
     ]
   },
   {
@@ -3083,9 +3083,9 @@
     ],
     "recommended_ids": [
       "metaframing",
-      "unite",
       "cordobacourt",
-      "patio-walk-cordoba"
+      "patio-walk-cordoba",
+      "unite"
     ]
   },
   {
@@ -3158,8 +3158,8 @@
       "entries/blog/unite/survey-combined.png"
     ],
     "recommended_ids": [
-      "metaframing",
       "uniteposter",
+      "metaframing",
       "surveysNecessary",
       "scan-to-ar"
     ]
@@ -3206,8 +3206,8 @@
     "recommended_ids": [
       "digitalpicnic",
       "bezeliness",
-      "guchibytes",
-      "munich"
+      "austere",
+      "guchibytes"
     ]
   },
   {
@@ -3237,14 +3237,14 @@
     "recommended_ids": [
       "recoveringurbanmemory",
       "patio-walk-cordoba",
-      "cordobacourt",
-      "ict-for-urban-heritage-palermo"
+      "ict-for-urban-heritage-palermo",
+      "cordobacourt"
     ]
   },
   {
     "title": "\"Patio Walk\": C\u00f3rdoba",
     "year": "2022",
-    "description": "As a member of the Dariah Udigish Working Group, I developed two web applications: (1) a workshop organization tool designed to enable field workers to effortlessly collect surveys and primary media for our GIS database, and (2) a final <a href='https://dariahcloud.web.illinois.edu/cordoba/map/?lang=en' target='_blank'>visualization tool</a> for displaying the collected material, which can be accessed via the provided link.",
+    "description": "A pair of web applications for a Dariah Udigish Working Group project on the intangible cultural heritage of C\u00f3rdoba's communal patios. The first was a site-specific recording tool for field workers that automatically linked photos, texts, audio interviews, and surveys to their GPS locations in a GIS database. The second was an interactive map-based visualization that displayed all collected materials overlaid on the city's patios. As a member of the working group, I was responsible for the design and development of both the data collection and final visualization tools.",
     "season": "fall",
     "theme": "blog",
     "tags": "workshop, ICT, fieldwork, report, dariah, intangible-cultural-heritage, heritage",
@@ -3269,7 +3269,7 @@
       "cordobacourt",
       "ict-for-urban-heritage-palermo",
       "scan-to-ar",
-      "unite"
+      "surveysNecessary"
     ]
   },
   {
@@ -3280,7 +3280,7 @@
     "tags": "Conf. Publication, architecture, heritage, ICT, dariah, academic, AR, 3d capture, dariah, workshop, participatory methods",
     "id": "scan-to-ar",
     "locked": false,
-    "description": "A co-design workshop using rapid 3D site capture and a library of design primitives (akin to Lego bricks) to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The public space opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
+    "description": "A co-design workshop using rapid 3D site capture and an AR design tool with a library of design primitives (akin to Lego bricks). The goal was to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The public space opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
     "thumbnail_override": "static/thumbs/ad088b3d890cad683611ece9b0a834e8.jpg",
     "media_dimensions": {
       "entries/blog/scan-to-ar/_1_STARC_Scientific_Expert_Panel_-_Colter_3_.jpg": {
@@ -3335,7 +3335,7 @@
       "ict-for-urban-heritage-palermo",
       "metaframing",
       "patio-walk-cordoba",
-      "schlegel"
+      "dariah25"
     ]
   },
   {
@@ -3347,7 +3347,7 @@
     "id": "ict-for-urban-heritage-palermo",
     "locked": false,
     "content": "https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities",
-    "description": "A <a href='https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities' target='_blank'>workshop</a> engaging the neighborhood with digital tools to envision the future of an abandoned warehouse\u2014a modern 20th century ruin. I helped coordinate the event and contributed to the participatory design process.",
+    "description": "A <a href='https://campus.dariah.eu/resource/events/use-of-ict-for-community-building-actions-towards-the-reactivation-of-urban-heritagescapes-in-south-european-cities' target='_blank'>co-design workshop</a> in Palermo to envision the future of an abandoned warehouse, serving as the first field test for my dissertation research on propositional modeling. I designed two competing architectural proposals (conservative and radical) and used my AR platform, Wikar, to allow local stakeholders to view them on-site. By testing the proposals at different scales (a 1:500 map vs. 1:1 walkthroughs), the process surfaced the community's deep attachment to the site's recent, unwritten history as a local park. This visualization work made their tacit knowledge empirically grounded, and the feedback directly informed the final design, which preserved the area as a public plaza.",
     "thumbnail_override": "static/thumbs/1cf28e11534a483e7feadf3d3115d531.jpg",
     "media_dimensions": {
       "entries/blog/ict-for-urban-heritage-palermo/_c_Capture.png": {
@@ -3364,9 +3364,9 @@
     ],
     "recommended_ids": [
       "scan-to-ar",
-      "recoveringurbanmemory",
       "patio-walk-cordoba",
-      "schlegel"
+      "recoveringurbanmemory",
+      "beep"
     ]
   },
   {
@@ -3377,7 +3377,6 @@
     "tags": "architecture, competition, design, heritage",
     "id": "recoveringurbanmemory",
     "locked": false,
-    "content": "",
     "description": "<strong>Chicago Studio Award (First Place), 2019</strong><br><br>An architectural intervention to redesign an abandoned farmer's market in the historic heart of Beijing's Baitasi District, resurrecting collective spaces such as farmers' markets and cafes that had slowly disappeared from the community fabric. I developed this proposal through the UIUC Plym Studio, exploring lost cultural practices and spaces in the district from the turn of the century through to the late modern period. The studio was led in collaboration with Dong Gong of Vector Architects and Professor Botund Bognar. See an <a href='https://www.youtube.com/watch?v=Y54UwufO0F4' target='_blank'>interview</a> about this project with Mayur Mistry.",
     "thumbnail_override": "static/thumbs/0554c75c87114150ebaa6a153cc07ab2.jpg",
     "media_dimensions": {
@@ -3503,7 +3502,7 @@
       "trainhouse",
       "austere",
       "ict-for-urban-heritage-palermo",
-      "paphosgate"
+      "uncertainty"
     ]
   },
   {
@@ -3515,7 +3514,6 @@
     "tags": "research, cyprus institute, architecture, design, analytics, heritage, 3d capture, VR, data-driven design",
     "id": "paphosgate",
     "locked": false,
-    "content": "",
     "description": "Multiple VR applications (using Oculus DK2 and HTC Vive) to visualize archaeological findings and a proposed architectural intervention for an urban archaeology project in Nicosia. I prototyped and built the applications as a research assistant, developing systems for locomotion, interaction, and gaze-tracking analytics to understand how stakeholders focused on the virtual site. These tools engaged everyone from the public to the Department of Antiquities. The gaze-tracking data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. The project spanned a decade and opened to the public in <a href='https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe'>2024</a>.",
     "thumbnail_override": "static/thumbs/5f423bdc9e407166347e56196ed424da.jpg",
     "media_dimensions": {
@@ -3637,7 +3635,6 @@
     "tags": "exhibition, installation, architecture, design, fabrication, furniture, interactive art",
     "id": "digitalpicnic",
     "locked": false,
-    "content": "",
     "description": "A suspended holo-deck-like structure using projectors and a USB controller to adjust the environment with various images, patterns, and colors. I contributed production, assembly, conceptualization, and created visuals and an interactive controller using Arduino and Max/MSP, working with Christian Pepper and Robert Prochaska. We ultimately repurposed the installation into permanent furniture.",
     "thumbnail_override": "static/thumbs/1778167612b377ce1f43f622c739088b_thumb.webm",
     "media_dimensions": {
@@ -3704,9 +3701,9 @@
       "entries/blog/digitalpicnic/_c_56608822301_E8BF2057-612C-44B7-889E-C4A60D2DAA29.jpg"
     ],
     "recommended_ids": [
-      "guchibytes",
       "bezeliness",
       "seoul",
+      "guchibytes",
       "quipit_table"
     ]
   },
@@ -3718,8 +3715,7 @@
     "tags": "exhibition, art, design, new-media, 3d printing, furniture, fabrication, installation",
     "id": "bezeliness",
     "locked": false,
-    "content": "",
-    "description": "This art and research project studies the aesthetics of frames and bezels through the use of space-filling curves, packing algorithms, and reaction-diffusion simulations. It also investigates various digital production techniques, including 3D printing, furniture making, pen plotting, rendering, video production, and reactive lighting for installations.",
+    "description": "An art and research project in which I studied the aesthetics of frames and bezels through space-filling curves, packing algorithms, and reaction-diffusion simulations. The project also served as a personal investigation into various digital production techniques, including 3D printing, furniture making, pen plotting, rendering, video production, and reactive lighting for installations.",
     "thumbnail_override": "static/thumbs/47d7d911a509c6f2f658dfab27ec2c90_thumb.webm",
     "media_dimensions": {
       "entries/blog/bezeliness/_c__1_phone_rotated.webm": {
@@ -3801,9 +3797,9 @@
     ],
     "recommended_ids": [
       "digitalpicnic",
-      "miner75",
       "seoul",
-      "guchibytes"
+      "lovebench",
+      "quipit_table"
     ]
   },
   {
@@ -3851,7 +3847,7 @@
     "id": "austere",
     "locked": false,
     "content": "/entries/blog/austere/_1_Poster-Final07.jpg",
-    "description": "<strong>CRITICAL MASS Student Choice Award, 2018</strong><br><br>Conceived in 2018, The Austere originated as a design-build proposal for the U.S. Solar Decathlon before being reformulated as a speculative project. The work imagines a future shaped by accelerating climate catastrophe and water scarcity, where corporations step in to provide housing through prefabricated shelters tied directly to food production and labor contracts. Exhibited as a large-format presentation board and later adapted as an augmented reality installation, the project won First Prize (Student Choice) at Critical Mass that year, positioning it between architectural proposal, narrative fiction, and propaganda artifact.\n\nThe reading of the work reflects the moment of its making. At the time, speculative design culture often produced exaggerated extremes as a form of safe estrangement, using implausibility to open critical distance. The Austere inverted this conceit: instead of hyperbole, it grounded itself in the plausible, reframing an extreme condition\u2014collapse of water systems, corporate housing provision, labor serfdom\u2014not as outlandish but as an almost logical extension of existing trends. The effect was unsettling: the imagery, from homestead-style prefabs to Wyeth-inspired fields, rendered austerity not futuristic but imminent.\n\nLooking back from 2025, the project reads as tied to the optimism and anxieties of its context. At that moment, the gig economy and corporate urban visions\u2014Katerra, WeWork, Sidewalk Labs\u2014were still seen as possible bulwarks against systemic collapse. The Austere took those trajectories to their limit, presenting them as survival infrastructure. In hindsight, as many of those corporate futures have faltered and private equity's financialization of existing housing has become the dominant threat, the project stands less as prediction and more as a record of how speculative design can mirror its moment: exaggerating some dangers while making others visible in ways that, only later, prove prescient.",
+    "description": "<strong>CRITICAL MASS Student Choice Award, 2018</strong><br><br>A speculative project that imagines a near-future of climate catastrophe where corporations provide prefabricated housing tied to labor contracts. Originally a design-build proposal for the U.S. Solar Decathlon, I reformulated the work to explore how speculative design could feel more imminent and unsettling. Instead of distant hyperbole, the project grounded its extreme scenario in plausible economic and social trends, positioning it between architectural proposal, narrative fiction, and propaganda artifact. Exhibited as a large-format presentation board and later as an augmented reality installation, the work won the Student Choice Award at Critical Mass in 2018.",
     "thumbnail_override": "static/thumbs/d4a1b0c09a1b4df381d769aa45266217.jpg",
     "media_dimensions": {
       "entries/blog/austere/_c__1_poster1.jpg": {
@@ -3896,8 +3892,7 @@
     "tags": "architecture, competition, design, archon studio",
     "id": "trainhouse",
     "locked": false,
-    "content": "",
-    "description": "<strong>Archon Studio Prize (2nd Place), 2018</strong><br><br>My winning entry for the Archon Studio of 2018, with the supervision of Olsen-Kundig Studio and professor Carl Lewis, drew inspiration from the post-industrial landscapes of the Midwest, particularly those of early nuclear research and energy production. Dresden Generating Station\u2014the first privately financed nuclear power plant in the U.S. and a keystone of postwar energy optimism\u2014sits within a landscape where rail lines, river corridors, and prairie converge. This terrain carries the layered histories of industry, energy, and abandonment. By re-inhabiting its disused rail lines, the project reclaims infrastructure not for transit or commerce but for reflection and habitation, transforming the residues of industry into a framework for living.\n\nRather than treating movement as speed or efficiency, the project reframes locomotion as a slow inhabitation of landscape. Its propulsion system borrows from the mechanics of a grandfather clock, scaled up into a pendulum, counterweights, and a 1.5-meter winding wheel. Each day, residents wind the mechanism to power the ultra-slow drive, where a heavy steel \"foot\" presses against the ground to move the house forward.\n\nBuilt on the reclaimed steel frame of boxcars, the house unfolds as a linear sequence\u2014private quarters, dining, power, and communal spaces\u2014that extend dwelling into a year-long passage across prairie, rivers, marshland, and ruins. In place of the forward thrust of rail or the concentrated energy of nuclear power, the project proposes a cyclical, patient mode of inhabiting the Anthropocene landscape. The house becomes an instrument for reading its environment slowly and deliberately, reframing abandoned infrastructure as a stage for observation, ritual, and renewed attachment to place.",
+    "description": "<strong>Archon Studio Prize (2nd Place), 2018</strong><br><br>An architectural proposal that reclaims industrial infrastructure for habitation, this was my winning entry for the Archon Studio of 2018. Developed with the supervision of Olsen-Kundig Studio and professor Carl Lewis, the project drew inspiration from the post-industrial landscapes of the Midwest, particularly those of early nuclear research and energy production. Dresden Generating Station\u2014the first privately financed nuclear power plant in the U.S. and a keystone of postwar energy optimism\u2014sits within a landscape where rail lines, river corridors, and prairie converge. This terrain carries the layered histories of industry, energy, and abandonment. By re-inhabiting its disused rail lines, the project reclaims infrastructure not for transit or commerce but for reflection and habitation, transforming the residues of industry into a framework for living.\n\nRather than treating movement as speed or efficiency, the project reframes locomotion as a slow inhabitation of landscape. Its propulsion system borrows from the mechanics of a grandfather clock, scaled up into a pendulum, counterweights, and a 1.5-meter winding wheel. Each day, residents wind the mechanism to power the ultra-slow drive, where a heavy steel \"foot\" presses against the ground to move the house forward.\n\nBuilt on the reclaimed steel frame of boxcars, the house unfolds as a linear sequence\u2014private quarters, dining, power, and communal spaces\u2014that extend dwelling into a year-long passage across prairie, rivers, marshland, and ruins. In place of the forward thrust of rail or the concentrated energy of nuclear power, the project proposes a cyclical, patient mode of inhabiting the Anthropocene landscape. The house becomes an instrument for reading its environment slowly and deliberately, reframing abandoned infrastructure as a stage for observation, ritual, and renewed attachment to place.",
     "thumbnail_override": "static/thumbs/f7ca0304d7bad6a75a162746a99820bb.jpg",
     "media_dimensions": {
       "entries/blog/trainhouse/_1_Artboard20copy10bb2x-100.jpg": {
@@ -3991,7 +3986,7 @@
       "recoveringurbanmemory",
       "austere",
       "archonprize2018",
-      "bench"
+      "beep"
     ]
   },
   {
@@ -4003,7 +3998,7 @@
     "id": "archonprize2018",
     "locked": false,
     "content": "/entries/blog/archonprize2018/pdf/ArchonBook_Spring2018.pdf",
-    "description": "I produced a <a href='/entries/blog/archonprize2018/pdf/ArchonBook_Spring2018.pdf' target='_blank'>documentary book</a> for the Archon Studio, showcasing the work of all participating students.",
+    "description": "A <a href='/entries/blog/archonprize2018/pdf/ArchonBook_Spring2018.pdf' target='_blank'>documentary book</a> showcasing the work of all participating students in the Archon Studio. I was responsible for producing the book.",
     "thumbnail_override": "static/thumbs/0d8b416f29dce8aea3f3fb3ca64895bc.jpg",
     "media_dimensions": {
       "entries/blog/archonprize2018/Capture.png": {
