@@ -995,6 +995,26 @@
     ]
   },
   {
+    "title": "Interlopers Map Nights",
+    "year": "2011",
+    "season": "winter",
+    "theme": "game",
+    "tags": "game, source-modding, community, level-design, interlopers",
+    "id": "crapmaps",
+    "locked": false,
+    "content": "",
+    "description": "Interlopers's Map Nights was a yearly event within the Source modding community, where a group of 12-30 modders would each create a few maps to play together. I was an active participant in this community, contributing maps and playing alongside fellow modders. The event was indicative of emergent digital scenes of the time, where communities formed to build and share creative works and small worlds, and spend time together within them. The maps ranged from scrapped prototypes and strange experiments to high-effort niche works in non-standard gamemodes that had bubbled up from the larger community.",
+    "thumbnail_override": "",
+    "media_dimensions": {},
+    "file_paths": [],
+    "recommended_ids": [
+      "fazole",
+      "flatsky",
+      "skyboxes",
+      "crapmaps"
+    ]
+  },
+  {
     "title": "Otto Wagner Areal - Peter Kogler",
     "year": "2023",
     "season": "summer",
@@ -1019,8 +1039,8 @@
       "entries/wikar/kogler2/poster.jpg"
     ],
     "recommended_ids": [
-      "wurm",
       "schlegel",
+      "wurm",
       "joteva",
       "othermatters"
     ]
@@ -1123,8 +1143,8 @@
     "recommended_ids": [
       "wikarv1",
       "wurm",
-      "munich",
-      "othermatters"
+      "schlegel",
+      "munich"
     ]
   },
   {
@@ -1153,8 +1173,8 @@
     ],
     "recommended_ids": [
       "munich",
-      "schlegel",
       "wurm",
+      "schlegel",
       "joteva"
     ]
   },
@@ -1238,9 +1258,9 @@
       "entries/wikar/guchibytes/_c_Screenshot_2023-07-19_at_2_57_49_PM.png"
     ],
     "recommended_ids": [
+      "wurm",
       "incoherence",
       "codex20",
-      "wurm",
       "digitalpicnic"
     ]
   },
@@ -1299,9 +1319,9 @@
       "entries/wikar/schlegel/2021_Palermo_008-010.jpg"
     ],
     "recommended_ids": [
-      "othermatters",
       "wurm",
       "munich",
+      "othermatters",
       "joteva"
     ]
   },
@@ -1582,8 +1602,8 @@
     "recommended_ids": [
       "wikar14",
       "wurm",
-      "whereshome",
-      "sloppyjoe"
+      "schlegel",
+      "whereshome"
     ]
   },
   {
@@ -1617,9 +1637,9 @@
     ],
     "recommended_ids": [
       "joteva",
+      "schlegel",
       "meshair",
-      "timelineatlas",
-      "schlegel"
+      "timelineatlas"
     ]
   },
   {
@@ -1660,7 +1680,7 @@
       "pano",
       "othermatters",
       "earthvis",
-      "joteva"
+      "wurm"
     ]
   },
   {
@@ -1968,7 +1988,7 @@
       "arcade",
       "lilbable",
       "staked-desk",
-      "wikar14"
+      "minotaur"
     ]
   },
   {
@@ -2631,7 +2651,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "austere",
-      "digitalpicnic"
+      "guchibytes"
     ]
   },
   {
@@ -2817,7 +2837,7 @@
       "fazole",
       "flatsky",
       "skyboxes",
-      "oceantop"
+      "crapmaps"
     ]
   },
   {
@@ -2982,8 +3002,8 @@
     "recommended_ids": [
       "paphosgate",
       "dariah25",
-      "spacenature",
-      "beep"
+      "beep",
+      "spacenature"
     ]
   },
   {
@@ -3084,8 +3104,8 @@
     "recommended_ids": [
       "metaframing",
       "cordobacourt",
-      "patio-walk-cordoba",
-      "unite"
+      "unite",
+      "patio-walk-cordoba"
     ]
   },
   {
@@ -3366,7 +3386,7 @@
       "scan-to-ar",
       "patio-walk-cordoba",
       "recoveringurbanmemory",
-      "beep"
+      "schlegel"
     ]
   },
   {
@@ -3881,7 +3901,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "guchibytes",
-      "digitalpicnic"
+      "wurm"
     ]
   },
   {
