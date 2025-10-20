@@ -3297,7 +3297,7 @@
     "year": "2022",
     "season": "summer",
     "theme": "blog, wikar",
-    "tags": "Conf. Publication, architecture, heritage, ICT, dariah, academic, AR, 3d capture, dariah, workshop, participatory methods",
+    "tags": "Conf. Publication, architecture, design, heritage, ICT, dariah, academic, AR, 3d capture, dariah, workshop, participatory methods",
     "id": "scan-to-ar",
     "locked": false,
     "description": "A co-design workshop using rapid 3D site capture and an AR design tool with a library of design primitives (akin to Lego bricks). The goal was to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The public space opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
@@ -3644,7 +3644,7 @@
       "nicairport",
       "recoveringurbanmemory",
       "seoul",
-      "beep"
+      "scan-to-ar"
     ]
   },
   {
