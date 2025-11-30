@@ -184,8 +184,8 @@
     ],
     "recommended_ids": [
       "sloppyjoe",
-      "minotaur",
       "drip",
+      "minotaur",
       "whereshome"
     ]
   },
@@ -578,7 +578,7 @@
     "id": "soup1",
     "locked": false,
     "content": "https://kiteline.itch.io/soup-rooms",
-    "description": "An atmospheric exploration game created for the 2024 SOAP SOUP collaboration, a modding project where artists create abstract rooms using a fixed set of elements. My entry is a sensory experience that places the player in a sodium-lit parking lot on a midsummer night. I designed a soundscape of cicadas and a distant storm, and used sophisticated spherical projection mapping for the visuals, focusing on creating a realistic and immersive atmosphere of warm light and deep shadow.",
+    "description": "An atmospheric exploration game created for the <a href='https://kiteline.itch.io/soup-rooms' target='_blank'>2024 SOAP SOUP collaboration</a>, a modding project where artists create abstract rooms using a fixed set of elements. My entry is a sensory experience that places the player in a sodium-lit parking lot on a midsummer night. I designed a soundscape of cicadas and a distant storm, and used sophisticated spherical projection mapping for the visuals, focusing on creating a realistic and immersive atmosphere of warm light and deep shadow.",
     "season": "fall",
     "end_year": "2025",
     "thumbnail_override": "static/thumbs/ffc2bc50cf1864577af3935e13375e24_thumb.webm",
@@ -666,7 +666,7 @@
     "id": "minotaur",
     "locked": false,
     "content": "https://culture.itch.io/minotaur-webgl",
-    "description": "A simple game experience that served as my earliest experiment with embedded analytics. For this project, I built a system that records play sessions and sends summary data back to a Clowder server. This work enabled long-term data collection, and the results from over three years and thousands of play sessions are analyzed in <a href='https://colter.us/experiments/minotaur/' target='_blank'>this report</a>.",
+    "description": "<a href='https://culture.itch.io/minotaur-webgl' target='_blank'>Minotaur</a> is a simple game experience that served as my earliest experiment with embedded analytics. For this project, I built a system that records play sessions and sends summary data back to a Clowder server. This work enabled long-term data collection, and the results from over three years and thousands of play sessions are analyzed in <a href='https://colter.us/experiments/minotaur/' target='_blank'>this report</a>.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/478ee6ea8e74a95e2aab56e5908270fb_thumb.webm",
     "media_dimensions": {
@@ -704,9 +704,9 @@
     ],
     "recommended_ids": [
       "cordobacourt",
-      "earthvis",
       "peoplestree2",
-      "peoplestree1"
+      "peoplestree1",
+      "rococo"
     ]
   },
   {
@@ -1573,7 +1573,7 @@
       "othermatters",
       "schlegel",
       "wurm",
-      "timelineatlas"
+      "joteva"
     ]
   },
   {
@@ -1860,9 +1860,9 @@
     ],
     "recommended_ids": [
       "beep",
-      "minotaur",
       "meshair",
-      "joteva"
+      "joteva",
+      "timelineatlas"
     ]
   },
   {
@@ -2116,8 +2116,8 @@
     "recommended_ids": [
       "earthvis",
       "bezeliness",
-      "minotaur",
-      "austere"
+      "austere",
+      "digitalpicnic"
     ]
   },
   {
@@ -2332,7 +2332,7 @@
     "tags": "furniture, concept, wood, technology, games",
     "id": "arcade",
     "locked": false,
-    "content": "https://photos.app.goo.gl/Xj2aecCd1zRJoSRr5",
+    "content": "",
     "description": "An arcade cabinet designed for exhibiting contemporary art games. The concept's core innovation is a novel fabrication method I developed for creating a perfect, CRT-style curved lens to place over a modern flat-panel screen. The technique adapts the principles of liquid-mirror telescopes: first, liquid silicon is spun in a dish to form a perfect parabolic mold; then, epoxy is poured into the stationary mold to cast the lens. While this fabrication method is developed and ready, the project is currently shelved, awaiting grant funding to produce a full-scale prototype.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/b4eb86b0087568ea43267272c7d91402.jpg",
@@ -2606,7 +2606,7 @@
     "id": "sloppyjoe",
     "locked": false,
     "content": "/entries/junk/sloppyjoe/html/index.html",
-    "description": "A prototype for a dungeon crawler set in the <i>Rococo</i> universe, created to test a unique ground-based movement mechanic. In this demo, I implemented a system where the player navigates on a rolling seat, bouncing off walls and turning in 90-degree increments. The project was also an experiment in pushing the <i>Rococo</i> aesthetic in a darker visual direction. <a href='/entries/junk/html/SloppyJoe-Web/index.html' target='_blank'>The prototype can be played here.</a>",
+    "description": "A prototype for a dungeon crawler set in the <i>Rococo</i> universe, created to test a unique ground-based movement mechanic. In this demo, I implemented a system where the player navigates on a rolling seat, bouncing off walls and turning in 90-degree increments. The project was also an experiment in pushing the <i>Rococo</i> aesthetic in a darker visual direction. <a href='/entries/junk/sloppyjoe/html/index.html' target='_blank'>The prototype can be played here.</a>",
     "season": "",
     "thumbnail_override": "static/thumbs/47e1f30a492611eb7b001c910ff7a1e2.jpg",
     "media_dimensions": {
@@ -3574,7 +3574,7 @@
     "id": "seoul",
     "locked": false,
     "content": "https://activate.zone/seoul-biennale-nicosia-city",
-    "description": "A lightweight VR installation featuring a 3D-printed, stereogram-inspired VR system that loops 360-degree stereo videos of climate modeling scenarios and disasters unfolding within a virtual model of Nicosia. I designed the system while assisting the VELab at the Cyprus Institute for the Cyprus Pavilion at the Seoul Biennale.",
+    "description": "A lightweight VR installation featuring a 3D-printed, stereogram-inspired VR system that loops 360-degree stereo videos of climate modeling scenarios and disasters unfolding within a virtual model of Nicosia. I designed the system while assisting the VELab at the Cyprus Institute for the <a href='https://activate.zone/seoul-biennale-nicosia-city' target='_blank'>Cyprus Pavilion at the Seoul Biennale</a>.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/f07f75abca8d959de54fef3f3da60c62.jpg",
     "media_dimensions": {
