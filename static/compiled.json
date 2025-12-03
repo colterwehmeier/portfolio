@@ -803,9 +803,20 @@
     "content": "",
     "description": "The fifth iteration of the People's Tree project series, developed as the centerpiece for the 2025 Madvent launcher. I was invited by the junior team\u2014who had taken over the launcher technology and coordination\u2014to contribute this game for continuity with the series. My contributions focused on technical refinement: redesigning and optimizing the input system for significantly improved panning and zooming controls, recoloring and reskinning the visual aesthetic, and optimizing data serialization and loading sequences. The project marks my transition from lead developer to technical consultant, supporting the next generation of Haunted PS1 organizers.",
     "season": "winter",
-    "thumbnail_override": "",
-    "media_dimensions": {},
-    "file_paths": [],
+    "thumbnail_override": "static/thumbs/eb9d37cb3528a7c903b4e4f46b1ba698_thumb.webm",
+    "media_dimensions": {
+      "entries/game/peoplessky2/_c_in2.webm": {
+        "width": 720,
+        "height": 476
+      },
+      "static/thumbs/eb9d37cb3528a7c903b4e4f46b1ba698_thumb.webm": {
+        "width": 500,
+        "height": 330
+      }
+    },
+    "file_paths": [
+      "entries/game/peoplessky2/_c_in2.webm"
+    ],
     "recommended_ids": [
       "peoplessky",
       "peoplestree2",
