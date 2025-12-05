@@ -3531,6 +3531,10 @@
         "width": 720,
         "height": 404
       },
+      "entries/blog/nicairport/_3_slide1.png": {
+        "width": 960,
+        "height": 540
+      },
       "entries/blog/nicairport/_3_walkway-pano.webm": {
         "width": 720,
         "height": 406
@@ -3563,6 +3567,7 @@
     "file_paths": [
       "entries/blog/nicairport/_c__1_booth.jpg",
       "entries/blog/nicairport/_2_parking-tarmac-plane-video_compressed.webm",
+      "entries/blog/nicairport/_3_slide1.png",
       "entries/blog/nicairport/_3_walkway-pano.webm",
       "entries/blog/nicairport/_4_clip_10.webm",
       "entries/blog/nicairport/IMG_8021.jpg",
