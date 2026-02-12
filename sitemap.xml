@@ -475,13 +475,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
+    <loc>https://portfolio.colter.us/research/filter/game</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/game</loc>
+    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -571,6 +571,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://portfolio.colter.us/engagement/filter/analytics</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://portfolio.colter.us/engagement/filter/citizen-science</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -583,19 +589,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/engagement/filter/analytics</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/engagement/filter/exhibition</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/engagement/filter/heritage</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/engagement/filter/game</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
