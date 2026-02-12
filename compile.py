@@ -115,6 +115,14 @@ def process_files(file_list):
         # Handle video conversion (always convert to WebM)
         if extension in [".mp4", ".avi", ".mkv", ".mov"]:
             filename = compress_video_if_needed(filename, 1000000)
+        # Handle animated GIF conversion to WebM
+        elif extension == ".gif":
+            try:
+                with Image.open(filename) as img:
+                    if getattr(img, 'n_frames', 1) > 1:
+                        filename = compress_video_if_needed(filename, 1000000)
+            except Exception:
+                pass  # Leave static GIFs as-is
         # Handle image compression
         elif extension in [".jpg", ".jpeg", ".png", ".bmp", ".tif", ".tiff"]:
             filename = compress_image_if_needed(filename, 1000000)
@@ -625,14 +633,14 @@ def filter_video_files(file_list):
         name_without_ext, extension = os.path.splitext(base_name)
         dir_name = os.path.dirname(filename)
         
-        # If it's an MP4, check if WebM version exists
-        if extension.lower() in [".mp4", ".avi", ".mkv", ".mov"]:
+        # If it's a video or animated GIF, check if WebM version exists
+        if extension.lower() in [".mp4", ".avi", ".mkv", ".mov", ".gif"]:
             # Look for corresponding WebM file
             webm_name = f"_c_{name_without_ext}.webm"
             webm_path = os.path.join(dir_name, webm_name)
-            
+
             if os.path.exists(webm_path):
-                # WebM exists, skip this original video
+                # WebM exists, skip this original file
                 continue
         
         filtered_files.append(filename)
