@@ -809,11 +809,10 @@ p {
 
 /* Section intro text for category pages */
 .section-intro {
-    grid-column: span 1;
     max-width: 60ch;
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.25rem;
     border-left: 3px solid #ccc;
-    align-self: start;
+    margin-bottom: 1.5rem;
 }
 .section-intro-title {
     font-size: 0.75rem;
