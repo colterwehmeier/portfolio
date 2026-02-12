@@ -10,7 +10,7 @@
     "description": "A large-scale, collaborative follow-up to C.H.A.I.N., this project connects over 40 developers' games into a branching narrative. After each entry, the player chooses between two games, representing forks in the timeline. My primary contribution was designing the technical architecture that enabled this branching to occur within the launcher itself, rather than individual games. This key decision made the project feasible to implement across multiple engines and contributors. You can <a href='https://papercookies.itch.io/chainged' target='_blank'>play the full collection here</a> and read an <a href='https://www.gamedeveloper.com/design/-i-c-h-a-i-n-g-e-d-i-is-a-multi-dev-project-where-every-in-game-decision-is-a-brand-new-game' target='_blank'>interview about the project</a>.",
     "season": "summer",
     "end_year": "2023",
-    "thumbnail_override": "static/thumbs/4750fc2b82038035a8acd0b29dbff5d2.gif",
+    "thumbnail_override": "static/thumbs/4750fc2b82038035a8acd0b29dbff5d2_thumb.webm",
     "media_dimensions": {
       "entries/game/chain2/_1_chain2.gif": {
         "width": 630,
@@ -24,9 +24,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/4750fc2b82038035a8acd0b29dbff5d2.gif": {
-        "width": 400,
-        "height": 317
+      "static/thumbs/4750fc2b82038035a8acd0b29dbff5d2_thumb.webm": {
+        "width": 500,
+        "height": 396
       }
     },
     "file_paths": [
@@ -203,7 +203,7 @@
     "content": "https://hauntedps1.itch.io/demo-disc-spectral-mall",
     "description": "A <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a> for the 2022 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. I led the software development for the launcher, which included all coding, gameplay programming, UI design, and tech-art. I was also responsible for organizing the broader collaborative effort.",
     "season": "spring",
-    "thumbnail_override": "static/thumbs/89ebf508758392a40c1d8a056754f9e4.gif",
+    "thumbnail_override": "static/thumbs/89ebf508758392a40c1d8a056754f9e4_thumb.webm",
     "media_dimensions": {
       "entries/game/demodisk3/ddspectal.gif": {
         "width": 650,
@@ -213,9 +213,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/89ebf508758392a40c1d8a056754f9e4.gif": {
-        "width": 400,
-        "height": 308
+      "static/thumbs/89ebf508758392a40c1d8a056754f9e4_thumb.webm": {
+        "width": 500,
+        "height": 384
       }
     },
     "file_paths": [
@@ -280,7 +280,7 @@
     "content": "https://hauntedps1.itch.io/demodisc2021",
     "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a> for the 2021 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. As the project lead, I was responsible for organizing the collaborative effort and for the launcher's software development, including all code, gameplay programming, UI, and tech-art.",
     "season": "spring",
-    "thumbnail_override": "static/thumbs/9dc8830fa32e1a8cc6d4731072ac5457.gif",
+    "thumbnail_override": "static/thumbs/9dc8830fa32e1a8cc6d4731072ac5457_thumb.webm",
     "media_dimensions": {
       "entries/game/demodisk2/_1_dd21.gif": {
         "width": 315,
@@ -294,9 +294,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/9dc8830fa32e1a8cc6d4731072ac5457.gif": {
-        "width": 315,
-        "height": 250
+      "static/thumbs/9dc8830fa32e1a8cc6d4731072ac5457_thumb.webm": {
+        "width": 500,
+        "height": 396
       }
     },
     "file_paths": [
@@ -490,7 +490,7 @@
     "content": "https://hauntedps1.itch.io/madvent3",
     "description": "The <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>official launcher</a> for the 2022 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. In my role as lead coordinator and launcher developer, I was responsible for organizing the event and building the application that unites all the contributed games.",
     "season": "winter",
-    "thumbnail_override": "static/thumbs/1d8396e257e57f9a39df0ca4e8ff068c.gif",
+    "thumbnail_override": "static/thumbs/1d8396e257e57f9a39df0ca4e8ff068c_thumb.webm",
     "media_dimensions": {
       "entries/game/madvent3/_1_mad3.gif": {
         "width": 600,
@@ -504,9 +504,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/1d8396e257e57f9a39df0ca4e8ff068c.gif": {
-        "width": 400,
-        "height": 225
+      "static/thumbs/1d8396e257e57f9a39df0ca4e8ff068c_thumb.webm": {
+        "width": 500,
+        "height": 280
       }
     },
     "file_paths": [
@@ -531,7 +531,7 @@
     "content": "https://hauntedps1.itch.io/madvent2021",
     "description": "An <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a> for the 2021 Madvent event, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this event, I both coordinated the project and single-handedly built the launcher application to house the collection of games.",
     "season": "winter",
-    "thumbnail_override": "static/thumbs/3ada7a9a6237deab85abbb7fd77f26d3.gif",
+    "thumbnail_override": "static/thumbs/3ada7a9a6237deab85abbb7fd77f26d3_thumb.webm",
     "media_dimensions": {
       "entries/game/madvent2/_1_mad1.gif": {
         "width": 400,
@@ -549,9 +549,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/3ada7a9a6237deab85abbb7fd77f26d3.gif": {
-        "width": 400,
-        "height": 225
+      "static/thumbs/3ada7a9a6237deab85abbb7fd77f26d3_thumb.webm": {
+        "width": 500,
+        "height": 282
       }
     },
     "file_paths": [
@@ -577,15 +577,15 @@
     "content": "https://hauntedps1.itch.io/madvent4",
     "description": "A <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>custom launcher</a> for the 2023 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. As lead coordinator and launcher developer for the series, I created a fully dynamic train that journeys through various biomes and navigates twisting terrain to connect the individual games.",
     "season": "winter",
-    "thumbnail_override": "static/thumbs/60f41466c4e274d7efb6bc6857faba1e.gif",
+    "thumbnail_override": "static/thumbs/60f41466c4e274d7efb6bc6857faba1e_thumb.webm",
     "media_dimensions": {
       "entries/game/madvent4/_1_output2.gif": {
         "width": 400,
         "height": 267
       },
-      "static/thumbs/60f41466c4e274d7efb6bc6857faba1e.gif": {
-        "width": 400,
-        "height": 267
+      "static/thumbs/60f41466c4e274d7efb6bc6857faba1e_thumb.webm": {
+        "width": 500,
+        "height": 334
       }
     },
     "file_paths": [
@@ -747,7 +747,7 @@
     "content": "https://hauntedps1.itch.io/madvent2020",
     "description": "An <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a> for the inaugural Madvent event in 2020, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this first event, I coordinated the project and built the launcher application to house the collection of games.",
     "season": "winter",
-    "thumbnail_override": "static/thumbs/96e540ead505e629a038d75ed8f94f52.gif",
+    "thumbnail_override": "static/thumbs/96e540ead505e629a038d75ed8f94f52_thumb.webm",
     "media_dimensions": {
       "entries/game/madvent1/_1_madvencalendarlauncher.gif": {
         "width": 400,
@@ -769,9 +769,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/96e540ead505e629a038d75ed8f94f52.gif": {
-        "width": 400,
-        "height": 187
+      "static/thumbs/96e540ead505e629a038d75ed8f94f52_thumb.webm": {
+        "width": 500,
+        "height": 234
       }
     },
     "file_paths": [
@@ -866,7 +866,7 @@
     "content": "https://papercookies.itch.io/chain",
     "description": "An early collaboration by the Haunted PS1 collective, <a href='https://papercookies.itch.io/chain' target='_blank'>C.H.A.I.N.</a> was an experimental game series with a unique structure: each developer received a game, created a direct sequel, and then passed it to the next person in the chain. I participated in this project, contributing my own entry, \"Drip.\" The unpredictable, flowing nature of the narrative was a gratifying success, and the experiment's popularity directly led to the creation of a more ambitious sequel, C.H.A.I.N.G.E.D., in 2022.",
     "season": "fall",
-    "thumbnail_override": "static/thumbs/3d755198ffc595a10d65a77e8ea21bb0.gif",
+    "thumbnail_override": "static/thumbs/3d755198ffc595a10d65a77e8ea21bb0_thumb.webm",
     "media_dimensions": {
       "entries/game/chain/_1_chain.gif": {
         "width": 400,
@@ -880,9 +880,9 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/3d755198ffc595a10d65a77e8ea21bb0.gif": {
-        "width": 400,
-        "height": 317
+      "static/thumbs/3d755198ffc595a10d65a77e8ea21bb0_thumb.webm": {
+        "width": 500,
+        "height": 396
       }
     },
     "file_paths": [

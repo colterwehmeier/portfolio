@@ -161,15 +161,22 @@ def calculate_max_height(file_list):
 def generate_image_thumbnail(image_path, thumbs_base_dir, size=(400, 400)):
     """
     Creates a small, compressed thumbnail for a given image.
-    Animated GIFs are resized while preserving all frames.
+    Animated GIFs are converted to WebM video thumbnails via ffmpeg.
     """
+    # Check if this is an animated GIF — route through video thumbnail pipeline
+    if image_path.lower().endswith('.gif'):
+        try:
+            with Image.open(image_path) as img:
+                if getattr(img, 'n_frames', 1) > 1:
+                    return generate_video_thumbnail(image_path, thumbs_base_dir)
+        except Exception:
+            pass  # Fall through to static thumbnail
+
     try:
         # Create a unique, stable filename using a hash
         hash_obj = hashlib.md5(image_path.encode())
         hash_name = hash_obj.hexdigest()
-
-        is_gif = image_path.lower().endswith('.gif')
-        thumb_filename = f"{hash_name}.gif" if is_gif else f"{hash_name}.jpg"
+        thumb_filename = f"{hash_name}.jpg"
 
         # Define paths
         thumb_rel_path = f"static/thumbs/{thumb_filename}"
@@ -178,41 +185,23 @@ def generate_image_thumbnail(image_path, thumbs_base_dir, size=(400, 400)):
         # If thumbnail doesn't already exist, create it
         if not os.path.exists(thumb_full_path):
             with Image.open(image_path) as img:
-                if is_gif and getattr(img, 'n_frames', 1) > 1:
-                    # Animated GIF: resize all frames
-                    frames = []
-                    durations = []
-                    for i in range(img.n_frames):
-                        img.seek(i)
-                        frame = img.copy()
-                        frame.thumbnail(size, PIL.Image.Resampling.LANCZOS)
-                        frames.append(frame)
-                        durations.append(img.info.get('duration', 100))
-                    frames[0].save(
-                        thumb_full_path, format="GIF", save_all=True,
-                        append_images=frames[1:], loop=img.info.get('loop', 0),
-                        duration=durations, optimize=True
-                    )
-                    print(f"  ✓ Generated animated thumbnail for {os.path.basename(image_path)}")
-                else:
-                    # Static image (or single-frame GIF): save as JPEG
-                    # Handle EXIF orientation just in case
-                    try:
-                        for orientation in ExifTags.TAGS.keys():
-                            if ExifTags.TAGS[orientation] == 'Orientation':
-                                break
-                        exif = img._getexif()
-                        if exif and exif.get(orientation) in [3, 6, 8]:
-                            if exif[orientation] == 3: img = img.rotate(180, expand=True)
-                            elif exif[orientation] == 6: img = img.rotate(270, expand=True)
-                            elif exif[orientation] == 8: img = img.rotate(90, expand=True)
-                    except (AttributeError, KeyError, IndexError):
-                        pass # No EXIF data
+                # Handle EXIF orientation just in case
+                try:
+                    for orientation in ExifTags.TAGS.keys():
+                        if ExifTags.TAGS[orientation] == 'Orientation':
+                            break
+                    exif = img._getexif()
+                    if exif and exif.get(orientation) in [3, 6, 8]:
+                        if exif[orientation] == 3: img = img.rotate(180, expand=True)
+                        elif exif[orientation] == 6: img = img.rotate(270, expand=True)
+                        elif exif[orientation] == 8: img = img.rotate(90, expand=True)
+                except (AttributeError, KeyError, IndexError):
+                    pass # No EXIF data
 
-                    img = img.convert('RGB')
-                    img.thumbnail(size, PIL.Image.Resampling.LANCZOS)
-                    img.save(thumb_full_path, "JPEG", quality=80, optimize=True)
-                    print(f"  ✓ Generated thumbnail for {os.path.basename(image_path)}")
+                img = img.convert('RGB')
+                img.thumbnail(size, PIL.Image.Resampling.LANCZOS)
+                img.save(thumb_full_path, "JPEG", quality=80, optimize=True)
+                print(f"  ✓ Generated thumbnail for {os.path.basename(image_path)}")
 
         return thumb_rel_path
     except Exception as e:
