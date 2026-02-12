@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Colter Wehmeier</title>
+<meta name="description" content="Get in touch with Colter Wehmeier for collaborations, questions, or other inquiries.">
+<link rel="stylesheet" href="https://colterwehmeier.github.io/portfolio/static/node.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+color: #333;
+line-height: 1.6;
+}
+.nav-header {
+padding: 2rem;
+border-bottom: 1px solid #e0e0e0;
+}
+.breadcrumb {
+display: flex;
+gap: 1rem;
+align-items: center;
+flex-wrap: wrap;
+}
+.breadcrumb-item {
+cursor: pointer;
+padding: 0.5rem 1rem;
+background: #f0f0f0;
+border-radius: 20px;
+text-decoration: none;
+color: #333;
+}
+.breadcrumb-item.active {
+background: #333;
+color: white;
+}
+.grid-container {
+padding: 2rem;
+max-width: 1400px;
+margin: 0 auto;
+}
+.contact-container { 
+max-width: 650px; 
+margin: 3rem auto; 
+padding: 2rem; 
+background: #ffffff; 
+border-radius: 8px; 
+box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+}
+.form-group { margin-bottom: 1.5rem; }
+label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+input, textarea { 
+width: 100%; 
+padding: 0.85rem; 
+border: 1px solid #ddd; 
+border-radius: 4px; 
+transition: border-color 0.3s;
+}
+button { 
+display: block; 
+width: 100%; 
+padding: 1rem; 
+background: #333; 
+color: white; 
+border: none; 
+border-radius: 4px; 
+font-size: 1.1rem; 
+cursor: pointer; 
+}
+button:hover { background: #555; }
+button:disabled { 
+background: #ccc; 
+cursor: not-allowed; 
+}
+/* Hide honeypot fields completely */
+.ohnohoney { 
+position: absolute; 
+left: -9999px; 
+height: 0; 
+width: 0; 
+opacity: 0; 
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #1a1a1a;
+color: #e0e0e0;
+}
+.nav-header {
+background: #1a1a1a;
+border-bottom: 1px solid #404040;
+}
+.breadcrumb-item {
+background: #404040;
+color: #e0e0e0;
+}
+.breadcrumb-item.active {
+background: #e0e0e0;
+color: #1a1a1a;
+}
+.contact-container {
+background: #2d2d2d;
+color: #e0e0e0;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+input, textarea {
+background: #404040;
+color: #e0e0e0;
+border: 1px solid #666;
+}
+input:focus, textarea:focus {
+border-color: #6366f1;
+outline: none;
+}
+button {
+background: #e0e0e0;
+color: #1a1a1a;
+}
+button:hover {
+background: #f0f0f0;
+}
+button:disabled {
+background: #666;
+color: #999;
+}
+}
+</style>
+</head>
+<body>
+<header class="nav-header">
+<div class="breadcrumb">
+<a href="/" class="breadcrumb-item">Colter</a>
+<span class="breadcrumb-separator">→</span>
+<span class="breadcrumb-item active">Contact</span>
+</div>
+</header>
+
+<img style="margin-top: 2rem; border-radius: 8px; display: block; margin-left:auto;margin-right:auto; width: 60ch; max-width:100%; height:auto;" src="/static/assets/IMG-20180414-WA0004-01.jpeg" width="4000" height="3000" alt="Contact banner">
+
+<main class="grid-container">
+<div class="contact-container">
+<form action="https://colter.us/log/" method="POST" id="contactForm">
+<h1>Contact Me</h1>
+<p>For questions, collaborations, or other inquiries, please use the form below.</p>
+
+<input type="hidden" name="from" value="portfolio-contact">
+<input type="hidden" name="title" value="New Portfolio Contact Form Submission">
+
+<!-- Multiple honeypots with realistic names -->
+<div class="ohnohoney">
+    <input type="text" name="subject" tabindex="-1" autocomplete="off">
+    <input type="text" name="url" tabindex="-1" autocomplete="off">
+    <input type="text" name="website" tabindex="-1" autocomplete="off">
+</div>
+
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required maxlength="100">
+</div>
+
+<div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required maxlength="254">
+</div>
+
+<div class="form-group">
+    <label for="message_body">Message</label>
+    <textarea id="message_body" name="message_body" rows="6" required maxlength="5000"></textarea>
+    <small style="color: #666; font-size: 0.85rem;">Plain English text only. No URLs.</small>
+</div>
+
+<button type="submit" id="submitBtn">Send Message</button>
+</form>
+</div>
+</main>
+
+<script>
+// Track form load time for bot detection
+fetch('https://colter.us/log/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({action: 'start_session'})
+}).catch(() => {});
+
+// Minimal JS to prevent double-submit
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+});
+
+// Gentle reminder for non-English chars (doesn't block submission)
+const messageField = document.getElementById('message_body');
+const nameField = document.getElementById('name');
+
+function checkForNonEnglish(field) {
+    const nonEnglishPattern = /[^\x20-\x7E\r\n]/;
+    if (nonEnglishPattern.test(field.value)) {
+        field.style.borderColor = '#ff9800';
+    } else {
+        field.style.borderColor = '#ddd';
+    }
+}
+
+messageField.addEventListener('input', () => checkForNonEnglish(messageField));
+nameField.addEventListener('input', () => checkForNonEnglish(nameField));
+</script>
+
+</body>
+</html>

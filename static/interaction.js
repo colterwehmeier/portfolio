@@ -1,0 +1,209 @@
+// public/interaction.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Enable JS-only features
+    document.documentElement.classList.add('js-enabled');
+    
+    // Handle legacy hash-based URLs for backward compatibility
+    handleLegacyHashUrls();
+    
+    // Handle timeline back navigation
+    handleTimelineNavigation();
+    
+    // Initialize scroll behavior only for JS users
+    let lastScrollTop = 0;
+    let ticking = false;
+
+    function updateHeader(scrollTop) {
+        const navbar = document.querySelector('.nav-header');
+        if (!navbar) return;
+
+        const navbarHeight = navbar.offsetHeight;
+        const currentOffset = parseFloat(navbar.dataset.offset || '0');
+        
+        let scrollDelta = scrollTop - lastScrollTop;
+        let newOffset = currentOffset - scrollDelta;
+
+        if (newOffset < -navbarHeight) newOffset = -navbarHeight;
+        if (newOffset > 0) newOffset = 0;
+
+        navbar.style.transform = `translateY(${newOffset}px)`;
+        navbar.dataset.offset = newOffset;
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+
+    // Scroll handler
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                updateHeader(scrollTop);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // View Transitions (if supported)
+    // if ('startViewTransition' in document) {
+    //     document.addEventListener('click', async (e) => {
+    //         const link = e.target.closest('a[href^="/"]');
+    //         if (!link || e.metaKey || e.ctrlKey || e.shiftKey) return;
+            
+    //         // Check if this is a transition from grid to detail view
+    //         const isItemCard = link.classList.contains('item-card');
+    //         const currentPath = window.location.pathname;
+    //         const newPath = link.pathname;
+            
+    //         // Skip view transitions for grid->detail navigations
+    //         if (isItemCard) {
+    //             // Just do regular navigation
+    //             window.location.href = link.href;
+    //             return;
+    //         }
+            
+    //         e.preventDefault();
+            
+    //         try {
+    //             await document.startViewTransition(async () => {
+    //                 const response = await fetch(link.href);
+    //                 const html = await response.text();
+                    
+    //                 const parser = new DOMParser();
+    //                 const newDoc = parser.parseFromString(html, 'text/html');
+                    
+    //                 // Update content
+    //                 document.querySelector('.nav-header')?.replaceWith(newDoc.querySelector('.nav-header'));
+    //                 document.querySelector('.grid-container')?.replaceWith(
+    //                     newDoc.querySelector('.grid-container')
+    //                 );
+                    
+    //                 // Reset navbar state for fresh page
+    //                 const newNavbar = document.querySelector('.nav-header');
+    //                 if (newNavbar) {
+    //                     newNavbar.dataset.offset = '0';
+    //                     newNavbar.style.transform = 'translateY(0)';
+    //                 }
+                    
+    //                 // Ensure JS class persists
+    //                 document.documentElement.classList.add('js-enabled');
+                    
+    //                 // Update URL and title
+    //                 history.pushState(null, '', link.href);
+    //                 document.title = newDoc.title;
+                    
+    //                 // Scroll to top after transition
+    //                 window.scrollTo(0, 0);
+    //                 lastScrollTop = 0; // Reset scroll tracking
+    //             });
+    //         } catch (error) {
+    //             console.error('View transition failed:', error);
+    //             window.location.href = link.href;
+    //         }
+    //     });
+        
+    //     // Handle browser navigation
+    //     window.addEventListener('popstate', () => {
+    //         location.reload();
+    //     });
+    // }
+});
+
+// Legacy hash URL handler for backward compatibility
+function handleLegacyHashUrls() {
+    const hash = window.location.hash;
+    
+    if (!hash || hash === '#') {
+        return;
+    }
+    
+    // Extract the item ID from the hash (remove the #)
+    const itemId = hash.substring(1);
+    
+    // Only proceed if it looks like a valid item ID
+    if (!itemId || itemId.includes('/') || itemId.includes('?')) {
+        return;
+    }
+    
+    // Try to find the item and redirect to new URL structure
+    fetch('/static/compiled.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const item = data.find(item => item.id === itemId);
+            
+            if (item && !item.locked) {
+                const year = item.year || '0000';
+                const newUrl = `/${year}/${itemId}`;
+                
+                console.log(`Redirecting legacy URL #${itemId} → ${newUrl}`);
+                
+                // Replace the current URL to avoid back button issues
+                window.location.replace(newUrl);
+            } else {
+                // Clear the hash but stay on current page
+                history.replaceState(null, null, window.location.pathname);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading compiled data for legacy redirect:', error);
+            // Clear the hash but stay on current page
+            history.replaceState(null, null, window.location.pathname);
+        });
+}
+
+// Timeline navigation handler for back button functionality
+function handleTimelineNavigation() {
+    // Check if we came from timeline and should show a back button
+    const timelineReturnUrl = sessionStorage.getItem('timelineReturnUrl');
+    
+    // Only show back to timeline if we're on a project page and came from timeline
+    if (timelineReturnUrl && window.location.pathname.match(/^\/\d{4}\/[^\/]+$/)) {
+        // We're on a project detail page and came from timeline
+        const breadcrumbContainer = document.querySelector('.breadcrumb');
+        
+        if (breadcrumbContainer && !breadcrumbContainer.querySelector('.timeline-back')) {
+            // Add a "Back to Timeline" link
+            const backLink = document.createElement('a');
+            backLink.href = timelineReturnUrl;
+            backLink.className = 'breadcrumb-item timeline-back';
+            backLink.textContent = '← Timeline';
+            backLink.style.cssText = 'color: #666; text-decoration: none; font-size: 0.9rem; margin-right: 0.5rem;';
+            
+            // Insert at the beginning of breadcrumb
+            breadcrumbContainer.insertBefore(backLink, breadcrumbContainer.firstChild);
+            
+            // Add a separator after the back link
+            const separator = document.createElement('span');
+            separator.className = 'breadcrumb-separator';
+            separator.textContent = '→';
+            breadcrumbContainer.insertBefore(separator, backLink.nextSibling);
+        }
+        
+        // Handle browser back button to go to filtered timeline
+        const originalOnPopState = window.onpopstate;
+        window.onpopstate = function(event) {
+            // Check if the previous page was timeline
+            if (document.referrer && document.referrer.includes('/timeline')) {
+                window.location.href = timelineReturnUrl;
+                return;
+            }
+            
+            // Fallback to original handler if any
+            if (originalOnPopState) {
+                originalOnPopState.call(this, event);
+            }
+        };
+    }
+    
+    // Clean up sessionStorage when navigating away from project pages
+    if (!window.location.pathname.match(/^\/\d{4}\/[^\/]+$/)) {
+        sessionStorage.removeItem('timelineReturnUrl');
+    }
+}
