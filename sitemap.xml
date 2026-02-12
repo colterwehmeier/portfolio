@@ -421,210 +421,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2025/backbone</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/chain3</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/soup1</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/peoplessky2</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/egw24</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/genesis24</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/chain2</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/madvent4</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/genesis</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/peoplessky</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/surveysNecessary</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/demodisk3</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/cordobacourt</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/madvent3</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/arcade</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/peoplestree2</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/demodisk2</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/whereshome</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/madvent2</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/dungeon</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/rococo</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/drip</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/minotaur</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/madvent1</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/chain</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/peoplestree1</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/sloppyjoe</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2011/fazole</loc>
-    <lastmod>2011-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2011/crapmaps</loc>
-    <lastmod>2011-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/oceantop</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/nightmarehouse2</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/skyboxes</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2008/flatsky</loc>
-    <lastmod>2008-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/ar-spatial</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -667,136 +463,10 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/kogler2</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/wikar14</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/meshair</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/beep</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/schlegel</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/othermatters</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/munich</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/wurm</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/ict-for-urban-heritage-palermo</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/wikarv1</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/austere</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/seoul</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/tools</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/qr1</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/wikar14</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/pano</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/unite</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/research</loc>
@@ -841,18 +511,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/peoplessky2</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2025/dariah25</loc>
     <lastmod>2025-12-31</lastmod>
     <changefreq>yearly</changefreq>
@@ -871,79 +529,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/egw24</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/peoplessky</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/meshair</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/unite</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2023/metaframing</loc>
     <lastmod>2023-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2023/surveysNecessary</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/cordobacourt</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/beep</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/schlegel</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/othermatters</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/munich</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2022/patio-walk-cordoba</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -955,50 +547,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2021/peoplestree2</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/whereshome</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/ict-for-urban-heritage-palermo</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/minotaur</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/peoplestree1</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2020/earthvis</loc>
     <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
-    <lastmod>2019-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1051,156 +601,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/peoplessky2</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/dariah25</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/peoplessky</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/meshair</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/unite</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/metaframing</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/surveysNecessary</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/cordobacourt</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/beep</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/schlegel</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/othermatters</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/munich</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/patio-walk-cordoba</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/peoplestree2</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/whereshome</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/ict-for-urban-heritage-palermo</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/minotaur</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/peoplestree1</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/earthvis</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2014/quipit_table</loc>
-    <lastmod>2014-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/publications</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1243,88 +643,10 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2023/unite</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/metaframing</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/surveysNecessary</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/cordobacourt</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/uncertainty</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/patio-walk-cordoba</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/ict-for-urban-heritage-palermo</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/minotaur</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/presentations</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/dariah25</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/spacenature</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/egw24</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/metaframing</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/design</loc>
@@ -1369,44 +691,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2025/spacenature</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2024/lillamp</loc>
     <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/kogler2</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/meshair</loc>
-    <lastmod>2023-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1423,68 +709,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/schlegel</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/othermatters</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/munich</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/beep</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2022/hifi</loc>
     <lastmod>2022-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2022/arcade</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/wurm</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2021/codex20</loc>
     <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/earthvis</loc>
-    <lastmod>2020-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1507,19 +739,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2019/recoveringurbanmemory</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
     <lastmod>2019-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -1567,19 +787,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2018/austere</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/2018/digitalpicnic</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/seoul</loc>
     <lastmod>2018-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -1599,24 +807,6 @@
   <url>
     <loc>https://portfolio.colter.us/2018/bench</loc>
     <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2014/quipit_table</loc>
-    <lastmod>2014-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/nightmarehouse2</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/skyboxes</loc>
-    <lastmod>2010-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1663,54 +853,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2016/paphosgate</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/scan-to-ar</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/recoveringurbanmemory</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/trainhouse</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/austere</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/digitalpicnic</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/exhibitions</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1751,96 +893,6 @@
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/kogler2</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/schlegel</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/othermatters</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/munich</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/wurm</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/austere</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/digitalpicnic</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/seoul</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/bezeliness</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2014/quipit_table</loc>
-    <lastmod>2014-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/media</loc>
@@ -1885,114 +937,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/2025/spacenature</loc>
-    <lastmod>2025-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/qbicon</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/meshair</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/uniteposter</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/beep</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/joteva</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2021/codex20</loc>
-    <lastmod>2021-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/earthvis</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/miner75</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/timelineatlas</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/illusive</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/incoherence</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/a3</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/willarnold</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/archonprize2018</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/nightmarehouse2</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2010/skyboxes</loc>
-    <lastmod>2010-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/objects</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -2033,95 +977,5 @@
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/lillamp</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2023/lilbable</loc>
-    <lastmod>2023-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/hifi</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2022/arcade</loc>
-    <lastmod>2022-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/staked-desk</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2020/pipe</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/guchibytes</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/lovebench</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2019/cncchair</loc>
-    <lastmod>2019-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/bench</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/digitalpicnic</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/seoul</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2018/bezeliness</loc>
-    <lastmod>2018-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2014/quipit_table</loc>
-    <lastmod>2014-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
