@@ -92,15 +92,15 @@
     "content": "https://culture.itch.io/rococo",
     "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is a short, atmospheric game set within a child's dream of a deconstructed kitchen. The player bounces on a jelly-like linoleum floor to jump higher and higher, reaching for a floating jar of cookies. As my first full game project, I focused on polishing this simple physics interaction by developing custom shaders for a unique unlit look and a physics-driven sound system to create a heightened sense of motion.",
     "season": "summer",
-    "thumbnail_override": "static/thumbs/bb47a11421e16d316d837ee6fd40677e_thumb.webm",
+    "thumbnail_override": "static/thumbs/b93ed0f425b6b6f3c2e7e5eccdc32bbd_thumb.webm",
     "media_dimensions": {
-      "entries/game/rococo/_c__1_movie009.webm": {
-        "width": 720,
-        "height": 360
-      },
-      "entries/game/rococo/_c__2_2.webm": {
+      "entries/game/rococo/_c__1_2.webm": {
         "width": 500,
         "height": 250
+      },
+      "entries/game/rococo/_c__2_movie009.webm": {
+        "width": 720,
+        "height": 360
       },
       "entries/game/rococo/_3_rococo.png": {
         "width": 315,
@@ -162,14 +162,14 @@
         "width": 16,
         "height": 9
       },
-      "static/thumbs/bb47a11421e16d316d837ee6fd40677e_thumb.webm": {
+      "static/thumbs/b93ed0f425b6b6f3c2e7e5eccdc32bbd_thumb.webm": {
         "width": 500,
         "height": 250
       }
     },
     "file_paths": [
-      "entries/game/rococo/_c__1_movie009.webm",
-      "entries/game/rococo/_c__2_2.webm",
+      "entries/game/rococo/_c__1_2.webm",
+      "entries/game/rococo/_c__2_movie009.webm",
       "entries/game/rococo/_3_rococo.png",
       "entries/game/rococo/_c_1.webm",
       "entries/game/rococo/_c_3.webm",
