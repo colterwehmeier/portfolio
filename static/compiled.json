@@ -90,7 +90,7 @@
     "id": "rococo",
     "locked": false,
     "content": "https://culture.itch.io/rococo",
-    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is a short, atmospheric game set within a child's dream of a deconstructed kitchen. The player bounces on a jelly-like linoleum floor to jump higher and higher, reaching for a floating jar of cookies. As my first full game project, I focused on polishing this simple physics interaction by developing custom shaders for a unique unlit look and a physics-driven sound system to create a heightened sense of motion.",
+    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is my first complete game, built solo in two weeks for the Haunted PS1 Summer of Screams jam. The player bounces on a jelly-like linoleum floor through a child's dream of a deconstructed kitchen, reaching for a floating jar of cookies. Two inputs, three minutes \u2014 I focused on making one interaction feel inevitable through custom shaders for an unlit, candy-colored look and a physics-driven sound system that ties audio to the player's motion. An epilogue was added days after release in response to players wanting to stay in the world. Rococo reached 4.6\u2605 across 218 ratings with 109 comments over five years of organic discovery \u2014 more individual ratings than any Haunted PS1 collective release except the two flagship Demo Discs.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/b93ed0f425b6b6f3c2e7e5eccdc32bbd_thumb.webm",
     "media_dimensions": {
@@ -190,7 +190,7 @@
       "sloppyjoe",
       "drip",
       "minotaur",
-      "whereshome"
+      "chain2"
     ]
   },
   {
@@ -683,7 +683,7 @@
       "chain",
       "rococo",
       "chain2",
-      "soup1"
+      "genesis"
     ]
   },
   {
@@ -734,7 +734,7 @@
       "cordobacourt",
       "peoplestree2",
       "peoplestree1",
-      "rococo"
+      "whereshome"
     ]
   },
   {
@@ -1249,7 +1249,7 @@
       "wurm",
       "schlegel",
       "joteva",
-      "othermatters"
+      "timelineatlas"
     ]
   },
   {
@@ -2900,8 +2900,8 @@
     ],
     "recommended_ids": [
       "fazole",
-      "skyboxes",
       "flatsky",
+      "skyboxes",
       "oceantop"
     ]
   },
