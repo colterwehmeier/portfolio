@@ -230,46 +230,36 @@ def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=500):
         # Define paths
         thumb_rel_path = f"static/thumbs/{thumb_filename}"
         thumb_full_path = os.path.join(thumbs_base_dir, thumb_filename)
-        
-        # Skip if thumbnail already exists
-        if os.path.exists(thumb_full_path):
-            return thumb_rel_path
-            
+
         # Get video dimensions to calculate scale
         width, height = get_video_dimensions(video_path)
-        
+
         # Calculate scale to fit within max_size
         if width > height:
             scale = f"{max_size}:-2"  # Scale width to max_size, height auto
         else:
             scale = f"-2:{max_size}"  # Scale height to max_size, width auto
-        
-        print(f"  Creating video thumbnail for {os.path.basename(video_path)}...")
-        
-        # FFmpeg command for thumbnail video
-        # - No audio (-an)
-        # - Scale down
-        # - High compression
-        # - Fast seek for better performance
-        subprocess.run([
-            "ffmpeg", "-i", video_path,
-            "-an",                          # Remove audio
-            "-vf", f"scale={scale}",        # Scale to max 300px
-            "-c:v", "libvpx-vp9",          # VP9 codec
-            "-b:v", "0",                   # Use CRF-only mode
-            "-crf", "28",                  # Lower CRF = better quality (20–32 range)
-            "-cpu-used", "4",              # Good speed-quality balance (0=best quality, 5=fastest)
-            "-deadline", "good",           # Better visual quality than "realtime"
-            "-auto-alt-ref", "1",          # Allow alternate reference frames (improves quality)
-            "-lag-in-frames", "25",        # Enable lookahead for better compression
-            "-y",                          # Overwrite
-            thumb_full_path
-        ], check=True, capture_output=True)
 
-        
-        print(f"  ✓ Generated video thumbnail: {thumb_rel_path}")
+        # Generate video thumbnail if it doesn't exist
+        if not os.path.exists(thumb_full_path):
+            print(f"  Creating video thumbnail for {os.path.basename(video_path)}...")
+            subprocess.run([
+                "ffmpeg", "-i", video_path,
+                "-an",                          # Remove audio
+                "-vf", f"scale={scale}",        # Scale to max 300px
+                "-c:v", "libvpx-vp9",          # VP9 codec
+                "-b:v", "0",                   # Use CRF-only mode
+                "-crf", "28",                  # Lower CRF = better quality (20–32 range)
+                "-cpu-used", "4",              # Good speed-quality balance (0=best quality, 5=fastest)
+                "-deadline", "good",           # Better visual quality than "realtime"
+                "-auto-alt-ref", "1",          # Allow alternate reference frames (improves quality)
+                "-lag-in-frames", "25",        # Enable lookahead for better compression
+                "-y",                          # Overwrite
+                thumb_full_path
+            ], check=True, capture_output=True)
+            print(f"  ✓ Generated video thumbnail: {thumb_rel_path}")
 
-        # Also generate a static poster frame for OG images
+        # Generate a static poster frame for OG images
         poster_filename = f"{hash_name}_thumb.jpg"
         poster_full_path = os.path.join(thumbs_base_dir, poster_filename)
         if not os.path.exists(poster_full_path):
