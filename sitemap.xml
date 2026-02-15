@@ -31,13 +31,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/exhibition</loc>
+    <loc>https://portfolio.colter.us/playable/filter/madvent</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/madvent</loc>
+    <loc>https://portfolio.colter.us/playable/filter/exhibition</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -49,7 +49,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/playable/filter/analytics</loc>
+    <loc>https://portfolio.colter.us/playable/filter/clowder</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -62,12 +62,6 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/2025/chain3</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2024/nicairport</loc>
     <lastmod>2026-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -409,13 +403,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/filter/research</loc>
+    <loc>https://portfolio.colter.us/games/filter/solo</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/games/filter/solo</loc>
+    <loc>https://portfolio.colter.us/games/filter/research</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -509,6 +503,12 @@
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/2024/nicairport</loc>
+    <lastmod>2026-12-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/2025/dariah25</loc>
