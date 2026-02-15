@@ -268,8 +268,26 @@ def generate_video_thumbnail(video_path, thumbs_base_dir, max_size=500):
 
         
         print(f"  ✓ Generated video thumbnail: {thumb_rel_path}")
+
+        # Also generate a static poster frame for OG images
+        poster_filename = f"{hash_name}_thumb.jpg"
+        poster_full_path = os.path.join(thumbs_base_dir, poster_filename)
+        if not os.path.exists(poster_full_path):
+            try:
+                subprocess.run([
+                    "ffmpeg", "-i", video_path,
+                    "-vframes", "1",
+                    "-vf", f"scale={scale}",
+                    "-q:v", "5",
+                    "-y",
+                    poster_full_path
+                ], check=True, capture_output=True)
+                print(f"  ✓ Generated poster frame: static/thumbs/{poster_filename}")
+            except Exception as e:
+                print(f"  ✗ Failed to create poster frame: {e}")
+
         return thumb_rel_path
-        
+
     except subprocess.CalledProcessError as e:
         print(f"  ✗ Failed to create video thumbnail: {e}")
         print(f"    Error output: {e.stderr.decode() if e.stderr else 'No error output'}")
