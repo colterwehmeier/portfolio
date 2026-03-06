@@ -37,8 +37,8 @@
     "recommended_ids": [
       "chain",
       "genesis",
-      "egw24",
-      "chain3"
+      "chain3",
+      "egw24"
     ]
   },
   {
@@ -893,8 +893,8 @@
     "recommended_ids": [
       "chain2",
       "drip",
-      "chain3",
-      "genesis"
+      "genesis",
+      "chain3"
     ]
   },
   {
@@ -992,7 +992,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a mass-collaborative game bringing together over 120 developers from the Haunted PS1 and wider indie communities. As co-director and lead technical developer, I built the launcher that coordinates spatially linked games\u2014a door in one game leads into another, forming a vast interconnected network. Because the scale is larger than any single person can engage, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. Supporting this was a PHP-based build system with automated itch.io syncing for rapid testing and other purpose-built coordination tools for over 100 simultaneous contributors.",
+    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a spatially distributed network of game worlds, each built by its own developer, bringing together over 120 contributors from the Haunted PS1 and wider indie communities. A door in one game leads to a door in another, and the player's save state is shared between them. As co-director and lead technical developer, I built the launcher application that coordinates these transitions and ensures uniformity across the network. Because the scale is larger than any single person can engage, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. Supporting this was a PHP-based build system with automated itch.io syncing for rapid testing and other purpose-built coordination tools for over 100 simultaneous contributors.",
     "season": "winter",
     "end_year": "2026",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
@@ -1012,8 +1012,8 @@
     "recommended_ids": [
       "chain2",
       "peoplessky2",
-      "backbone",
-      "chain"
+      "chain",
+      "backbone"
     ]
   },
   {
@@ -1246,9 +1246,9 @@
       "entries/wikar/kogler2/poster.jpg"
     ],
     "recommended_ids": [
-      "wurm",
       "joteva",
       "schlegel",
+      "wurm",
       "timelineatlas"
     ]
   },
