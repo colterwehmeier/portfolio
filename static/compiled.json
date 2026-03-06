@@ -1070,7 +1070,7 @@
     "id": "beep",
     "locked": false,
     "content": "https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html",
-    "description": "An AR energy-use visualization that lets stakeholders view expected energy loads for every room in a heritage building over the year using a phone or tablet. A slider scrubs through a full year of data, built to explain green infrastructure investments for the adaptive reuse project. Technically, I baked 3D room volumes into an optimized mesh whose vertex UVs encode positions on a packed lookup texture for GPU-driven animation without CPU overhead. The project also showcased Wikar's 3D section slicer, which recomposes standard shaders into slicable equivalents using 3D SDF intersections with a stencil pass for back-face fill. <a href='https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html' target='_blank'>More information on the project can be found here.</a>",
+    "description": "An AR energy-use visualization that lets stakeholders view expected energy loads for every room in a heritage building over the year using a phone or tablet. A slider scrubs through a full year of data, built to explain green infrastructure investments for the adaptive reuse project. <a href='https://www.cyi.ac.cy/index.php/eewrc/research-information/ongoing-research-projects/beep-bim-for-energy-efficiency-in-the-public-sector.html' target='_blank'>More information on the project can be found here.</a><br><br><strong>Technical:</strong> I baked 3D room volumes into an optimized mesh whose vertex UVs encode positions on a packed lookup texture for GPU-driven animation without CPU overhead. The project also showcased Wikar's 3D section slicer, which recomposes standard shaders into slicable equivalents using 3D SDF intersections with a stencil pass for back-face fill.",
     "season": "fall",
     "thumbnail_override": "static/thumbs/8de005008d0ea778b0b0087d82cbd2fc_thumb.webm",
     "media_dimensions": {
@@ -1249,7 +1249,7 @@
       "wurm",
       "schlegel",
       "munich",
-      "timelineatlas"
+      "joteva"
     ]
   },
   {
@@ -1382,7 +1382,7 @@
     "id": "joteva",
     "locked": false,
     "content": "",
-    "description": "An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. When viewed through a phone, the painting comes alive with particles that shift and flow based on live magnetic field data. I developed the coding and visuals for Eli Joteva. Live sensor intensities are baked into packed textures so particles animate by interpolating a texture index on the GPU, keeping the visualization real-time without CPU overhead.",
+    "description": "An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. When viewed through a phone, the painting comes alive with particles that shift and flow based on live magnetic field data. I developed the coding and visuals for Eli Joteva.<br><br><strong>Technical:</strong> Live sensor intensities are baked into packed textures so particles animate by interpolating a texture index on the GPU, keeping the visualization real-time without CPU overhead.",
     "season": "",
     "thumbnail_override": "static/thumbs/78bd7ccd825845d43739b7b5f8903c5b.jpg",
     "media_dimensions": {
