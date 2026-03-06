@@ -90,7 +90,7 @@
     "id": "rococo",
     "locked": false,
     "content": "https://culture.itch.io/rococo",
-    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is my first complete game, built solo in two weeks for the Haunted PS1 Summer of Screams jam. The player bounces on a jelly-like linoleum floor through a child's dream of a deconstructed kitchen, reaching for a floating jar of cookies. Two inputs, three minutes \u2014 I focused on making one interaction feel inevitable through custom shaders for an unlit, candy-colored look and a physics-driven sound system that ties audio to the player's motion. An epilogue was added days after release in response to players wanting to stay in the world. Rococo reached 4.6\u2605 across 218 ratings with 109 comments over five years of organic discovery \u2014 more individual ratings than any Haunted PS1 collective release except the two flagship Demo Discs.",
+    "description": "<a href='https://culture.itch.io/rococo' target='_blank'>Rococo</a> is my first complete game, built solo in two weeks for the Haunted PS1 Summer of Screams jam. The player bounces on a jelly-like linoleum floor through a child's dream of a deconstructed kitchen, reaching for a floating jar of cookies. Two inputs, three minutes \u2014 I focused on making the single interaction feel complete \u2014 custom shaders create an unlit, candy-colored look, and a physics-driven sound system ties audio to the player's motion. An epilogue was added days after release in response to players wanting to stay in the world. Rococo reached 4.6\u2605 across 218 ratings with 109 comments over five years of organic discovery \u2014 more individual ratings than any Haunted PS1 collective release except the two flagship Demo Discs.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/b93ed0f425b6b6f3c2e7e5eccdc32bbd_thumb.webm",
     "media_dimensions": {
@@ -319,7 +319,7 @@
     "id": "whereshome",
     "locked": false,
     "content": "",
-    "description": "An experimental game prototype conceived as the next evolution of the People's Tree series. Where previous iterations had players designing ornaments for a shared space, this version reimagined the format around NPCs: players meet characters throughout an abstracted Union Station, Chicago, ask them questions, and contribute answers that populate other players' encounters\u2014so the station gradually fills with player-authored characters to discover. The game translated the unshaded, minimalist aesthetic of <i>Rococo</i> into a more detailed architectural style. For the prototype, I developed a custom Rhinoceros plugin to export modular architectural elements and a system to place around 100 unique characters throughout the scene. The project was shelved to allow for more design iteration on its dialogue system.",
+    "description": "An experimental game prototype conceived as the next evolution of the People's Tree series. Where previous iterations had players designing ornaments for a shared space, this version reimagined the format around NPCs: players meet characters throughout an abstracted version of Union Station in Chicago, ask them questions, and contribute answers that populate other players' encounters\u2014so the station gradually fills with player-authored characters to discover. The game translated the unshaded, minimalist aesthetic of <i>Rococo</i> into a more detailed architectural style. For the prototype, I developed a custom Rhinoceros plugin to export modular architectural elements, and a separate system to place around 100 unique characters throughout the scene. The project was shelved to allow for more design iteration on its dialogue system.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/2a76f361e08ebdc40cffe751edc4cf77.jpg",
     "media_dimensions": {
@@ -421,7 +421,7 @@
     "id": "backbone",
     "locked": false,
     "content": "",
-    "description": "An immersive horror, first-person stealth exploration game spanning approximately 30 minutes, rendered with NTSC analogue-style graphics that mimic the rainbow iridescence of 1970s television. BACKBONE\u2014my contribution to C.H.A.I.N. 3, a collaborative network where each developer builds a game world connected to others through doors\u2014continued directly from the starting game and expanded the exposition, connecting to three other games in the network. The game recreates an early 70s midwestern basement\u2014a childhood memory of one of the lead characters\u2014using modular architectural assets to build an atmospheric period environment. Technical features include an inspection system for environmental storytelling, a phone call system for delivering dialogue sequences, and stealth gameplay driven by enemy AI running on a finite state machine with procedural and physics-based animation. Within the network, BACKBONE bridges multiple narrative threads and establishes mechanical systems used by subsequent developers.",
+    "description": "An immersive horror, first-person stealth exploration game spanning approximately 30 minutes, rendered with NTSC analogue-style graphics that mimic the rainbow iridescence of 1970s television. BACKBONE is my contribution to C.H.A.I.N. 3, a collaborative network where each developer builds a game world connected to others through doors. Continuing directly from the network's starting game, it expanded the exposition and connected to three other games. The game recreates an early 70s midwestern basement\u2014a childhood memory of one of the lead characters\u2014using modular architectural assets to build an atmospheric period environment. Technical features include an inspection system for environmental storytelling, a phone call system for delivering dialogue sequences, and stealth gameplay with enemy AI that uses a finite state machine and procedural, physics-based animation. Within the network, BACKBONE bridges multiple narrative threads and establishes mechanical systems used by subsequent developers.",
     "season": "winter",
     "end_year": "2026",
     "thumbnail_override": "static/thumbs/7e0b6567d7e403441c3773b54be71093.jpg",
@@ -636,8 +636,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "backbone",
-      "drip"
+      "drip",
+      "backbone"
     ]
   },
   {
@@ -683,7 +683,7 @@
       "chain",
       "rococo",
       "chain2",
-      "genesis"
+      "soup1"
     ]
   },
   {
@@ -796,7 +796,7 @@
     "id": "genesis",
     "locked": false,
     "content": "https://papercookies.itch.io/chainged",
-    "description": "A light-gun game inspired by vector graphics that reimagines the credit crawl sequence from <i>Super Smash Bros. Melee</i> (2001). I developed this game as my submission for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>. The project was an opportunity to explore new techniques, including motion-captured camera techniques, synchronizing gameplay to music, a blocking system for sequencing events, and vector-based rendering.",
+    "description": "A light-gun game inspired by vector graphics that reimagines the credit crawl sequence from <i>Super Smash Bros. Melee</i> (2001). I developed this game as my submission for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. collaboration</a>. The project was an opportunity to explore motion-captured camera work, gameplay-to-music synchronization, a blocking system for sequencing events, and vector-based rendering.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/97815e48a95e3d4118a3a8dbc75fabab_thumb.webm",
     "media_dimensions": {
@@ -820,8 +820,8 @@
     ],
     "recommended_ids": [
       "genesis24",
-      "egw24",
       "chain2",
+      "egw24",
       "soup1"
     ]
   },
@@ -905,7 +905,7 @@
     "id": "peoplessky",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-sky",
-    "description": "The fourth iteration of the People's Tree series, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> is an experimental game where players design items, append messages, and place them in a shared digital sky. A key design change was constraining the color palette to reduce the visual cacophony of earlier iterations. I also developed 'trace' visualizations that passively record and display player exploration paths, data-transfer optimizations, analytic logs for post-experiment analysis, and a web application for content moderation.",
+    "description": "The fourth iteration of the People's Tree series, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> is an experimental game where players design items, append messages, and place them in a shared digital sky. A key design change was constraining the color palette to reduce the visual cacophony of earlier iterations. I also developed data-transfer optimizations, analytic logs for post-experiment analysis, a web application for content moderation, and 'trace' visualizations that passively record and display player exploration paths.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/d96cd359a524fccf7cdac42f3d0ad641_thumb.webm",
     "media_dimensions": {
@@ -992,7 +992,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a spatially distributed network of game worlds, each built by its own developer, bringing together over 120 contributors from the Haunted PS1 collective and the wider indie community. A door in one game leads to a door in another, and the player's save state is shared between them. As co-director and lead technical developer, I built the launcher application that coordinates these transitions and ensures uniformity across the network. Because the scale is larger than any single person can engage, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. Supporting this was a custom automated build system for developer build syncing and other purpose-built coordination tools for over 100 simultaneous contributors.",
+    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a spatially distributed network of game worlds, each built by its own developer, bringing together over 120 contributors from the Haunted PS1 collective and the wider indie community. A door in one game leads to a door in another, and the player's save state is shared between them. As co-director and lead technical developer, I built the launcher application that coordinates these transitions and ensures uniformity across the network. Because the scale is larger than any single person can engage with, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. This was supported by a custom automated build system for syncing developer builds, along with other purpose-built coordination tools for over 100 simultaneous contributors.",
     "season": "winter",
     "end_year": "2026",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
@@ -1011,9 +1011,9 @@
     ],
     "recommended_ids": [
       "chain2",
-      "backbone",
       "peoplessky2",
-      "chain"
+      "chain",
+      "backbone"
     ]
   },
   {
@@ -1024,7 +1024,7 @@
     "id": "genesis24",
     "locked": false,
     "content": "",
-    "description": "A head-tracked rhythmic rail-shooter that traces the cyberspace aesthetics of <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez</a></i> (2001) back to their origins in Chicago's art and technology scenes. In collaboration with <a href='https://charlesvoita.com/'>Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'>Bill Derrah</a>, I led the development of this remake of my <a href='https://colter.us/#genesis'>2023 entry</a> for the <a href='https://papercookies.itch.io/chainged' target='_blank'>C.H.A.I.N.G.E.D. project</a>. The game reimagines the Electronic Visualization Laboratory's (EVL) 3D vector graphics for <i>Star Wars</i> (1977) and incorporates head-tracking from the CAVE system (1992), set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985). It was exhibited at the <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a> festival.",
+    "description": "A head-tracked rhythmic rail-shooter that traces the cyberspace aesthetics of <i><a href='https://en.wikipedia.org/wiki/Rez_(video_game)' target='_blank'>Rez</a></i> (2001) back to their origins in Chicago's art and technology scenes. In collaboration with <a href='https://charlesvoita.com/'>Charles Voita</a> and <a href='https://jewelblind.bandcamp.com/'>Bill Derrah</a>, I led development on this remake of my <a href='https://colter.us/#genesis'>2023 C.H.A.I.N.G.E.D. entry</a>. The game reimagines the Electronic Visualization Laboratory's (EVL) 3D vector graphics for <i>Star Wars</i> (1977) and incorporates head-tracking from the CAVE system (1992), set to Phuture's genre-defining <i><a href='https://en.wikipedia.org/wiki/Acid_Tracks' target='_blank'>Acid Tracks</a></i> (1985). It was exhibited at the <a href='https://bitbashchicago.com/' target='_blank'>BitBash 2024</a> festival.",
     "season": "fall",
     "thumbnail_override": "static/thumbs/616d9512ed403804bc04d226f679f00e_thumb.webm",
     "media_dimensions": {
@@ -1059,7 +1059,7 @@
       "genesis",
       "soup1",
       "backbone",
-      "chain2"
+      "cordobacourt"
     ]
   },
   {
@@ -1249,7 +1249,7 @@
       "wurm",
       "schlegel",
       "munich",
-      "joteva"
+      "timelineatlas"
     ]
   },
   {
@@ -1649,8 +1649,8 @@
     ],
     "recommended_ids": [
       "wikar14",
-      "wurm",
       "sloppyjoe",
+      "wurm",
       "othermatters"
     ]
   },
@@ -2080,8 +2080,8 @@
     ],
     "recommended_ids": [
       "incoherence",
-      "codex20",
       "bezeliness",
+      "codex20",
       "timelineatlas"
     ]
   },
