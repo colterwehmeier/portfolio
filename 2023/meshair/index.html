@@ -179,27 +179,7 @@
                         <span class="item-tag">data viz</span><span class="item-tag">cyprus institute</span><span class="item-tag">ar</span>
                     </div>
                 </div>
-                <p class="item-description">An AR energy-use visualization showing expected energy loads for every room in a heritage building over the year, taking into account climatic comfort. I built the visualization to explain green infrastructure investments for the adaptive reuse project. More information on the project can be found here.</p>
-            </div>
-        </a>
-    
-        <a class="item-card" href="/2020/earthvis" data-tags="data viz vfx climate research">
-            
-                <div class="item-thumbnail">
-                    <div class="media-aspect-wrapper" style="--ar: 1.000000;">
-                        <video src="https://colterwehmeier.github.io/portfolio/static/thumbs/9852356150dc747e11836fdb50db57cb_thumb.webm" playsinline muted autoplay loop aria-label="Earth Vis thumbnail"></video>
-                    </div>
-                </div>
-            
-            <div class="item-content">
-                <h3 class="item-title">Earth Vis</h3>
-                <div class="item-meta">
-                    <div class="year">2020</div>
-                    <div class="item-tags">
-                        <span class="item-tag">data viz</span><span class="item-tag">vfx</span><span class="item-tag">climate</span>
-                    </div>
-                </div>
-                <p class="item-description">An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over a globe, using a flowmap to determine wind speed and direction, while their trails change color based on temperature.</p>
+                <p class="item-description">An AR energy-use visualization showing expected energy loads for every room in a heritage building over the year, taking into account climatic comfort. I baked 3D room volumes into an optimized mesh whose vertex UVs encode positions on a packed lookup texture, so a slider can scrub through a full year of energy data without CPU overhead. The project also showcased Wikar's 3D section slicer, which recomposes arbitrary models' standard shaders into slicable equivalents, discarding pixels via 3D SDF intersections with a stencil pass for back-face fill. Built to explain green infrastructure investments for the adaptive reuse project. More information on the project can be found here.</p>
             </div>
         </a>
     
@@ -219,27 +199,47 @@
                         <span class="item-tag">exhibition</span><span class="item-tag">art</span><span class="item-tag">ar</span>
                     </div>
                 </div>
-                <p class="item-description">An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. I developed the coding and visuals for Eli Joteva, including data-reactive shaders, VFX-graph particles, real-time web monitoring, and full AR integration.</p>
+                <p class="item-description">An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. I developed the coding and visuals for Eli Joteva. Live sensor intensities are baked into packed textures so particles and meshes can animate by interpolating a texture index on the GPU, keeping the visualization real-time without CPU overhead. Includes data-reactive shaders, VFX-graph particles, real-time web monitoring, and full AR integration.</p>
             </div>
         </a>
     
-        <a class="item-card" href="/2023/kogler2" data-tags="exhibition art-installation ar shaders modelling wikar">
+        <a class="item-card" href="/2020/earthvis" data-tags="data viz vfx climate research">
             
                 <div class="item-thumbnail">
-                    <div class="media-aspect-wrapper" style="--ar: 1.002506;">
-                        <img src="https://colterwehmeier.github.io/portfolio/static/thumbs/e87c940f39727f1e2942e8de07ce2e09.jpg" loading="lazy" decoding="async" alt="Otto Wagner Areal - Peter Kogler">
+                    <div class="media-aspect-wrapper" style="--ar: 1.000000;">
+                        <video src="https://colterwehmeier.github.io/portfolio/static/thumbs/9852356150dc747e11836fdb50db57cb_thumb.webm" playsinline muted autoplay loop aria-label="Earth Vis thumbnail"></video>
                     </div>
                 </div>
             
             <div class="item-content">
-                <h3 class="item-title">Otto Wagner Areal - Peter Kogler</h3>
+                <h3 class="item-title">Earth Vis</h3>
+                <div class="item-meta">
+                    <div class="year">2020</div>
+                    <div class="item-tags">
+                        <span class="item-tag">data viz</span><span class="item-tag">vfx</span><span class="item-tag">climate</span>
+                    </div>
+                </div>
+                <p class="item-description">An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader drives particles across a globe in polar coordinates, sampling precomputed flowmaps for wind speed and direction, while their trails change color based on temperature.</p>
+            </div>
+        </a>
+    
+        <a class="item-card" href="/2023/wikar14" data-tags="tool update ar performance clowder wikar">
+            
+                <div class="item-thumbnail">
+                    <div class="media-aspect-wrapper" style="--ar: 1.459854;">
+                        <img src="https://colterwehmeier.github.io/portfolio/static/thumbs/9ce209f27be08c45d296be4b5ce736ec.jpg" loading="lazy" decoding="async" alt="WIKAR v14">
+                    </div>
+                </div>
+            
+            <div class="item-content">
+                <h3 class="item-title">WIKAR v14</h3>
                 <div class="item-meta">
                     <div class="year">2023</div>
                     <div class="item-tags">
-                        <span class="item-tag">exhibition</span><span class="item-tag">art-installation</span><span class="item-tag">ar</span>
+                        <span class="item-tag">tool update</span><span class="item-tag">ar</span><span class="item-tag">performance</span>
                     </div>
                 </div>
-                <p class="item-description">An AR sculpture garden featuring Peter Kogler's unmade digital sculptures at Wiener Gesundheitsverbund, an Otto Wagner-designed 19th century medical campus now reused as a university and culture campus. I served as technical producer, taking the artist's intricate 3D meshes, creating site-specific shaders to simulate reflection and lighting, and working on-site with Kogler to place, scale, and rotate the virtual works. I added features to Wikar for real-time metadata syncing from our Clowder server, enabling the rapid placement of eight complex sculptures in a single day. Part of a promotional event.</p>
+                <p class="item-description">A major update to Wikar for which I developed several key performance and feature improvements in preparation for new AR projects. These included: a multi-tiered caching system to enable offline mode for sculpture gardens; an iterative solver that uses a scan's confidence rating to progressively refine AR placement accuracy; and an optimized mesh slicer system for exploring 3D cross-sections of complex models.</p>
             </div>
         </a>
     

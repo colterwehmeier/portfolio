@@ -8,18 +8,18 @@
     <link rel="dns-prefetch" href="https://colterwehmeier.github.io">
     <title>Earth Vis - Engagement - Colter</title>
     <meta name="title" content="Earth Vis - Engagement - Colter Wehmeier">
-    <meta name="description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over...">
+    <meta name="description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader...">
 
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://portfolio.colter.us/2020/earthvis">
     <meta property="og:title" content="Earth Vis - Engagement - Colter Wehmeier">
-    <meta property="og:description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over...">
+    <meta property="og:description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader...">
     <meta property="og:image" content="https://colterwehmeier.github.io/portfolio/static/thumbs/9852356150dc747e11836fdb50db57cb_thumb.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://portfolio.colter.us/2020/earthvis">
     <meta property="twitter:title" content="Earth Vis - Engagement - Colter Wehmeier">
-    <meta property="twitter:description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over...">
+    <meta property="twitter:description" content="An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader...">
     <meta property="twitter:image" content="https://colterwehmeier.github.io/portfolio/static/thumbs/9852356150dc747e11836fdb50db57cb_thumb.jpg">
 
     <link rel="canonical" href="https://portfolio.colter.us/2020/earthvis">
@@ -68,7 +68,7 @@
   "dateCreated": "2020",
   "url": "https://portfolio.colter.us/2020/earthvis",
   "keywords": "data viz, vfx, climate, research",
-  "description": "An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over a globe, using a flowmap to determine wind speed and direction, while their trails change color based on temperature.",
+  "description": "An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader drives particles across a globe in polar coordinates, sampling precomputed flowmaps for wind speed and direction, while their trails change color",
   "associatedMedia": [
     {
       "@type": "VideoObject",
@@ -147,7 +147,7 @@
                             <span class="item-tag">data viz</span><span class="item-tag">vfx</span><span class="item-tag">climate</span><span class="item-tag">research</span>
                         </div>
                     </div>
-                    <div class="description"><p>An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where particles sweep over a globe, using a flowmap to determine wind speed and direction, while their trails change color based on temperature.</p>
+                    <div class="description"><p>An experiment in converting NASA climate data into a real-time VFX graph visualization. For this project, I built a system in Unity where a compute shader drives particles across a globe in polar coordinates, sampling precomputed flowmaps for wind speed and direction, while their trails change color based on temperature.</p>
 </div>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <span class="item-tag">data viz</span><span class="item-tag">cyprus institute</span><span class="item-tag">ar</span>
                     </div>
                 </div>
-                <p class="item-description">An AR energy-use visualization showing expected energy loads for every room in a heritage building over the year, taking into account climatic comfort. I built the visualization to explain green infrastructure investments for the adaptive reuse project. More information on the project can be found here.</p>
+                <p class="item-description">An AR energy-use visualization showing expected energy loads for every room in a heritage building over the year, taking into account climatic comfort. I baked 3D room volumes into an optimized mesh whose vertex UVs encode positions on a packed lookup texture, so a slider can scrub through a full year of energy data without CPU overhead. The project also showcased Wikar's 3D section slicer, which recomposes arbitrary models' standard shaders into slicable equivalents, discarding pixels via 3D SDF intersections with a stencil pass for back-face fill. Built to explain green infrastructure investments for the adaptive reuse project. More information on the project can be found here.</p>
             </div>
         </a>
     
@@ -191,7 +191,7 @@
                         <span class="item-tag">exhibition</span><span class="item-tag">art</span><span class="item-tag">ar</span>
                     </div>
                 </div>
-                <p class="item-description">An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. I developed the coding and visuals for Eli Joteva, including data-reactive shaders, VFX-graph particles, real-time web monitoring, and full AR integration.</p>
+                <p class="item-description">An AR artwork representing the strength and location of Earth's magnetic fields using NASA's real-time sensor network, overlaying data-driven particle systems on an original painting using image tracking. I developed the coding and visuals for Eli Joteva. Live sensor intensities are baked into packed textures so particles and meshes can animate by interpolating a texture index on the GPU, keeping the visualization real-time without CPU overhead. Includes data-reactive shaders, VFX-graph particles, real-time web monitoring, and full AR integration.</p>
             </div>
         </a>
     
@@ -215,23 +215,23 @@
             </div>
         </a>
     
-        <a class="item-card" href="/2019/timelineatlas" data-tags="exhibition art ar data viz wikar">
+        <a class="item-card" href="/2021/whereshome" data-tags="game prototype madvent haunted-ps1 analytics research citizen-science clowder">
             
                 <div class="item-thumbnail">
-                    <div class="media-aspect-wrapper" style="--ar: 0.740000;">
-                        <img src="https://colterwehmeier.github.io/portfolio/static/thumbs/2817e20728683af00b1e81b55932de1d.jpg" loading="lazy" decoding="async" alt="Timeline Atlas">
+                    <div class="media-aspect-wrapper" style="--ar: 2.547771;">
+                        <img src="https://colterwehmeier.github.io/portfolio/static/thumbs/2a76f361e08ebdc40cffe751edc4cf77.jpg" loading="lazy" decoding="async" alt="Where's Home?">
                     </div>
                 </div>
             
             <div class="item-content">
-                <h3 class="item-title">Timeline Atlas</h3>
+                <h3 class="item-title">Where's Home?</h3>
                 <div class="item-meta">
-                    <div class="year">2019</div>
+                    <div class="year">2021</div>
                     <div class="item-tags">
-                        <span class="item-tag">exhibition</span><span class="item-tag">art</span><span class="item-tag">ar</span>
+                        <span class="item-tag">game</span><span class="item-tag">prototype</span><span class="item-tag">madvent</span>
                     </div>
                 </div>
-                <p class="item-description">Two AR data-visualization sculptures visualizing datasets too complex to depict through physical sculpture: the home locations of all female senators over the past century. I collaborated with artist Stephen Cartwright, known for meticulously logging personal data over decades and crafting it into acrylic sculptures that exhibit spatial-temporal patterns. We used AR to surpass the limitations of his traditional manufacturing techniques. Debuted as part of a faculty showcase in 2019.</p>
+                <p class="item-description">An experimental prototype that successfully translated the unshaded, minimalist aesthetic of Rococo into a more complex, architecturally descriptive style. The concept was a sequel to the People's Tree project set in an abstracted Union Station, Chicago. For the prototype, I developed a custom Rhinoceros plugin to optimize and export modular architectural elements, and created a system to randomly place around 100 unique characters and their luggage throughout the scene. While the core technical art was a success, the project was paused to allow for more design iteration on its complex dialogue system.</p>
             </div>
         </a>
     
