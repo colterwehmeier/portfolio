@@ -49,7 +49,7 @@
     "id": "peoplestree2",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-tree-2021",
-    "description": "The second iteration of the <a href='https://culture.itch.io/the-peoples-tree-2021' target='_blank'>People's Tree project</a>, an experimental game exploring community building in networked spaces. I created this application to allow participants to design ornaments and leave messages on a communal tree. The project was an opportunity to develop new technology, define content moderation policies, and run analytics on player behavior.",
+    "description": "The second iteration of the <a href='https://culture.itch.io/the-peoples-tree-2021' target='_blank'>People's Tree project</a>, an experimental game where participants design ornaments and leave messages on a communal tree in a shared digital space. For this iteration, I rebuilt the underlying technology, expanded content moderation policies, and added more detailed analytics on player behavior.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/9a2322f41e9cbbab900f1ce25260492a_thumb.webm",
     "media_dimensions": {
@@ -190,7 +190,7 @@
       "sloppyjoe",
       "drip",
       "minotaur",
-      "demodisk2"
+      "chain2"
     ]
   },
   {
@@ -201,7 +201,7 @@
     "id": "demodisk3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demo-disc-spectral-mall",
-    "description": "A <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>custom launcher</a> for the 2022 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. I led the software development for the launcher, which included all coding, gameplay programming, UI design, and tech-art. I was also responsible for organizing the broader collaborative effort.",
+    "description": "A <a href='https://hauntedps1.itch.io/demo-disc-spectral-mall' target='_blank'>first-person horror game</a> set in an abandoned mall, built as the launcher for the 2022 Haunted PS1 Demo Disc\u2014a curated collection of games selected from hundreds of community submissions. Each contributed game appears as a locked storefront procedurally scattered throughout the mall; the player solves puzzles and acquires tools to unlock them. With co-director <a href='https://cyreides.itch.io/' target='_blank'>Cyreides</a> leading much of the art, I was responsible for all gameplay programming, technical materials, and organizing the broader collaborative effort.",
     "season": "spring",
     "thumbnail_override": "static/thumbs/f05f3662f9c68cb1e65105bb98144f9c_thumb.webm",
     "media_dimensions": {
@@ -278,7 +278,7 @@
     "id": "demodisk2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demodisc2021",
-    "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>custom launcher</a> for the 2021 Haunted PS1 Demo Disk, a curated collection of games selected from hundreds of community submissions. As the project lead, I was responsible for organizing the collaborative effort and for the launcher's software development, including all code, gameplay programming, UI, and tech-art.",
+    "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>first-person exploration game</a> set in an old museum, built as the launcher for the 2021 Haunted PS1 Demo Disc\u2014a curated collection of games selected from hundreds of community submissions. Modeled after the <i>Namco Museum</i> series, the launcher recreates its presentation and input style, with each contributed game appearing as a miniature diorama scattered throughout the space. As project lead, I organized the collaborative effort and wrote most of the gameplay code and infrastructure, with <a href='https://bryce-bucher.itch.io/' target='_blank'>Bryce Bucher</a> leading art direction and <a href='https://modus-interactive.itch.io/' target='_blank'>Modus Interactive</a> contributing key art.",
     "season": "spring",
     "thumbnail_override": "static/thumbs/1076f34744aab5842835d323b14f36fe_thumb.webm",
     "media_dimensions": {
@@ -319,7 +319,7 @@
     "id": "whereshome",
     "locked": false,
     "content": "",
-    "description": "An experimental game prototype that translated the unshaded, minimalist aesthetic of <i>Rococo</i> (my earlier kitchen dreamscape platformer) into a more detailed architectural style. The concept was a sequel to the People's Tree series (where players decorate a shared digital space) set in an abstracted Union Station, Chicago. For the prototype, I developed a custom Rhinoceros plugin to optimize and export modular architectural elements, and created a system to randomly place around 100 unique characters and their luggage throughout the scene. While the core technical art was a success, the project was paused to allow for more design iteration on its complex dialogue system.",
+    "description": "An experimental game prototype conceived as the next evolution of the People's Tree series. Where previous iterations had players designing ornaments for a shared space, this version reimagined the format around NPCs: players meet characters throughout an abstracted Union Station, Chicago, ask them questions, and contribute answers that populate other players' encounters\u2014so the station gradually fills with player-authored characters to discover. The game translated the unshaded, minimalist aesthetic of <i>Rococo</i> into a more detailed architectural style. For the prototype, I developed a custom Rhinoceros plugin to export modular architectural elements and a system to place around 100 unique characters throughout the scene. The project was shelved to allow for more design iteration on its dialogue system.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/2a76f361e08ebdc40cffe751edc4cf77.jpg",
     "media_dimensions": {
@@ -370,7 +370,7 @@
     "id": "cordobacourt",
     "locked": false,
     "content": "https://dariahcloud.web.illinois.edu/cordoba/court",
-    "description": "<a href='https://dariahcloud.web.illinois.edu/cordoba/court' target='_blank'>C\u00f3rdoba Court</a> is a social game I designed and developed, modeled after the communal patios of C\u00f3rdoba, Spain. Players cultivate a shared virtual environment by designing personalized totems from a combinatorial system of parts. The project is a social experiment in shared digital space and community greening. A <a href='https://dariahcloud.web.illinois.edu/cordoba/court_report/' target='_blank'>report</a> is also available, which analyzes player content and observed behaviors.",
+    "description": "<a href='https://dariahcloud.web.illinois.edu/cordoba/court' target='_blank'>C\u00f3rdoba Court</a> is a social game I designed and developed as the third iteration of the People's Tree series, modeled after the communal patios of C\u00f3rdoba, Spain. Players cultivate a shared virtual environment by designing personalized totems from a combinatorial system of parts. The project was released simultaneously through the Haunted PS1 community and as part of the DARIAH Udigish Working Group's survey on C\u00f3rdoba's communal patios, serving as a social experiment in shared digital space and community greening. A <a href='https://dariahcloud.web.illinois.edu/cordoba/court_report/' target='_blank'>report</a> is also available, which analyzes player content and observed behaviors.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/561b866c97a6b39bd0a272f7316d71b6_thumb.webm",
     "media_dimensions": {
@@ -408,8 +408,8 @@
     ],
     "recommended_ids": [
       "minotaur",
-      "peoplessky",
       "peoplestree2",
+      "peoplessky",
       "peoplestree1"
     ]
   },
@@ -488,7 +488,7 @@
     "id": "madvent3",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent3",
-    "description": "The <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>official launcher</a> for the 2022 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. In my role as lead coordinator and launcher developer, I was responsible for organizing the event and building the application that unites all the contributed games.",
+    "description": "The <a href='https://hauntedps1.itch.io/madvent3' target='_blank'>launcher</a> for the 2022 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. Set in a city of skyscrapers, the player clicks stained glass windows on their facades, each window a contributed game. With co-developer <a href='https://vladimerelhore.itch.io/' target='_blank'>Vladimere Lhore</a>, I organized the event and built the launcher application.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/99e13df7b3d940a098ed12ddd81c1fed_thumb.webm",
     "media_dimensions": {
@@ -529,7 +529,7 @@
     "id": "madvent2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2021",
-    "description": "An <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>ornate launcher</a> for the 2021 Madvent event, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this event, I both coordinated the project and single-handedly built the launcher application to house the collection of games.",
+    "description": "The <a href='https://hauntedps1.itch.io/madvent2021' target='_blank'>launcher</a> for the second annual Madvent event, a Haunted PS1 collaboration where ~30 developers release small games daily throughout December. The player navigates a free-floating camera around cabins on a mountain, clicking each to launch its contributed game. With co-developer <a href='https://vladimerelhore.itch.io/' target='_blank'>Vladimere Lhore</a>, I coordinated the project and built the launcher application.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/efd6ce535b3f810fc4791484e61a6ada_thumb.webm",
     "media_dimensions": {
@@ -575,7 +575,7 @@
     "id": "madvent4",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent4",
-    "description": "A <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>custom launcher</a> for the 2023 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. As lead coordinator and launcher developer for the series, I created a fully dynamic train that journeys through various biomes and navigates twisting terrain to connect the individual games.",
+    "description": "The <a href='https://hauntedps1.itch.io/madvent4' target='_blank'>launcher</a> for the 2023 Madvent event, an annual Haunted PS1 collaboration where ~30 creators release games daily throughout December. With co-developer <a href='https://vladimerelhore.itch.io/' target='_blank'>Vladimere Lhore</a>, I created a fully dynamic train that journeys through various biomes and navigates twisting terrain to connect the individual games.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/a2a6ef23e38dc1f2620d42dc961b363b_thumb.webm",
     "media_dimensions": {
@@ -636,8 +636,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "drip",
-      "backbone"
+      "backbone",
+      "drip"
     ]
   },
   {
@@ -745,7 +745,7 @@
     "id": "madvent1",
     "locked": false,
     "content": "https://hauntedps1.itch.io/madvent2020",
-    "description": "An <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>ornate launcher</a> for the inaugural Madvent event in 2020, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. For this first event, I coordinated the project and built the launcher application to house the collection of games.",
+    "description": "The <a href='https://hauntedps1.itch.io/madvent2020' target='_blank'>launcher</a> for the inaugural Madvent event in 2020, an annual Haunted PS1 collaboration where ~30 developers release small games daily throughout December. The player navigates a free-floating camera around a pile of houses stacked in the shape of a tree\u2014an advent calendar where each house is a contributed game that unlocks on its calendar day. I coordinated the project and built the launcher\u2014an application that compiles builds from all contributors, unifies the experience, and manages launching, monitoring, and progress tracking across the full collection.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/5dd43613247129bac440460d247c1540_thumb.webm",
     "media_dimensions": {
@@ -851,9 +851,9 @@
     ],
     "recommended_ids": [
       "peoplessky",
+      "whereshome",
       "peoplestree2",
-      "peoplestree1",
-      "whereshome"
+      "peoplestree1"
     ]
   },
   {
@@ -893,8 +893,8 @@
     "recommended_ids": [
       "chain2",
       "drip",
-      "genesis",
-      "chain3"
+      "chain3",
+      "genesis"
     ]
   },
   {
@@ -905,7 +905,7 @@
     "id": "peoplessky",
     "locked": false,
     "content": "https://culture.itch.io/the-peoples-sky",
-    "description": "The fourth iteration of the People's Tree project, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> is an experimental game exploring community building by enabling players to design items, append messages, and place them in a shared digital space. For this iteration, I developed several key features, including data-transfer optimizations, new 'trace' visualizations to show player exploration paths, analytic logs for post-experiment analysis, and a web application for content moderation.",
+    "description": "The fourth iteration of the People's Tree series, <a href='https://culture.itch.io/the-peoples-sky' target='_blank'>The People's Sky</a> is an experimental game where players design items, append messages, and place them in a shared digital sky. A key design change was constraining the color palette to reduce the visual cacophony of earlier iterations. I also developed 'trace' visualizations that passively record and display player exploration paths, data-transfer optimizations, analytic logs for post-experiment analysis, and a web application for content moderation.",
     "season": "winter",
     "thumbnail_override": "static/thumbs/d96cd359a524fccf7cdac42f3d0ad641_thumb.webm",
     "media_dimensions": {
@@ -992,7 +992,7 @@
     "id": "chain3",
     "locked": false,
     "content": "",
-    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a spatially distributed network of game worlds, each built by its own developer, bringing together over 120 contributors from the Haunted PS1 and wider indie communities. A door in one game leads to a door in another, and the player's save state is shared between them. As co-director and lead technical developer, I built the launcher application that coordinates these transitions and ensures uniformity across the network. Because the scale is larger than any single person can engage, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. Supporting this was a custom automated build system for developer build syncing and other purpose-built coordination tools for over 100 simultaneous contributors.",
+    "description": "The third entry in the C.H.A.I.N. experimental series, this project is a spatially distributed network of game worlds, each built by its own developer, bringing together over 120 contributors from the Haunted PS1 collective and the wider indie community. A door in one game leads to a door in another, and the player's save state is shared between them. As co-director and lead technical developer, I built the launcher application that coordinates these transitions and ensures uniformity across the network. Because the scale is larger than any single person can engage, the launcher also managed distributed QA via a <a href='https://colter.us/ex/chain3/nodemap/#analytics' target='_blank'>real-time analytics dashboard</a>, using player movement data to surface errors and bugs across the network. Supporting this was a custom automated build system for developer build syncing and other purpose-built coordination tools for over 100 simultaneous contributors.",
     "season": "winter",
     "end_year": "2026",
     "thumbnail_override": "static/thumbs/3628e27c6eba0d793d1e5c5d4cc3cad9_thumb.webm",
@@ -1248,8 +1248,8 @@
     "recommended_ids": [
       "wurm",
       "schlegel",
-      "joteva",
-      "othermatters"
+      "munich",
+      "timelineatlas"
     ]
   },
   {
@@ -1463,7 +1463,7 @@
       "wikarv1",
       "wurm",
       "munich",
-      "othermatters"
+      "schlegel"
     ]
   },
   {
@@ -1620,7 +1620,7 @@
       "othermatters",
       "schlegel",
       "wurm",
-      "timelineatlas"
+      "joteva"
     ]
   },
   {
@@ -1631,7 +1631,7 @@
     "id": "wikarv1",
     "locked": false,
     "content": "https://www.youtube.com/watch?v=tLPcyBG3nbE",
-    "description": "The initial prototype for Wikar, an AR app I designed for viewing cloud-hosted media like artworks and design proposals. During an affiliation with the NCSA's Advanced Visualization Laboratory, I developed this first version to use NCSA's Clowder data repository for storing and distributing Unity asset bundles. The system uses QR codes for URL lookup and precise positioning, enabling multi-user, location-integrated experiences. The project, which received financial support from eDream and the Fiddler Foundation, has since been used by international artists, researchers, architects, and students.",
+    "description": "The initial prototype for Wikar, an AR app I designed for viewing cloud-hosted media like artworks and design proposals. During an affiliation with the National Center for Supercomputing Applications' (NCSA) Advanced Visualization Laboratory, I developed this first version to use NCSA's Clowder data repository for storing and distributing Unity asset bundles. The system uses QR codes for URL lookup and precise positioning, enabling multi-user, location-integrated experiences. The project, which received financial support from eDream and the Fiddler Foundation, has since been used by international artists, researchers, architects, and students.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/c4e4dd3a5a3ce570f469d0fc7c49e6b9_thumb.webm",
     "media_dimensions": {
@@ -1649,8 +1649,8 @@
     ],
     "recommended_ids": [
       "wikar14",
+      "wurm",
       "sloppyjoe",
-      "whereshome",
       "othermatters"
     ]
   },
@@ -1682,7 +1682,7 @@
       "qr1",
       "unite",
       "patio-walk-cordoba",
-      "demodisk3"
+      "uncertainty"
     ]
   },
   {
@@ -1909,7 +1909,7 @@
       "beep",
       "joteva",
       "meshair",
-      "whereshome"
+      "timelineatlas"
     ]
   },
   {
@@ -2161,10 +2161,10 @@
       "entries/junk/miner75/_c_withblue.png"
     ],
     "recommended_ids": [
-      "earthvis",
       "austere",
+      "earthvis",
       "bezeliness",
-      "whereshome"
+      "guchibytes"
     ]
   },
   {
@@ -2534,7 +2534,7 @@
       "a3",
       "whereshome",
       "chain2",
-      "madvent4"
+      "peoplestree2"
     ]
   },
   {
@@ -2799,7 +2799,7 @@
       "nightmarehouse2",
       "crapmaps",
       "fazole",
-      "flatsky"
+      "oceantop"
     ]
   },
   {
@@ -3368,7 +3368,7 @@
     "id": "scan-to-ar",
     "locked": false,
     "content": "",
-    "description": "A co-design workshop using rapid 3D site capture and an AR design tool with a library of design primitives (akin to Lego bricks). The goal was to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The public space opened in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
+    "description": "A co-design workshop using rapid 3D site capture and an AR design tool with a library of design primitives (akin to Lego bricks). The goal was to repurpose abandoned industrial heritage in Palermo. I collaborated with Federico La Russa to facilitate the workshop, using Wikar (my augmented reality platform) to swiftly mock up and review architectural proposals with stakeholders over a single weekend. The co-design process helped the local campus community collect a public voice for preserving the open space, and the site opened as a public space in <a target='_blank' href='https://www.orogastronomico.it/apre-averna-spazio-open-ai-cantieri-culturali-alla-zisa-nuova-vita-allarea-industriale/'>October 2022</a>. Conference <a href='https://www.researchgate.net/publication/363871315_Scan-To-Ar_from_Reality-Capture_to_Participatory_Design_Supported_by_AR' target='_blank'>presentation and publication</a> documented the methodology.",
     "season": "summer",
     "thumbnail_override": "static/thumbs/ad088b3d890cad683611ece9b0a834e8.jpg",
     "media_dimensions": {
@@ -3428,7 +3428,7 @@
       "ict-for-urban-heritage-palermo",
       "metaframing",
       "patio-walk-cordoba",
-      "dariah25"
+      "paphosgate"
     ]
   },
   {
@@ -3474,7 +3474,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "guchibytes",
-      "digitalpicnic"
+      "miner75"
     ]
   },
   {
@@ -4004,7 +4004,7 @@
     "id": "paphosgate",
     "locked": false,
     "content": "",
-    "description": "Multiple VR applications (using Oculus DK2 and HTC Vive) to visualize archaeological findings and a proposed architectural intervention for an urban archaeology project in Nicosia. I prototyped and built the applications as a research assistant, developing systems for locomotion, interaction, and gaze-tracking analytics to understand how stakeholders focused on the virtual site. These tools engaged everyone from the public to the Department of Antiquities. The gaze-tracking data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. The project spanned a decade and opened to the public in <a href='https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe'>2024</a>.",
+    "description": "Multiple VR applications (using Oculus DK2 and HTC Vive) to visualize archaeological findings and a proposed architectural intervention for an urban archaeology project in Nicosia. I prototyped and built the applications as a research assistant, developing systems for locomotion, interaction, and gaze-tracking analytics to understand how stakeholders focused on the virtual site. These tools engaged everyone from the public to the Department of Antiquities. The gaze-tracking data directly informed the design of the final public walkway and was integrated into the permanent VR exhibit at the museum. The project spanned a decade before the site and its permanent VR exhibit opened to the public in <a href='https://www.facebook.com/share/D98dkQsr7uCGSBf8/?mibextid=WC7FNe'>2024</a>.",
     "season": "winter",
     "end_year": "2025",
     "thumbnail_override": "static/thumbs/5f423bdc9e407166347e56196ed424da.jpg",
@@ -4115,8 +4115,8 @@
     "recommended_ids": [
       "nicairport",
       "recoveringurbanmemory",
-      "seoul",
-      "beep"
+      "scan-to-ar",
+      "seoul"
     ]
   }
 ]
