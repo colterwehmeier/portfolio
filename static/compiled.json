@@ -820,8 +820,8 @@
     ],
     "recommended_ids": [
       "genesis24",
-      "chain2",
       "egw24",
+      "chain2",
       "soup1"
     ]
   },
@@ -3001,7 +3001,7 @@
     "title": "Creativity in Modern Heritage: A Doctoral Symposium",
     "year": "2026",
     "theme": "blog",
-    "tags": "event organization, web design, graphic, heritage, architecture, uiuc, symposium",
+    "tags": "conf. presentation, event organization, heritage, academic, web design, graphic, uiuc, symposium",
     "id": "modernheritage",
     "locked": false,
     "content": "http://modernheritage.web.illinois.edu/",
@@ -3023,9 +3023,9 @@
     ],
     "recommended_ids": [
       "spacenature",
-      "uniteposter",
       "dariah25",
-      "unite"
+      "uniteposter",
+      "metaframing"
     ]
   },
   {
@@ -3141,9 +3141,9 @@
     ],
     "recommended_ids": [
       "metaframing",
+      "modernheritage",
       "spacenature",
-      "scan-to-ar",
-      "modernheritage"
+      "scan-to-ar"
     ]
   },
   {
@@ -4023,8 +4023,8 @@
     "recommended_ids": [
       "metaframing",
       "cordobacourt",
-      "unite",
-      "patio-walk-cordoba"
+      "patio-walk-cordoba",
+      "unite"
     ]
   },
   {

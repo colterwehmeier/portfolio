@@ -475,13 +475,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/game</loc>
+    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/research/filter/heritage</loc>
+    <loc>https://portfolio.colter.us/research/filter/game</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -509,6 +509,12 @@
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/2026/modernheritage</loc>
+    <lastmod>2026-12-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/2025/dariah25</loc>
@@ -631,13 +637,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/publications/filter/design</loc>
+    <loc>https://portfolio.colter.us/publications/filter/academic</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/publications/filter/cyprus institute</loc>
+    <loc>https://portfolio.colter.us/publications/filter/design</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -689,12 +695,6 @@
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://portfolio.colter.us/2026/modernheritage</loc>
-    <lastmod>2026-12-31</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://portfolio.colter.us/2024/lillamp</loc>
@@ -919,12 +919,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://portfolio.colter.us/media/filter/architecture</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://portfolio.colter.us/media/filter/ar</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -938,6 +932,12 @@
   </url>
   <url>
     <loc>https://portfolio.colter.us/media/filter/graphic</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.colter.us/media/filter/exhibition</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
