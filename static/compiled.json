@@ -3010,8 +3010,8 @@
     "thumbnail_override": "static/thumbs/bfa2e5c2352ea217cdc96f415b643319.jpg",
     "media_dimensions": {
       "entries/blog/modernheritage/modernheritage.png": {
-        "width": 480,
-        "height": 307
+        "width": 960,
+        "height": 614
       },
       "static/thumbs/bfa2e5c2352ea217cdc96f415b643319.jpg": {
         "width": 400,

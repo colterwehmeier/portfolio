@@ -1,0 +1,8 @@
+{
+    "title":"The Beach",
+    "desc":"Cannon Beach, OG.",
+    "pano":"one.jpg",
+    "rotate":90,
+    "sound":["ambience.wav"],
+    "fadeIn":"5"
+}

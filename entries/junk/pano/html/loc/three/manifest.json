@@ -1,0 +1,8 @@
+{
+    "title":"Freeway",
+    "desc":"I-20, SC.",
+    "pano":"three.jpg",
+    "rotate":90,
+    "sound":["story.mp3","cicadas.mp3"],
+    "fadeIn":10
+}
