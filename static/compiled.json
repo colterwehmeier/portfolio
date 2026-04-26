@@ -266,8 +266,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "chain3",
-      "chain"
+      "chain",
+      "chain3"
     ]
   },
   {
@@ -278,7 +278,7 @@
     "id": "demodisk2",
     "locked": false,
     "content": "https://hauntedps1.itch.io/demodisc2021",
-    "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>first-person exploration game</a> set in an old museum, built as the launcher for the 2021 Haunted PS1 Demo Disc\u2014a curated collection of games selected from hundreds of community submissions. Modeled after the <i>Namco Museum</i> series, the launcher recreates its presentation and input style, with each contributed game appearing as a miniature diorama scattered throughout the space. As project lead, I organized the collaborative effort and wrote most of the gameplay code and infrastructure, with <a href='https://bryce-bucher.itch.io/' target='_blank'>Bryce Bucher</a> leading art direction and <a href='https://modus-interactive.itch.io/' target='_blank'>Modus Interactive</a> contributing key art.",
+    "description": "A <a href='https://hauntedps1.itch.io/demodisc2021' target='_blank'>first-person exploration game</a> set in an old museum, built as the launcher for the 2021 Haunted PS1 Demo Disc\u2014a curated collection of games selected from hundreds of community submissions. Modeled after the <i>Namco Museum</i> series, the launcher recreates its presentation and input style, with each contributed game appearing as a miniature diorama scattered throughout the space. As technical lead, I built the tools and infrastructure for coordinating with roughly 30 developers and delivering their contributions, and wrote much of the code players touch\u2014navigation, UI, interaction, and scene management. <a href='https://bryce-bucher.itch.io/' target='_blank'>Bryce Bucher</a> served as creative lead, with <a href='https://modus-interactive.itch.io/' target='_blank'>Modus Interactive</a> and <a href='https://z-bill.itch.io/' target='_blank'>z_bill</a> contributing key art, <a href='https://germfood.itch.io/' target='_blank'>Germfood</a> designing the cover, and <a href='https://www.moyahorror.com/' target='_blank'>Amos Sorri (Moya Horror)</a> producing trailers.",
     "season": "spring",
     "thumbnail_override": "static/thumbs/1076f34744aab5842835d323b14f36fe_thumb.webm",
     "media_dimensions": {
@@ -636,8 +636,8 @@
     "recommended_ids": [
       "genesis",
       "chain2",
-      "drip",
-      "backbone"
+      "immerse26",
+      "drip"
     ]
   },
   {
@@ -893,8 +893,8 @@
     "recommended_ids": [
       "chain2",
       "drip",
-      "chain3",
-      "genesis"
+      "genesis",
+      "chain3"
     ]
   },
   {
@@ -1012,8 +1012,8 @@
     "recommended_ids": [
       "chain2",
       "peoplessky2",
-      "chain",
-      "backbone"
+      "backbone",
+      "chain"
     ]
   },
   {
@@ -1153,8 +1153,8 @@
       "entries/wikar/schlegel/2021_Palermo_008-010.jpg"
     ],
     "recommended_ids": [
-      "othermatters",
       "wurm",
+      "othermatters",
       "munich",
       "joteva"
     ]
@@ -1246,10 +1246,10 @@
       "entries/wikar/kogler2/poster.jpg"
     ],
     "recommended_ids": [
-      "wurm",
       "schlegel",
-      "munich",
-      "timelineatlas"
+      "wurm",
+      "timelineatlas",
+      "munich"
     ]
   },
   {
@@ -1462,8 +1462,8 @@
     "recommended_ids": [
       "wurm",
       "wikarv1",
-      "munich",
-      "schlegel"
+      "schlegel",
+      "munich"
     ]
   },
   {
@@ -1650,8 +1650,8 @@
     "recommended_ids": [
       "wikar14",
       "wurm",
-      "sloppyjoe",
-      "othermatters"
+      "schlegel",
+      "sloppyjoe"
     ]
   },
   {
@@ -2082,7 +2082,7 @@
       "incoherence",
       "bezeliness",
       "codex20",
-      "timelineatlas"
+      "guchibytes"
     ]
   },
   {
@@ -2992,9 +2992,29 @@
     ],
     "recommended_ids": [
       "joteva",
+      "schlegel",
       "beep",
-      "timelineatlas",
-      "meshair"
+      "timelineatlas"
+    ]
+  },
+  {
+    "title": "Constraints, Not Freedom: Designing Virtual Environments for Distributed Co-Creation",
+    "year": "2026",
+    "theme": "blog",
+    "tags": "conf. presentation, poster, demo, immersive computing, ugc, distributed co-creation, design-research, interaction architecture, heritage, games, uiuc",
+    "id": "immerse26",
+    "locked": false,
+    "content": "https://colter.us/ex/immerse26/",
+    "description": "A poster and live-demo presentation at the IMMERSE Symposium 2026 (April 28-29, University of Illinois Urbana-Champaign), introducing five productive constraint patterns - spatial, propositional, relational, technical, thematic - as a typology for designing user-generated-content systems. Drawing on a decade of design-research across <a href=\"https://portfolio.colter.us/2024/nicairport\" target=\"_blank\">Nicosia International Airport VE</a>, <a href=\"https://portfolio.colter.us/2025/chain3\" target=\"_blank\">C.H.A.I.N. 3</a>, <a href=\"https://portfolio.colter.us/2024/soup1\" target=\"_blank\">Soap Soup</a>, the <a href=\"https://portfolio.colter.us/2022/demodisk3\" target=\"_blank\">Haunted PS1</a> demo discs, and <a href=\"https://portfolio.colter.us/2023/wikar14\" target=\"_blank\">Wikar</a>, the work argues that maximizing user freedom can paradoxically undermine the creative economy in which participants engage. The booth presented two live demos: Soap Soup (technical constraint) on a CRT and the Nicosia Airport VE (propositional constraint) on a laptop. <a href=\"https://colter.us/ex/immerse26/\" target=\"_blank\">Supplement page</a> hosts the full abstract, partner credits, analogous-pattern links, and project context.",
+    "season": "spring",
+    "thumbnail_override": "",
+    "media_dimensions": {},
+    "file_paths": [],
+    "recommended_ids": [
+      "surveysNecessary",
+      "soup1",
+      "spacenature",
+      "modernheritage"
     ]
   },
   {
@@ -3024,8 +3044,8 @@
     "recommended_ids": [
       "spacenature",
       "dariah25",
-      "uniteposter",
-      "metaframing"
+      "immerse26",
+      "uniteposter"
     ]
   },
   {
@@ -3505,7 +3525,7 @@
       "recoveringurbanmemory",
       "trainhouse",
       "guchibytes",
-      "miner75"
+      "wurm"
     ]
   },
   {
@@ -3656,9 +3676,9 @@
     ],
     "recommended_ids": [
       "paphosgate",
+      "immerse26",
       "dariah25",
-      "beep",
-      "spacenature"
+      "beep"
     ]
   },
   {
@@ -3725,7 +3745,7 @@
       "scan-to-ar",
       "patio-walk-cordoba",
       "recoveringurbanmemory",
-      "beep"
+      "schlegel"
     ]
   },
   {
@@ -3896,8 +3916,8 @@
     "recommended_ids": [
       "modernheritage",
       "dariah25",
-      "uniteposter",
-      "nicairport"
+      "immerse26",
+      "uniteposter"
     ]
   },
   {
@@ -4022,8 +4042,8 @@
     ],
     "recommended_ids": [
       "metaframing",
+      "immerse26",
       "cordobacourt",
-      "patio-walk-cordoba",
       "unite"
     ]
   },
