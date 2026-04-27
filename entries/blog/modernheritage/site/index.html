@@ -230,6 +230,7 @@
 
 <script>(function () {
     var sections = document.querySelectorAll('details[id]');
+    var hash = location.hash.replace('#', '');
 
     sections.forEach(function (details) {
         var saved = localStorage.getItem('mh_' + details.id);
@@ -244,6 +245,20 @@
             localStorage.setItem('mh_' + details.id, details.open ? 'open' : 'closed');
         });
     });
+
+    if (hash) {
+        var target = document.getElementById(hash);
+        if (target) {
+            var chain = [];
+            var el = target;
+            while (el) {
+                if (el.tagName === 'DETAILS') chain.push(el);
+                el = el.parentElement;
+            }
+            chain.reverse().forEach(function (d) { d.setAttribute('open', ''); });
+            setTimeout(function () { target.scrollIntoView({ behavior: 'smooth' }); }, 100);
+        }
+    }
 })();
 </script>
 </body>
