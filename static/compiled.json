@@ -188,9 +188,9 @@
     ],
     "recommended_ids": [
       "sloppyjoe",
-      "drip",
       "minotaur",
-      "chain2"
+      "drip",
+      "chain"
     ]
   },
   {
@@ -476,8 +476,8 @@
     "recommended_ids": [
       "chain3",
       "genesis",
-      "chain2",
-      "soup1"
+      "soup1",
+      "chain2"
     ]
   },
   {
@@ -599,14 +599,14 @@
     ]
   },
   {
-    "title": "Soap Soup: Sodium",
+    "title": "SOUP ROOMS: Sodium",
     "year": "2024",
     "theme": "game",
     "tags": "game, solo, art, collaboration",
     "id": "soup1",
     "locked": false,
     "content": "https://kiteline.itch.io/soup-rooms",
-    "description": "An atmospheric exploration game created for the <a href='https://kiteline.itch.io/soup-rooms' target='_blank'>2024 SOAP SOUP collaboration</a>, a modding project where artists create abstract rooms using a fixed set of elements. My entry is a sensory experience that places the player in a sodium-lit parking lot on a midsummer night. I designed a soundscape of cicadas and a distant storm, and used spherical projection mapping for the visuals, focusing on creating a realistic and immersive atmosphere of warm light and deep shadow.",
+    "description": "An atmospheric exploration room created for <a href='https://kiteline.itch.io/soup-rooms' target='_blank'>SOUP ROOMS</a> (2025), a virtual gallery system directed by Akuma Kira & Kite Line. SOUP is a rigid creative format lifted from a 2007 artware game; its many subsequent releases now exhibit 300+ rooms, suggesting how set technical constraints can scale participation and reward ingenuity. Contributors define their cube-shaped \"rooms\" from a fixed set of images and sounds. SOUP-making has been used as a charrette exercise in game design studios, where it can teach the fundamentals of game assets, collaborative work, and creative economy. My contribution, <em>Sodium</em>, places the player in a sodium-lit parking lot on a midsummer night, pairing a soundscape of cicadas and a distant storm with spherical projection mapping to evoke warm light and deep shadow.",
     "season": "fall",
     "end_year": "2025",
     "thumbnail_override": "static/thumbs/ffc2bc50cf1864577af3935e13375e24_thumb.webm",
@@ -614,6 +614,10 @@
       "entries/game/soup1/_c__1_2.webm": {
         "width": 720,
         "height": 534
+      },
+      "entries/game/soup1/_2_soup-diagram.png": {
+        "width": 1530,
+        "height": 633
       },
       "entries/game/soup1/_c_SOUP_trimmed.webm": {
         "width": 720,
@@ -630,13 +634,14 @@
     },
     "file_paths": [
       "entries/game/soup1/_c__1_2.webm",
+      "entries/game/soup1/_2_soup-diagram.png",
       "entries/game/soup1/_c_SOUP_trimmed.webm",
       "entries/game/soup1/_c_Screenshot_2025-07-27_at_6_22_47_PM.png"
     ],
     "recommended_ids": [
       "genesis",
       "chain2",
-      "immerse26",
+      "backbone",
       "drip"
     ]
   },
@@ -680,10 +685,10 @@
       "entries/game/drip/_c_model.png"
     ],
     "recommended_ids": [
-      "chain",
       "rococo",
+      "chain",
       "chain2",
-      "soup1"
+      "genesis"
     ]
   },
   {
@@ -892,9 +897,9 @@
     ],
     "recommended_ids": [
       "chain2",
-      "drip",
+      "chain3",
       "genesis",
-      "chain3"
+      "drip"
     ]
   },
   {
@@ -1012,8 +1017,8 @@
     "recommended_ids": [
       "chain2",
       "peoplessky2",
-      "backbone",
-      "chain"
+      "chain",
+      "backbone"
     ]
   },
   {
@@ -1909,7 +1914,7 @@
       "beep",
       "joteva",
       "meshair",
-      "timelineatlas"
+      "minotaur"
     ]
   },
   {
@@ -2161,10 +2166,10 @@
       "entries/junk/miner75/_c_withblue.png"
     ],
     "recommended_ids": [
-      "austere",
       "earthvis",
+      "austere",
       "bezeliness",
-      "guchibytes"
+      "minotaur"
     ]
   },
   {
@@ -2368,8 +2373,8 @@
     "recommended_ids": [
       "arcade",
       "lilbable",
-      "wikar14",
-      "digitalpicnic"
+      "digitalpicnic",
+      "wikar14"
     ]
   },
   {
@@ -2534,7 +2539,7 @@
       "a3",
       "whereshome",
       "chain2",
-      "peoplestree2"
+      "drip"
     ]
   },
   {
@@ -3012,7 +3017,7 @@
     "file_paths": [],
     "recommended_ids": [
       "surveysNecessary",
-      "soup1",
+      "nicairport",
       "spacenature",
       "modernheritage"
     ]
