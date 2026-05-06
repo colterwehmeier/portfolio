@@ -13,6 +13,11 @@ import imageio
 import math
 import time
 from collections import Counter
+from pathlib import Path
+
+# Anchor all relative reads/writes to the project root (one level above tools/)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+os.chdir(PROJECT_ROOT)
 
 # ---------------------------------------------------------------------------
 # Media dimensions cache – avoids re-spawning ffprobe / re-opening images
@@ -1151,12 +1156,13 @@ def main():
     # Sitemap generation is now handled by bake.js
 
     # --- Copy to git directory (skip unchanged files) ---
-    source_dir = Path(__file__).parent
+    source_dir = PROJECT_ROOT
     target_dir = Path('/home/colter/git/portfolio')
 
     print("copying over files to git")
 
-    for fp in ['favicon.ico', 'compile.py']:
+    # Note: tools/bake.js separately copies tools/compile.py → target_dir/compile.py
+    for fp in ['favicon.ico']:
         src = source_dir / fp
         dst = target_dir / fp
         dst.parent.mkdir(parents=True, exist_ok=True)
