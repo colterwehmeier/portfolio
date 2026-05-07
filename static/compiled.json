@@ -475,8 +475,8 @@
     ],
     "recommended_ids": [
       "chain3",
-      "genesis",
       "soup1",
+      "genesis",
       "chain2"
     ]
   },
@@ -1657,6 +1657,25 @@
       "wurm",
       "schlegel",
       "sloppyjoe"
+    ]
+  },
+  {
+    "title": "Now",
+    "year": "2026",
+    "theme": "junk",
+    "tags": "now, current, status",
+    "id": "now",
+    "locked": false,
+    "season": "spring",
+    "description": "/entries/junk/now/html/now.html",
+    "thumbnail_override": "",
+    "media_dimensions": {},
+    "file_paths": [],
+    "recommended_ids": [
+      "soup1",
+      "spacenature",
+      "kogler2",
+      "immerse26"
     ]
   },
   {
