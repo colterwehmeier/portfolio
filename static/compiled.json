@@ -1827,8 +1827,8 @@
     ],
     "recommended_ids": [
       "lillamp",
-      "seoul",
       "bezeliness",
+      "seoul",
       "lilbable"
     ]
   },
@@ -3707,7 +3707,7 @@
   },
   {
     "title": "Cyprus Pavilion: Seoul Biennale",
-    "year": "2018",
+    "year": "2017",
     "theme": "blog",
     "tags": "exhibition, VR, climate, design, fabrication, 3d-print, installation",
     "id": "seoul",
@@ -4190,8 +4190,8 @@
     "recommended_ids": [
       "nicairport",
       "recoveringurbanmemory",
-      "scan-to-ar",
-      "seoul"
+      "seoul",
+      "scan-to-ar"
     ]
   }
 ]
