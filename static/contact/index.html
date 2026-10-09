@@ -147,6 +147,8 @@ color: #999;
 
 <input type="hidden" name="from" value="portfolio-contact">
 <input type="hidden" name="title" value="New Portfolio Contact Form Submission">
+<input type="hidden" name="form_token">
+<input type="hidden" name="client_metrics">
 
 <!-- Multiple honeypots with realistic names -->
 <div class="ohnohoney">
@@ -177,12 +179,24 @@ color: #999;
 </main>
 
 <script>
-// Track form load time for bot detection
+// Timing/interaction metrics, recorded server-side in form-signals.log (never used to block)
+const form = document.getElementById('contactForm');
+const t0 = performance.now();
+const m = {keys: 0, pastes: 0, first_input_ms: null};
 fetch('https://colter.us/log/', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({action: 'start_session'})
-}).catch(() => {});
+}).then(r => r.json()).then(d => { form.form_token.value = d.token; }).catch(() => {});
+form.addEventListener('keydown', () => {
+    m.keys++;
+    if (m.first_input_ms === null) m.first_input_ms = Math.round(performance.now() - t0);
+});
+form.addEventListener('paste', () => { m.pastes++; });
+form.addEventListener('submit', () => {
+    m.submit_ms = Math.round(performance.now() - t0);
+    form.client_metrics.value = JSON.stringify(m);
+});
 
 // Minimal JS to prevent double-submit
 document.getElementById('contactForm').addEventListener('submit', function(e) {
